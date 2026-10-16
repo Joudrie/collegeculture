@@ -121,7 +121,13 @@ window.SCHOOL_LIST = [
   { id: 'university-of-bridgeport', name: 'University of Bridgeport', location: 'Bridgeport, CT', band: '#FFFFFF', stripe: '#592D82' },
   { id: 'university-of-saint-joseph', name: 'University of Saint Joseph', location: 'West Hartford, CT', band: '#002D62', stripe: '#0B6DB7' },
   { id: 'goodwin', name: 'Goodwin University', location: 'East Hartford, CT', band: '#005CB9', stripe: '#7FBC42' },
-  { id: 'mitchell', name: 'Mitchell College', location: 'New London, CT', band: '#38164B', stripe: '#FF0033' }
+  { id: 'mitchell', name: 'Mitchell College', location: 'New London, CT', band: '#38164B', stripe: '#FF0033' },
+  { id: 'fisher', name: 'Fisher College', location: 'Boston, MA', band: '#031756', stripe: '#01549E' },
+  { id: 'hult', name: 'Hult International Business School', location: 'Boston, MA', band: '#001529', stripe: '#1F93FF' },
+  { id: 'nec', name: 'New England Conservatory', location: 'Boston, MA', band: '#3A3329', stripe: '#EAAA00' },
+  { id: 'bac', name: 'Boston Architectural College', location: 'Boston, MA', band: '#343434', stripe: '#FFC632' },
+  { id: 'montserrat', name: 'Montserrat College of Art', location: 'Beverly, MA', band: '#0F576E', stripe: '#A5AF3A' },
+  { id: 'franklin-cummings', name: 'Benjamin Franklin Cummings Institute of Technology', location: 'Boston, MA', band: '#2350A4', stripe: '#EEB00E' }
 ];
 
 /* Rough popularity order inside each state: the names most high schoolers have heard of come first.
@@ -134,7 +140,7 @@ window.SCHOOL_ORDER = [
   'stonehill', 'merrimack', 'endicott', 'springfield-college', 'simmons', 'emmanuel', 'massart', 'mcphs',
   'lesley', 'wheaton-ma', 'gordon', 'assumption', 'western-new-england', 'bridgewater-state', 'salem-state',
   'westfield-state', 'worcester-state', 'framingham-state', 'fitchburg-state', 'mass-maritime', 'curry',
-  'lasell', 'nichols', 'dean', 'regis', 'american-international', 'mcla', 'bay-path', 'elms', 'cambridge-college', 'hellenic',
+  'lasell', 'nichols', 'dean', 'regis', 'american-international', 'mcla', 'bay-path', 'elms', 'cambridge-college', 'hellenic', 'fisher', 'hult', 'nec', 'bac', 'montserrat', 'franklin-cummings',
   // New Hampshire
   'dartmouth', 'unh', 'snhu', 'plymouth-state', 'keene-state', 'saint-anselm', 'colby-sawyer',
   'franklin-pierce', 'rivier', 'new-england-college', 'nhti',
