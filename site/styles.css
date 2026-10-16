@@ -154,6 +154,9 @@ details[open] .sum-preview { display: none; }
   transform: rotate(45deg);
 }
 details[open] .chev { transform: rotate(225deg); border-color: var(--accent); }
+.cost { display: grid; }
+.cost div { display: flex; justify-content: space-between; gap: var(--s2); padding-block: var(--s1); border-bottom: 1px solid var(--line); }
+.cost dd { font-weight: 600; font-variant-numeric: tabular-nums; }
 .body { display: grid; gap: var(--s2); padding-bottom: var(--s2); min-width: 0; }
 
 /* Meters */
@@ -252,7 +255,7 @@ footer .wrap { padding-block: var(--s3); display: grid; gap: 4px; }
   padding-block: var(--s1); border-bottom: 1px solid var(--line); display: grid; gap: var(--s1);
 }
 .progress-top { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s1); }
-.bar { height: 4px; background: var(--line); border-radius: var(--radius); overflow: hidden; }
+.progress-track { height: 4px; background: var(--line); border-radius: var(--radius); overflow: hidden; }
 .bar-fill { height: 100%; width: 0; background: var(--accent); }
 
 .q-section { display: grid; gap: var(--s2); }
@@ -389,3 +392,9 @@ footer .wrap { padding-block: var(--s3); display: grid; gap: 4px; }
 .rank-dot { width: var(--s1); height: var(--s2); border-radius: var(--radius); }
 .rank-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rank-pct { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+/* About page */
+.about { display: grid; gap: var(--s4); padding-block: var(--s3) var(--s5); }
+.about section { display: grid; gap: var(--s1); }
+.about h2 { font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; font-variation-settings: "wdth" 75; }
+.about ul { padding-left: var(--s2); display: grid; gap: var(--s1); }

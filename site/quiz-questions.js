@@ -64,7 +64,7 @@ window.QUIZ_SECTIONS = [
     { id: 'activism', weight: 0.6, type: 'scale', imp: true, text: 'A campus known for activism and speaking up?', low: 'Not for me', high: 'Love that' }
   ] },
   { id: 'money', title: 'Money', questions: [
-    { id: 'cost', weight: 1.5, quick: true, type: 'choice', imp: true, text: 'How much does cost matter?', help: 'Uses public vs private and in-state, not real prices.',
+    { id: 'cost', weight: 1.5, quick: true, type: 'choice', imp: true, text: 'How much does cost matter?', help: 'Uses federal averages for what families pay after aid, and in-state vs out-of-state.',
       options: [['cheapest', 'I need the cheapest option'], ['lot', 'It matters a lot'], ['some', 'Somewhat'], ['none', 'Not a factor']] },
     { id: 'aid', type: 'choice', text: 'Would you look at pricey schools that give big aid?', help: 'Many top private schools end up cheaper than state schools for lots of families.',
       options: [['yes', 'Yes'], ['no', 'No']] }

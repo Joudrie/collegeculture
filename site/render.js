@@ -123,7 +123,7 @@
   function renderPeople(data) {
     return [
       twoLists('Comes up as a plus', data.plus, 'Comes up as a minus', data.minus),
-      h('p', { class: 'small muted' }, 'No student reviews yet. On the real site, verified students and alumni add their take here and this summary updates.')
+      h('p', { class: 'small muted' }, 'No student reviews yet. This is a summary of what students and alumni commonly say.')
     ];
   }
 
@@ -136,6 +136,56 @@
         h('span', { class: 'chev', 'aria-hidden': 'true' })),
       h('div', { class: 'body' }, def.render(data))
     );
+  }
+
+  // Numbers from the federal College Scorecard (schools/stats.js). Rounded so they don't look more exact than they are.
+  function stats(id) {
+    return window.SCHOOL_STATS && window.SCHOOL_STATS.schools[id];
+  }
+  function money(n) {
+    return '$' + (Math.round(n / 100) * 100).toLocaleString('en-US');
+  }
+
+  // Swaps the hand-written size and admit facts for the federal numbers.
+  // The federal count for mostly-online schools includes online students, so their campus number stays.
+  var ONLINE_HEAVY = { snhu: true, post: true };
+  function liveFacts(s) {
+    var st = stats(s.id);
+    if (!st) return s.facts;
+    return s.facts.map(function (f) {
+      if (f.label === 'Undergrads' && st.undergrad && !ONLINE_HEAVY[s.id]) return { label: f.label, value: '~' + (st.undergrad >= 1000 ? (Math.round(st.undergrad / 100) * 100).toLocaleString('en-US') : st.undergrad) };
+      if (f.label === 'Getting in' && st.admitRate != null) return { label: f.label, value: Math.round(st.admitRate * 100) + '% admitted' };
+      return f;
+    });
+  }
+
+  function costSection(s) {
+    var st = stats(s.id);
+    if (!st) return null;
+    var rows = [];
+    function row(label, n) { if (n != null) rows.push(h('div', null, h('dt', null, label), h('dd', null, money(n)))); }
+    var out = [];
+    if (st.sticker == null && st.net == null) {
+      out.push(h('p', null, 'The federal data has no price numbers for this school. Check its website.'));
+      return { title: 'What it costs', preview: 'No federal price data', body: out };
+    }
+    row('Sticker price per year', st.sticker);
+    row(st.public ? 'Average after aid, in-state' : 'Average after aid', st.net);
+    row('Family makes under $30k', st.netLow);
+    row('Family makes $48k to $75k', st.netMid);
+    row('Family makes over $110k', st.netHigh);
+    if (st.public && st.tuitionOut && st.tuitionIn && st.tuitionOut > st.tuitionIn) {
+      row('Tuition, in-state', st.tuitionIn);
+      row('Tuition, out-of-state', st.tuitionOut);
+    }
+    out.push(h('dl', { class: 'cost' }, rows));
+    out.push(h('p', null, 'Sticker price includes tuition, housing, food and books. Most students on aid pay less. The "after aid" numbers are what first-year students who got aid paid on average, by family income' + (st.public ? ', for in-state students.' : '.')));
+    if (st.public) out.push(h('p', null, 'Live in another New England state? The ',
+      h('a', { href: 'https://www.nebhe.org/tuitionbreak' }, 'Tuition Break'),
+      ' program can cut out-of-state tuition at New England public colleges for some majors.'));
+    out.push(h('p', { class: 'small muted' }, 'From the U.S. Department of Education College Scorecard. Your real price depends on your family, so try the net price calculator on the school\'s website.'));
+    var preview = st.net != null ? 'Sticker ' + (st.sticker ? money(st.sticker) : 'n/a') + ', about ' + money(st.net) + ' after aid on average' : 'Sticker ' + money(st.sticker);
+    return { title: 'What it costs', preview: preview, body: out };
   }
 
   function applyColors(c) {
@@ -173,7 +223,7 @@
         logo(s)),
       h('p', { class: 'vibe-line' }, s.vibe),
       h('ul', { class: 'flags small', 'aria-label': 'Heads-up' }, s.flags.map(function (f) { return h('li', null, f); })),
-      h('dl', { class: 'facts' }, s.facts.map(function (f) { return h('div', null, h('dt', null, f.label), h('dd', null, f.value)); })),
+      h('dl', { class: 'facts' }, liveFacts(s).map(function (f) { return h('div', null, h('dt', null, f.label), h('dd', null, f.value)); })),
       h('p', { class: 'colors small' },
         s.colors.swatches.map(function (hex) { return h('span', { class: 'sw', style: 'background:' + hex, 'aria-hidden': 'true' }); }),
         s.colors.name)
@@ -181,11 +231,17 @@
 
     var defs = SECTIONS.filter(function (d) { return s.sections[d.key]; });
     var toggle = h('button', { class: 'btn', id: 'toggle-all', type: 'button' }, 'Open all');
-    var list = h('div', { class: 'sections' }, defs.map(function (d) { return section(d, s.sections[d.key]); }));
+    var sections = defs.map(function (d) { return section(d, s.sections[d.key]); });
+    var cost = costSection(s);
+    if (cost) {
+      var at = defs.map(function (d) { return d.key; }).indexOf('gettingIn') + 1;
+      sections.splice(at, 0, section({ key: 'cost', title: cost.title, render: function () { return cost.body; } }, { preview: cost.preview }));
+    }
+    var list = h('div', { class: 'sections' }, sections);
 
     var main = h('main', { class: 'wrap' },
       schoolNav(s.id),
-      h('div', { class: 'controls' }, h('span', { class: 'small muted' }, defs.length + ' sections'), toggle),
+      h('div', { class: 'controls' }, h('span', { class: 'small muted' }, sections.length + ' sections'), toggle),
       list);
 
     var app = document.getElementById('app');

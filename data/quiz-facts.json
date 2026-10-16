@@ -4,8 +4,8 @@
   "lon": -72.94,
   "setting": "small-city",
   "public": false,
-  "undergrad": 1200,
-  "admit": 1,
+  "undergrad": 991,
+  "admit": 3,
   "division": "D3",
   "areas": [
    "business",
@@ -35,7 +35,7 @@
   "lon": -72.549,
   "setting": "small-city",
   "public": false,
-  "undergrad": 1800,
+  "undergrad": 1017,
   "admit": 1,
   "division": "D1",
   "areas": [
@@ -67,7 +67,7 @@
   "lon": -72.517,
   "setting": "college-town",
   "public": false,
-  "undergrad": 1900,
+  "undergrad": 1911,
   "admit": 5,
   "division": "D3",
   "areas": [
@@ -97,8 +97,8 @@
   "lon": -71.836,
   "setting": "small-city",
   "public": false,
-  "undergrad": 1900,
-  "admit": 2,
+  "undergrad": 1669,
+  "admit": 1,
   "division": "D2",
   "areas": [
    "business",
@@ -129,7 +129,7 @@
   "lon": -71.264,
   "setting": "suburb",
   "public": false,
-  "undergrad": 2900,
+  "undergrad": 2728,
   "admit": 4,
   "division": "D3",
   "areas": [
@@ -157,7 +157,7 @@
   "lon": -71.082,
   "setting": "big-city",
   "public": false,
-  "undergrad": 700,
+  "undergrad": 280,
   "admit": 3,
   "division": "none",
   "areas": [
@@ -186,8 +186,8 @@
   "lon": -70.205,
   "setting": "small-city",
   "public": false,
-  "undergrad": 1800,
-  "admit": 4,
+  "undergrad": 1760,
+  "admit": 5,
   "division": "D3",
   "areas": [
    "social-sciences",
@@ -217,7 +217,7 @@
   "lon": -72.547,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1100,
+  "undergrad": 1108,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -248,7 +248,7 @@
   "lon": -73.201,
   "setting": "rural",
   "public": false,
-  "undergrad": 600,
+  "undergrad": 780,
   "admit": 3,
   "division": "none",
   "areas": [
@@ -280,7 +280,7 @@
   "lon": -71.221,
   "setting": "suburb",
   "public": false,
-  "undergrad": 4200,
+  "undergrad": 4474,
   "admit": 3,
   "division": "D2",
   "areas": [
@@ -308,7 +308,7 @@
   "lon": -71.087,
   "setting": "big-city",
   "public": false,
-  "undergrad": 6000,
+  "undergrad": 7468,
   "admit": 3,
   "division": "none",
   "areas": [
@@ -336,7 +336,7 @@
   "lon": -71.168,
   "setting": "suburb",
   "public": false,
-  "undergrad": 9500,
+  "undergrad": 10085,
   "admit": 4,
   "division": "D1",
   "areas": [
@@ -369,7 +369,7 @@
   "lon": -69.963,
   "setting": "college-town",
   "public": false,
-  "undergrad": 1900,
+  "undergrad": 1873,
   "admit": 5,
   "division": "D3",
   "areas": [
@@ -400,8 +400,8 @@
   "lon": -71.259,
   "setting": "suburb",
   "public": false,
-  "undergrad": 3700,
-  "admit": 4,
+  "undergrad": 3618,
+  "admit": 3,
   "division": "D3",
   "areas": [
    "social-sciences",
@@ -430,7 +430,7 @@
   "lon": -70.969,
   "setting": "suburb",
   "public": true,
-  "undergrad": 8500,
+  "undergrad": 7829,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -462,7 +462,7 @@
   "lon": -71.403,
   "setting": "big-city",
   "public": false,
-  "undergrad": 7200,
+  "undergrad": 7226,
   "admit": 5,
   "division": "D1",
   "areas": [
@@ -495,7 +495,7 @@
   "lon": -71.545,
   "setting": "suburb",
   "public": false,
-  "undergrad": 3400,
+  "undergrad": 3194,
   "admit": 2,
   "division": "D1",
   "areas": [
@@ -527,8 +527,8 @@
   "lon": -71.11,
   "setting": "big-city",
   "public": false,
-  "undergrad": 18000,
-  "admit": 4,
+  "undergrad": 18248,
+  "admit": 5,
   "division": "D1",
   "areas": [
    "communications-media",
@@ -559,7 +559,7 @@
   "lon": -71.088,
   "setting": "big-city",
   "public": false,
-  "undergrad": 500,
+  "undergrad": 532,
   "admit": 1,
   "division": "none",
   "areas": [
@@ -589,8 +589,8 @@
   "lon": -72.769,
   "setting": "small-city",
   "public": true,
-  "undergrad": 9000,
-  "admit": 1,
+  "undergrad": 7822,
+  "admit": 2,
   "division": "D1",
   "areas": [
    "education",
@@ -621,8 +621,8 @@
   "lon": -73.208,
   "setting": "college-town",
   "public": false,
-  "undergrad": 3000,
-  "admit": 2,
+  "undergrad": 2752,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "engineering-cs",
@@ -652,7 +652,7 @@
   "lon": -71.824,
   "setting": "small-city",
   "public": false,
-  "undergrad": 2400,
+  "undergrad": 2214,
   "admit": 3,
   "division": "D3",
   "areas": [
@@ -683,7 +683,7 @@
   "lon": -72.1,
   "setting": "small-city",
   "public": true,
-  "undergrad": 1000,
+  "undergrad": 1108,
   "admit": 4,
   "division": "D3",
   "areas": [
@@ -715,7 +715,7 @@
   "lon": -69.663,
   "setting": "rural",
   "public": false,
-  "undergrad": 2100,
+  "undergrad": 2407,
   "admit": 5,
   "division": "D3",
   "areas": [
@@ -742,11 +742,11 @@
   ]
  },
  "colby-sawyer": {
-  "lat": 43.463,
-  "lon": -71.853,
+  "lat": 43.412,
+  "lon": -71.976,
   "setting": "rural",
   "public": false,
-  "undergrad": 1000,
+  "undergrad": 771,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -777,8 +777,8 @@
   "lon": -68.226,
   "setting": "rural",
   "public": false,
-  "undergrad": 350,
-  "admit": 3,
+  "undergrad": 353,
+  "admit": 2,
   "division": "none",
   "areas": [
    "sciences",
@@ -809,7 +809,7 @@
   "lon": -72.105,
   "setting": "small-city",
   "public": false,
-  "undergrad": 1800,
+  "undergrad": 1937,
   "admit": 3,
   "division": "D3",
   "areas": [
@@ -841,8 +841,8 @@
   "lon": -71.08,
   "setting": "suburb",
   "public": false,
-  "undergrad": 2200,
-  "admit": 2,
+  "undergrad": 1780,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "health-nursing",
@@ -873,7 +873,7 @@
   "lon": -72.289,
   "setting": "rural",
   "public": false,
-  "undergrad": 4500,
+  "undergrad": 4541,
   "admit": 5,
   "division": "D1",
   "areas": [
@@ -906,8 +906,8 @@
   "lon": -71.396,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1500,
-  "admit": 1,
+  "undergrad": 1089,
+  "admit": 2,
   "division": "D3",
   "areas": [
    "music-theater",
@@ -938,8 +938,8 @@
   "lon": -72.209,
   "setting": "rural",
   "public": true,
-  "undergrad": 4000,
-  "admit": 2,
+  "undergrad": 3418,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "education",
@@ -969,7 +969,7 @@
   "lon": -72.584,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1000,
+  "undergrad": 949,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1000,7 +1000,7 @@
   "lon": -71.065,
   "setting": "big-city",
   "public": false,
-  "undergrad": 3800,
+  "undergrad": 3870,
   "admit": 3,
   "division": "D3",
   "areas": [
@@ -1031,7 +1031,7 @@
   "lon": -71.103,
   "setting": "big-city",
   "public": false,
-  "undergrad": 1800,
+  "undergrad": 1854,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -1062,7 +1062,7 @@
   "lon": -70.831,
   "setting": "suburb",
   "public": false,
-  "undergrad": 3000,
+  "undergrad": 3125,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -1094,8 +1094,8 @@
   "lon": -73.256,
   "setting": "suburb",
   "public": false,
-  "undergrad": 4200,
-  "admit": 3,
+  "undergrad": 5373,
+  "admit": 4,
   "division": "D1",
   "areas": [
    "business",
@@ -1126,8 +1126,8 @@
   "lon": -71.075,
   "setting": "big-city",
   "public": false,
-  "undergrad": 1500,
-  "admit": 1,
+  "undergrad": 1167,
+  "admit": 2,
   "division": "none",
   "areas": [
    "health-nursing",
@@ -1157,7 +1157,7 @@
   "lon": -71.809,
   "setting": "small-city",
   "public": true,
-  "undergrad": 3500,
+  "undergrad": 2752,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1189,7 +1189,7 @@
   "lon": -71.432,
   "setting": "suburb",
   "public": true,
-  "undergrad": 4500,
+  "undergrad": 2566,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1221,7 +1221,7 @@
   "lon": -71.071,
   "setting": "big-city",
   "public": false,
-  "undergrad": 600,
+  "undergrad": 483,
   "admit": 1,
   "division": "none",
   "areas": [
@@ -1250,7 +1250,7 @@
   "lon": -72.019,
   "setting": "rural",
   "public": false,
-  "undergrad": 1100,
+  "undergrad": 992,
   "admit": 1,
   "division": "D2",
   "areas": [
@@ -1281,7 +1281,7 @@
   "lon": -72.616,
   "setting": "small-city",
   "public": false,
-  "undergrad": 3000,
+  "undergrad": 2693,
   "admit": 1,
   "division": "none",
   "areas": [
@@ -1312,7 +1312,7 @@
   "lon": -70.822,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1500,
+  "undergrad": 1278,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -1343,7 +1343,7 @@
   "lon": -71.117,
   "setting": "big-city",
   "public": false,
-  "undergrad": 7100,
+  "undergrad": 7601,
   "admit": 5,
   "division": "D1",
   "areas": [
@@ -1374,7 +1374,7 @@
   "lon": -71.167,
   "setting": "suburb",
   "public": false,
-  "undergrad": 100,
+  "undergrad": 64,
   "admit": 2,
   "division": "none",
   "areas": [
@@ -1403,7 +1403,7 @@
   "lon": -71.808,
   "setting": "small-city",
   "public": false,
-  "undergrad": 3100,
+  "undergrad": 3106,
   "admit": 4,
   "division": "D1",
   "areas": [
@@ -1434,7 +1434,7 @@
   "lon": -71.083,
   "setting": "big-city",
   "public": false,
-  "undergrad": 600,
+  "undergrad": 618,
   "admit": 2,
   "division": "none",
   "areas": [
@@ -1462,7 +1462,7 @@
   "lon": -68.79,
   "setting": "small-city",
   "public": false,
-  "undergrad": 2000,
+  "undergrad": 2618,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1494,7 +1494,7 @@
   "lon": -71.416,
   "setting": "big-city",
   "public": false,
-  "undergrad": 4500,
+  "undergrad": 3868,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1525,7 +1525,7 @@
   "lon": -72.279,
   "setting": "small-city",
   "public": true,
-  "undergrad": 3500,
+  "undergrad": 2699,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1557,8 +1557,8 @@
   "lon": -72.52,
   "setting": "rural",
   "public": false,
-  "undergrad": 500,
-  "admit": 2,
+  "undergrad": 455,
+  "admit": 3,
   "division": "D3",
   "areas": [
    "business",
@@ -1587,8 +1587,8 @@
   "lon": -71.254,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1800,
-  "admit": 2,
+  "undergrad": 1226,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "business",
@@ -1619,8 +1619,8 @@
   "lon": -71.12,
   "setting": "big-city",
   "public": false,
-  "undergrad": 2500,
-  "admit": 2,
+  "undergrad": 1122,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "education",
@@ -1651,8 +1651,8 @@
   "lon": -68.8,
   "setting": "rural",
   "public": true,
-  "undergrad": 1000,
-  "admit": 2,
+  "undergrad": 942,
+  "admit": 3,
   "division": "D3",
   "areas": [
    "maritime",
@@ -1682,8 +1682,8 @@
   "lon": -70.62,
   "setting": "rural",
   "public": true,
-  "undergrad": 1700,
-  "admit": 2,
+  "undergrad": 1395,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "maritime",
@@ -1714,7 +1714,7 @@
   "lon": -71.099,
   "setting": "big-city",
   "public": true,
-  "undergrad": 1500,
+  "undergrad": 1831,
   "admit": 2,
   "division": "none",
   "areas": [
@@ -1742,7 +1742,7 @@
   "lon": -73.11,
   "setting": "small-city",
   "public": true,
-  "undergrad": 1100,
+  "undergrad": 713,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1775,8 +1775,8 @@
   "lon": -71.107,
   "setting": "big-city",
   "public": false,
-  "undergrad": 4000,
-  "admit": 3,
+  "undergrad": 3451,
+  "admit": 1,
   "division": "none",
   "areas": [
    "health-nursing",
@@ -1804,7 +1804,7 @@
   "lon": -71.122,
   "setting": "suburb",
   "public": false,
-  "undergrad": 3800,
+  "undergrad": 3916,
   "admit": 2,
   "division": "D1",
   "areas": [
@@ -1836,7 +1836,7 @@
   "lon": -73.176,
   "setting": "rural",
   "public": false,
-  "undergrad": 2800,
+  "undergrad": 2738,
   "admit": 5,
   "division": "D3",
   "areas": [
@@ -1868,7 +1868,7 @@
   "lon": -71.094,
   "setting": "big-city",
   "public": false,
-  "undergrad": 4600,
+  "undergrad": 4535,
   "admit": 5,
   "division": "D3",
   "areas": [
@@ -1897,7 +1897,7 @@
   "lon": -72.099,
   "setting": "small-city",
   "public": false,
-  "undergrad": 700,
+  "undergrad": 377,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -1928,7 +1928,7 @@
   "lon": -70.88,
   "setting": "suburb",
   "public": false,
-  "undergrad": 400,
+  "undergrad": 226,
   "admit": 2,
   "division": "none",
   "areas": [
@@ -1956,7 +1956,7 @@
   "lon": -72.575,
   "setting": "rural",
   "public": false,
-  "undergrad": 2100,
+  "undergrad": 2169,
   "admit": 3,
   "division": "D3",
   "areas": [
@@ -1987,7 +1987,7 @@
   "lon": -71.086,
   "setting": "big-city",
   "public": false,
-  "undergrad": 800,
+  "undergrad": 393,
   "admit": 3,
   "division": "none",
   "areas": [
@@ -2016,7 +2016,7 @@
   "lon": -71.776,
   "setting": "rural",
   "public": false,
-  "undergrad": 1200,
+  "undergrad": 1022,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -2047,8 +2047,8 @@
   "lon": -71.48,
   "setting": "suburb",
   "public": false,
-  "undergrad": 2500,
-  "admit": 1,
+  "undergrad": 1718,
+  "admit": 2,
   "division": "none",
   "areas": [
    "trades-technical",
@@ -2078,7 +2078,7 @@
   "lon": -71.527,
   "setting": "small-city",
   "public": true,
-  "undergrad": 3000,
+  "undergrad": 2154,
   "admit": 1,
   "division": "none",
   "areas": [
@@ -2108,8 +2108,8 @@
   "lon": -71.884,
   "setting": "rural",
   "public": false,
-  "undergrad": 1500,
-  "admit": 2,
+  "undergrad": 1163,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "business",
@@ -2138,8 +2138,8 @@
   "lon": -71.088,
   "setting": "big-city",
   "public": false,
-  "undergrad": 16000,
-  "admit": 4,
+  "undergrad": 17326,
+  "admit": 5,
   "division": "D1",
   "areas": [
    "engineering-cs",
@@ -2170,7 +2170,7 @@
   "lon": -72.659,
   "setting": "rural",
   "public": false,
-  "undergrad": 2000,
+  "undergrad": 2428,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -2202,8 +2202,8 @@
   "lon": -71.264,
   "setting": "suburb",
   "public": false,
-  "undergrad": 400,
-  "admit": 5,
+  "undergrad": 377,
+  "admit": 4,
   "division": "none",
   "areas": [
    "engineering-cs"
@@ -2230,7 +2230,7 @@
   "lon": -71.688,
   "setting": "rural",
   "public": true,
-  "undergrad": 3500,
+  "undergrad": 3153,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -2293,7 +2293,7 @@
   "lon": -71.439,
   "setting": "big-city",
   "public": false,
-  "undergrad": 3900,
+  "undergrad": 4229,
   "admit": 3,
   "division": "D1",
   "areas": [
@@ -2325,8 +2325,8 @@
   "lon": -72.893,
   "setting": "suburb",
   "public": false,
-  "undergrad": 6200,
-  "admit": 3,
+  "undergrad": 6531,
+  "admit": 2,
   "division": "D1",
   "areas": [
    "health-nursing",
@@ -2358,7 +2358,7 @@
   "lon": -71.278,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1500,
+  "undergrad": 956,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -2389,7 +2389,7 @@
   "lon": -71.439,
   "setting": "small-city",
   "public": true,
-  "undergrad": 5000,
+  "undergrad": 5049,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -2421,7 +2421,7 @@
   "lon": -71.408,
   "setting": "big-city",
   "public": false,
-  "undergrad": 2100,
+  "undergrad": 2084,
   "admit": 4,
   "division": "none",
   "areas": [
@@ -2449,7 +2449,7 @@
   "lon": -71.49,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1200,
+  "undergrad": 1231,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -2480,8 +2480,8 @@
   "lon": -71.261,
   "setting": "suburb",
   "public": false,
-  "undergrad": 3800,
-  "admit": 2,
+  "undergrad": 3946,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "engineering-cs",
@@ -2512,7 +2512,7 @@
   "lon": -73.241,
   "setting": "suburb",
   "public": false,
-  "undergrad": 6000,
+  "undergrad": 7087,
   "admit": 2,
   "division": "D1",
   "areas": [
@@ -2544,7 +2544,7 @@
   "lon": -71.502,
   "setting": "suburb",
   "public": false,
-  "undergrad": 2100,
+  "undergrad": 2087,
   "admit": 2,
   "division": "D2",
   "areas": [
@@ -2576,7 +2576,7 @@
   "lon": -70.55,
   "setting": "rural",
   "public": false,
-  "undergrad": 1000,
+  "undergrad": 964,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -2607,8 +2607,8 @@
   "lon": -73.151,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1700,
-  "admit": 2,
+  "undergrad": 1092,
+  "admit": 1,
   "division": "D2",
   "areas": [
    "business",
@@ -2639,7 +2639,7 @@
   "lon": -70.894,
   "setting": "small-city",
   "public": true,
-  "undergrad": 6000,
+  "undergrad": 4291,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -2671,7 +2671,7 @@
   "lon": -71.306,
   "setting": "small-city",
   "public": false,
-  "undergrad": 2300,
+  "undergrad": 2121,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -2703,8 +2703,8 @@
   "lon": -71.101,
   "setting": "big-city",
   "public": false,
-  "undergrad": 2100,
-  "admit": 3,
+  "undergrad": 1670,
+  "admit": 2,
   "division": "D3",
   "areas": [
    "health-nursing",
@@ -2735,7 +2735,7 @@
   "lon": -72.64,
   "setting": "college-town",
   "public": false,
-  "undergrad": 2500,
+  "undergrad": 2544,
   "admit": 4,
   "division": "D3",
   "areas": [
@@ -2798,7 +2798,7 @@
   "lon": -72.947,
   "setting": "small-city",
   "public": true,
-  "undergrad": 6500,
+  "undergrad": 6295,
   "admit": 1,
   "division": "D2",
   "areas": [
@@ -2829,7 +2829,7 @@
   "lon": -72.552,
   "setting": "small-city",
   "public": false,
-  "undergrad": 2800,
+  "undergrad": 1751,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -2860,8 +2860,8 @@
   "lon": -71.087,
   "setting": "suburb",
   "public": false,
-  "undergrad": 2500,
-  "admit": 3,
+  "undergrad": 2528,
+  "admit": 2,
   "division": "D1",
   "areas": [
    "business",
@@ -2891,8 +2891,8 @@
   "lon": -71.062,
   "setting": "big-city",
   "public": false,
-  "undergrad": 4500,
-  "admit": 2,
+  "undergrad": 4268,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "business",
@@ -2922,7 +2922,7 @@
   "lon": -69.668,
   "setting": "small-city",
   "public": false,
-  "undergrad": 1000,
+  "undergrad": 647,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -2953,8 +2953,8 @@
   "lon": -72.69,
   "setting": "small-city",
   "public": false,
-  "undergrad": 2200,
-  "admit": 3,
+  "undergrad": 2146,
+  "admit": 4,
   "division": "D3",
   "areas": [
    "social-sciences",
@@ -2984,8 +2984,8 @@
   "lon": -71.12,
   "setting": "suburb",
   "public": false,
-  "undergrad": 6800,
-  "admit": 4,
+  "undergrad": 7061,
+  "admit": 5,
   "division": "D3",
   "areas": [
    "social-sciences",
@@ -3015,7 +3015,7 @@
   "lon": -72.254,
   "setting": "rural",
   "public": true,
-  "undergrad": 19000,
+  "undergrad": 19835,
   "admit": 3,
   "division": "D1",
   "areas": [
@@ -3047,8 +3047,8 @@
   "lon": -68.668,
   "setting": "college-town",
   "public": true,
-  "undergrad": 9000,
-  "admit": 2,
+  "undergrad": 8496,
+  "admit": 1,
   "division": "D1",
   "areas": [
    "engineering-cs",
@@ -3079,8 +3079,8 @@
   "lon": -70.15,
   "setting": "rural",
   "public": true,
-  "undergrad": 1500,
-  "admit": 2,
+  "undergrad": 1140,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "education",
@@ -3110,7 +3110,7 @@
   "lon": -68.59,
   "setting": "rural",
   "public": true,
-  "undergrad": 700,
+  "undergrad": 599,
   "admit": 1,
   "division": "none",
   "areas": [
@@ -3141,7 +3141,7 @@
   "lon": -68.016,
   "setting": "rural",
   "public": true,
-  "undergrad": 900,
+  "undergrad": 1913,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -3172,7 +3172,7 @@
   "lon": -72.527,
   "setting": "college-town",
   "public": true,
-  "undergrad": 24000,
+  "undergrad": 23671,
   "admit": 3,
   "division": "D1",
   "areas": [
@@ -3205,8 +3205,8 @@
   "lon": -71.038,
   "setting": "big-city",
   "public": true,
-  "undergrad": 12000,
-  "admit": 2,
+  "undergrad": 11512,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "social-sciences",
@@ -3237,8 +3237,8 @@
   "lon": -71.003,
   "setting": "suburb",
   "public": true,
-  "undergrad": 7000,
-  "admit": 2,
+  "undergrad": 5221,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "business",
@@ -3269,8 +3269,8 @@
   "lon": -71.325,
   "setting": "small-city",
   "public": true,
-  "undergrad": 13000,
-  "admit": 2,
+  "undergrad": 11434,
+  "admit": 1,
   "division": "D1",
   "areas": [
    "engineering-cs",
@@ -3302,8 +3302,8 @@
   "lon": -70.419,
   "setting": "suburb",
   "public": false,
-  "undergrad": 4500,
-  "admit": 2,
+  "undergrad": 2135,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "health-nursing",
@@ -3333,8 +3333,8 @@
   "lon": -70.926,
   "setting": "college-town",
   "public": true,
-  "undergrad": 12000,
-  "admit": 2,
+  "undergrad": 11261,
+  "admit": 1,
   "division": "D1",
   "areas": [
    "business",
@@ -3365,7 +3365,7 @@
   "lon": -73.193,
   "setting": "small-city",
   "public": false,
-  "undergrad": 2500,
+  "undergrad": 1534,
   "admit": 1,
   "division": "D2",
   "areas": [
@@ -3397,8 +3397,8 @@
   "lon": -72.708,
   "setting": "suburb",
   "public": false,
-  "undergrad": 4500,
-  "admit": 2,
+  "undergrad": 4146,
+  "admit": 1,
   "division": "D1",
   "areas": [
    "music-theater",
@@ -3429,7 +3429,7 @@
   "lon": -72.961,
   "setting": "suburb",
   "public": false,
-  "undergrad": 5500,
+  "undergrad": 4841,
   "admit": 2,
   "division": "D2",
   "areas": [
@@ -3461,7 +3461,7 @@
   "lon": -72.744,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1300,
+  "undergrad": 838,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -3492,7 +3492,7 @@
   "lon": -71.529,
   "setting": "rural",
   "public": true,
-  "undergrad": 14000,
+  "undergrad": 13381,
   "admit": 2,
   "division": "D1",
   "areas": [
@@ -3524,8 +3524,8 @@
   "lon": -70.269,
   "setting": "small-city",
   "public": true,
-  "undergrad": 6000,
-  "admit": 1,
+  "undergrad": 4222,
+  "admit": 2,
   "division": "D3",
   "areas": [
    "business",
@@ -3556,8 +3556,8 @@
   "lon": -73.196,
   "setting": "college-town",
   "public": true,
-  "undergrad": 11000,
-  "admit": 3,
+  "undergrad": 11743,
+  "admit": 2,
   "division": "D1",
   "areas": [
    "sciences",
@@ -3589,7 +3589,7 @@
   "lon": -73.18,
   "setting": "rural",
   "public": true,
-  "undergrad": 3000,
+  "undergrad": 3590,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -3621,8 +3621,8 @@
   "lon": -71.306,
   "setting": "suburb",
   "public": false,
-  "undergrad": 2400,
-  "admit": 4,
+  "undergrad": 2300,
+  "admit": 5,
   "division": "D3",
   "areas": [
    "social-sciences",
@@ -3651,8 +3651,8 @@
   "lon": -71.096,
   "setting": "big-city",
   "public": false,
-  "undergrad": 4000,
-  "admit": 2,
+  "undergrad": 3747,
+  "admit": 1,
   "division": "D3",
   "areas": [
    "engineering-cs",
@@ -3682,7 +3682,7 @@
   "lon": -72.657,
   "setting": "small-city",
   "public": false,
-  "undergrad": 3200,
+  "undergrad": 3067,
   "admit": 4,
   "division": "D3",
   "areas": [
@@ -3715,7 +3715,7 @@
   "lon": -73.447,
   "setting": "small-city",
   "public": true,
-  "undergrad": 4500,
+  "undergrad": 3511,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -3747,8 +3747,8 @@
   "lon": -72.511,
   "setting": "suburb",
   "public": false,
-  "undergrad": 2500,
-  "admit": 2,
+  "undergrad": 2603,
+  "admit": 1,
   "division": "D1",
   "areas": [
    "engineering-cs",
@@ -3779,7 +3779,7 @@
   "lon": -72.79,
   "setting": "small-city",
   "public": true,
-  "undergrad": 4000,
+  "undergrad": 3615,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -3810,7 +3810,7 @@
   "lon": -71.184,
   "setting": "suburb",
   "public": false,
-  "undergrad": 1700,
+  "undergrad": 1773,
   "admit": 2,
   "division": "D3",
   "areas": [
@@ -3841,7 +3841,7 @@
   "lon": -73.205,
   "setting": "rural",
   "public": false,
-  "undergrad": 2100,
+  "undergrad": 2076,
   "admit": 5,
   "division": "D3",
   "areas": [
@@ -3873,7 +3873,7 @@
   "lon": -71.844,
   "setting": "small-city",
   "public": true,
-  "undergrad": 5000,
+  "undergrad": 3930,
   "admit": 1,
   "division": "D3",
   "areas": [
@@ -3905,8 +3905,8 @@
   "lon": -71.808,
   "setting": "small-city",
   "public": false,
-  "undergrad": 4600,
-  "admit": 3,
+  "undergrad": 5447,
+  "admit": 2,
   "division": "D3",
   "areas": [
    "engineering-cs",
@@ -3934,7 +3934,7 @@
   "lon": -72.926,
   "setting": "small-city",
   "public": false,
-  "undergrad": 6600,
+  "undergrad": 6758,
   "admit": 5,
   "division": "D1",
   "areas": [

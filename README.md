@@ -18,14 +18,19 @@ site/
     index.js          the list of schools shown on index.html
     _template.js      blank school file with writing and color rules
     northeastern.js   one file per school
+  about.html          where the info comes from
   quiz.html           the Find Your Fit quiz (quiz.js, quiz-questions.js)
   zips.js             ZIP code locations for distance
   schools/quiz-data.js  generated quiz data (do not edit)
+  schools/stats.js    generated federal numbers: size, admit rate, prices (do not edit)
 data/
   quiz-facts.json     structured facts per school for the quiz
+  scorecard.json      numbers from the federal College Scorecard
+  scorecard-ids.json  school id to Scorecard UNITID
 tools/
   check-schools.js    checks every school file against the rules
-  build-quiz-data.js  rebuilds schools/quiz-data.js after edits
+  build-quiz-data.js  rebuilds schools/quiz-data.js and schools/stats.js after edits
+  update-scorecard.py refreshes data/scorecard.json from the Scorecard download
   sync-index.js       copies school colors into the school list
 ```
 
@@ -46,5 +51,7 @@ Every school page uses the same template. A school is one data file: its content
 - **Short first screen.** A one-screen summary up top, then collapsible sections, each with a one-line preview.
 - **Strict system.** Text sizes 13 / 15 / 17 plus the display size, spacing on an 8pt scale, one 4px radius, no decorative animation.
 - **Same scales everywhere.** The vibe meters (party scene, campus feel, school spirit, academic pressure, career focus, Greek life, religion) are fixed in `render.js` so every school is rated the same way, and the quiz can use them too.
+
+Undergrad size, admit rate and the "What it costs" section come from the College Scorecard, not the school files. To refresh them, follow the steps at the top of `tools/update-scorecard.py`.
 
 Content is approximate as of 2026 and should be checked before anything goes public.

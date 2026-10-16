@@ -263,7 +263,7 @@
         h('span', { class: 'small muted', id: 'saved', 'aria-live': 'polite' }),
         h('button', { type: 'button', class: 'link-btn small', text: state.mode === 'quick' ? 'Switch to Deep' : 'Switch to Quick',
           onclick: function () { state.mode = state.mode === 'quick' ? 'deep' : 'quick'; save(); show('quiz'); } })),
-      h('div', { class: 'bar' }, h('div', { class: 'bar-fill' })));
+      h('div', { class: 'progress-track' }, h('div', { class: 'bar-fill' })));
     var main = h('main', { class: 'wrap quiz' }, progressEl, prefsCard());
     SECTIONS.forEach(function (sec) {
       var qs = sec.questions.filter(function (q) { return state.mode === 'deep' || q.quick; });
@@ -406,7 +406,13 @@
     var cost = v('cost');
     if (cost && cost !== 'none') {
       var home = state.prefs.homeState;
-      var c = s.public ? (home === s.state ? 1 : 0.65) : (v('aid') === 'yes' && s.admit >= 4 ? 0.7 : 0.3);
+      var c;
+      if (s.net != null) {
+        // Average yearly price after aid; out-of-state students at public schools pay the tuition gap on top.
+        var price = v('aid') === 'no' && !s.public ? s.sticker || s.net : s.net;
+        if (s.public && home !== s.state && s.tuitionOut && s.tuitionIn) price += s.tuitionOut - s.tuitionIn;
+        c = Math.max(0.05, Math.min(1, 1 - (price - 12000) / 40000));
+      } else c = s.public ? (home === s.state ? 1 : 0.65) : (v('aid') === 'yes' && s.admit >= 4 ? 0.7 : 0.3);
       add('cost', c, 'Cost', cost === 'cheapest' ? 1.6 : cost === 'lot' ? 1.2 : 0.7);
     }
 
