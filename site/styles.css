@@ -322,3 +322,33 @@ footer .wrap { padding-block: var(--s3); display: grid; gap: 4px; }
 }
 .quiz-cta .sum-title { color: var(--bg); }
 .quiz-cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Quiz results: number one + swipe row of matches */
+.hero-match {
+  display: grid; grid-template-columns: var(--s1) minmax(0, 1fr); gap: 12px; color: var(--fg); text-decoration: none;
+  border: 2px solid var(--fg); border-radius: var(--radius); padding: var(--s2);
+}
+.hero-match:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hero-flag { border-radius: var(--radius); }
+.hero-name { font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 700; }
+.carousel { display: grid; gap: var(--s1); }
+.carousel-bar { display: flex; justify-content: space-between; align-items: center; }
+.nav-btn {
+  font: inherit; font-size: var(--t-lg); width: 40px; height: 40px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--bg); color: var(--fg); cursor: pointer;
+}
+.nav-btn:disabled { opacity: 0.35; cursor: default; }
+.nav-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.slides {
+  list-style: none; margin: 0; padding: 0; display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; gap: 0;
+}
+.slides::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 100%; scroll-snap-align: start; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.slide-head { display: flex; justify-content: space-between; align-items: baseline; padding: var(--s1) 12px; }
+.slide-rank { font-weight: 800; font-size: var(--t-lg); }
+.slide-pct { font-weight: 700; }
+.slide-body { display: grid; gap: var(--s1); padding: 12px; }
+.slide-body .school-name { margin: 0; font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 700; }
+.slide-body p { margin: 0; }
+.miss { color: var(--myth); }

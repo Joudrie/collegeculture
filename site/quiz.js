@@ -477,75 +477,113 @@
 
   function chip(text, cls) { return h('span', { class: 'tag ' + (cls || ''), text: text }); }
 
-  function resultCard(r, i) {
-    var good = r.parts.filter(function (p) { return p.fit >= 0.8 && p.w >= 0.6; }).sort(function (a, b) { return b.w - a.w; }).slice(0, 3);
-    var bad = r.parts.filter(function (p) { return p.fit < 0.45 && p.w >= 0.6; }).sort(function (a, b) { return b.w - a.w; }).slice(0, 2);
-    var ch = chance(r.s);
-    return h('li', { class: 'match' },
-      h('a', { class: 'match-link', href: 'school.html#' + r.id },
-        h('span', { class: 'match-flag', style: 'background:' + r.s.band }),
-        h('span', { class: 'match-body' },
-          h('span', { class: 'match-top' },
-            h('span', { class: 'school-name', text: (i != null ? (i + 1) + '. ' : '') + r.s.name }),
-            h('span', { class: 'pct', text: Math.round(r.fit * 100) + '%' })),
-          h('span', { class: 'small muted', text: r.s.town + ', ' + r.s.state + (r.dist != null ? ' · ' + Math.round(r.dist) + ' mi from home' : '') + (ch ? ' · ' + ch : '') }),
-          good.length || bad.length ? h('span', { class: 'tags' },
-            good.map(function (p) { return chip(p.label, 'good'); }),
-            bad.map(function (p) { return chip(p.label, 'bad'); })) : null,
-          r.filters.length ? h('span', { class: 'small muted', text: 'Outside your filters: ' + r.filters.join(', ') }) : null)));
+  var CMP_DIMS = ['party', 'campus', 'spirit', 'pressure', 'career', 'greek', 'religion', 'size', 'classSize'];
+
+  // You-vs-school bars for one school
+  function compareChart(s) {
+    var t = targets(), d = schoolDims(s), notes = [];
+    var box = h('div', { class: 'compare-body' },
+      h('div', { class: 'legend small muted' },
+        h('span', null, h('span', { class: 'key key-school' }), s.short), h('span', null, h('span', { class: 'key key-you' }), 'You')));
+    CMP_DIMS.forEach(function (k) {
+      var you = t[k];
+      box.appendChild(h('div', { class: 'cmp-row' },
+        h('span', { class: 'small', text: DIM_LABEL[k] }),
+        h('span', { class: 'cmp-track' },
+          h('span', { class: 'cmp-fill', style: 'width:' + d[k] * 10 + '%' }),
+          you != null ? h('span', { class: 'cmp-you', style: 'left:calc(' + you * 10 + '% - 2px)' }) : null)));
+      if (you != null && Math.abs(you - d[k]) >= 3.5) notes.push(DIM_LABEL[k] + ': ' + (d[k] > you ? 'more' : 'less') + ' than you want');
+    });
+    box.appendChild(h('p', { class: 'small', text: notes.length ? notes.join('. ') + '.' : 'Close to what you want on everything you answered.' }));
+    return box;
   }
 
-  function compareBlock(results, pickId) {
-    var t = targets();
-    var dims = ['party', 'campus', 'spirit', 'pressure', 'career', 'greek', 'religion', 'size', 'classSize'];
+  function reasons(r) {
+    var good = r.parts.filter(function (p) { return p.fit >= 0.8 && p.w >= 0.6; }).sort(function (a, b) { return b.w - a.w; }).slice(0, 3);
+    var bad = r.parts.filter(function (p) { return p.fit < 0.45 && p.w >= 0.6; }).sort(function (a, b) { return b.w - a.w; }).slice(0, 2);
+    return good.length || bad.length ? h('span', { class: 'tags' },
+      good.map(function (p) { return chip(p.label, 'good'); }), bad.map(function (p) { return chip(p.label, 'bad'); })) : null;
+  }
+
+  function metaLine(r) {
+    var ch = chance(r.s);
+    return r.s.town + ', ' + r.s.state + (r.dist != null ? ' · ' + Math.round(r.dist) + ' mi from home' : '') + (ch ? ' · ' + ch : '');
+  }
+
+  // One card in the swipe row: rank, name, reasons and the full chart
+  function slide(r, i, total) {
+    return h('li', { class: 'slide', id: 'match-' + (i + 1), 'aria-label': 'Match ' + (i + 1) + ' of ' + total },
+      h('div', { class: 'slide-head', style: 'background:' + r.s.band + ';color:' + (r.s.onBand || '#FFFFFF') },
+        h('span', { class: 'slide-rank', text: '#' + (i + 1) }),
+        h('span', { class: 'slide-pct', text: Math.round(r.fit * 100) + '% fit' })),
+      h('div', { class: 'slide-body' },
+        h('p', { class: 'school-name', text: r.s.name }),
+        h('p', { class: 'small muted', text: metaLine(r) }),
+        reasons(r),
+        r.filters.length ? h('p', { class: 'small miss', text: 'Misses your filters: ' + r.filters.join(', ') }) : null,
+        compareChart(r.s),
+        h('a', { class: 'link-btn', href: 'school.html#' + r.id, text: 'Read the full ' + r.s.short + ' page' })));
+  }
+
+  function carousel(list) {
+    var track = h('ol', { class: 'slides' }, list.map(function (r, i) { return slide(r, i, list.length); }));
+    var counter = h('span', { class: 'small', 'aria-live': 'polite', text: '1 of ' + list.length });
+    var prev = h('button', { type: 'button', class: 'nav-btn', 'aria-label': 'Previous match', text: '‹' });
+    var next = h('button', { type: 'button', class: 'nav-btn', 'aria-label': 'Next match', text: '›' });
+    function current() { return Math.round(track.scrollLeft / track.clientWidth); }
+    function go(i) { track.scrollTo({ left: Math.max(0, Math.min(list.length - 1, i)) * track.clientWidth, behavior: 'smooth' }); }
+    prev.addEventListener('click', function () { go(current() - 1); });
+    next.addEventListener('click', function () { go(current() + 1); });
+    track.addEventListener('scroll', function () {
+      var i = current();
+      counter.textContent = (i + 1) + ' of ' + list.length;
+      prev.disabled = i === 0;
+      next.disabled = i === list.length - 1;
+    }, { passive: true });
+    prev.disabled = true;
+    return h('div', { class: 'carousel' },
+      h('div', { class: 'carousel-bar' }, prev, counter, next),
+      track,
+      h('p', { class: 'small muted', text: 'Swipe to see your next match.' }));
+  }
+
+  function anyCompare(res, pickId) {
     var select = h('select', { id: 'compare-pick', 'aria-label': 'School to compare' });
-    results.all.slice().sort(function (a, b) { return a.s.name.localeCompare(b.s.name); }).forEach(function (r) {
+    res.all.slice().sort(function (a, b) { return a.s.name.localeCompare(b.s.name); }).forEach(function (r) {
       select.appendChild(h('option', { value: r.id, text: r.s.name, selected: r.id === pickId }));
     });
-    var body = h('div', { class: 'compare-body' });
-    function draw() {
-      var s = SCHOOLS[select.value];
-      var d = schoolDims(s);
-      body.textContent = '';
-      body.appendChild(h('div', { class: 'legend small muted' },
-        h('span', null, h('span', { class: 'key key-school' }), s.short), h('span', null, h('span', { class: 'key key-you' }), 'You')));
-      var notes = [];
-      dims.forEach(function (k) {
-        var you = t[k];
-        body.appendChild(h('div', { class: 'cmp-row' },
-          h('span', { class: 'small', text: DIM_LABEL[k] }),
-          h('span', { class: 'cmp-track' },
-            h('span', { class: 'cmp-fill', style: 'width:' + d[k] * 10 + '%' }),
-            you != null ? h('span', { class: 'cmp-you', style: 'left:calc(' + you * 10 + '% - 2px)' }) : null)));
-        if (you != null && Math.abs(you - d[k]) >= 3.5) notes.push(DIM_LABEL[k] + ': ' + (d[k] > you ? 'more' : 'less') + ' than you want');
-      });
-      body.appendChild(h('p', { class: 'small', text: notes.length ? notes.join('. ') + '.' : 'Close to what you want on everything you answered.' }));
-    }
+    var holder = h('div');
+    function draw() { holder.textContent = ''; holder.appendChild(compareChart(SCHOOLS[select.value])); }
     select.addEventListener('change', draw);
     draw();
     return h('section', { class: 'q-section' },
-      h('h2', { class: 'sec-title', text: 'Compare yourself to a school' }),
+      h('h2', { class: 'sec-title', text: 'Compare with any school' }),
       h('p', { class: 'small muted', text: 'Bars are the school. The dark line is what you said you want.' }),
-      select, body);
+      select, holder);
   }
 
   function renderResults() {
     var res = runMatch();
-    var top = res.fits.slice(0, 10);
-    var outside = res.outside.filter(function (r) { return r.fit >= (top.length ? top[top.length - 1].fit - 0.05 : 0); }).slice(0, 5);
+    // Always show 10: fits first, then the closest near-misses
+    var list = res.fits.slice(0, 10);
+    if (list.length < 10) list = list.concat(res.outside.slice(0, 10 - list.length));
+    var first = list[0];
     var main = h('main', { class: 'wrap results' },
       h('p', { class: 'vibe-sum', text: summary() }),
+      first ? h('section', { class: 'q-section' },
+        h('h2', { class: 'sec-title', text: 'Your number one' }),
+        h('a', { class: 'hero-match', href: 'school.html#' + first.id },
+          h('span', { class: 'hero-flag', style: 'background:' + first.s.band }),
+          h('span', { class: 'match-body' },
+            h('span', { class: 'match-top' }, h('span', { class: 'hero-name', text: first.s.name }), h('span', { class: 'pct', text: Math.round(first.fit * 100) + '%' })),
+            h('span', { class: 'small muted', text: metaLine(first) }),
+            reasons(first)))) : null,
+      h('section', { class: 'q-section' },
+        h('h2', { class: 'sec-title', text: 'Your matches in order' }),
+        carousel(list)),
+      anyCompare(res, first ? first.id : 'harvard'),
       h('div', { class: 'btn-row' },
         h('button', { type: 'button', class: 'btn-ghost', text: 'Change my answers', onclick: function () { location.hash = 'quiz'; } })),
-      h('section', { class: 'q-section' },
-        h('h2', { class: 'sec-title', text: 'Your best fits' }),
-        top.length ? h('ol', { class: 'match-list' }, top.map(resultCard))
-          : h('p', { text: 'Nothing passes all your dealbreakers. Try loosening one.' })),
-      outside.length ? h('section', { class: 'q-section' },
-        h('h2', { class: 'sec-title', text: 'Just outside your filters' }),
-        h('p', { class: 'small muted', text: 'Strong fits that miss one of your filters.' }),
-        h('ol', { class: 'match-list' }, outside.map(function (r) { return resultCard(r, null); }))) : null,
-      compareBlock(res, top[0] ? top[0].id : 'harvard'),
       h('p', { class: 'small muted', text: 'Matches are a starting point, not advice. Visit, talk to students, and check the school sites for real numbers.' }));
     app.appendChild(main);
   }

@@ -31,6 +31,7 @@ list.forEach(entry => {
     town: entry.location.split(',')[0],
     rank: order.indexOf(entry.id),
     band: entry.band,
+    onBand: s.colors.onBand,
     meters: meters
   }, f);
 });
