@@ -115,7 +115,13 @@ window.SCHOOL_LIST = [
   { id: 'western-ct-state', name: 'Western Connecticut State University', location: 'Danbury, CT', band: '#002856', stripe: '#FF4D00' },
   { id: 'eastern-ct-state', name: 'Eastern Connecticut State University', location: 'Willimantic, CT', band: '#E6EAF0', stripe: '#7C2128' },
   { id: 'albertus-magnus', name: 'Albertus Magnus College', location: 'New Haven, CT', band: '#003DA6', stripe: '#7C92BF' },
-  { id: 'post', name: 'Post University', location: 'Waterbury, CT', band: '#FF8300', stripe: '#632D4F' }
+  { id: 'post', name: 'Post University', location: 'Waterbury, CT', band: '#FF8300', stripe: '#632D4F' },
+  { id: 'cambridge-college', name: 'Cambridge College', location: 'Boston, MA', band: '#002F65', stripe: '#00697A' },
+  { id: 'hellenic', name: 'Hellenic College Holy Cross', location: 'Brookline, MA', band: '#293F50', stripe: '#E9A411' },
+  { id: 'university-of-bridgeport', name: 'University of Bridgeport', location: 'Bridgeport, CT', band: '#FFFFFF', stripe: '#592D82' },
+  { id: 'university-of-saint-joseph', name: 'University of Saint Joseph', location: 'West Hartford, CT', band: '#002D62', stripe: '#0B6DB7' },
+  { id: 'goodwin', name: 'Goodwin University', location: 'East Hartford, CT', band: '#005CB9', stripe: '#7FBC42' },
+  { id: 'mitchell', name: 'Mitchell College', location: 'New London, CT', band: '#38164B', stripe: '#FF0033' }
 ];
 
 /* Rough popularity order inside each state: the names most high schoolers have heard of come first.
@@ -128,7 +134,7 @@ window.SCHOOL_ORDER = [
   'stonehill', 'merrimack', 'endicott', 'springfield-college', 'simmons', 'emmanuel', 'massart', 'mcphs',
   'lesley', 'wheaton-ma', 'gordon', 'assumption', 'western-new-england', 'bridgewater-state', 'salem-state',
   'westfield-state', 'worcester-state', 'framingham-state', 'fitchburg-state', 'mass-maritime', 'curry',
-  'lasell', 'nichols', 'dean', 'regis', 'american-international', 'mcla', 'bay-path', 'elms',
+  'lasell', 'nichols', 'dean', 'regis', 'american-international', 'mcla', 'bay-path', 'elms', 'cambridge-college', 'hellenic',
   // New Hampshire
   'dartmouth', 'unh', 'snhu', 'plymouth-state', 'keene-state', 'saint-anselm', 'colby-sawyer',
   'franklin-pierce', 'rivier', 'new-england-college', 'nhti',
@@ -138,7 +144,7 @@ window.SCHOOL_ORDER = [
   // Connecticut
   'yale', 'uconn', 'wesleyan', 'coast-guard-academy', 'trinity-college', 'connecticut-college', 'fairfield',
   'quinnipiac', 'sacred-heart', 'university-of-hartford', 'university-of-new-haven', 'central-ct-state',
-  'southern-ct-state', 'eastern-ct-state', 'western-ct-state', 'albertus-magnus', 'post',
+  'southern-ct-state', 'eastern-ct-state', 'western-ct-state', 'albertus-magnus', 'post', 'university-of-bridgeport', 'university-of-saint-joseph', 'goodwin', 'mitchell',
   // Vermont
   'middlebury', 'uvm', 'champlain', 'norwich', 'saint-michaels', 'bennington', 'vermont-state', 'landmark',
   // Maine
