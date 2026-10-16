@@ -30,5 +30,14 @@ window.SCHOOL_LIST = [
   { id: 'umaine', name: 'University of Maine', location: 'Orono, ME', band: '#79BDE8', stripe: '#082E58' },
   { id: 'southern-ct-state', name: 'Southern Connecticut State University', location: 'New Haven, CT', band: '#003399', stripe: '#00ADEB' },
   { id: 'central-ct-state', name: 'Central Connecticut State University', location: 'New Britain, CT', band: '#00539B', stripe: '#CFD4D8' },
-  { id: 'rhode-island-college', name: 'Rhode Island College', location: 'Providence, RI', band: '#990000', stripe: '#F1B434' }
+  { id: 'rhode-island-college', name: 'Rhode Island College', location: 'Providence, RI', band: '#990000', stripe: '#F1B434' },
+  { id: 'williams', name: 'Williams College', location: 'Williamstown, MA', band: '#FCD205', stripe: '#492872' },
+  { id: 'amherst-college', name: 'Amherst College', location: 'Amherst, MA', band: '#470A77', stripe: '#B9A3DB' },
+  { id: 'wellesley', name: 'Wellesley College', location: 'Wellesley, MA', band: '#0142A4', stripe: '#091A36' },
+  { id: 'dartmouth', name: 'Dartmouth College', location: 'Hanover, NH', band: '#00693E', stripe: '#C4DD88' },
+  { id: 'middlebury', name: 'Middlebury College', location: 'Middlebury, VT', band: '#0D395F', stripe: '#1F9F8B' },
+  { id: 'brown', name: 'Brown University', location: 'Providence, RI', band: '#4E3629', stripe: '#ED1C24' },
+  { id: 'umass-lowell', name: 'University of Massachusetts Lowell', location: 'Lowell, MA', band: '#1257D1', stripe: '#5ADBFF' },
+  { id: 'umass-boston', name: 'University of Massachusetts Boston', location: 'Boston, MA', band: '#005A8B', stripe: '#FEDE42' },
+  { id: 'umass-dartmouth', name: 'University of Massachusetts Dartmouth', location: 'North Dartmouth, MA', band: '#003764', stripe: '#FF4613' }
 ];
