@@ -181,7 +181,12 @@ h3 { font-size: var(--t-md); line-height: var(--lh-md); font-weight: 700; }
 .sub-h { padding-top: var(--s1); }
 
 /* School list (index) */
-.school-list { list-style: none; padding: 0; border-top: 2px solid var(--fg); margin-block: var(--s2) var(--s4); }
+.state-head {
+  font-size: var(--t-sm); line-height: var(--lh-sm); font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--muted); margin: 0; padding-top: var(--s3);
+}
+.school-list { list-style: none; padding: 0; border-top: 2px solid var(--fg); margin-block: var(--s1) 0; }
+#schools-wrap { padding-bottom: var(--s4); }
 .school-list li { border-bottom: 1px solid var(--line); }
 .school-list a {
   display: grid; grid-template-columns: var(--s1) minmax(0, 1fr) var(--s2); align-items: center; gap: var(--s2);
