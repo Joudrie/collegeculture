@@ -147,6 +147,16 @@
     Object.keys(map).forEach(function (k) { if (map[k]) root.setProperty(k, map[k]); });
   }
 
+  // School logo or seal from Wikimedia (schools/logos.js). Hidden if missing or if it fails to load.
+  function logo(s) {
+    var src = window.SCHOOL_LOGOS && window.SCHOOL_LOGOS[s.id];
+    if (!src) return null;
+    var img = h('img', { class: 'logo', src: src, alt: (s.title || s.name) + ' logo', loading: 'eager', referrerpolicy: 'no-referrer' });
+    var tile = h('span', { class: 'logo-tile' }, img);
+    img.addEventListener('error', function () { tile.remove(); });
+    return tile;
+  }
+
   function renderSchool(s) {
     document.title = (s.title || s.name) + ' Culture Snapshot';
     var meta = document.querySelector('meta[name="description"]');
@@ -158,7 +168,9 @@
         h('a', { class: 'wordmark', href: 'index.html' }, 'College Culture'),
         h('span', { class: 'small on-muted' }, s.state)),
       h('p', { class: 'small on-muted where' }, s.location),
-      h('h1', null, s.name, s.nameSub ? h('span', { class: 'sub' }, s.nameSub) : null),
+      h('div', { class: 'title-row' },
+        h('h1', null, s.name, s.nameSub ? h('span', { class: 'sub' }, s.nameSub) : null),
+        logo(s)),
       h('p', { class: 'vibe-line' }, s.vibe),
       h('ul', { class: 'flags small', 'aria-label': 'Heads-up' }, s.flags.map(function (f) { return h('li', null, f); })),
       h('dl', { class: 'facts' }, s.facts.map(function (f) { return h('div', null, h('dt', null, f.label), h('dd', null, f.value)); })),
