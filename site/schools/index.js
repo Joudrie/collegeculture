@@ -73,5 +73,8 @@ window.SCHOOL_LIST = [
   { id: 'lasell', name: 'Lasell University', location: 'Newton, MA', band: '#13294B', stripe: '#5C88DA' },
   { id: 'massart', name: 'Massachusetts College of Art and Design', location: 'Boston, MA', band: '#000000', stripe: '#2FB3FF' },
   { id: 'berklee', name: 'Berklee College of Music', location: 'Boston, MA', band: '#25353C', stripe: '#D81118' },
-  { id: 'mcphs', name: 'Massachusetts College of Pharmacy and Health Sciences', location: 'Boston, MA', band: '#97233F', stripe: '#D2E0EF' }
+  { id: 'mcphs', name: 'Massachusetts College of Pharmacy and Health Sciences', location: 'Boston, MA', band: '#97233F', stripe: '#D2E0EF' },
+  { id: 'clark', name: 'Clark University', location: 'Worcester, MA', band: '#C52026', stripe: '#ADACA9' },
+  { id: 'assumption', name: 'Assumption University', location: 'Worcester, MA', band: '#B6BFC5', stripe: '#004B87' },
+  { id: 'springfield-college', name: 'Springfield College', location: 'Springfield, MA', band: '#862633', stripe: '#FDD26E' }
 ];
