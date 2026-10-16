@@ -104,5 +104,16 @@ window.SCHOOL_LIST = [
   { id: 'maine-maritime', name: 'Maine Maritime Academy', location: 'Castine, ME', band: '#1B3A5C', stripe: '#E8B730' },
   { id: 'college-of-the-atlantic', name: 'College of the Atlantic', location: 'Bar Harbor, ME', band: '#0F6E7A', stripe: '#8CC63F' },
   { id: 'umaine-presque-isle', name: 'University of Maine at Presque Isle', location: 'Presque Isle, ME', band: '#0B5CAD', stripe: '#FFC20E' },
-  { id: 'umaine-fort-kent', name: 'University of Maine at Fort Kent', location: 'Fort Kent, ME', band: '#2C6E49', stripe: '#F2B705' }
+  { id: 'umaine-fort-kent', name: 'University of Maine at Fort Kent', location: 'Fort Kent, ME', band: '#2C6E49', stripe: '#F2B705' },
+  { id: 'wesleyan', name: 'Wesleyan University', location: 'Middletown, CT', band: '#B01C2E', stripe: '#000000' },
+  { id: 'connecticut-college', name: 'Connecticut College', location: 'New London, CT', band: '#DCE6F2', stripe: '#0B2A55' },
+  { id: 'fairfield', name: 'Fairfield University', location: 'Fairfield, CT', band: '#F3F3F3', stripe: '#C8102E' },
+  { id: 'sacred-heart', name: 'Sacred Heart University', location: 'Fairfield, CT', band: '#8E0C1C', stripe: '#B3B3B3' },
+  { id: 'university-of-hartford', name: 'University of Hartford', location: 'West Hartford, CT', band: '#D50032', stripe: '#231F20' },
+  { id: 'university-of-new-haven', name: 'University of New Haven', location: 'West Haven, CT', band: '#0A4DA2', stripe: '#F2B705' },
+  { id: 'coast-guard-academy', name: 'United States Coast Guard Academy', location: 'New London, CT', band: '#F36F21', stripe: '#0B2D5E' },
+  { id: 'western-ct-state', name: 'Western Connecticut State University', location: 'Danbury, CT', band: '#12315F', stripe: '#F58220' },
+  { id: 'eastern-ct-state', name: 'Eastern Connecticut State University', location: 'Willimantic, CT', band: '#14233F', stripe: '#B03A5C' },
+  { id: 'albertus-magnus', name: 'Albertus Magnus College', location: 'New Haven, CT', band: '#25408F', stripe: '#C9D6EE' },
+  { id: 'post', name: 'Post University', location: 'Waterbury, CT', band: '#FF8200', stripe: '#4B2178' }
 ];
