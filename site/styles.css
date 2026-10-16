@@ -187,6 +187,13 @@ h3 { font-size: var(--t-md); line-height: var(--lh-md); font-weight: 700; }
 }
 .school-list { list-style: none; padding: 0; border-top: 2px solid var(--fg); margin-block: var(--s1) 0; }
 #schools-wrap { padding-bottom: var(--s4); }
+.search { display: grid; gap: 4px; padding-top: var(--s3); }
+.search input {
+  font: inherit; font-size: 16px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--muted); border-radius: var(--radius); padding: var(--s1) 12px;
+}
+.search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#no-match { padding-top: var(--s2); }
 .school-list li { border-bottom: 1px solid var(--line); }
 .school-list a {
   display: grid; grid-template-columns: var(--s1) minmax(0, 1fr) var(--s2); align-items: center; gap: var(--s2);

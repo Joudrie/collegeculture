@@ -21,7 +21,14 @@
   </div>
 </header>
 
-<main class="wrap" id="schools-wrap"></main>
+<main class="wrap">
+  <div class="search">
+    <label class="small muted" for="school-search">Find a school</label>
+    <input id="school-search" type="search" placeholder="Name or town" autocomplete="off">
+  </div>
+  <p class="small muted" id="no-match" hidden>No schools match that. Try a town or a shorter name.</p>
+  <div id="schools-wrap"></div>
+</main>
 
 <footer>
   <div class="wrap small muted">
@@ -65,10 +72,31 @@
       chev.setAttribute('aria-hidden', 'true');
       a.append(chip, text, chev);
       var li = document.createElement('li');
+      li.dataset.search = (s.name + ' ' + s.id.replace(/-/g, ' ') + ' ' + s.location + ' ' + STATES[code]).toLowerCase();
       li.appendChild(a);
       list.appendChild(li);
     });
-    main.append(head, list);
+    var group = document.createElement('section');
+    group.append(head, list);
+    main.appendChild(group);
+  });
+
+  var input = document.getElementById('school-search');
+  var empty = document.getElementById('no-match');
+  input.addEventListener('input', function () {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    main.querySelectorAll('section').forEach(function (group) {
+      var visible = 0;
+      group.querySelectorAll('li').forEach(function (li) {
+        var match = !q || li.dataset.search.indexOf(q) !== -1;
+        li.hidden = !match;
+        if (match) visible++;
+      });
+      group.hidden = visible === 0;
+      shown += visible;
+    });
+    empty.hidden = shown !== 0;
   });
 })();
 </script>
