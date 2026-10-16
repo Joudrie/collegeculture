@@ -10,6 +10,10 @@
   var NE = { MA: 'Massachusetts', NH: 'New Hampshire', RI: 'Rhode Island', CT: 'Connecticut', VT: 'Vermont', ME: 'Maine' };
   var KEY = 'cc-quiz-v1';
   var IMP_WEIGHT = [0, 0.25, 0.6, 1, 1.8, 3];
+  var IMP_NAMES = ['Barely', 'Slight', 'Matters', 'Big deal', 'Dealbreaker'];
+  // Built-in weight per question: some things (study area, cost, distance) count more than others (traditions, vibe words)
+  var BASE = {};
+  SECTIONS.forEach(function (s) { s.questions.forEach(function (q) { BASE[q.id] = q.weight || 1; }); });
 
   // ---------- saving ----------
   function load() {
@@ -83,17 +87,26 @@
 
   // ---------- controls ----------
   // A 1-5 slider you can drag or tap. Starts "unset" until touched.
-  function scale(value, low, high, label, onChange) {
+  // A 1-5 slider you can drag or tap. Starts "unset" until touched. names: optional label for each step.
+  function scale(value, low, high, label, onChange, names) {
     var input = h('input', { type: 'range', min: '1', max: '5', step: '1', value: value || 3, 'aria-label': label });
     var wrap = h('div', { class: 'scale' + (value ? '' : ' unset') });
-    function set(v) { input.value = v; wrap.classList.remove('unset'); onChange(+v); }
+    var readout = h('span', { class: 'scale-value' });
+    var ticks = h('div', { class: 'ticks' });
+    function paint(v) {
+      wrap.style.setProperty('--fill', ((v - 1) / 4 * 100) + '%');
+      readout.textContent = wrap.classList.contains('unset') ? 'Slide or tap a number' : v + (names ? ' · ' + names[v - 1] : ' of 5');
+      [].forEach.call(ticks.children, function (t, i) { t.classList.toggle('on', !wrap.classList.contains('unset') && i + 1 === +v); });
+    }
+    function set(v) { input.value = v; wrap.classList.remove('unset'); paint(+v); onChange(+v); }
     input.addEventListener('input', function () { set(input.value); });
     input.addEventListener('pointerdown', function () { if (wrap.classList.contains('unset')) set(input.value); });
-    var ticks = h('div', { class: 'ticks' });
     for (var i = 1; i <= 5; i++) (function (n) {
-      ticks.appendChild(h('button', { type: 'button', class: 'tick', 'aria-label': label + ': ' + n, onclick: function () { set(n); } }, String(n)));
+      ticks.appendChild(h('button', { type: 'button', class: 'tick', 'aria-label': label + ': ' + n + (names ? ' ' + names[n - 1] : '') }, String(n)));
+      ticks.lastChild.addEventListener('click', function () { set(n); });
     })(i);
-    wrap.append(input, ticks, h('div', { class: 'scale-ends small muted' }, h('span', { text: low }), h('span', { text: high })));
+    wrap.append(readout, input, ticks, h('div', { class: 'scale-ends small muted' }, h('span', { text: names ? names[0] : low }), h('span', { text: names ? names[4] : high })));
+    paint(+input.value);
     return wrap;
   }
 
@@ -139,7 +152,7 @@
         h('p', { class: 'small muted', text: 'How much does this matter to you?' }),
         scale(a.imp, 'Barely', 'Dealbreaker', 'How much it matters', function (v) {
           state.a[q.id] = Object.assign(state.a[q.id] || {}, { imp: v }); save();
-        })) : null);
+        }, IMP_NAMES)) : null);
     return card;
   }
 
@@ -306,7 +319,7 @@
   function score(s, ctx) {
     var parts = [], filters = [];
     function add(id, fit, label, w) {
-      var weight = (w || 1) * IMP_WEIGHT[imp(id)];
+      var weight = (w || 1) * IMP_WEIGHT[imp(id)] * (BASE[id] || 1);
       parts.push({ id: id, fit: Math.max(0, Math.min(1, fit)), w: weight, label: label });
     }
     function hard(id) { return imp(id) === 5; }
@@ -411,13 +424,42 @@
 
     // vibe
     var tags = v('tags') || [];
-    if (tags.length) parts.push({ id: 'tags', fit: tags.filter(function (x) { return s.tags.indexOf(x) !== -1; }).length / tags.length, w: 1.5, label: 'Your vibe words' });
+    if (tags.length) parts.push({ id: 'tags', fit: tags.filter(function (x) { return s.tags.indexOf(x) !== -1; }).length / tags.length, w: 0.9, label: 'Your vibe words' });
     var od = scaleTarget('outdoors'); if (od != null) add('outdoors', 1 - Math.max(0, od - ((s.mountains ? 6 : 0) + (s.tags.indexOf('outdoorsy') !== -1 ? 4 : 0))) / 10, 'Outdoors');
     (v('miserable') || []).forEach(function (m) {
       var bad = { 'tiny-town': s.setting === 'rural' || (s.setting === 'college-town' && s.undergrad < 3000), 'no-parties': d.party <= 2, 'huge-classes': s.classSize <= 2,
         'long-commute': live === 'commute' && dist != null && dist > 45, 'religious-rules': s.religious, 'greek-heavy': d.greek >= 7, 'big-city': s.setting === 'big-city' }[m];
       parts.push({ id: 'miserable', fit: bad ? 0 : 1, w: 1, label: 'Avoids what you hate' });
     });
+
+    // going deeper
+    var wi = v('winter');
+    if (wi != null) {
+      var north = Math.max(0, Math.min(1, (s.lat - 41.2) / 3.8)); // 0 = southern CT, 1 = northern Maine
+      add('winter', wi >= 3 ? 1 - north * (wi - 2) / 3 : 0.6 + 0.4 * (s.mountains ? 1 : north), 'Winters');
+    }
+    var ca = scaleTarget('cityAccess');
+    if (ca != null) {
+      var near = Math.min.apply(null, [['boston'], ['providence'], ['hartford'], ['new-haven'], ['nyc']].map(function (k) {
+        var c = CITIES.filter(function (x) { return x[0] === k[0]; })[0];
+        return miles(c[2], c[3], s.lat, s.lon);
+      }));
+      var access = near <= 12 ? 10 : near <= 30 ? 7 : near <= 60 ? 4 : 1;
+      add('cityAccess', 1 - Math.max(0, ca - access) / 10, 'Big city nearby');
+    }
+    var rs = scaleTarget('research');
+    if (rs != null) {
+      var rlevel = (s.type === 'university' ? 2 : s.type === 'liberal-arts' ? 1 : 0) + Math.max(0, s.admit - 2) * 2; // 0-8
+      add('research', 1 - Math.max(0, rs - rlevel * 1.25) / 10, 'Research');
+    }
+    var bz = v('business');
+    if (bz && bz !== 'no') add('business', (s.areas.indexOf('business') !== -1 ? 0.6 : 0.2) + (s.tags.indexOf('career-focused') !== -1 || s.tags.indexOf('ambitious') !== -1 ? 0.4 : 0), 'Business path', bz === 'yes' ? 1 : 0.5);
+    var wj = v('workJob');
+    if (wj && wj !== 'no') add('workJob', SET[s.setting] <= 1.5 || s.transit ? 1 : 0.4, 'Jobs nearby', wj === 'yes' ? 1 : 0.5);
+    var dv2 = scaleTarget('diversity');
+    if (dv2 != null) add('diversity', 1 - Math.max(0, dv2 - (s.tags.indexOf('diverse') !== -1 ? 9 : SET[s.setting] <= 1 ? 6 : 3)) / 10, 'Diversity');
+    var sk = v('schoolKind');
+    if (sk && sk !== 'either') add('schoolKind', sk === 'liberal-arts' ? (s.type === 'liberal-arts' ? 1 : s.undergrad < 3000 ? 0.5 : 0) : (s.type === 'university' ? 1 : 0.3), sk === 'liberal-arts' ? 'Liberal arts' : 'University');
 
     // dealbreakers
     if (ctx.deal.dorms && s.residential < 20) filters.push('barely any dorms');
