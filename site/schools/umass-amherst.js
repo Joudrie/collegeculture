@@ -1,6 +1,7 @@
 registerSchool({
   id: 'umass-amherst',
   name: 'UMass',
+  title: 'UMass Amherst',
   nameSub: 'Amherst',
   state: 'Massachusetts',
   location: 'Amherst, MA · Pioneer Valley college town',

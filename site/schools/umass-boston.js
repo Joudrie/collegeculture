@@ -1,6 +1,7 @@
 registerSchool({
   id: 'umass-boston',
   name: 'UMass',
+  title: 'UMass Boston',
   nameSub: 'Boston',
   state: 'Massachusetts',
   location: 'Boston, MA · Columbia Point on the harbor',

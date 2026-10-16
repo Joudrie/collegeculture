@@ -1,6 +1,7 @@
 registerSchool({
   id: 'umass-dartmouth',
   name: 'UMass',
+  title: 'UMass Dartmouth',
   nameSub: 'Dartmouth',
   state: 'Massachusetts',
   location: 'North Dartmouth, MA · Near New Bedford',

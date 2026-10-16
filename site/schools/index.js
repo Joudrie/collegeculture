@@ -39,5 +39,14 @@ window.SCHOOL_LIST = [
   { id: 'brown', name: 'Brown University', location: 'Providence, RI', band: '#4E3629', stripe: '#ED1C24' },
   { id: 'umass-lowell', name: 'University of Massachusetts Lowell', location: 'Lowell, MA', band: '#1257D1', stripe: '#5ADBFF' },
   { id: 'umass-boston', name: 'University of Massachusetts Boston', location: 'Boston, MA', band: '#005A8B', stripe: '#FEDE42' },
-  { id: 'umass-dartmouth', name: 'University of Massachusetts Dartmouth', location: 'North Dartmouth, MA', band: '#003764', stripe: '#FF4613' }
+  { id: 'umass-dartmouth', name: 'University of Massachusetts Dartmouth', location: 'North Dartmouth, MA', band: '#003764', stripe: '#FF4613' },
+  { id: 'bridgewater-state', name: 'Bridgewater State University', location: 'Bridgewater, MA', band: '#990022', stripe: '#D49991' },
+  { id: 'salem-state', name: 'Salem State University', location: 'Salem, MA', band: '#00245E', stripe: '#F47D2F' },
+  { id: 'worcester-state', name: 'Worcester State University', location: 'Worcester, MA', band: '#003087', stripe: '#FFB81C' },
+  { id: 'yale', name: 'Yale University', location: 'New Haven, CT', band: '#00356B', stripe: '#286DC0' },
+  { id: 'trinity-college', name: 'Trinity College', location: 'Hartford, CT', band: '#003057', stripe: '#866D4B' },
+  { id: 'endicott', name: 'Endicott College', location: 'Beverly, MA', band: '#00325D', stripe: '#007C57' },
+  { id: 'saint-anselm', name: 'Saint Anselm College', location: 'Goffstown, NH', band: '#00325B', stripe: '#30A3C0' },
+  { id: 'colby-sawyer', name: 'Colby-Sawyer College', location: 'New London, NH', band: '#0492D2', stripe: '#231F20' },
+  { id: 'champlain', name: 'Champlain College', location: 'Burlington, VT', band: '#003C5F', stripe: '#6B8F00' }
 ];

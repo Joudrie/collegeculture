@@ -148,7 +148,7 @@
   }
 
   function renderSchool(s) {
-    document.title = s.name + ' Culture Snapshot';
+    document.title = (s.title || s.name) + ' Culture Snapshot';
     var meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', 'What ' + s.name + ' ' + (s.nameSub || '') + ' is actually like: the vibe, the social life, the stereotypes, and the things nobody tells you.');
     applyColors(s.colors);

@@ -1,6 +1,7 @@
 registerSchool({
   id: 'umass-lowell',
   name: 'UMass',
+  title: 'UMass Lowell',
   nameSub: 'Lowell',
   state: 'Massachusetts',
   location: 'Lowell, MA · Old mill city on the Merrimack',
