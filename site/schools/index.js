@@ -57,5 +57,7 @@ window.SCHOOL_LIST = [
   { id: 'bowdoin', name: 'Bowdoin College', location: 'Brunswick, ME', band: '#231F20', stripe: '#00506A' },
   { id: 'framingham-state', name: 'Framingham State University', location: 'Framingham, MA', band: '#FCB614', stripe: '#000000' },
   { id: 'westfield-state', name: 'Westfield State University', location: 'Westfield, MA', band: '#012169', stripe: '#33BBED' },
-  { id: 'fitchburg-state', name: 'Fitchburg State University', location: 'Fitchburg, MA', band: '#E9AF2F', stripe: '#00563F' }
+  { id: 'fitchburg-state', name: 'Fitchburg State University', location: 'Fitchburg, MA', band: '#E9AF2F', stripe: '#00563F' },
+  { id: 'elms', name: 'College of Our Lady of the Elms', location: 'Chicopee, MA', band: '#004731', stripe: '#C3A250' },
+  { id: 'dean', name: 'Dean College', location: 'Franklin, MA', band: '#7C1D2D', stripe: '#FFA029' }
 ];
