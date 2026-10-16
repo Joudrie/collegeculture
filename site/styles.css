@@ -222,7 +222,14 @@ h3 { font-size: var(--t-md); line-height: var(--lh-md); font-weight: 700; }
   border: 1px solid var(--muted); border-radius: var(--radius); padding: var(--s1) 12px;
 }
 .search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-#no-match { padding-top: var(--s2); }
+#no-match, #match-count { padding-top: var(--s2); }
+.filters { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s1); padding-top: var(--s1); }
+.filters label { display: grid; gap: 4px; }
+.filters select {
+  font: inherit; font-size: 16px; color: var(--fg); background: var(--bg); width: 100%;
+  border: 1px solid var(--muted); border-radius: var(--radius); padding: var(--s1) 12px;
+}
+@media (min-width: 720px) { .filters { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
 /* Not-found state */
 .empty-state { padding-block: var(--s5); display: grid; gap: var(--s1); }

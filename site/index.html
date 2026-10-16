@@ -30,7 +30,18 @@
     <label class="small muted" for="school-search">Find a school</label>
     <input id="school-search" type="search" placeholder="Name or town" autocomplete="off">
   </div>
-  <p class="small muted" id="no-match" hidden>No schools match that. Try a town or a shorter name.</p>
+  <div class="filters">
+    <label class="small muted">Size
+      <select id="f-size"><option value="">Any</option><option value="small">Under 2,000</option><option value="mid">2,000 to 10,000</option><option value="big">Over 10,000</option></select></label>
+    <label class="small muted">Setting
+      <select id="f-setting"><option value="">Any</option><option value="big-city">Big city</option><option value="small-city">Small city</option><option value="college-town">College town</option><option value="rural">Rural</option></select></label>
+    <label class="small muted">Type
+      <select id="f-type"><option value="">Any</option><option value="public">Public</option><option value="private">Private</option></select></label>
+    <label class="small muted">Price after aid
+      <select id="f-price"><option value="">Any</option><option value="20000">Under $20k</option><option value="30000">Under $30k</option><option value="40000">Under $40k</option></select></label>
+  </div>
+  <p class="small muted" id="match-count" hidden></p>
+  <p class="small muted" id="no-match" hidden>No schools match that. Try fewer filters, a town or a shorter name.</p>
   <div class="states" id="schools-wrap"></div>
 </main>
 
@@ -41,6 +52,7 @@
 </footer>
 
 <script src="schools/index.js"></script>
+<script src="schools/quiz-data.js"></script>
 <script>
 (function () {
   var STATES = { MA: 'Massachusetts', NH: 'New Hampshire', RI: 'Rhode Island', CT: 'Connecticut', VT: 'Vermont', ME: 'Maine' };
@@ -82,6 +94,7 @@
       go.setAttribute('aria-hidden', 'true');
       a.append(chip, text, go);
       var li = el('li');
+      li.dataset.id = s.id;
       li.dataset.search = (s.name + ' ' + s.id.replace(/-/g, ' ') + ' ' + s.location + ' ' + STATES[code]).toLowerCase();
       li.appendChild(a);
       row.appendChild(li);
@@ -90,24 +103,52 @@
     main.appendChild(details);
   });
 
+  // Filters use the quiz data: size and price from the federal College Scorecard, setting from data/quiz-facts.json.
+  // Price after aid is the federal average for students on aid (in-state for public schools).
+  var facts = window.QUIZ_DATA || {};
+  var pick = {};
+  ['size', 'setting', 'type', 'price'].forEach(function (k) {
+    pick[k] = document.getElementById('f-' + k);
+    pick[k].addEventListener('change', update);
+  });
+  function passes(id) {
+    var f = facts[id];
+    if (!f) return !(pick.size.value || pick.setting.value || pick.type.value || pick.price.value);
+    var n = f.undergrad, size = pick.size.value;
+    if (size === 'small' && !(n < 2000)) return false;
+    if (size === 'mid' && !(n >= 2000 && n <= 10000)) return false;
+    if (size === 'big' && !(n > 10000)) return false;
+    if (pick.setting.value && f.setting !== pick.setting.value) return false;
+    if (pick.type.value && f.public !== (pick.type.value === 'public')) return false;
+    if (pick.price.value && !(f.net != null && f.net < +pick.price.value)) return false;
+    return true;
+  }
+
   var input = document.getElementById('school-search');
   var empty = document.getElementById('no-match');
-  input.addEventListener('input', function () {
+  var count = document.getElementById('match-count');
+  input.addEventListener('input', update);
+  function update() {
     var q = input.value.trim().toLowerCase();
+    var filtering = !!(pick.size.value || pick.setting.value || pick.type.value || pick.price.value);
     var shown = 0;
     main.querySelectorAll('details').forEach(function (group) {
       var visible = 0;
       group.querySelectorAll('li').forEach(function (li) {
-        var match = !q || li.dataset.search.indexOf(q) !== -1;
+        var match = (!q || li.dataset.search.indexOf(q) !== -1) && passes(li.dataset.id);
         li.hidden = !match;
         if (match) visible++;
       });
       group.hidden = visible === 0;
-      group.open = !!q && visible > 0;
+      group.open = (!!q || filtering) && visible > 0;
+      var total = group.querySelectorAll('li').length;
+      group.querySelector('.state-count').textContent = (q || filtering ? visible + ' of ' : '') + total + ' schools';
       shown += visible;
     });
     empty.hidden = shown !== 0;
-  });
+    count.hidden = !(q || filtering) || shown === 0;
+    count.textContent = shown + (shown === 1 ? ' school matches' : ' schools match');
+  }
 })();
 </script>
 </body>
