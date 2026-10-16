@@ -21,5 +21,8 @@ window.SCHOOL_LIST = [
   { id: 'quinnipiac', name: 'Quinnipiac University', location: 'Hamden, CT', band: '#FFB81C', stripe: '#418FDE' },
   { id: 'wpi', name: 'Worcester Polytechnic Institute', location: 'Worcester, MA', band: '#A9B0B7', stripe: '#AC2B37' },
   { id: 'holy-cross', name: 'College of the Holy Cross', location: 'Worcester, MA', band: '#602D89', stripe: '#111111' },
-  { id: 'brandeis', name: 'Brandeis University', location: 'Waltham, MA', band: '#00A3E0', stripe: '#003478' }
+  { id: 'brandeis', name: 'Brandeis University', location: 'Waltham, MA', band: '#00A3E0', stripe: '#003478' },
+  { id: 'providence-college', name: 'Providence College', location: 'Providence, RI', band: '#000000', stripe: '#A3A19E' },
+  { id: 'bryant', name: 'Bryant University', location: 'Smithfield, RI', band: '#222020', stripe: '#B4975A' },
+  { id: 'johnson-wales', name: 'Johnson & Wales University', location: 'Providence, RI', band: '#FDB714', stripe: '#004483' }
 ];
