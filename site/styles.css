@@ -352,3 +352,17 @@ footer .wrap { padding-block: var(--s3); display: grid; gap: 4px; }
 .slide-body .school-name { margin: 0; font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 700; }
 .slide-body p { margin: 0; }
 .miss { color: var(--myth); }
+
+/* Quiz results: dense top 10 list that controls the swipe panel */
+.rank-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.rank-row {
+  width: 100%; display: grid; grid-template-columns: var(--s3) var(--s1) minmax(0, 1fr) auto; align-items: center; gap: var(--s1);
+  font: inherit; text-align: left; color: var(--fg); background: var(--bg); border: 0; border-bottom: 1px solid var(--line);
+  padding: var(--s1) 4px; cursor: pointer;
+}
+.rank-row.on { background: var(--line); font-weight: 700; }
+.rank-row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.rank-n { color: var(--muted); font-variant-numeric: tabular-nums; }
+.rank-dot { width: var(--s1); height: var(--s2); border-radius: var(--radius); }
+.rank-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rank-pct { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }

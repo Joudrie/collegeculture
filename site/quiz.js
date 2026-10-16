@@ -505,6 +505,14 @@
       good.map(function (p) { return chip(p.label, 'good'); }), bad.map(function (p) { return chip(p.label, 'bad'); })) : null;
   }
 
+  function whyLine(r) {
+    var good = r.parts.filter(function (p) { return p.fit >= 0.8 && p.w >= 0.6; }).sort(function (a, b) { return b.w - a.w; }).slice(0, 3)
+      .map(function (p) { return p.label.toLowerCase(); });
+    if (!good.length) return null;
+    var last = good.pop();
+    return h('p', { class: 'small', text: 'Why it fits: ' + (good.length ? good.join(', ') + ' and ' + last : last) + ' line up with what you want.' });
+  }
+
   function metaLine(r) {
     var ch = chance(r.s);
     return r.s.town + ', ' + r.s.state + (r.dist != null ? ' · ' + Math.round(r.dist) + ' mi from home' : '') + (ch ? ' · ' + ch : '');
@@ -519,13 +527,14 @@
       h('div', { class: 'slide-body' },
         h('p', { class: 'school-name', text: r.s.name }),
         h('p', { class: 'small muted', text: metaLine(r) }),
+        whyLine(r),
         reasons(r),
         r.filters.length ? h('p', { class: 'small miss', text: 'Misses your filters: ' + r.filters.join(', ') }) : null,
         compareChart(r.s),
         h('a', { class: 'link-btn', href: 'school.html#' + r.id, text: 'Read the full ' + r.s.short + ' page' })));
   }
 
-  function carousel(list) {
+  function carousel(list, onChange) {
     var track = h('ol', { class: 'slides' }, list.map(function (r, i) { return slide(r, i, list.length); }));
     var counter = h('span', { class: 'small', 'aria-live': 'polite', text: '1 of ' + list.length });
     var prev = h('button', { type: 'button', class: 'nav-btn', 'aria-label': 'Previous match', text: '‹' });
@@ -534,13 +543,18 @@
     function go(i) { track.scrollTo({ left: Math.max(0, Math.min(list.length - 1, i)) * track.clientWidth, behavior: 'smooth' }); }
     prev.addEventListener('click', function () { go(current() - 1); });
     next.addEventListener('click', function () { go(current() + 1); });
+    var last = -1;
     track.addEventListener('scroll', function () {
       var i = current();
+      if (i === last) return;
+      last = i;
       counter.textContent = (i + 1) + ' of ' + list.length;
       prev.disabled = i === 0;
       next.disabled = i === list.length - 1;
+      if (onChange) onChange(i);
     }, { passive: true });
     prev.disabled = true;
+    carousel.go = go;
     return h('div', { class: 'carousel' },
       h('div', { class: 'carousel-bar' }, prev, counter, next),
       track,
@@ -567,21 +581,33 @@
     // Always show 10: fits first, then the closest near-misses
     var list = res.fits.slice(0, 10);
     if (list.length < 10) list = list.concat(res.outside.slice(0, 10 - list.length));
-    var first = list[0];
+    var rows = [];
+    function highlight(i) {
+      rows.forEach(function (row, j) { row.classList.toggle('on', i === j); row.setAttribute('aria-current', i === j ? 'true' : 'false'); });
+    }
+    var slides = carousel(list, highlight);
+    var rankList = h('ol', { class: 'rank-list' }, list.map(function (r, i) {
+      var row = h('button', { type: 'button', class: 'rank-row' + (i === 0 ? ' on' : ''), onclick: function () {
+        carousel.go(i);
+        slides.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } },
+        h('span', { class: 'rank-n', text: String(i + 1) }),
+        h('span', { class: 'rank-dot', style: 'background:' + r.s.band }),
+        h('span', { class: 'rank-name', text: r.s.name }),
+        h('span', { class: 'rank-pct', text: Math.round(r.fit * 100) + '%' }));
+      rows.push(row);
+      return h('li', null, row);
+    }));
     var main = h('main', { class: 'wrap results' },
-      h('p', { class: 'vibe-sum', text: summary() }),
-      first ? h('section', { class: 'q-section' },
-        h('h2', { class: 'sec-title', text: 'Your number one' }),
-        h('a', { class: 'hero-match', href: 'school.html#' + first.id },
-          h('span', { class: 'hero-flag', style: 'background:' + first.s.band }),
-          h('span', { class: 'match-body' },
-            h('span', { class: 'match-top' }, h('span', { class: 'hero-name', text: first.s.name }), h('span', { class: 'pct', text: Math.round(first.fit * 100) + '%' })),
-            h('span', { class: 'small muted', text: metaLine(first) }),
-            reasons(first)))) : null,
       h('section', { class: 'q-section' },
-        h('h2', { class: 'sec-title', text: 'Your matches in order' }),
-        carousel(list)),
-      anyCompare(res, first ? first.id : 'harvard'),
+        h('h2', { class: 'sec-title', text: 'Your results' }),
+        h('p', { class: 'vibe-sum', text: summary() }),
+        slides),
+      h('section', { class: 'q-section' },
+        h('h2', { class: 'sec-title', text: 'Your top 10 in order' }),
+        h('p', { class: 'small muted', text: 'Tap one to see it above.' }),
+        rankList),
+      anyCompare(res, list[0] ? list[0].id : 'harvard'),
       h('div', { class: 'btn-row' },
         h('button', { type: 'button', class: 'btn-ghost', text: 'Change my answers', onclick: function () { location.hash = 'quiz'; } })),
       h('p', { class: 'small muted', text: 'Matches are a starting point, not advice. Visit, talk to students, and check the school sites for real numbers.' }));
