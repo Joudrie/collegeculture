@@ -79,5 +79,10 @@ window.SCHOOL_LIST = [
   { id: 'springfield-college', name: 'Springfield College', location: 'Springfield, MA', band: '#862633', stripe: '#FDD26E' },
   { id: 'mcla', name: 'Massachusetts College of Liberal Arts', location: 'North Adams, MA', band: '#88DBDF', stripe: '#0085CA' },
   { id: 'regis', name: 'Regis College', location: 'Weston, MA', band: '#F4A518', stripe: '#A52238' },
-  { id: 'bay-path', name: 'Bay Path University', location: 'Longmeadow, MA', band: '#6A1E26', stripe: '#BE414F' }
+  { id: 'bay-path', name: 'Bay Path University', location: 'Longmeadow, MA', band: '#6A1E26', stripe: '#BE414F' },
+  { id: 'norwich', name: 'Norwich University', location: 'Northfield, VT', band: '#CBA761', stripe: '#892432' },
+  { id: 'saint-michaels', name: "Saint Michael's College", location: 'Colchester, VT', band: '#D6C682', stripe: '#55318C' },
+  { id: 'bennington', name: 'Bennington College', location: 'Bennington, VT', band: '#E8E1D0', stripe: '#B5472B' },
+  { id: 'vermont-state', name: 'Vermont State University', location: 'Castleton, VT', band: '#00A5B3', stripe: '#B3223F' },
+  { id: 'landmark', name: 'Landmark College', location: 'Putney, VT', band: '#1F5AA6', stripe: '#F2B705' }
 ];
