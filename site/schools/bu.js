@@ -9,10 +9,10 @@ registerSchool({
   colors: {
     name: 'Terriers · Scarlet and white',
     swatches: ['#CC0000', '#2D2926', '#FFFFFF'],
-    band: '#2D2926',
+    band: '#CC0000',
     onBand: '#FFFFFF',
-    onBandMuted: '#BDB7B2',
-    stripe: '#CC0000',
+    onBandMuted: '#FFF0F0',
+    stripe: '#2D2926',
     accent: '#CC0000',
     accentOnDark: '#FF6B6B'
   },
