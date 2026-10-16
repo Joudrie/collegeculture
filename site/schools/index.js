@@ -3,6 +3,8 @@
 window.SCHOOL_LIST = [
   { id: 'northeastern', name: 'Northeastern University', location: 'Boston, MA', band: '#0B0B0B', stripe: '#D41B2C' },
   { id: 'snhu', name: 'Southern New Hampshire University', location: 'Manchester, NH', band: '#0A3370', stripe: '#FDB913' },
+  { id: 'unh', name: 'University of New Hampshire', location: 'Durham, NH', band: '#041E42', stripe: '#BBBCBC' },
+  { id: 'umass-amherst', name: 'University of Massachusetts Amherst', location: 'Amherst, MA', band: '#840028', stripe: '#A2AAAD' },
   { id: 'bu', name: 'Boston University', location: 'Boston, MA', band: '#CC0000', stripe: '#2D2926' },
   { id: 'boston-college', name: 'Boston College', location: 'Chestnut Hill, MA', band: '#8A100B', stripe: '#B29D6C' },
   { id: 'harvard', name: 'Harvard University', location: 'Cambridge, MA', band: '#A51C30', stripe: '#1E1E1E' },
