@@ -24,5 +24,8 @@ window.SCHOOL_LIST = [
   { id: 'brandeis', name: 'Brandeis University', location: 'Waltham, MA', band: '#00A3E0', stripe: '#003478' },
   { id: 'providence-college', name: 'Providence College', location: 'Providence, RI', band: '#000000', stripe: '#A3A19E' },
   { id: 'bryant', name: 'Bryant University', location: 'Smithfield, RI', band: '#222020', stripe: '#B4975A' },
-  { id: 'johnson-wales', name: 'Johnson & Wales University', location: 'Providence, RI', band: '#FDB714', stripe: '#004483' }
+  { id: 'johnson-wales', name: 'Johnson & Wales University', location: 'Providence, RI', band: '#FDB714', stripe: '#004483' },
+  { id: 'plymouth-state', name: 'Plymouth State University', location: 'Plymouth, NH', band: '#135841', stripe: '#A0B8B0' },
+  { id: 'keene-state', name: 'Keene State College', location: 'Keene, NH', band: '#CE1126', stripe: '#D9D9D6' },
+  { id: 'umaine', name: 'University of Maine', location: 'Orono, ME', band: '#79BDE8', stripe: '#082E58' }
 ];
