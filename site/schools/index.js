@@ -76,5 +76,8 @@ window.SCHOOL_LIST = [
   { id: 'mcphs', name: 'Massachusetts College of Pharmacy and Health Sciences', location: 'Boston, MA', band: '#97233F', stripe: '#D2E0EF' },
   { id: 'clark', name: 'Clark University', location: 'Worcester, MA', band: '#C52026', stripe: '#ADACA9' },
   { id: 'assumption', name: 'Assumption University', location: 'Worcester, MA', band: '#B6BFC5', stripe: '#004B87' },
-  { id: 'springfield-college', name: 'Springfield College', location: 'Springfield, MA', band: '#862633', stripe: '#FDD26E' }
+  { id: 'springfield-college', name: 'Springfield College', location: 'Springfield, MA', band: '#862633', stripe: '#FDD26E' },
+  { id: 'mcla', name: 'Massachusetts College of Liberal Arts', location: 'North Adams, MA', band: '#88DBDF', stripe: '#0085CA' },
+  { id: 'regis', name: 'Regis College', location: 'Weston, MA', band: '#F4A518', stripe: '#A52238' },
+  { id: 'bay-path', name: 'Bay Path University', location: 'Longmeadow, MA', band: '#6A1E26', stripe: '#BE414F' }
 ];
