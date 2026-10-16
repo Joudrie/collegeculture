@@ -64,5 +64,8 @@ window.SCHOOL_LIST = [
   { id: 'mass-maritime', name: 'Massachusetts Maritime Academy', location: 'Buzzards Bay, MA', band: '#072040', stripe: '#CFB888' },
   { id: 'western-new-england', name: 'Western New England University', location: 'Springfield, MA', band: '#004B8E', stripe: '#FDB812' },
   { id: 'american-international', name: 'American International College', location: 'Springfield, MA', band: '#1A1919', stripe: '#FFB81C' },
-  { id: 'wheaton-ma', name: 'Wheaton College', location: 'Norton, MA', band: '#155196', stripe: '#A9B6DA' }
+  { id: 'wheaton-ma', name: 'Wheaton College', location: 'Norton, MA', band: '#155196', stripe: '#A9B6DA' },
+  { id: 'gordon', name: 'Gordon College', location: 'Wenham, MA', band: '#D5F0FE', stripe: '#00AEEF' },
+  { id: 'curry', name: 'Curry College', location: 'Milton, MA', band: '#654389', stripe: '#9DC33B' },
+  { id: 'nichols', name: 'Nichols College', location: 'Dudley, MA', band: '#115740', stripe: '#0B0B0B' }
 ];
