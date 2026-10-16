@@ -6,7 +6,9 @@ Casual, honest snapshots of New England colleges for high schoolers. Not ranking
 
 - Always merge finished work into `main` and push it. No exceptions; the owner asked for this. Work on a branch if useful, then merge to `main` (fast-forward or merge commit) and push `main` in the same turn.
 - Before merging, run `node tools/check-schools.js` and make sure every school passes.
-- Share GitHub links (https://github.com/Joudrie/collegeculture), not claude.ai artifacts. The owner asked for this.
+- Every change gets pushed to `main`, which publishes the live site through GitHub Pages. No exceptions.
+- End every message to the owner with the live site link: https://joudrie.github.io/collegeculture/
+- Never send claude.ai artifacts. Never send links to the repo or code; only the live site link. The owner asked for this.
 
 ## Content rules
 
