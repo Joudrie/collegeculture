@@ -48,5 +48,11 @@ window.SCHOOL_LIST = [
   { id: 'endicott', name: 'Endicott College', location: 'Beverly, MA', band: '#00325D', stripe: '#007C57' },
   { id: 'saint-anselm', name: 'Saint Anselm College', location: 'Goffstown, NH', band: '#00325B', stripe: '#30A3C0' },
   { id: 'colby-sawyer', name: 'Colby-Sawyer College', location: 'New London, NH', band: '#0492D2', stripe: '#231F20' },
-  { id: 'champlain', name: 'Champlain College', location: 'Burlington, VT', band: '#003C5F', stripe: '#6B8F00' }
+  { id: 'champlain', name: 'Champlain College', location: 'Burlington, VT', band: '#003C5F', stripe: '#6B8F00' },
+  { id: 'stonehill', name: 'Stonehill College', location: 'Easton, MA', band: '#582C83', stripe: '#9F7D23' },
+  { id: 'merrimack', name: 'Merrimack College', location: 'North Andover, MA', band: '#FFE000', stripe: '#003767' },
+  { id: 'lesley', name: 'Lesley University', location: 'Cambridge, MA', band: '#00965E', stripe: '#004C45' },
+  { id: 'smith', name: 'Smith College', location: 'Northampton, MA', band: '#207CB1', stripe: '#FFEB0A' },
+  { id: 'mount-holyoke', name: 'Mount Holyoke College', location: 'South Hadley, MA', band: '#004876', stripe: '#00A9E0' },
+  { id: 'bowdoin', name: 'Bowdoin College', location: 'Brunswick, ME', band: '#231F20', stripe: '#00506A' }
 ];
