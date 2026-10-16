@@ -47,7 +47,7 @@ registerSchool({
       paragraphs: [
         "PC is small and most people live on campus for at least the first few years, so you see the same faces all the time. People describe it as friendly and close, and also a bit of a bubble.",
         "There's no Greek life, so the party scene runs through off-campus houses on streets like Eaton Street, mostly upperclassmen. Underclassmen end up there a lot too. The neighbors complain about it often, and the city and the college have pushed back on big parties more than once.",
-        "Basketball games are the shared event. Students take the shuttle downtown to the arena, and a big Big East game is the best night of the winter for a lot of people."
+        "Basketball games are the shared event. Home games are downtown at the arena, and a big Big East game is the best night of the winter for a lot of people."
       ]
     },
 
@@ -57,7 +57,7 @@ registerSchool({
         { title: "It's selective, not impossible.", text: "Roughly half of applicants get in. Solid grades in hard classes put you in good shape." },
         { title: 'Tests are optional.', text: "Most applicants and most admitted students skip the SAT and ACT. Check the current policy before you apply." },
         { title: 'Early options exist.', text: "There are early action and early decision rounds. If it's your clear first choice, applying early can help." },
-        { title: 'Honors is separate.', text: 'There is an Honors Program with its own version of Civ. You can be invited when you apply.' }
+        { title: 'Honors is separate.', text: 'There is an Honors Program with its own, longer version of Civ. Ask admissions how students are picked.' }
       ]
     },
 

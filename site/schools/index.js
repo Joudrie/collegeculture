@@ -15,5 +15,11 @@ window.SCHOOL_LIST = [
   { id: 'uvm', name: 'University of Vermont', location: 'Burlington, VT', band: '#154734', stripe: '#FFD100' },
   { id: 'tufts', name: 'Tufts University', location: 'Medford, MA', band: '#5E4B3C', stripe: '#3E8EDE' },
   { id: 'bentley', name: 'Bentley University', location: 'Waltham, MA', band: '#0B0B0B', stripe: '#0075BE' },
-  { id: 'babson', name: 'Babson College', location: 'Wellesley, MA', band: '#006644', stripe: '#A3AAAE' }
+  { id: 'babson', name: 'Babson College', location: 'Wellesley, MA', band: '#006644', stripe: '#A3AAAE' },
+  { id: 'suffolk', name: 'Suffolk University', location: 'Boston, MA', band: '#BC912C', stripe: '#15284B' },
+  { id: 'wentworth', name: 'Wentworth Institute of Technology', location: 'Boston, MA', band: '#000000', stripe: '#FFCB05' },
+  { id: 'quinnipiac', name: 'Quinnipiac University', location: 'Hamden, CT', band: '#FFB81C', stripe: '#418FDE' },
+  { id: 'wpi', name: 'Worcester Polytechnic Institute', location: 'Worcester, MA', band: '#A9B0B7', stripe: '#AC2B37' },
+  { id: 'holy-cross', name: 'College of the Holy Cross', location: 'Worcester, MA', band: '#602D89', stripe: '#111111' },
+  { id: 'brandeis', name: 'Brandeis University', location: 'Waltham, MA', band: '#00A3E0', stripe: '#003478' }
 ];
