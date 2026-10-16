@@ -17,7 +17,9 @@ site/
   schools/
     index.js          the list of schools shown on index.html
     _template.js      blank school file with writing and color rules
-    northeastern.js   first school
+    northeastern.js   one file per school
+tools/
+  check-schools.js    checks every school file against the rules
 ```
 
 Every school page uses the same template. A school is one data file: its content plus its colors.
@@ -27,7 +29,8 @@ Every school page uses the same template. A school is one data file: its content
 1. Copy `site/schools/_template.js` to `site/schools/<id>.js` (lowercase with dashes, like `umass-amherst.js`).
 2. Fill in the content and colors. The comments at the top of the template explain each field.
 3. Add a line for it in `site/schools/index.js`.
-4. Open `site/school.html?s=<id>` to check it.
+4. Run `node tools/check-schools.js <id>` to check colors, contrast and content rules.
+5. Open `site/school.html?s=<id>` to see it.
 
 ## Design rules
 
