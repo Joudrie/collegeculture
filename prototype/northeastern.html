@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+/* Base reset: matches what the artifact host provides */
+*, *::before, *::after { box-sizing: border-box; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+</style>
+<title>Northeastern Culture Snapshot</title>
+<meta name="description" content="What Northeastern University is actually like: the vibe, the social life, the stereotypes, and the things nobody tells you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&display=swap">
+<style>
+/* Layout: school-colored header band (the page wears the school's colors), then a light body of collapsible sections.
+   Type: one family, Archivo. Condensed widths for display (varsity signage), normal width for reading.
+   System: text sizes 13 / 15 / 17 / display; spacing from 8pt scale; one radius (4px). */
+:root {
+  /* School theme: swap these three per school */
+  --school: #0B0B0B;         /* header band */
+  --on-school: #FFFFFF;
+  --on-school-muted: #B9B9B9;
+  --school-accent: #D41B2C;  /* Northeastern red */
+
+  --bg: #FFFFFF;
+  --fg: #141414;
+  --muted: #5F5F5F;
+  --line: #E6E6E6;
+  --accent: #C8102E;
+  --true: #1E6B44;
+  --half: #8A5A00;
+  --myth: #B42318;
+
+  --font: "Archivo", "Arial Narrow", Arial, sans-serif;
+
+  --t-sm: 13px;  --lh-sm: 20px;
+  --t-md: 15px;  --lh-md: 22px;
+  --t-lg: 17px;  --lh-lg: 24px;
+  --t-xl: 48px;  --lh-xl: 44px;
+
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --s5: 48px;
+  --radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212; --fg: #EDEDED; --muted: #A3A3A3; --line: #2A2A2A;
+    --accent: #FF6B6B; --true: #74C99B; --half: #E0B25A; --myth: #FF8A80;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121212; --fg: #EDEDED; --muted: #A3A3A3; --line: #2A2A2A;
+  --accent: #FF6B6B; --true: #74C99B; --half: #E0B25A; --myth: #FF8A80;
+  color-scheme: dark;
+}
+@media (min-width: 720px) { :root { --t-xl: 76px; --lh-xl: 68px; } }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: var(--t-md);
+  line-height: var(--lh-md);
+  font-variation-settings: "wdth" 100;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--school);
+}
+h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+strong { font-weight: 600; }
+.muted { color: var(--muted); }
+.small { font-size: var(--t-sm); line-height: var(--lh-sm); }
+.cond { font-stretch: 75%; font-variation-settings: "wdth" 75; }
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* Header band in school colors */
+.band { background: var(--school); color: var(--on-school); border-bottom: 6px solid var(--school-accent); }
+.band .wrap { padding-block: var(--s1) var(--s3); display: grid; gap: var(--s1); }
+.bar { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s2); padding-bottom: var(--s1); border-bottom: 1px solid rgba(255,255,255,0.14); }
+.wordmark { font-weight: 700; font-size: var(--t-md); letter-spacing: 0.02em; text-transform: uppercase; font-variation-settings: "wdth" 75; }
+.band .where { color: var(--on-school-muted); padding-top: var(--s1); }
+h1 {
+  font-weight: 800; font-size: var(--t-xl); line-height: var(--lh-xl);
+  text-transform: uppercase; letter-spacing: -0.01em;
+  font-variation-settings: "wdth" 62;
+}
+h1 .sub { display: block; font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 600; letter-spacing: 0.12em; color: var(--on-school-muted); font-variation-settings: "wdth" 100; padding-top: var(--s1); }
+.vibe-line { max-width: 56ch; }
+.flags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0 var(--s1); color: var(--on-school-muted); }
+.flags li + li::before { content: "/"; margin-right: var(--s1); color: var(--school-accent); }
+.facts {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s1) var(--s2); padding-top: var(--s2); margin-top: var(--s1);
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+.facts div { display: grid; align-content: start; min-width: 0; }
+.facts dt { font-size: var(--t-sm); line-height: var(--lh-sm); color: var(--on-school-muted); }
+.facts dd { font-weight: 600; }
+.colors { display: flex; align-items: center; gap: var(--s1); color: var(--on-school-muted); padding-top: var(--s1); }
+.sw { width: 12px; height: 12px; border-radius: var(--radius); display: inline-block; }
+.sw.red { background: var(--school-accent); }
+.sw.black { background: #000; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4); }
+
+/* Controls */
+.controls { display: flex; justify-content: space-between; align-items: center; gap: var(--s2); padding-block: var(--s2) var(--s1); }
+.btn {
+  font: inherit; font-size: var(--t-sm); line-height: var(--lh-sm); font-weight: 600;
+  color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer;
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.btn:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: var(--radius); }
+
+/* Collapsible sections */
+.sections { border-top: 2px solid var(--fg); margin-bottom: var(--s4); }
+details { border-bottom: 1px solid var(--line); }
+summary {
+  list-style: none; cursor: pointer;
+  display: grid; grid-template-columns: minmax(0, 1fr) var(--s2); align-items: center; gap: var(--s2);
+  padding-block: 12px;
+}
+summary::-webkit-details-marker { display: none; }
+.sum-text { display: grid; min-width: 0; }
+.sum-title {
+  font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.02em; font-variation-settings: "wdth" 75;
+}
+details[open] .sum-title { color: var(--accent); }
+details[open] .sum-preview { display: none; }
+.chev {
+  width: 8px; height: 8px; justify-self: center;
+  border-right: 2px solid var(--fg); border-bottom: 2px solid var(--fg);
+  transform: rotate(45deg);
+}
+details[open] .chev { transform: rotate(225deg); border-color: var(--accent); }
+.body { display: grid; gap: var(--s2); padding-bottom: var(--s2); min-width: 0; }
+
+/* Meters */
+.meters { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+.meter { display: grid; gap: var(--s1); }
+.meter-top { display: flex; justify-content: space-between; align-items: baseline; gap: 0 var(--s2); flex-wrap: wrap; }
+.track { height: 8px; background: var(--line); border-radius: var(--radius); overflow: hidden; }
+.fill { height: 100%; background: var(--accent); }
+.ends { display: flex; justify-content: space-between; gap: var(--s2); }
+
+/* Stereotypes */
+.stereos { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+.stereos li { display: grid; gap: 4px; }
+.said { font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 700; font-variation-settings: "wdth" 85; }
+.said::before { content: "\201C"; color: var(--accent); }
+.said::after { content: "\201D"; color: var(--accent); }
+.verdict { font-size: var(--t-sm); line-height: var(--lh-sm); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.verdict.true { color: var(--true); }
+.verdict.half { color: var(--half); }
+.verdict.myth { color: var(--myth); }
+
+/* Lists */
+.list { list-style: none; padding: 0; display: grid; gap: var(--s2); }
+.list li { display: grid; }
+.list s { color: var(--muted); text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.cols { display: grid; gap: var(--s3); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 560px) { .cols { grid-template-columns: minmax(0, 1fr); } }
+.cols > div { display: grid; gap: var(--s1); align-content: start; }
+.cols ul { padding-left: var(--s2); display: grid; gap: 4px; }
+.cols li::marker { color: var(--accent); }
+h3 { font-size: var(--t-md); line-height: var(--lh-md); font-weight: 700; }
+.sub-h { padding-top: var(--s1); }
+
+footer { border-top: 1px solid var(--line); }
+footer .wrap { padding-block: var(--s3); display: grid; gap: 4px; }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div class="bar">
+      <span class="wordmark">College Culture</span>
+      <span class="small" style="color: var(--on-school-muted)">Massachusetts</span>
+    </div>
+    <p class="small where">Boston · Fenway / Huntington Ave</p>
+    <h1>Northeastern<span class="sub">University</span></h1>
+    <p class="vibe-line">A big, busy city school where most people are there to get hired. You'll work real jobs before you graduate, but your friend group moves around a lot.</p>
+    <ul class="flags small" aria-label="Heads-up">
+      <li>City campus</li>
+      <li>Career-focused</li>
+      <li>5 years is normal</li>
+      <li>No car needed</li>
+    </ul>
+    <dl class="facts">
+      <div><dt>Setting</dt><dd>City</dd></div>
+      <div><dt>Undergrads</dt><dd>~20,000</dd></div>
+      <div><dt>Getting in</dt><dd>Very selective</dd></div>
+      <div><dt>Usual length</dt><dd>5 years</dd></div>
+      <div><dt>Big sport</dt><dd>Hockey</dd></div>
+      <div><dt>Greek life</dt><dd>Small</dd></div>
+    </dl>
+    <p class="colors small"><span class="sw red" aria-hidden="true"></span><span class="sw black" aria-hidden="true"></span>Huskies · Red and black</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <span class="small muted">9 sections</span>
+    <button class="btn" id="toggle-all" type="button">Open all</button>
+  </div>
+
+  <div class="sections">
+    <details id="vibe">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">The vibe</span>
+          <span class="sum-preview small muted">Huge career focus, medium party scene, city campus</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <p class="small muted">Rated on the same scales as the quiz, based on what students and alumni say.</p>
+        <ul class="meters">
+          <li class="meter">
+            <div class="meter-top"><strong>Party scene</strong><span class="small muted">Spread out in off-campus apartments</span></div>
+            <div class="track" role="meter" aria-label="Party scene" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5"><div class="fill" style="width:50%"></div></div>
+            <div class="ends small muted"><span>Quiet weekends</span><span>Always something on</span></div>
+          </li>
+          <li class="meter">
+            <div class="meter-top"><strong>Campus feel</strong><span class="small muted">Nice quad, surrounded by city</span></div>
+            <div class="track" role="meter" aria-label="Campus feel" aria-valuemin="0" aria-valuemax="10" aria-valuenow="3"><div class="fill" style="width:30%"></div></div>
+            <div class="ends small muted"><span>All city</span><span>Quad and trees</span></div>
+          </li>
+          <li class="meter">
+            <div class="meter-top"><strong>School spirit</strong><span class="small muted">Comes out for hockey</span></div>
+            <div class="track" role="meter" aria-label="School spirit" aria-valuemin="0" aria-valuemax="10" aria-valuenow="4"><div class="fill" style="width:40%"></div></div>
+            <div class="ends small muted"><span>Nobody cares</span><span>Everyone's at the game</span></div>
+          </li>
+          <li class="meter">
+            <div class="meter-top"><strong>Academic pressure</strong><span class="small muted">Competitive, mostly about jobs</span></div>
+            <div class="track" role="meter" aria-label="Academic pressure" aria-valuemin="0" aria-valuemax="10" aria-valuenow="7"><div class="fill" style="width:70%"></div></div>
+            <div class="ends small muted"><span>Chill</span><span>Intense</span></div>
+          </li>
+          <li class="meter">
+            <div class="meter-top"><strong>Career focus</strong><span class="small muted">The main reason people pick it</span></div>
+            <div class="track" role="meter" aria-label="Career focus" aria-valuemin="0" aria-valuemax="10" aria-valuenow="10"><div class="fill" style="width:100%"></div></div>
+            <div class="ends small muted"><span>Learning for fun</span><span>Everything points to a job</span></div>
+          </li>
+          <li class="meter">
+            <div class="meter-top"><strong>Religion on campus</strong><span class="small muted">Secular, groups exist if you look</span></div>
+            <div class="track" role="meter" aria-label="Religion on campus" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1"><div class="fill" style="width:10%"></div></div>
+            <div class="ends small muted"><span>Barely noticeable</span><span>Part of daily life</span></div>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="social">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">Social life</span>
+          <span class="sum-preview small muted">Dorms freshman year, then apartments and small friend groups</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <p>Freshman year in the dorms is the most social it gets. After that, most people move into apartments in Mission Hill, Fenway and nearby neighborhoods, and the scene becomes small friend groups and apartment parties.</p>
+        <p>Co-op is the big shake-up. Half your friends might be working full time while you're in class, then you swap. Some people love the reset. Others say it's hard to keep a group together.</p>
+        <p>Boston fills in the gaps. Fenway Park is a walk away, the T gets you anywhere, and schools like BU and Berklee are close enough that social circles mix.</p>
+      </div>
+    </details>
+
+    <details id="getting-in">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">Getting in</span>
+          <span class="sum-preview small muted">Very selective now. Apply early if it's your top pick.</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <ul class="list">
+          <li><strong>It's hard to get into.</strong><span class="muted">Most applicants are turned away. Treat it as a reach unless your grades are near the top of your class.</span></li>
+          <li><strong>Early application matters.</strong><span class="muted">It has early decision and early action rounds. If it's your first choice, applying early can help.</span></li>
+          <li><strong>Tests may be optional.</strong><span class="muted">It has been test-optional in recent years. Check the current policy before you apply.</span></li>
+          <li><strong>You might get NUin.</strong><span class="muted">Some admits spend their first semester at a partner campus, often abroad, then come to Boston in the spring. It's a real admission.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="who">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">Who goes here</span>
+          <span class="sum-preview small muted">Driven, career-minded, lots of business and engineering</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <p>Driven people who already have a rough idea of what job they want. Lots of business, engineering, computer science, health science and nursing students. There's a big international crowd and plenty of kids from New York, New Jersey and the rest of the Northeast.</p>
+        <p>It's not a "figure yourself out for four years" school. Undecided students do fine, but they'll feel pressure to pick a direction sooner than at a liberal arts college.</p>
+      </div>
+    </details>
+
+    <details id="known">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">Known for</span>
+          <span class="sum-preview small muted">Co-op, getting very hard to get into, and hockey</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <ul class="list">
+          <li><strong>Co-op</strong><span class="muted">You alternate between classes and 4 to 6 month stretches working a real job, often paid. Most students do two or three. It's the whole identity of the school.</span></li>
+          <li><strong>A fast climb</strong><span class="muted">Twenty years ago it was a backup school. Now it turns away most applicants.</span></li>
+          <li><strong>Hockey</strong><span class="muted">The Beanpot tournament against BU, BC and Harvard is the one time a year the whole school cares about sports.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="stereotypes">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">Stereotypes vs. reality</span>
+          <span class="sum-preview small muted">"Career-obsessed" is mostly true. "Safety school" is outdated.</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <ul class="stereos">
+          <li>
+            <p class="said">Everyone's obsessed with their career.</p>
+            <p class="verdict true">Mostly true</p>
+            <p class="muted">It's the point of the school. People talk about co-op interviews the way other schools talk about parties. The upside is you leave with a real resume.</p>
+          </li>
+          <li>
+            <p class="said">There's no school spirit.</p>
+            <p class="verdict half">Half true</p>
+            <p class="muted">Football was cut in 2009, so there are no fall game days. Hockey brings people out, but day to day it's quieter than BC or UMass.</p>
+          </li>
+          <li>
+            <p class="said">It's a safety school.</p>
+            <p class="verdict myth">Outdated</p>
+            <p class="muted">True for your parents' generation. Today it's one of the harder schools in the state to get into.</p>
+          </li>
+          <li>
+            <p class="said">It doesn't feel like a real campus.</p>
+            <p class="verdict half">Half true</p>
+            <p class="muted">The center of campus has green space and is pretty nice. Walk a block away and you're in the city with no clear edge.</p>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="know">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">Myths and things to know</span>
+          <span class="sum-preview small muted">Plan for 5 years, Boston is expensive, no car needed</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <h3>Myths you might hear</h3>
+        <ul class="list">
+          <li><s>It's a 4-year school.</s><span class="muted">Most people take 5 years because of co-op. There's a 4-year track with fewer co-ops. Plan for the cost of the extra year.</span></li>
+          <li><s>Co-op hands you a job.</s><span class="muted">The school helps, but you apply and interview like anyone else. Your first co-op might not be your dream company.</span></li>
+        </ul>
+        <h3 class="sub-h">Things to know before you go</h3>
+        <ul class="list">
+          <li><strong>Your friend group will shift.</strong><span class="muted">Co-op schedules split people up every few months. Clubs and roommates become the steady part.</span></li>
+          <li><strong>Boston is expensive.</strong><span class="muted">Most upperclassmen live off campus, and rent nearby is high. The sticker price isn't the whole cost.</span></li>
+          <li><strong>You don't need a car.</strong><span class="muted">The Green Line E branch and the Orange Line both stop by campus.</span></li>
+          <li><strong>Look at net price, not sticker price.</strong><span class="muted">What families pay after aid varies a lot. Use the net price calculator on the school's website.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="fit">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">Is it for you?</span>
+          <span class="sum-preview small muted">Great if you want a job lined up. Rough if you want tailgates.</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <div class="cols">
+          <div>
+            <h3>You'll probably love it if</h3>
+            <ul>
+              <li>You want work experience before you graduate</li>
+              <li>You want to live in a real city</li>
+              <li>You're fine making your own social scene</li>
+            </ul>
+          </div>
+          <div>
+            <h3>You might struggle if</h3>
+            <ul>
+              <li>You want game days and tailgates</li>
+              <li>You want the same friend group all four years</li>
+              <li>You want time to explore before picking a path</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details id="people">
+      <summary>
+        <span class="sum-text">
+          <span class="sum-title">What people say</span>
+          <span class="sum-preview small muted">Co-op pays off. Cost and scattered social life are the complaints.</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="body">
+        <div class="cols">
+          <div>
+            <h3>Comes up as a plus</h3>
+            <ul>
+              <li>Co-op pays off with real jobs and connections</li>
+              <li>Boston makes internships and free time easy</li>
+              <li>The campus is nicer than expected for a city school</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Comes up as a minus</h3>
+            <ul>
+              <li>It's expensive, and the fifth year adds up</li>
+              <li>Social life can feel scattered after year one</li>
+              <li>The career energy can feel draining</li>
+            </ul>
+          </div>
+        </div>
+        <p class="small muted">No student reviews yet. On the real site, verified students and alumni add their take here and this summary updates.</p>
+      </div>
+    </details>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap small muted">
+    <p>© 2026 College Culture</p>
+    <p>Sample page. Facts are approximate as of 2026, so check the school's website for current numbers.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('toggle-all');
+  var all = Array.prototype.slice.call(document.querySelectorAll('.sections details'));
+  function allOpen() { return all.every(function (d) { return d.open; }); }
+  function sync() { btn.textContent = allOpen() ? 'Close all' : 'Open all'; }
+  btn.addEventListener('click', function () {
+    var open = !allOpen();
+    all.forEach(function (d) { d.open = open; });
+    sync();
+  });
+  all.forEach(function (d) { d.addEventListener('toggle', sync); });
+  var target = location.hash && document.getElementById(location.hash.slice(1));
+  if (target && target.tagName === 'DETAILS') { target.open = true; }
+  sync();
+})();
+</script>
+</body>
+</html>
