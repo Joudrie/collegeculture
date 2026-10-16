@@ -54,5 +54,8 @@ window.SCHOOL_LIST = [
   { id: 'lesley', name: 'Lesley University', location: 'Cambridge, MA', band: '#00965E', stripe: '#004C45' },
   { id: 'smith', name: 'Smith College', location: 'Northampton, MA', band: '#207CB1', stripe: '#FFEB0A' },
   { id: 'mount-holyoke', name: 'Mount Holyoke College', location: 'South Hadley, MA', band: '#004876', stripe: '#00A9E0' },
-  { id: 'bowdoin', name: 'Bowdoin College', location: 'Brunswick, ME', band: '#231F20', stripe: '#00506A' }
+  { id: 'bowdoin', name: 'Bowdoin College', location: 'Brunswick, ME', band: '#231F20', stripe: '#00506A' },
+  { id: 'framingham-state', name: 'Framingham State University', location: 'Framingham, MA', band: '#FCB614', stripe: '#000000' },
+  { id: 'westfield-state', name: 'Westfield State University', location: 'Westfield, MA', band: '#012169', stripe: '#33BBED' },
+  { id: 'fitchburg-state', name: 'Fitchburg State University', location: 'Fitchburg, MA', band: '#E9AF2F', stripe: '#00563F' }
 ];
