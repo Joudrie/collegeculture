@@ -12,5 +12,8 @@ window.SCHOOL_LIST = [
   { id: 'emerson', name: 'Emerson College', location: 'Boston, MA', band: '#5F249F', stripe: '#FFB81C' },
   { id: 'uri', name: 'University of Rhode Island', location: 'Kingston, RI', band: '#002147', stripe: '#75B2DD' },
   { id: 'uconn', name: 'University of Connecticut', location: 'Storrs, CT', band: '#000E2F', stripe: '#7C878E' },
-  { id: 'uvm', name: 'University of Vermont', location: 'Burlington, VT', band: '#154734', stripe: '#FFD100' }
+  { id: 'uvm', name: 'University of Vermont', location: 'Burlington, VT', band: '#154734', stripe: '#FFD100' },
+  { id: 'tufts', name: 'Tufts University', location: 'Medford, MA', band: '#5E4B3C', stripe: '#3E8EDE' },
+  { id: 'bentley', name: 'Bentley University', location: 'Waltham, MA', band: '#0B0B0B', stripe: '#0075BE' },
+  { id: 'babson', name: 'Babson College', location: 'Wellesley, MA', band: '#006644', stripe: '#A3AAAE' }
 ];
