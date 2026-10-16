@@ -70,5 +70,8 @@ window.SCHOOL_LIST = [
   { id: 'nichols', name: 'Nichols College', location: 'Dudley, MA', band: '#115740', stripe: '#0B0B0B' },
   { id: 'emmanuel', name: 'Emmanuel College', location: 'Boston, MA', band: '#1F4B7E', stripe: '#F2B90B' },
   { id: 'simmons', name: 'Simmons University', location: 'Boston, MA', band: '#003A70', stripe: '#BADCED' },
-  { id: 'lasell', name: 'Lasell University', location: 'Newton, MA', band: '#13294B', stripe: '#5C88DA' }
+  { id: 'lasell', name: 'Lasell University', location: 'Newton, MA', band: '#13294B', stripe: '#5C88DA' },
+  { id: 'massart', name: 'Massachusetts College of Art and Design', location: 'Boston, MA', band: '#000000', stripe: '#2FB3FF' },
+  { id: 'berklee', name: 'Berklee College of Music', location: 'Boston, MA', band: '#25353C', stripe: '#D81118' },
+  { id: 'mcphs', name: 'Massachusetts College of Pharmacy and Health Sciences', location: 'Boston, MA', band: '#97233F', stripe: '#D2E0EF' }
 ];
