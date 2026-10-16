@@ -54,7 +54,7 @@
     list.className = 'school-list';
     groups[code].sort(function (a, b) { return a.name.localeCompare(b.name); }).forEach(function (s) {
       var a = document.createElement('a');
-      a.href = 'school.html?s=' + encodeURIComponent(s.id);
+      a.href = 'school.html#' + encodeURIComponent(s.id);
       var chip = document.createElement('span');
       chip.className = 'chip';
       chip.style.background = 'linear-gradient(' + s.band + ' 70%, ' + s.stripe + ' 70%)';

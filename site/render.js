@@ -1,5 +1,5 @@
 /* College Culture: builds a school page from a data file in schools/.
-   school.html?s=<id> loads schools/<id>.js, which calls registerSchool({...}).
+   school.html#<id> (or school.html?s=<id>) loads schools/<id>.js, which calls registerSchool({...}).
    See schools/_template.js for the full data shape. */
 (function () {
   'use strict';
@@ -190,7 +190,7 @@
       sync();
     });
     all.forEach(function (d) { d.addEventListener('toggle', sync); });
-    var target = location.hash && document.getElementById(location.hash.slice(1));
+    var target = location.hash && location.hash.slice(1) !== s.id && document.getElementById(location.hash.slice(1));
     if (target && target.tagName === 'DETAILS') target.open = true;
     sync();
   }
@@ -209,7 +209,12 @@
     catch (e) { console.error(e); notFound(data && data.id); }
   };
 
-  var id = new URLSearchParams(location.search).get('s') || '';
+  // The school id comes from ?s=<id>, or from #<id> where query strings are not kept (hosted previews)
+  var id = new URLSearchParams(location.search).get('s') || location.hash.slice(1) || '';
+  window.addEventListener('hashchange', function () {
+    var next = location.hash.slice(1);
+    if (/^[a-z0-9-]+$/.test(next) && !document.getElementById(next)) location.reload();
+  });
   if (!/^[a-z0-9-]+$/.test(id) || id === '_template') { notFound(id); return; }
   var script = document.createElement('script');
   script.src = 'schools/' + id + '.js';

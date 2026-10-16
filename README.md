@@ -11,7 +11,7 @@ Open `site/index.html` in a browser. No build step and no server needed.
 ```
 site/
   index.html          list of schools
-  school.html         the school page template (school.html?s=<id>)
+  school.html         the school page template (school.html#<id>)
   render.js           builds a school page from its data file
   styles.css          shared styles for every page
   schools/
@@ -30,7 +30,7 @@ Every school page uses the same template. A school is one data file: its content
 2. Fill in the content and colors. The comments at the top of the template explain each field.
 3. Add a line for it in `site/schools/index.js`.
 4. Run `node tools/check-schools.js <id>` to check colors, contrast and content rules.
-5. Open `site/school.html?s=<id>` to see it.
+5. Open `site/school.html#<id>` to see it.
 
 ## Design rules
 
