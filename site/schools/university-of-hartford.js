@@ -9,12 +9,12 @@ registerSchool({
 
   colors: {
     name: 'Hawks · Scarlet and white',
-    swatches: ['#D50032', '#FFFFFF'],
-    band: '#D50032',
+    swatches: ['#DA1A32', '#FFFFFF'],
+    band: '#DA1A32',
     onBand: '#FFFFFF',
-    onBandMuted: '#FFEBEF',
+    onBandMuted: '#FFF5F7',
     stripe: '#231F20',
-    accent: '#B8002B',
+    accent: '#C0162C',
     accentOnDark: '#FF7A93'
   },
 

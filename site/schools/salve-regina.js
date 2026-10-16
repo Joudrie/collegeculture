@@ -8,8 +8,8 @@ registerSchool({
 
   colors: {
     name: 'Seahawks · Blue, teal and gold',
-    swatches: ['#005555', '#AA8800'],
-    band: '#005555',
+    swatches: ['#002855', '#AA8800'],
+    band: '#002855',
     onBand: '#FFFFFF',
     onBandMuted: '#C2DCDC',
     stripe: '#AA8800',

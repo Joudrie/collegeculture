@@ -8,7 +8,7 @@ registerSchool({
 
   colors: {
     name: 'Vermont State · Teal and red',
-    swatches: ['#00A5B3', '#B3223F'],
+    swatches: ['#00A5B3', '#EC3754'],
     band: '#00A5B3',
     onBand: '#06262B',
     onBandMuted: '#07323A',

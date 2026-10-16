@@ -6,16 +6,16 @@ registerSchool({
   "location": "Waterville, ME · Kennebec River",
   "asOf": "2026",
   "colors": {
-    "name": "Terriers · Red and black",
+    "name": "Terriers · Red and charcoal",
     "swatches": [
-      "#C8102E",
-      "#111111"
+      "#B52C1F",
+      "#151515"
     ],
     "band": "#D9D9D9",
-    "onBand": "#111111",
+    "onBand": "#151515",
     "onBandMuted": "#444444",
-    "stripe": "#C8102E",
-    "accent": "#B3122A",
+    "stripe": "#B52C1F",
+    "accent": "#B52C1F",
     "accentOnDark": "#FF7A89"
   },
   "vibe": "A small business-focused college by the Kennebec. Big on athletics and jobs, with a tight community and lots of first-generation students.",

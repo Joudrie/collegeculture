@@ -8,13 +8,13 @@ registerSchool({
 
   colors: {
     name: 'Lynx · Maroon and gold',
-    swatches: ['#E0A526', '#7A1F2B'],
-    band: '#E0A526',
-    onBand: '#4A0E1A',
-    onBandMuted: '#5C1A27',
-    stripe: '#7A1F2B',
-    accent: '#7A1F2B',
-    accentOnDark: '#E0A526'
+    swatches: ['#862633', '#F2CA36', '#651726'],
+    band: '#862633',
+    onBand: '#FFFFFF',
+    onBandMuted: '#F3D9DD',
+    stripe: '#F2CA36',
+    accent: '#862633',
+    accentOnDark: '#F2CA36'
   },
 
   vibe: "A community college in the state capital, with a practical focus and a lot of students working toward nursing or other health careers. Most people are here to get a degree or certificate, then transfer or start working.",

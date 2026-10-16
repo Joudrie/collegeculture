@@ -8,14 +8,14 @@ registerSchool({
   asOf: '2026',
 
   colors: {
-    name: 'Wolves · Navy and orange',
-    swatches: ['#12315F', '#F58220'],
-    band: '#12315F',
+    name: 'Wolves · Deep blue and orange',
+    swatches: ['#002856', '#FF4D00'],
+    band: '#002856',
     onBand: '#FFFFFF',
     onBandMuted: '#C5D3EA',
-    stripe: '#F58220',
-    accent: '#12315F',
-    accentOnDark: '#F58A3A'
+    stripe: '#FF4D00',
+    accent: '#002856',
+    accentOnDark: '#FF7A3D'
   },
 
   vibe: "An affordable state school in Danbury with a lot of commuters and two small campuses. It's practical and low-key, and a good fit if you want a degree without a huge price tag.",

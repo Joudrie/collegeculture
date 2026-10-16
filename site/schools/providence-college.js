@@ -7,8 +7,8 @@ registerSchool({
   asOf: '2026',
 
   colors: {
-    name: 'Friars · Black and white',
-    swatches: ['#000000', '#FFFFFF', '#A3A19E'],
+    name: 'Friars · Black, white and gold',
+    swatches: ['#000000', '#FFFFFF', '#BD9E5E', '#A3A19E'],
     band: '#000000',
     onBand: '#FFFFFF',
     onBandMuted: '#B5B3B0',

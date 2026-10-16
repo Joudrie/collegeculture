@@ -8,13 +8,13 @@ registerSchool({
 
   colors: {
     name: 'Cardinals · Cardinal red and black',
-    swatches: ['#B01C2E', '#000000'],
-    band: '#B01C2E',
+    swatches: ['#D72121', '#000000'],
+    band: '#D72121',
     onBand: '#FFFFFF',
-    onBandMuted: '#F2D4D8',
+    onBandMuted: '#FFF0F0',
     stripe: '#000000',
-    accent: '#B01C2E',
-    accentOnDark: '#FF7A8A'
+    accent: '#D72121',
+    accentOnDark: '#FF7A7A'
   },
 
   vibe: "A small, artsy, very liberal school where you design your own path. People are into music, film, activism and arguing about ideas, and it's one of the more selective schools in the state.",

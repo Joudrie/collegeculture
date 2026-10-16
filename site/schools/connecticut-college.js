@@ -9,13 +9,13 @@ registerSchool({
 
   colors: {
     name: 'Camels · Blue and white',
-    swatches: ['#0B2A55', '#FFFFFF'],
+    swatches: ['#002F5F', '#9EC3DE', '#FFFFFF'],
     band: '#DCE6F2',
-    onBand: '#0B2A55',
+    onBand: '#002F5F',
     onBandMuted: '#34507A',
-    stripe: '#0B2A55',
-    accent: '#0B2A55',
-    accentOnDark: '#8FB4E8'
+    stripe: '#002F5F',
+    accent: '#002F5F',
+    accentOnDark: '#9EC3DE'
   },
 
   vibe: "A small, friendly liberal arts college on a hill over the Thames River. Lots of students study abroad, lots do research, and there are no frats.",

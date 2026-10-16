@@ -8,12 +8,12 @@ registerSchool({
 
   colors: {
     name: 'Raiders · Blue and silver',
-    swatches: ['#28588D', '#B8BBBE'],
-    band: '#28588D',
+    swatches: ['#004C97', '#B8BBBE'],
+    band: '#004C97',
     onBand: '#FFFFFF',
     onBandMuted: '#CBD8E8',
     stripe: '#B8BBBE',
-    accent: '#28588D',
+    accent: '#004C97',
     accentOnDark: '#8FB4E3'
   },
 

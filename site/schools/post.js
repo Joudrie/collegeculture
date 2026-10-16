@@ -9,12 +9,12 @@ registerSchool({
 
   colors: {
     name: 'Eagles · Purple and orange',
-    swatches: ['#4B2178', '#FF8200'],
-    band: '#FF8200',
+    swatches: ['#632D4F', '#FF8300'],
+    band: '#FF8300',
     onBand: '#2A0F47',
     onBandMuted: '#4A2300',
-    stripe: '#4B2178',
-    accent: '#5B2A8C',
+    stripe: '#632D4F',
+    accent: '#632D4F',
     accentOnDark: '#FF9E3D'
   },
 

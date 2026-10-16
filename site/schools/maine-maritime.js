@@ -8,14 +8,14 @@ registerSchool({
   "colors": {
     "name": "Mariners · Blue and gold",
     "swatches": [
-      "#1B3A5C",
-      "#E8B730"
+      "#002F6C",
+      "#FFCD00"
     ],
-    "band": "#1B3A5C",
+    "band": "#002F6C",
     "onBand": "#FFFFFF",
     "onBandMuted": "#C9D6E5",
-    "stripe": "#E8B730",
-    "accent": "#1B3A5C",
+    "stripe": "#FFCD00",
+    "accent": "#002F6C",
     "accentOnDark": "#8DB4E0"
   },
   "vibe": "A tiny harbor-town college where you train for ships, engines and the sea. Structured, hands-on and very job-focused, but it is not a military academy.",

@@ -9,14 +9,14 @@ registerSchool({
   "colors": {
     "name": "Huskies · Blue and gold",
     "swatches": [
-      "#0B3F8F",
-      "#DD9200"
+      "#002752",
+      "#F5A800"
     ],
-    "band": "#EAF1FB",
-    "onBand": "#0B3F8F",
+    "band": "#F2F6FC",
+    "onBand": "#002752",
     "onBandMuted": "#3D5E96",
-    "stripe": "#DD9200",
-    "accent": "#0B3F8F",
+    "stripe": "#F5A800",
+    "accent": "#002752",
     "accentOnDark": "#8DB0EC"
   },
   "vibe": "A public school with its main campuses in Portland and Gorham. Mix of commuters, working adults and traditional students, in the biggest city in Maine.",

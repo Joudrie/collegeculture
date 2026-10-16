@@ -9,12 +9,12 @@ registerSchool({
 
   colors: {
     name: 'Bears · Blue and orange',
-    swatches: ['#0B2D5E', '#F36F21'],
-    band: '#F36F21',
+    swatches: ['#223C70', '#F2531B'],
+    band: '#F2531B',
     onBand: '#0B1F3A',
-    onBandMuted: '#3A1A05',
-    stripe: '#0B2D5E',
-    accent: '#0B2D5E',
+    onBandMuted: '#3A1205',
+    stripe: '#223C70',
+    accent: '#223C70',
     accentOnDark: '#F58A4B'
   },
 

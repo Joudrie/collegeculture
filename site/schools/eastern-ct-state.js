@@ -9,12 +9,12 @@ registerSchool({
 
   colors: {
     name: 'Warriors · Navy and burgundy',
-    swatches: ['#14233F', '#B03A5C'],
-    band: '#14233F',
-    onBand: '#FFFFFF',
-    onBandMuted: '#C5CEE0',
-    stripe: '#B03A5C',
-    accent: '#8A1F3F',
+    swatches: ['#002649', '#7C2128'],
+    band: '#E6EAF0',
+    onBand: '#002649',
+    onBandMuted: '#3A4F6B',
+    stripe: '#7C2128',
+    accent: '#7C2128',
     accentOnDark: '#E58BA5'
   },
 

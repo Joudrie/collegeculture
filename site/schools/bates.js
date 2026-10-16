@@ -9,7 +9,7 @@ registerSchool({
     "name": "Bobcats · Garnet",
     "swatches": [
       "#881124",
-      "#FFFFFF"
+      "#707170"
     ],
     "band": "#F1E7DC",
     "onBand": "#881124",

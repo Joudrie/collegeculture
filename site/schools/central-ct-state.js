@@ -8,12 +8,12 @@ registerSchool({
 
   colors: {
     name: 'Blue Devils · Blue and white',
-    swatches: ['#00539B', '#CFD4D8', '#FFFFFF'],
-    band: '#00539B',
+    swatches: ['#205999', '#FFFFFF'],
+    band: '#205999',
     onBand: '#FFFFFF',
-    onBandMuted: '#CFD4D8',
-    stripe: '#CFD4D8',
-    accent: '#00539B',
+    onBandMuted: '#CFE3F7',
+    stripe: '#1B9CF2',
+    accent: '#205999',
     accentOnDark: '#7FB2E5'
   },
 

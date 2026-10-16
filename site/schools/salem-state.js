@@ -8,12 +8,12 @@ registerSchool({
 
   colors: {
     name: 'Vikings · Navy and orange',
-    swatches: ['#00245E', '#F47D2F'],
-    band: '#00245E',
+    swatches: ['#00205B', '#D24700'],
+    band: '#00205B',
     onBand: '#FFFFFF',
     onBandMuted: '#C9CFE3',
-    stripe: '#F47D2F',
-    accent: '#B4501A',
+    stripe: '#D24700',
+    accent: '#D24700',
     accentOnDark: '#F47D2F'
   },
 

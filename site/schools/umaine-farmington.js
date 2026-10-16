@@ -9,14 +9,14 @@ registerSchool({
   "colors": {
     "name": "Beavers · Maroon and gold",
     "swatches": [
-      "#6B1A2C",
-      "#F2B134"
+      "#69082B",
+      "#FFC270"
     ],
-    "band": "#F2B134",
+    "band": "#FFC270",
     "onBand": "#4A0F1E",
     "onBandMuted": "#5E3A12",
-    "stripe": "#6B1A2C",
-    "accent": "#6B1A2C",
+    "stripe": "#69082B",
+    "accent": "#69082B",
     "accentOnDark": "#F08AA0"
   },
   "vibe": "A small public liberal arts college in the western Maine mountains. Known for teacher training, friendly professors and an outdoorsy crowd.",

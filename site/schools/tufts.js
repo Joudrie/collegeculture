@@ -8,8 +8,8 @@ registerSchool({
 
   colors: {
     name: 'Jumbos · Blue and brown',
-    swatches: ['#3E8EDE', '#5E4B3C'],
-    band: '#5E4B3C',
+    swatches: ['#3E8EDE', '#63493A'],
+    band: '#63493A',
     onBand: '#FFFFFF',
     onBandMuted: '#E6DBD0',
     stripe: '#3E8EDE',

@@ -8,12 +8,12 @@ registerSchool({
 
   colors: {
     name: 'Bears · Crimson and white',
-    swatches: ['#990022', '#FFFFFF'],
-    band: '#990022',
+    swatches: ['#89191F', '#FFFFFF'],
+    band: '#89191F',
     onBand: '#FFFFFF',
     onBandMuted: '#E8C4C8',
     stripe: '#D49991',
-    accent: '#990022',
+    accent: '#89191F',
     accentOnDark: '#F08A8A'
   },
 

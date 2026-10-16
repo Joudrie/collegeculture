@@ -9,13 +9,13 @@ registerSchool({
 
   colors: {
     name: 'Chargers · Blue and gold',
-    swatches: ['#0A4DA2', '#F2B705'],
-    band: '#0A4DA2',
+    swatches: ['#002D74', '#FFC629'],
+    band: '#002D74',
     onBand: '#FFFFFF',
     onBandMuted: '#CFE0F7',
-    stripe: '#F2B705',
-    accent: '#0A4DA2',
-    accentOnDark: '#F2B705'
+    stripe: '#FFC629',
+    accent: '#002D74',
+    accentOnDark: '#FFC629'
   },
 
   vibe: "A hands-on, career-focused school in West Haven, best known for forensic science, criminal justice and engineering. It's practical and a little nerdy, and it's moving up to Division I sports.",

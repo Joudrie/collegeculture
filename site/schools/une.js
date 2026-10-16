@@ -8,14 +8,14 @@ registerSchool({
   "colors": {
     "name": "Nor'easters · Blue and gray",
     "swatches": [
-      "#00549F",
-      "#A7A9AC"
+      "#163E70",
+      "#9FA1A4"
     ],
-    "band": "#00549F",
+    "band": "#163E70",
     "onBand": "#FFFFFF",
     "onBandMuted": "#CFE0F2",
-    "stripe": "#C4C6C8",
-    "accent": "#00549F",
+    "stripe": "#9FA1A4",
+    "accent": "#163E70",
     "accentOnDark": "#7FB4EB"
   },
   "vibe": "A coastal health sciences school. Lots of nursing, bio and pre-med students, a beach nearby, and a campus that is pretty busy and career-focused.",

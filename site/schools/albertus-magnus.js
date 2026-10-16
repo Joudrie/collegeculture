@@ -9,12 +9,12 @@ registerSchool({
 
   colors: {
     name: 'Falcons · Blue and white',
-    swatches: ['#25408F', '#C9D6EE'],
-    band: '#25408F',
+    swatches: ['#003DA6', '#7C92BF'],
+    band: '#003DA6',
     onBand: '#FFFFFF',
     onBandMuted: '#CBD6F0',
-    stripe: '#C9D6EE',
-    accent: '#25408F',
+    stripe: '#7C92BF',
+    accent: '#003DA6',
     accentOnDark: '#8FAAF0'
   },
 

@@ -9,14 +9,14 @@ registerSchool({
   "colors": {
     "name": "Bengals · Green and gold",
     "swatches": [
-      "#2C6E49",
-      "#F2B705"
+      "#005941",
+      "#F3CF1E"
     ],
-    "band": "#2C6E49",
+    "band": "#005941",
     "onBand": "#FFFFFF",
     "onBandMuted": "#D4E8DC",
-    "stripe": "#F2B705",
-    "accent": "#2C6E49",
+    "stripe": "#F3CF1E",
+    "accent": "#005941",
     "accentOnDark": "#7FD1A0"
   },
   "vibe": "The northernmost campus in the University of Maine System, right on the Canadian border. Tiny, outdoorsy and tied to Acadian culture.",

@@ -8,12 +8,12 @@ registerSchool({
 
   colors: {
     name: 'Ravens · Crimson and gray',
-    swatches: ['#6D6E71', '#6A142C'],
+    swatches: ['#6D6E71', '#6F1931'],
     band: '#6D6E71',
     onBand: '#FFFFFF',
     onBandMuted: '#F5F5F5',
-    stripe: '#6A142C',
-    accent: '#6A142C',
+    stripe: '#6F1931',
+    accent: '#6F1931',
     accentOnDark: '#E8909F'
   },
 

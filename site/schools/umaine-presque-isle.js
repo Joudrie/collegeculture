@@ -9,14 +9,14 @@ registerSchool({
   "colors": {
     "name": "Owls · Blue and gold",
     "swatches": [
-      "#0B5CAD",
-      "#FFC20E"
+      "#004A9F",
+      "#FFCC33"
     ],
-    "band": "#0B5CAD",
+    "band": "#004A9F",
     "onBand": "#FFFFFF",
     "onBandMuted": "#CFE0F4",
-    "stripe": "#FFC20E",
-    "accent": "#0B5CAD",
+    "stripe": "#FFCC33",
+    "accent": "#004A9F",
     "accentOnDark": "#7FB4EB"
   },
   "vibe": "A small public school way up in northern Maine, known for flexible and online programs. Many students are working or older, and the campus is quiet.",

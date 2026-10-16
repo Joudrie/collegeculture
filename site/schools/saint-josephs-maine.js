@@ -9,14 +9,14 @@ registerSchool({
   "colors": {
     "name": "Monks · Royal blue and white",
     "swatches": [
-      "#1E4D9B",
+      "#0246BE",
       "#FFFFFF"
     ],
     "band": "#DCE6F5",
     "onBand": "#173B78",
     "onBandMuted": "#3F5C8F",
-    "stripe": "#1E4D9B",
-    "accent": "#1E4D9B",
+    "stripe": "#0246BE",
+    "accent": "#0246BE",
     "accentOnDark": "#8DB0EC"
   },
   "vibe": "A small Catholic college on a lake near Portland. Quiet, friendly, health and education focused, and everybody knows everybody.",

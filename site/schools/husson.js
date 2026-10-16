@@ -8,14 +8,14 @@ registerSchool({
   "colors": {
     "name": "Eagles · Green and gold",
     "swatches": [
-      "#0F3D30",
-      "#E0A526"
+      "#004D43",
+      "#B4975A"
     ],
-    "band": "#E0A526",
-    "onBand": "#0F3D30",
-    "onBandMuted": "#3B2E0A",
-    "stripe": "#0F3D30",
-    "accent": "#0F5C45",
+    "band": "#B4975A",
+    "onBand": "#003029",
+    "onBandMuted": "#2E2508",
+    "stripe": "#004D43",
+    "accent": "#00614F",
     "accentOnDark": "#7FD1B0"
   },
   "vibe": "A practical, career-focused school in Bangor. Lots of nursing, pharmacy, business and communications students who want a job when they finish.",

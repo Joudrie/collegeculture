@@ -8,13 +8,13 @@ registerSchool({
 
   colors: {
     name: 'Pioneers · Red and white',
-    swatches: ['#8E0C1C', '#FFFFFF'],
-    band: '#8E0C1C',
+    swatches: ['#CD1041', '#8A8D8F', '#1A1718'],
+    band: '#CD1041',
     onBand: '#FFFFFF',
-    onBandMuted: '#F2D0D4',
-    stripe: '#B3B3B3',
-    accent: '#A30F22',
-    accentOnDark: '#FF7A8A'
+    onBandMuted: '#FFE9EE',
+    stripe: '#1A1718',
+    accent: '#CD1041',
+    accentOnDark: '#FF7A93'
   },
 
   vibe: "A mid-sized Catholic school close to New York with a big sports scene and a lot of Division I teams. It's friendly and social, with a strong pull toward business, nursing and health programs.",

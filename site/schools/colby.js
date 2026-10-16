@@ -9,7 +9,7 @@ registerSchool({
     "name": "Mules · Blue and gray",
     "swatches": [
       "#002169",
-      "#8D8F90"
+      "#9EA9B0"
     ],
     "band": "#D3D6DA",
     "onBand": "#002169",
