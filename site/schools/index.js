@@ -59,5 +59,7 @@ window.SCHOOL_LIST = [
   { id: 'westfield-state', name: 'Westfield State University', location: 'Westfield, MA', band: '#012169', stripe: '#33BBED' },
   { id: 'fitchburg-state', name: 'Fitchburg State University', location: 'Fitchburg, MA', band: '#E9AF2F', stripe: '#00563F' },
   { id: 'elms', name: 'College of Our Lady of the Elms', location: 'Chicopee, MA', band: '#004731', stripe: '#C3A250' },
-  { id: 'dean', name: 'Dean College', location: 'Franklin, MA', band: '#7C1D2D', stripe: '#FFA029' }
+  { id: 'dean', name: 'Dean College', location: 'Franklin, MA', band: '#7C1D2D', stripe: '#FFA029' },
+  { id: 'olin', name: 'Olin College of Engineering', location: 'Needham, MA', band: '#00458C', stripe: '#009BDF' },
+  { id: 'mass-maritime', name: 'Massachusetts Maritime Academy', location: 'Buzzards Bay, MA', band: '#072040', stripe: '#CFB888' }
 ];
