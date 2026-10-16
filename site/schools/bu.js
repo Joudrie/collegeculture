@@ -112,7 +112,7 @@ registerSchool({
     people: {
       preview: 'The location is the best part. Cost and feeling lost in the crowd are the complaints.',
       plus: ['Living in Boston is the biggest perk', 'So many majors, clubs and people to choose from', 'Hockey games are a blast'],
-      minus: ["It's expensive, and Boston rent adds up", 'Easy to feel lonely if you don't put yourself out there', 'The campus is one long busy street']
+      minus: ["It's expensive, and Boston rent adds up", "Easy to feel lonely if you don't put yourself out there", 'The campus is one long busy street']
     }
   }
 });
