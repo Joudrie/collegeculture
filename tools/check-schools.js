@@ -89,7 +89,7 @@ function check(id, listed) {
 
 const listed = listIds();
 const ids = process.argv.slice(2).length ? process.argv.slice(2)
-  : fs.readdirSync(dir).filter(f => f.endsWith('.js') && f !== 'index.js' && f !== 'logos.js' && !f.startsWith('_')).map(f => f.slice(0, -3)).sort();
+  : fs.readdirSync(dir).filter(f => f.endsWith('.js') && f !== 'index.js' && f !== 'logos.js' && f !== 'quiz-data.js' && !f.startsWith('_')).map(f => f.slice(0, -3)).sort();
 
 listed.forEach(l => { if (!fs.existsSync(path.join(dir, l.id + '.js'))) console.log(`index.js lists "${l.id}" but there is no file`); });
 

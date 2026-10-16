@@ -18,8 +18,15 @@ site/
     index.js          the list of schools shown on index.html
     _template.js      blank school file with writing and color rules
     northeastern.js   one file per school
+  quiz.html           the Find Your Fit quiz (quiz.js, quiz-questions.js)
+  zips.js             ZIP code locations for distance
+  schools/quiz-data.js  generated quiz data (do not edit)
+data/
+  quiz-facts.json     structured facts per school for the quiz
 tools/
   check-schools.js    checks every school file against the rules
+  build-quiz-data.js  rebuilds schools/quiz-data.js after edits
+  sync-index.js       copies school colors into the school list
 ```
 
 Every school page uses the same template. A school is one data file: its content plus its colors.
