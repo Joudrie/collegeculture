@@ -67,5 +67,8 @@ window.SCHOOL_LIST = [
   { id: 'wheaton-ma', name: 'Wheaton College', location: 'Norton, MA', band: '#155196', stripe: '#A9B6DA' },
   { id: 'gordon', name: 'Gordon College', location: 'Wenham, MA', band: '#D5F0FE', stripe: '#00AEEF' },
   { id: 'curry', name: 'Curry College', location: 'Milton, MA', band: '#654389', stripe: '#9DC33B' },
-  { id: 'nichols', name: 'Nichols College', location: 'Dudley, MA', band: '#115740', stripe: '#0B0B0B' }
+  { id: 'nichols', name: 'Nichols College', location: 'Dudley, MA', band: '#115740', stripe: '#0B0B0B' },
+  { id: 'emmanuel', name: 'Emmanuel College', location: 'Boston, MA', band: '#1F4B7E', stripe: '#F2B90B' },
+  { id: 'simmons', name: 'Simmons University', location: 'Boston, MA', band: '#003A70', stripe: '#BADCED' },
+  { id: 'lasell', name: 'Lasell University', location: 'Newton, MA', band: '#13294B', stripe: '#5C88DA' }
 ];
