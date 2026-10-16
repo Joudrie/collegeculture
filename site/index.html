@@ -11,13 +11,13 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="band">
+<header class="band home">
   <div class="wrap">
     <div class="bar">
       <span class="wordmark">College Culture</span>
+      <span class="small on-muted">New England</span>
     </div>
-    <h1>New England<span class="sub">Schools</span></h1>
-    <p class="vibe-line">What schools are actually like, from the people who go there. Not rankings and not advice. Use it to get a feel, then go visit.</p>
+    <p class="vibe-line">What schools are actually like, from the people who go there. Not rankings, not advice.</p>
   </div>
 </header>
 
@@ -27,7 +27,7 @@
     <input id="school-search" type="search" placeholder="Name or town" autocomplete="off">
   </div>
   <p class="small muted" id="no-match" hidden>No schools match that. Try a town or a shorter name.</p>
-  <div id="schools-wrap"></div>
+  <div class="states" id="schools-wrap"></div>
 </main>
 
 <footer>
@@ -40,45 +40,51 @@
 <script>
 (function () {
   var STATES = { MA: 'Massachusetts', NH: 'New Hampshire', RI: 'Rhode Island', CT: 'Connecticut', VT: 'Vermont', ME: 'Maine' };
+  var order = window.SCHOOL_ORDER || [];
+  function rank(s) { var i = order.indexOf(s.id); return i === -1 ? 9999 : i; }
   var main = document.getElementById('schools-wrap');
   var groups = {};
   (window.SCHOOL_LIST || []).forEach(function (s) {
     var code = (s.location.split(', ')[1] || '').trim();
     (groups[code] = groups[code] || []).push(s);
   });
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+
   Object.keys(STATES).filter(function (c) { return groups[c]; }).forEach(function (code) {
-    var head = document.createElement('h2');
-    head.className = 'state-head';
-    head.textContent = STATES[code];
-    var list = document.createElement('ul');
-    list.className = 'school-list';
-    groups[code].sort(function (a, b) { return a.name.localeCompare(b.name); }).forEach(function (s) {
-      var a = document.createElement('a');
+    var list = groups[code].sort(function (a, b) { return rank(a) - rank(b) || a.name.localeCompare(b.name); });
+    var details = el('details', 'state');
+    details.open = true;
+    var summary = el('summary');
+    var title = el('span', 'sum-text');
+    title.append(el('span', 'sum-title', STATES[code]), el('span', 'small muted state-count', list.length + ' schools'));
+    var chev = el('span', 'chev');
+    chev.setAttribute('aria-hidden', 'true');
+    summary.append(title, chev);
+
+    var row = el('ul', 'card-row');
+    row.setAttribute('aria-label', STATES[code] + ' schools');
+    list.forEach(function (s) {
+      var a = el('a', 'card');
       a.href = 'school.html#' + encodeURIComponent(s.id);
-      var chip = document.createElement('span');
-      chip.className = 'chip';
-      chip.style.background = 'linear-gradient(' + s.band + ' 70%, ' + s.stripe + ' 70%)';
-      var text = document.createElement('span');
-      text.className = 'sum-text';
-      var name = document.createElement('span');
-      name.className = 'sum-title';
-      name.textContent = s.name;
-      var loc = document.createElement('span');
-      loc.className = 'small muted';
-      loc.textContent = s.location;
-      text.append(name, loc);
-      var chev = document.createElement('span');
-      chev.className = 'chev';
-      chev.setAttribute('aria-hidden', 'true');
-      a.append(chip, text, chev);
-      var li = document.createElement('li');
+      var flag = el('span', 'card-flag');
+      flag.style.background = s.band;
+      flag.style.borderBottomColor = s.stripe;
+      var text = el('span', 'card-text');
+      text.append(el('span', 'card-name', s.name), el('span', 'small muted', s.location.split(',')[0]));
+      a.append(flag, text);
+      var li = el('li');
       li.dataset.search = (s.name + ' ' + s.id.replace(/-/g, ' ') + ' ' + s.location + ' ' + STATES[code]).toLowerCase();
       li.appendChild(a);
-      list.appendChild(li);
+      row.appendChild(li);
     });
-    var group = document.createElement('section');
-    group.append(head, list);
-    main.appendChild(group);
+    details.append(summary, row);
+    main.appendChild(details);
   });
 
   var input = document.getElementById('school-search');
@@ -86,7 +92,7 @@
   input.addEventListener('input', function () {
     var q = input.value.trim().toLowerCase();
     var shown = 0;
-    main.querySelectorAll('section').forEach(function (group) {
+    main.querySelectorAll('details').forEach(function (group) {
       var visible = 0;
       group.querySelectorAll('li').forEach(function (li) {
         var match = !q || li.dataset.search.indexOf(q) !== -1;
@@ -94,6 +100,7 @@
         if (match) visible++;
       });
       group.hidden = visible === 0;
+      if (q && visible) group.open = true;
       shown += visible;
     });
     empty.hidden = shown !== 0;

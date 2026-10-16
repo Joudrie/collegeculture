@@ -180,28 +180,39 @@ details[open] .chev { transform: rotate(225deg); border-color: var(--accent); }
 h3 { font-size: var(--t-md); line-height: var(--lh-md); font-weight: 700; }
 .sub-h { padding-top: var(--s1); }
 
-/* School list (index) */
-.state-head {
-  font-size: var(--t-sm); line-height: var(--lh-sm); font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.06em; color: var(--muted); margin: 0; padding-top: var(--s3);
+/* School list (index): one collapsible row per state, cards scroll sideways */
+.band.home .wrap { padding-block: var(--s1) var(--s2); }
+.states { border-top: 2px solid var(--fg); margin-block: var(--s2) var(--s4); }
+.state { border-bottom: 1px solid var(--line); }
+.state .sum-text { display: flex; align-items: baseline; gap: var(--s1); flex-wrap: wrap; }
+.state-count { font-variation-settings: "wdth" 100; }
+.card-row {
+  list-style: none; margin: 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding: 0 max(16px, env(safe-area-inset-left, 0px)) var(--s2);
+  display: flex; gap: var(--s1); overflow-x: auto; scroll-snap-type: x mandatory;
+  scroll-padding-inline: max(16px, env(safe-area-inset-left, 0px)); scrollbar-width: none;
 }
-.school-list { list-style: none; padding: 0; border-top: 2px solid var(--fg); margin-block: var(--s1) 0; }
-#schools-wrap { padding-bottom: var(--s4); }
-.search { display: grid; gap: 4px; padding-top: var(--s3); }
+.card-row::-webkit-scrollbar { display: none; }
+.card-row li { flex: 0 0 136px; scroll-snap-align: start; display: flex; }
+.card {
+  display: grid; grid-template-rows: auto 1fr; width: 100%;
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  color: var(--fg); text-decoration: none; background: var(--bg);
+}
+.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.card-flag { display: block; height: var(--s2); border-bottom: 4px solid transparent; }
+.card-text { display: grid; gap: 4px; align-content: start; padding: var(--s1); }
+.card-name {
+  font-size: var(--t-md); line-height: var(--lh-md); font-weight: 700; font-variation-settings: "wdth" 80;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.search { display: grid; gap: 4px; padding-top: var(--s2); }
 .search input {
   font: inherit; font-size: 16px; color: var(--fg); background: var(--bg);
   border: 1px solid var(--muted); border-radius: var(--radius); padding: var(--s1) 12px;
 }
 .search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 #no-match { padding-top: var(--s2); }
-.school-list li { border-bottom: 1px solid var(--line); }
-.school-list a {
-  display: grid; grid-template-columns: var(--s1) minmax(0, 1fr) var(--s2); align-items: center; gap: var(--s2);
-  padding-block: 12px; color: var(--fg); text-decoration: none;
-}
-.school-list .chip { width: var(--s1); height: 40px; border-radius: var(--radius); }
-.school-list a:hover .sum-title { color: var(--accent); }
-.school-list .chev { transform: rotate(-45deg); }
 
 /* Not-found state */
 .empty-state { padding-block: var(--s5); display: grid; gap: var(--s1); }

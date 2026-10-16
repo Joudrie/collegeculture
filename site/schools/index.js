@@ -117,3 +117,31 @@ window.SCHOOL_LIST = [
   { id: 'albertus-magnus', name: 'Albertus Magnus College', location: 'New Haven, CT', band: '#003DA6', stripe: '#7C92BF' },
   { id: 'post', name: 'Post University', location: 'Waterbury, CT', band: '#FF8300', stripe: '#632D4F' }
 ];
+
+/* Rough popularity order inside each state: the names most high schoolers have heard of come first.
+   Not a ranking. Schools missing here go to the end of their state. */
+window.SCHOOL_ORDER = [
+  // Massachusetts
+  'harvard', 'mit', 'boston-college', 'bu', 'northeastern', 'tufts', 'williams', 'amherst-college', 'wellesley',
+  'umass-amherst', 'brandeis', 'babson', 'bentley', 'wpi', 'holy-cross', 'emerson', 'berklee', 'smith',
+  'mount-holyoke', 'olin', 'suffolk', 'wentworth', 'umass-lowell', 'umass-boston', 'umass-dartmouth', 'clark',
+  'stonehill', 'merrimack', 'endicott', 'springfield-college', 'simmons', 'emmanuel', 'massart', 'mcphs',
+  'lesley', 'wheaton-ma', 'gordon', 'assumption', 'western-new-england', 'bridgewater-state', 'salem-state',
+  'westfield-state', 'worcester-state', 'framingham-state', 'fitchburg-state', 'mass-maritime', 'curry',
+  'lasell', 'nichols', 'dean', 'regis', 'american-international', 'mcla', 'bay-path', 'elms',
+  // New Hampshire
+  'dartmouth', 'unh', 'snhu', 'plymouth-state', 'keene-state', 'saint-anselm', 'colby-sawyer',
+  'franklin-pierce', 'rivier', 'new-england-college', 'nhti',
+  // Rhode Island
+  'brown', 'risd', 'providence-college', 'uri', 'bryant', 'johnson-wales', 'roger-williams', 'salve-regina',
+  'rhode-island-college', 'new-england-tech',
+  // Connecticut
+  'yale', 'uconn', 'wesleyan', 'coast-guard-academy', 'trinity-college', 'connecticut-college', 'fairfield',
+  'quinnipiac', 'sacred-heart', 'university-of-hartford', 'university-of-new-haven', 'central-ct-state',
+  'southern-ct-state', 'eastern-ct-state', 'western-ct-state', 'albertus-magnus', 'post',
+  // Vermont
+  'middlebury', 'uvm', 'champlain', 'norwich', 'saint-michaels', 'bennington', 'vermont-state', 'landmark',
+  // Maine
+  'bowdoin', 'colby', 'bates', 'umaine', 'une', 'usm', 'maine-maritime', 'college-of-the-atlantic', 'husson',
+  'saint-josephs-maine', 'thomas', 'umaine-farmington', 'umaine-presque-isle', 'umaine-fort-kent'
+];
