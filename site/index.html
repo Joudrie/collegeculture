@@ -59,7 +59,6 @@
   Object.keys(STATES).filter(function (c) { return groups[c]; }).forEach(function (code) {
     var list = groups[code].sort(function (a, b) { return rank(a) - rank(b) || a.name.localeCompare(b.name); });
     var details = el('details', 'state');
-    details.open = true;
     var summary = el('summary');
     var title = el('span', 'sum-text');
     title.append(el('span', 'sum-title', STATES[code]), el('span', 'small muted state-count', list.length + ' schools'));
@@ -67,17 +66,17 @@
     chev.setAttribute('aria-hidden', 'true');
     summary.append(title, chev);
 
-    var row = el('ul', 'card-row');
-    row.setAttribute('aria-label', STATES[code] + ' schools');
+    var row = el('ul', 'school-list');
     list.forEach(function (s) {
-      var a = el('a', 'card');
+      var a = el('a');
       a.href = 'school.html#' + encodeURIComponent(s.id);
-      var flag = el('span', 'card-flag');
-      flag.style.background = s.band;
-      flag.style.borderBottomColor = s.stripe;
-      var text = el('span', 'card-text');
-      text.append(el('span', 'card-name', s.name), el('span', 'small muted', s.location.split(',')[0]));
-      a.append(flag, text);
+      var chip = el('span', 'chip');
+      chip.style.background = 'linear-gradient(' + s.band + ' 70%, ' + s.stripe + ' 70%)';
+      var text = el('span', 'sum-text');
+      text.append(el('span', 'school-name', s.name), el('span', 'small muted', s.location));
+      var go = el('span', 'chev');
+      go.setAttribute('aria-hidden', 'true');
+      a.append(chip, text, go);
       var li = el('li');
       li.dataset.search = (s.name + ' ' + s.id.replace(/-/g, ' ') + ' ' + s.location + ' ' + STATES[code]).toLowerCase();
       li.appendChild(a);
@@ -100,7 +99,7 @@
         if (match) visible++;
       });
       group.hidden = visible === 0;
-      if (q && visible) group.open = true;
+      group.open = !!q && visible > 0;
       shown += visible;
     });
     empty.hidden = shown !== 0;

@@ -172,6 +172,7 @@
     var list = h('div', { class: 'sections' }, defs.map(function (d) { return section(d, s.sections[d.key]); }));
 
     var main = h('main', { class: 'wrap' },
+      schoolNav(s.id),
       h('div', { class: 'controls' }, h('span', { class: 'small muted' }, defs.length + ' sections'), toggle),
       list);
 
@@ -195,6 +196,45 @@
     sync();
   }
 
+  // Neighbors in the same state, in the rough popularity order from schools/index.js
+  function neighbors(id) {
+    var list = window.SCHOOL_LIST || [];
+    var order = window.SCHOOL_ORDER || [];
+    var me = list.filter(function (x) { return x.id === id; })[0];
+    if (!me) return null;
+    var state = me.location.split(', ')[1];
+    var rank = function (x) { var i = order.indexOf(x.id); return i === -1 ? 9999 : i; };
+    var same = list.filter(function (x) { return x.location.split(', ')[1] === state; })
+      .sort(function (a, b) { return rank(a) - rank(b) || a.name.localeCompare(b.name); });
+    var i = same.indexOf(me);
+    return { state: state, index: i, total: same.length, prev: same[i - 1], next: same[i + 1] };
+  }
+
+  function schoolNav(id) {
+    var n = neighbors(id);
+    if (!n || n.total < 2) return null;
+    var nav = h('nav', { class: 'school-nav', 'aria-label': 'More schools in this state' },
+      n.prev ? h('a', { class: 'prev', href: '#' + n.prev.id }, '\u2039 ' + n.prev.name) : h('span'),
+      h('span', { class: 'pos small muted' }, (n.index + 1) + ' of ' + n.total + ' in ' + n.state),
+      n.next ? h('a', { class: 'next', href: '#' + n.next.id }, n.next.name + ' \u203A') : h('span'));
+
+    // Swipe left for the next school, right for the previous one
+    var x0 = null, y0 = null;
+    document.addEventListener('touchstart', function (e) {
+      if (e.touches.length !== 1) { x0 = null; return; }
+      x0 = e.touches[0].clientX; y0 = e.touches[0].clientY;
+    }, { passive: true });
+    document.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+      x0 = null;
+      if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      var target = dx < 0 ? n.next : n.prev;
+      if (target) location.hash = target.id;
+    }, { passive: true });
+    return nav;
+  }
+
   function notFound(id) {
     var app = document.getElementById('app');
     app.textContent = '';
@@ -213,7 +253,7 @@
   var id = new URLSearchParams(location.search).get('s') || location.hash.slice(1) || '';
   window.addEventListener('hashchange', function () {
     var next = location.hash.slice(1);
-    if (/^[a-z0-9-]+$/.test(next) && !document.getElementById(next)) location.reload();
+    if (/^[a-z0-9-]+$/.test(next) && !document.getElementById(next)) { window.scrollTo(0, 0); location.reload(); }
   });
   if (!/^[a-z0-9-]+$/.test(id) || id === '_template') { notFound(id); return; }
   var script = document.createElement('script');
