@@ -240,6 +240,8 @@ footer .wrap { padding-block: var(--s3); display: grid; gap: 4px; }
 }
 .mode.on { border-color: var(--accent); }
 .saved-box { cursor: default; gap: var(--s1); }
+.share { display: grid; gap: var(--s1); }
+a.btn-main { text-decoration: none; display: inline-block; }
 .btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s1); }
 .btn-main, .btn-ghost {
   font: inherit; font-weight: 700; border-radius: var(--radius); padding: 12px var(--s2); cursor: pointer;
@@ -263,7 +265,7 @@ footer .wrap { padding-block: var(--s3); display: grid; gap: 4px; }
 .q { display: grid; gap: var(--s1); padding-bottom: var(--s2); border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
 .q-text { font-weight: 600; margin: 0; }
 .q.done { border-bottom-color: var(--accent); }
-.q input[type="text"], .q select, .compare-body + select, #compare-pick {
+.q input[type="text"], .q select, .compare-body + select, #compare-pick, .share-url {
   font: inherit; font-size: 16px; color: var(--fg); background: var(--bg);
   border: 1px solid var(--muted); border-radius: var(--radius); padding: var(--s1) 12px; width: 100%;
 }

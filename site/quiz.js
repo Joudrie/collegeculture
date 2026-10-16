@@ -23,7 +23,9 @@
   if (!state.prefs) state.prefs = { wantStates: [] };
   if (!state.prefs.wantStates) state.prefs.wantStates = [];
   var saveTimer = null;
+  var viewing = false; // true while looking at someone else's shared results, so nothing gets saved over your own
   function save() {
+    if (viewing) return;
     state.updated = Date.now();
     try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* private mode: answers just won't persist */ }
     var flag = document.getElementById('saved');
@@ -83,6 +85,42 @@
     if (!hit) return null;
     var ll = hit.split(',');
     return { lat: +ll[0], lon: +ll[1] };
+  }
+
+  // ---------- sharing ----------
+  // A shared link carries the answers, not the results, so it always matches the current school data.
+  // The ZIP code is never shared: only the home location rounded to about 7 miles.
+  function shareLink() {
+    var a = {};
+    Object.keys(state.a).forEach(function (id) { var x = state.a[id]; if (x && x.v != null) a[id] = [x.v, x.imp || 3]; });
+    var p = state.prefs, home = p.loc || zipLocation(p.zip);
+    var data = { m: state.mode, a: a, p: {
+      h: p.homeState || '', w: (p.wantStates || []).filter(Boolean), c: p.city || '', r: p.radius || 0,
+      l: home ? [Math.round(home.lat * 10) / 10, Math.round(home.lon * 10) / 10] : null } };
+    var code = btoa(unescape(encodeURIComponent(JSON.stringify(data)))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    return location.href.split('#')[0] + '#r=' + code;
+  }
+  function readShared(code) {
+    try {
+      var d = JSON.parse(decodeURIComponent(escape(atob(code.replace(/-/g, '+').replace(/_/g, '/')))));
+      var a = {};
+      Object.keys(d.a || {}).forEach(function (id) { a[id] = { v: d.a[id][0], imp: d.a[id][1] }; });
+      var p = d.p || {};
+      return { mode: d.m, a: a, prefs: { zip: '', homeState: p.h || '', wantStates: p.w || [], city: p.c || '', radius: p.r || undefined,
+        loc: p.l ? { lat: p.l[0], lon: p.l[1] } : null } };
+    } catch (e) { return null; }
+  }
+  function shareButton() {
+    var btn = h('button', { type: 'button', class: 'btn-main', text: 'Share my results' });
+    var out = h('input', { type: 'text', class: 'share-url', readonly: 'readonly', 'aria-label': 'Link to your results', hidden: 'hidden' });
+    btn.addEventListener('click', function () {
+      var url = shareLink();
+      if (navigator.share) { navigator.share({ title: 'My College Culture matches', url: url }).catch(function () {}); return; }
+      function fallback() { out.value = url; out.hidden = false; out.select(); btn.textContent = 'Copy the link below'; }
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(function () { btn.textContent = 'Link copied'; }, fallback);
+      else fallback();
+    });
+    return [btn, out];
   }
 
   // ---------- controls ----------
@@ -364,7 +402,7 @@
     var want = ctx.wantStates;
     if (want.length) {
       var inState = want.indexOf(s.state) !== -1;
-      parts.push({ id: 'states', fit: inState ? 1 : 0, w: 1.8, label: 'Your states' });
+      parts.push({ id: 'states', fit: inState ? 1 : 0, w: 1.8, label: viewing ? 'Their states' : 'Your states' });
       if (!inState && ctx.deal.states) filters.push('in ' + s.state);
     }
     if (ctx.city) {
@@ -496,7 +534,7 @@
     var deal = {};
     (v('dealbreakers') || []).forEach(function (x) { deal[x] = true; });
     var ctx = {
-      home: zipLocation(state.prefs.zip),
+      home: state.prefs.loc || zipLocation(state.prefs.zip),
       wantStates: (state.prefs.wantStates || []).filter(Boolean),
       city: cityRow, radius: state.prefs.radius || 25, deal: deal
     };
@@ -518,9 +556,9 @@
     var pr = v('pressure'); if (pr) bits.push(['easygoing classes', 'classes on the easier side', 'medium-hard classes', 'hard classes', 'really intense classes'][pr - 1]);
     var c = v('career'); if (c && c >= 4) bits.push('a clear path to a job');
     var sp = v('spirit'); if (sp && sp >= 4) bits.push('real school spirit');
-    if (!bits.length) return 'Answer a few more questions and we can describe the vibe you want.';
+    if (!bits.length) return viewing ? 'They skipped the vibe questions, so these matches lean on their other answers.' : 'Answer a few more questions and we can describe the vibe you want.';
     var last = bits.pop();
-    return 'You want ' + (bits.length ? bits.join(', ') + ' and ' + last : last) + '.';
+    return (viewing ? 'They want ' : 'You want ') + (bits.length ? bits.join(', ') + ' and ' + last : last) + '.';
   }
 
   function chip(text, cls) { return h('span', { class: 'tag ' + (cls || ''), text: text }); }
@@ -532,7 +570,7 @@
     var t = targets(), d = schoolDims(s), notes = [];
     var box = h('div', { class: 'compare-body' },
       h('div', { class: 'legend small muted' },
-        h('span', null, h('span', { class: 'key key-school' }), s.short), h('span', null, h('span', { class: 'key key-you' }), 'You')));
+        h('span', null, h('span', { class: 'key key-school' }), s.short), h('span', null, h('span', { class: 'key key-you' }), viewing ? 'Them' : 'You')));
     CMP_DIMS.forEach(function (k) {
       var you = t[k];
       box.appendChild(h('div', { class: 'cmp-row' },
@@ -540,9 +578,9 @@
         h('span', { class: 'cmp-track' },
           h('span', { class: 'cmp-fill', style: 'width:' + d[k] * 10 + '%' }),
           you != null ? h('span', { class: 'cmp-you', style: 'left:calc(' + you * 10 + '% - 2px)' }) : null)));
-      if (you != null && Math.abs(you - d[k]) >= 3.5) notes.push(DIM_LABEL[k] + ': ' + (d[k] > you ? 'more' : 'less') + ' than you want');
+      if (you != null && Math.abs(you - d[k]) >= 3.5) notes.push(DIM_LABEL[k] + ': ' + (d[k] > you ? 'more' : 'less') + (viewing ? ' than they want' : ' than you want'));
     });
-    box.appendChild(h('p', { class: 'small', text: notes.length ? notes.join('. ') + '.' : 'Close to what you want on everything you answered.' }));
+    box.appendChild(h('p', { class: 'small', text: notes.length ? notes.join('. ') + '.' : viewing ? 'Close to what they want on everything they answered.' : 'Close to what you want on everything you answered.' }));
     return box;
   }
 
@@ -558,12 +596,12 @@
       .map(function (p) { return p.label.toLowerCase(); });
     if (!good.length) return null;
     var last = good.pop();
-    return h('p', { class: 'small', text: 'Why it fits: ' + (good.length ? good.join(', ') + ' and ' + last : last) + ' line up with what you want.' });
+    return h('p', { class: 'small', text: 'Why it fits: ' + (good.length ? good.join(', ') + ' and ' + last : last) + (viewing ? ' line up with what they want.' : ' line up with what you want.') });
   }
 
   function metaLine(r) {
     var ch = chance(r.s);
-    return r.s.town + ', ' + r.s.state + (r.dist != null ? ' · ' + Math.round(r.dist) + ' mi from home' : '') + (ch ? ' · ' + ch : '');
+    return r.s.town + ', ' + r.s.state + (r.dist != null ? ' · ' + Math.round(r.dist) + (viewing ? ' mi from their home' : ' mi from home') : '') + (ch ? ' · ' + ch : '');
   }
 
   // One card in the swipe row: rank, name, reasons and the full chart
@@ -646,26 +684,38 @@
       rows.push(row);
       return h('li', null, row);
     }));
+    var share = shareButton();
     var main = h('main', { class: 'wrap results' },
       h('section', { class: 'q-section' },
-        h('h2', { class: 'sec-title', text: 'Your results' }),
+        h('h2', { class: 'sec-title', text: viewing ? 'Shared results' : 'Your results' }),
+        viewing ? h('p', { class: 'small muted', text: "Someone sent you their quiz matches. Your own answers on this device are untouched." }) : null,
         h('p', { class: 'vibe-sum', text: summary() }),
         slides),
       h('section', { class: 'q-section' },
-        h('h2', { class: 'sec-title', text: 'Your top 10 in order' }),
+        h('h2', { class: 'sec-title', text: viewing ? 'Their top 10 in order' : 'Your top 10 in order' }),
         h('p', { class: 'small muted', text: 'Tap one to see it above.' }),
         rankList),
       anyCompare(res, list[0] ? list[0].id : 'harvard'),
-      h('div', { class: 'btn-row' },
-        h('button', { type: 'button', class: 'btn-ghost', text: 'Change my answers', onclick: function () { location.hash = 'quiz'; } })),
+      viewing
+        ? h('div', { class: 'btn-row' },
+          h('a', { class: 'btn-main', href: location.pathname, text: 'Take the quiz yourself' }))
+        : h('div', { class: 'share' },
+          h('div', { class: 'btn-row' }, share[0],
+            h('button', { type: 'button', class: 'btn-ghost', text: 'Change my answers', onclick: function () { location.hash = 'quiz'; } })),
+          share[1]),
       h('p', { class: 'small muted', text: 'Matches are a starting point, not advice. Visit, talk to students, and check the school sites for real numbers.' }));
     app.appendChild(main);
   }
 
   // ---------- routing ----------
+  var own = state;
   function route() {
     var r = location.hash.slice(1);
-    if (r === 'results') show('results');
+    var shared = r.indexOf('r=') === 0 ? readShared(r.slice(2)) : null;
+    viewing = !!shared;
+    state = shared || own;
+    if (shared) show('results');
+    else if (r === 'results') show('results');
     else if (r === 'quiz') show('quiz');
     else if (r.indexOf('q-') === 0) return;
     else show('start');
