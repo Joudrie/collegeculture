@@ -61,5 +61,8 @@ window.SCHOOL_LIST = [
   { id: 'elms', name: 'College of Our Lady of the Elms', location: 'Chicopee, MA', band: '#004731', stripe: '#C3A250' },
   { id: 'dean', name: 'Dean College', location: 'Franklin, MA', band: '#7C1D2D', stripe: '#FFA029' },
   { id: 'olin', name: 'Olin College of Engineering', location: 'Needham, MA', band: '#00458C', stripe: '#009BDF' },
-  { id: 'mass-maritime', name: 'Massachusetts Maritime Academy', location: 'Buzzards Bay, MA', band: '#072040', stripe: '#CFB888' }
+  { id: 'mass-maritime', name: 'Massachusetts Maritime Academy', location: 'Buzzards Bay, MA', band: '#072040', stripe: '#CFB888' },
+  { id: 'western-new-england', name: 'Western New England University', location: 'Springfield, MA', band: '#004B8E', stripe: '#FDB812' },
+  { id: 'american-international', name: 'American International College', location: 'Springfield, MA', band: '#1A1919', stripe: '#FFB81C' },
+  { id: 'wheaton-ma', name: 'Wheaton College', location: 'Norton, MA', band: '#155196', stripe: '#A9B6DA' }
 ];
