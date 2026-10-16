@@ -27,5 +27,8 @@ window.SCHOOL_LIST = [
   { id: 'johnson-wales', name: 'Johnson & Wales University', location: 'Providence, RI', band: '#FDB714', stripe: '#004483' },
   { id: 'plymouth-state', name: 'Plymouth State University', location: 'Plymouth, NH', band: '#135841', stripe: '#A0B8B0' },
   { id: 'keene-state', name: 'Keene State College', location: 'Keene, NH', band: '#CE1126', stripe: '#D9D9D6' },
-  { id: 'umaine', name: 'University of Maine', location: 'Orono, ME', band: '#79BDE8', stripe: '#082E58' }
+  { id: 'umaine', name: 'University of Maine', location: 'Orono, ME', band: '#79BDE8', stripe: '#082E58' },
+  { id: 'southern-ct-state', name: 'Southern Connecticut State University', location: 'New Haven, CT', band: '#003399', stripe: '#00ADEB' },
+  { id: 'central-ct-state', name: 'Central Connecticut State University', location: 'New Britain, CT', band: '#00539B', stripe: '#CFD4D8' },
+  { id: 'rhode-island-college', name: 'Rhode Island College', location: 'Providence, RI', band: '#990000', stripe: '#F1B434' }
 ];
