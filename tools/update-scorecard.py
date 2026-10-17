@@ -44,6 +44,12 @@ with open(sys.argv[1], encoding='utf-8-sig') as f:
             'netLow': num(r['NPT41_' + p]),
             'netMid': num(r['NPT43_' + p]),
             'netHigh': num(r['NPT45_' + p]),
+            'pell': rate(r['PCTPELL']),
+            'firstGen': rate(r['PAR_ED_PCT_1STGEN']),
+            'loan': rate(r['PCTFLOAN']),
+            'retention': rate(r['RET_FT4']) if rate(r['RET_FT4']) is not None else rate(r['RET_FTL4']),
+            'gradRate': rate(r['C150_4']) if rate(r['C150_4']) is not None else rate(r['C150_L4']),
+            'earnings': num(r['MD_EARN_WNE_P10']),
         }
 
 missing = sorted(set(ids) - set(out))

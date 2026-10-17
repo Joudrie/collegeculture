@@ -1,6 +1,6 @@
 {
  "source": "U.S. Department of Education College Scorecard",
- "pulled": "2026-10-16",
+ "pulled": "2026-10-17",
  "schools": {
   "albertus-magnus": {
    "unitid": "128498",
@@ -15,7 +15,13 @@
    "net": 31731,
    "netLow": 25371,
    "netMid": 35768,
-   "netHigh": 30251
+   "netHigh": 30251,
+   "pell": 0.546,
+   "firstGen": 0.534,
+   "loan": 0.724,
+   "retention": 0.669,
+   "gradRate": 0.484,
+   "earnings": 62459
   },
   "american-international": {
    "unitid": "164447",
@@ -30,7 +36,13 @@
    "net": 24178,
    "netLow": 25107,
    "netMid": 21135,
-   "netHigh": 27283
+   "netHigh": 27283,
+   "pell": 0.47,
+   "firstGen": 0.406,
+   "loan": 0.629,
+   "retention": 0.567,
+   "gradRate": 0.384,
+   "earnings": 66151
   },
   "amherst-college": {
    "unitid": "164465",
@@ -45,7 +57,13 @@
    "net": 19536,
    "netLow": 2424,
    "netMid": 13814,
-   "netHigh": 49700
+   "netHigh": 49700,
+   "pell": 0.252,
+   "firstGen": 0.208,
+   "loan": 0.115,
+   "retention": 0.973,
+   "gradRate": 0.925,
+   "earnings": 95161
   },
   "assumption": {
    "unitid": "164562",
@@ -60,7 +78,13 @@
    "net": 28788,
    "netLow": 21587,
    "netMid": 22195,
-   "netHigh": 32717
+   "netHigh": 32717,
+   "pell": 0.269,
+   "firstGen": 0.175,
+   "loan": 0.779,
+   "retention": 0.839,
+   "gradRate": 0.73,
+   "earnings": 73712
   },
   "babson": {
    "unitid": "164580",
@@ -75,7 +99,13 @@
    "net": 34096,
    "netLow": 21291,
    "netMid": 29562,
-   "netHigh": 82076
+   "netHigh": 82076,
+   "pell": 0.18,
+   "firstGen": 0.149,
+   "loan": 0.266,
+   "retention": 0.946,
+   "gradRate": 0.915,
+   "earnings": 138950
   },
   "bac": {
    "unitid": "164872",
@@ -90,7 +120,13 @@
    "net": 30907,
    "netLow": 28983,
    "netMid": 31271,
-   "netHigh": 33870
+   "netHigh": 33870,
+   "pell": 0.241,
+   "firstGen": null,
+   "loan": 0.412,
+   "retention": 0.75,
+   "gradRate": 0.368,
+   "earnings": 72049
   },
   "bates": {
    "unitid": "160977",
@@ -105,7 +141,13 @@
    "net": 27390,
    "netLow": 1899,
    "netMid": 9606,
-   "netHigh": 46685
+   "netHigh": 46685,
+   "pell": 0.136,
+   "firstGen": 0.151,
+   "loan": 0.145,
+   "retention": 0.913,
+   "gradRate": 0.881,
+   "earnings": 98373
   },
   "bay-path": {
    "unitid": "164632",
@@ -120,7 +162,13 @@
    "net": 16390,
    "netLow": 14328,
    "netMid": 13075,
-   "netHigh": 25953
+   "netHigh": 25953,
+   "pell": 0.714,
+   "firstGen": 0.497,
+   "loan": 0.922,
+   "retention": 0.728,
+   "gradRate": 0.419,
+   "earnings": 57958
   },
   "bennington": {
    "unitid": "230816",
@@ -135,7 +183,13 @@
    "net": 31507,
    "netLow": 22350,
    "netMid": 24125,
-   "netHigh": 43575
+   "netHigh": 43575,
+   "pell": 0.31,
+   "firstGen": 0.126,
+   "loan": 0.547,
+   "retention": 0.82,
+   "gradRate": 0.704,
+   "earnings": 46253
   },
   "bentley": {
    "unitid": "164739",
@@ -150,7 +204,13 @@
    "net": 38969,
    "netLow": 25905,
    "netMid": 27820,
-   "netHigh": 50907
+   "netHigh": 50907,
+   "pell": 0.2,
+   "firstGen": 0.156,
+   "loan": 0.442,
+   "retention": 0.927,
+   "gradRate": 0.879,
+   "earnings": 126427
   },
   "berklee": {
    "unitid": "164748",
@@ -165,7 +225,13 @@
    "net": 47587,
    "netLow": 42991,
    "netMid": 32977,
-   "netHigh": 55038
+   "netHigh": 55038,
+   "pell": 0.183,
+   "firstGen": 0.212,
+   "loan": 0.339,
+   "retention": 0.886,
+   "gradRate": 0.73,
+   "earnings": 43451
   },
   "boston-college": {
    "unitid": "164924",
@@ -180,7 +246,13 @@
    "net": 38930,
    "netLow": 7293,
    "netMid": 9615,
-   "netHigh": 61800
+   "netHigh": 61800,
+   "pell": 0.173,
+   "firstGen": 0.132,
+   "loan": 0.284,
+   "retention": 0.96,
+   "gradRate": 0.898,
+   "earnings": 112178
   },
   "bowdoin": {
    "unitid": "161004",
@@ -195,7 +267,13 @@
    "net": 15595,
    "netLow": 3318,
    "netMid": 8694,
-   "netHigh": 40929
+   "netHigh": 40929,
+   "pell": 0.203,
+   "firstGen": 0.188,
+   "loan": 0.085,
+   "retention": 0.968,
+   "gradRate": 0.928,
+   "earnings": 90153
   },
   "brandeis": {
    "unitid": "165015",
@@ -210,7 +288,13 @@
    "net": 30606,
    "netLow": 10028,
    "netMid": 17007,
-   "netHigh": 50519
+   "netHigh": 50519,
+   "pell": 0.2,
+   "firstGen": 0.163,
+   "loan": 0.307,
+   "retention": 0.87,
+   "gradRate": 0.81,
+   "earnings": 85519
   },
   "bridgewater-state": {
    "unitid": "165024",
@@ -225,7 +309,13 @@
    "net": 18061,
    "netLow": 13235,
    "netMid": 13217,
-   "netHigh": 23368
+   "netHigh": 23368,
+   "pell": 0.364,
+   "firstGen": 0.341,
+   "loan": 0.724,
+   "retention": 0.751,
+   "gradRate": 0.521,
+   "earnings": 61441
   },
   "brown": {
    "unitid": "217156",
@@ -240,7 +330,13 @@
    "net": 26976,
    "netLow": 39,
    "netMid": 10079,
-   "netHigh": 48459
+   "netHigh": 48459,
+   "pell": 0.165,
+   "firstGen": 0.17,
+   "loan": 0.108,
+   "retention": 0.988,
+   "gradRate": 0.956,
+   "earnings": 99974
   },
   "bryant": {
    "unitid": "217165",
@@ -255,7 +351,13 @@
    "net": 39186,
    "netLow": 31520,
    "netMid": 35124,
-   "netHigh": 42725
+   "netHigh": 42725,
+   "pell": 0.167,
+   "firstGen": 0.161,
+   "loan": 0.548,
+   "retention": 0.869,
+   "gradRate": 0.81,
+   "earnings": 104456
   },
   "bu": {
    "unitid": "164988",
@@ -270,7 +372,13 @@
    "net": 36503,
    "netLow": 16336,
    "netMid": 52880,
-   "netHigh": 83101
+   "netHigh": 83101,
+   "pell": 0.214,
+   "firstGen": 0.169,
+   "loan": 0.297,
+   "retention": 0.947,
+   "gradRate": 0.895,
+   "earnings": 89087
   },
   "cambridge-college": {
    "unitid": "165167",
@@ -285,7 +393,13 @@
    "net": 31462,
    "netLow": 23486,
    "netMid": null,
-   "netHigh": 34578
+   "netHigh": 34578,
+   "pell": 0.424,
+   "firstGen": 0.509,
+   "loan": 0.612,
+   "retention": 1.0,
+   "gradRate": 1.0,
+   "earnings": 58665
   },
   "central-ct-state": {
    "unitid": "128771",
@@ -300,7 +414,13 @@
    "net": 15537,
    "netLow": 12144,
    "netMid": 14265,
-   "netHigh": 21704
+   "netHigh": 21704,
+   "pell": 0.42,
+   "firstGen": 0.387,
+   "loan": 0.476,
+   "retention": 0.771,
+   "gradRate": 0.497,
+   "earnings": 65779
   },
   "champlain": {
    "unitid": "230852",
@@ -315,7 +435,13 @@
    "net": 39617,
    "netLow": 34656,
    "netMid": 33986,
-   "netHigh": 45511
+   "netHigh": 45511,
+   "pell": 0.305,
+   "firstGen": 0.317,
+   "loan": 0.633,
+   "retention": 0.817,
+   "gradRate": 0.606,
+   "earnings": 60573
   },
   "clark": {
    "unitid": "165334",
@@ -330,7 +456,13 @@
    "net": 29446,
    "netLow": 29477,
    "netMid": 26236,
-   "netHigh": 41971
+   "netHigh": 41971,
+   "pell": 0.269,
+   "firstGen": 0.163,
+   "loan": 0.572,
+   "retention": 0.862,
+   "gradRate": 0.765,
+   "earnings": 67223
   },
   "coast-guard-academy": {
    "unitid": "130624",
@@ -345,7 +477,13 @@
    "net": null,
    "netLow": null,
    "netMid": null,
-   "netHigh": null
+   "netHigh": null,
+   "pell": 0.0,
+   "firstGen": null,
+   "loan": 0.0,
+   "retention": 0.986,
+   "gradRate": 0.948,
+   "earnings": null
   },
   "colby": {
    "unitid": "161086",
@@ -360,7 +498,13 @@
    "net": 19835,
    "netLow": 5263,
    "netMid": 3132,
-   "netHigh": 53340
+   "netHigh": 53340,
+   "pell": 0.164,
+   "firstGen": 0.109,
+   "loan": 0.087,
+   "retention": 0.936,
+   "gradRate": 0.87,
+   "earnings": 88776
   },
   "colby-sawyer": {
    "unitid": "182634",
@@ -375,7 +519,13 @@
    "net": 26739,
    "netLow": 17087,
    "netMid": 22099,
-   "netHigh": 30121
+   "netHigh": 30121,
+   "pell": 0.259,
+   "firstGen": 0.241,
+   "loan": 0.496,
+   "retention": 0.767,
+   "gradRate": 0.561,
+   "earnings": 61214
   },
   "college-of-the-atlantic": {
    "unitid": "160959",
@@ -390,7 +540,13 @@
    "net": 24465,
    "netLow": 15931,
    "netMid": 19171,
-   "netHigh": 34575
+   "netHigh": 34575,
+   "pell": 0.363,
+   "firstGen": null,
+   "loan": 0.496,
+   "retention": 0.85,
+   "gradRate": 0.733,
+   "earnings": 47967
   },
   "connecticut-college": {
    "unitid": "128902",
@@ -405,7 +561,13 @@
    "net": 35960,
    "netLow": 17313,
    "netMid": 22908,
-   "netHigh": 49170
+   "netHigh": 49170,
+   "pell": 0.178,
+   "firstGen": 0.14,
+   "loan": 0.361,
+   "retention": 0.897,
+   "gradRate": 0.817,
+   "earnings": 82225
   },
   "curry": {
    "unitid": "165529",
@@ -420,7 +582,13 @@
    "net": 30155,
    "netLow": 26118,
    "netMid": 27237,
-   "netHigh": 35099
+   "netHigh": 35099,
+   "pell": 0.369,
+   "firstGen": 0.3,
+   "loan": 0.892,
+   "retention": 0.662,
+   "gradRate": 0.501,
+   "earnings": 69321
   },
   "dartmouth": {
    "unitid": "182670",
@@ -435,7 +603,13 @@
    "net": 26707,
    "netLow": 1399,
    "netMid": 1680,
-   "netHigh": 56894
+   "netHigh": 56894,
+   "pell": 0.173,
+   "firstGen": 0.174,
+   "loan": 0.153,
+   "retention": 0.984,
+   "gradRate": 0.953,
+   "earnings": 111162
   },
   "dean": {
    "unitid": "165574",
@@ -450,7 +624,13 @@
    "net": 32629,
    "netLow": 29604,
    "netMid": 31300,
-   "netHigh": 35637
+   "netHigh": 35637,
+   "pell": 0.34,
+   "firstGen": 0.317,
+   "loan": 0.742,
+   "retention": 0.683,
+   "gradRate": 0.532,
+   "earnings": 47982
   },
   "eastern-ct-state": {
    "unitid": "129215",
@@ -465,7 +645,13 @@
    "net": 20502,
    "netLow": 16357,
    "netMid": 17265,
-   "netHigh": 25226
+   "netHigh": 25226,
+   "pell": 0.304,
+   "firstGen": 0.345,
+   "loan": 0.478,
+   "retention": 0.837,
+   "gradRate": 0.544,
+   "earnings": 60748
   },
   "elms": {
    "unitid": "167394",
@@ -480,7 +666,13 @@
    "net": 16237,
    "netLow": 13436,
    "netMid": 15574,
-   "netHigh": 19969
+   "netHigh": 19969,
+   "pell": 0.456,
+   "firstGen": 0.352,
+   "loan": 0.714,
+   "retention": 0.76,
+   "gradRate": 0.635,
+   "earnings": 64534
   },
   "emerson": {
    "unitid": "165662",
@@ -495,7 +687,13 @@
    "net": 49215,
    "netLow": 49140,
    "netMid": 42830,
-   "netHigh": 59402
+   "netHigh": 59402,
+   "pell": 0.2,
+   "firstGen": 0.132,
+   "loan": 0.362,
+   "retention": 0.874,
+   "gradRate": 0.804,
+   "earnings": 67317
   },
   "emmanuel": {
    "unitid": "165671",
@@ -510,7 +708,13 @@
    "net": 27196,
    "netLow": 22210,
    "netMid": 23313,
-   "netHigh": 32393
+   "netHigh": 32393,
+   "pell": 0.292,
+   "firstGen": 0.207,
+   "loan": 0.629,
+   "retention": 0.786,
+   "gradRate": 0.639,
+   "earnings": 73794
   },
   "endicott": {
    "unitid": "165699",
@@ -525,7 +729,13 @@
    "net": 39219,
    "netLow": 30797,
    "netMid": 30402,
-   "netHigh": 43562
+   "netHigh": 43562,
+   "pell": 0.164,
+   "firstGen": 0.189,
+   "loan": 0.626,
+   "retention": 0.844,
+   "gradRate": 0.738,
+   "earnings": 77059
   },
   "fairfield": {
    "unitid": "129242",
@@ -540,7 +750,13 @@
    "net": 49906,
    "netLow": 30752,
    "netMid": 37768,
-   "netHigh": 53583
+   "netHigh": 53583,
+   "pell": 0.093,
+   "firstGen": 0.165,
+   "loan": 0.372,
+   "retention": 0.913,
+   "gradRate": 0.853,
+   "earnings": 101587
   },
   "fisher": {
    "unitid": "165802",
@@ -555,7 +771,13 @@
    "net": 22042,
    "netLow": 21191,
    "netMid": 22956,
-   "netHigh": 26422
+   "netHigh": 26422,
+   "pell": 0.395,
+   "firstGen": 0.468,
+   "loan": 0.527,
+   "retention": 0.546,
+   "gradRate": 0.397,
+   "earnings": 52749
   },
   "fitchburg-state": {
    "unitid": "165820",
@@ -570,7 +792,13 @@
    "net": 13803,
    "netLow": 10379,
    "netMid": 10609,
-   "netHigh": 23328
+   "netHigh": 23328,
+   "pell": 0.395,
+   "firstGen": 0.359,
+   "loan": 0.45,
+   "retention": 0.695,
+   "gradRate": 0.528,
+   "earnings": 63428
   },
   "framingham-state": {
    "unitid": "165866",
@@ -585,7 +813,13 @@
    "net": 15951,
    "netLow": 11831,
    "netMid": 12320,
-   "netHigh": 23325
+   "netHigh": 23325,
+   "pell": 0.431,
+   "firstGen": 0.323,
+   "loan": 0.539,
+   "retention": 0.71,
+   "gradRate": 0.457,
+   "earnings": 63249
   },
   "franklin-cummings": {
    "unitid": "165884",
@@ -600,7 +834,13 @@
    "net": 18833,
    "netLow": 18680,
    "netMid": 18620,
-   "netHigh": null
+   "netHigh": null,
+   "pell": 0.456,
+   "firstGen": 0.488,
+   "loan": 0.385,
+   "retention": 0.5,
+   "gradRate": 0.306,
+   "earnings": 60106
   },
   "franklin-pierce": {
    "unitid": "182795",
@@ -615,7 +855,13 @@
    "net": 23023,
    "netLow": 20478,
    "netMid": 20085,
-   "netHigh": 26679
+   "netHigh": 26679,
+   "pell": 0.367,
+   "firstGen": 0.298,
+   "loan": 0.735,
+   "retention": 0.743,
+   "gradRate": 0.547,
+   "earnings": 64588
   },
   "goodwin": {
    "unitid": "129154",
@@ -630,7 +876,13 @@
    "net": 31759,
    "netLow": 31735,
    "netMid": 27345,
-   "netHigh": 37298
+   "netHigh": 37298,
+   "pell": 0.622,
+   "firstGen": 0.528,
+   "loan": 0.787,
+   "retention": 0.667,
+   "gradRate": 0.505,
+   "earnings": 52576
   },
   "gordon": {
    "unitid": "165936",
@@ -645,7 +897,13 @@
    "net": 25227,
    "netLow": 22818,
    "netMid": 19618,
-   "netHigh": 29446
+   "netHigh": 29446,
+   "pell": 0.265,
+   "firstGen": 0.169,
+   "loan": 0.537,
+   "retention": 0.844,
+   "gradRate": 0.706,
+   "earnings": 59863
   },
   "harvard": {
    "unitid": "166027",
@@ -660,7 +918,13 @@
    "net": 19148,
    "netLow": 2542,
    "netMid": 4126,
-   "netHigh": 51128
+   "netHigh": 51128,
+   "pell": 0.199,
+   "firstGen": 0.257,
+   "loan": 0.079,
+   "retention": 0.983,
+   "gradRate": 0.971,
+   "earnings": 121957
   },
   "hellenic": {
    "unitid": "166054",
@@ -675,7 +939,13 @@
    "net": 19821,
    "netLow": 12256,
    "netMid": 35282,
-   "netHigh": null
+   "netHigh": null,
+   "pell": 0.372,
+   "firstGen": null,
+   "loan": 0.384,
+   "retention": 0.714,
+   "gradRate": 0.385,
+   "earnings": 62251
   },
   "holy-cross": {
    "unitid": "166124",
@@ -690,7 +960,13 @@
    "net": 38829,
    "netLow": 9931,
    "netMid": 18565,
-   "netHigh": 58649
+   "netHigh": 58649,
+   "pell": 0.162,
+   "firstGen": 0.166,
+   "loan": 0.384,
+   "retention": 0.948,
+   "gradRate": 0.864,
+   "earnings": 100485
   },
   "hult": {
    "unitid": "164368",
@@ -705,7 +981,13 @@
    "net": 47733,
    "netLow": 44394,
    "netMid": 53010,
-   "netHigh": 57437
+   "netHigh": 57437,
+   "pell": 0.087,
+   "firstGen": null,
+   "loan": 0.074,
+   "retention": 0.802,
+   "gradRate": 0.604,
+   "earnings": null
   },
   "husson": {
    "unitid": "487524",
@@ -720,7 +1002,13 @@
    "net": 22146,
    "netLow": 16332,
    "netMid": 17697,
-   "netHigh": 27958
+   "netHigh": 27958,
+   "pell": 0.445,
+   "firstGen": 0.322,
+   "loan": 0.697,
+   "retention": 0.753,
+   "gradRate": 0.601,
+   "earnings": 57136
   },
   "johnson-wales": {
    "unitid": "217235",
@@ -735,7 +1023,13 @@
    "net": 29952,
    "netLow": 26196,
    "netMid": 25185,
-   "netHigh": 35887
+   "netHigh": 35887,
+   "pell": 0.376,
+   "firstGen": 0.346,
+   "loan": 0.735,
+   "retention": 0.82,
+   "gradRate": 0.494,
+   "earnings": 53928
   },
   "keene-state": {
    "unitid": "183062",
@@ -750,7 +1044,13 @@
    "net": 17940,
    "netLow": 13631,
    "netMid": 14105,
-   "netHigh": 23060
+   "netHigh": 23060,
+   "pell": 0.296,
+   "firstGen": 0.23,
+   "loan": 0.677,
+   "retention": 0.787,
+   "gradRate": 0.562,
+   "earnings": 62326
   },
   "landmark": {
    "unitid": "247649",
@@ -765,7 +1065,13 @@
    "net": 43047,
    "netLow": 33912,
    "netMid": 40610,
-   "netHigh": 57021
+   "netHigh": 57021,
+   "pell": 0.195,
+   "firstGen": null,
+   "loan": 0.21,
+   "retention": 0.63,
+   "gradRate": 0.432,
+   "earnings": 42984
   },
   "lasell": {
    "unitid": "166391",
@@ -780,7 +1086,13 @@
    "net": 26341,
    "netLow": 19462,
    "netMid": 21160,
-   "netHigh": 32589
+   "netHigh": 32589,
+   "pell": 0.351,
+   "firstGen": 0.288,
+   "loan": 0.778,
+   "retention": 0.704,
+   "gradRate": 0.645,
+   "earnings": 64330
   },
   "lesley": {
    "unitid": "166452",
@@ -795,7 +1107,13 @@
    "net": 31777,
    "netLow": 24100,
    "netMid": 27261,
-   "netHigh": 37744
+   "netHigh": 37744,
+   "pell": 0.362,
+   "firstGen": 0.287,
+   "loan": 0.581,
+   "retention": 0.723,
+   "gradRate": 0.418,
+   "earnings": 57844
   },
   "maine-maritime": {
    "unitid": "161299",
@@ -810,7 +1128,13 @@
    "net": 21078,
    "netLow": 14300,
    "netMid": 14392,
-   "netHigh": 23949
+   "netHigh": 23949,
+   "pell": 0.285,
+   "firstGen": 0.207,
+   "loan": 0.842,
+   "retention": 0.817,
+   "gradRate": 0.583,
+   "earnings": 101511
   },
   "mass-maritime": {
    "unitid": "166692",
@@ -825,7 +1149,13 @@
    "net": 23759,
    "netLow": 4385,
    "netMid": 6816,
-   "netHigh": 30330
+   "netHigh": 30330,
+   "pell": 0.219,
+   "firstGen": 0.211,
+   "loan": 0.836,
+   "retention": 0.868,
+   "gradRate": 0.735,
+   "earnings": 104098
   },
   "massart": {
    "unitid": "166674",
@@ -840,7 +1170,13 @@
    "net": 26397,
    "netLow": 19393,
    "netMid": 21813,
-   "netHigh": 33587
+   "netHigh": 33587,
+   "pell": 0.338,
+   "firstGen": 0.225,
+   "loan": 0.518,
+   "retention": 0.891,
+   "gradRate": 0.587,
+   "earnings": 52923
   },
   "mcla": {
    "unitid": "167288",
@@ -855,7 +1191,13 @@
    "net": 11402,
    "netLow": 5260,
    "netMid": 5327,
-   "netHigh": 18930
+   "netHigh": 18930,
+   "pell": 0.426,
+   "firstGen": 0.33,
+   "loan": 0.602,
+   "retention": 0.757,
+   "gradRate": 0.466,
+   "earnings": 52507
   },
   "mcphs": {
    "unitid": "166656",
@@ -870,7 +1212,13 @@
    "net": 43891,
    "netLow": 39067,
    "netMid": 41557,
-   "netHigh": 48944
+   "netHigh": 48944,
+   "pell": 0.348,
+   "firstGen": 0.305,
+   "loan": 0.693,
+   "retention": 0.74,
+   "gradRate": 0.613,
+   "earnings": 103156
   },
   "merrimack": {
    "unitid": "166850",
@@ -885,7 +1233,13 @@
    "net": 39219,
    "netLow": 33969,
    "netMid": 36307,
-   "netHigh": 42472
+   "netHigh": 42472,
+   "pell": 0.211,
+   "firstGen": 0.207,
+   "loan": 0.6,
+   "retention": 0.793,
+   "gradRate": 0.691,
+   "earnings": 74412
   },
   "middlebury": {
    "unitid": "230959",
@@ -900,7 +1254,13 @@
    "net": 32102,
    "netLow": 7548,
    "netMid": 13993,
-   "netHigh": 50664
+   "netHigh": 50664,
+   "pell": 0.191,
+   "firstGen": 0.216,
+   "loan": 0.256,
+   "retention": 0.937,
+   "gradRate": 0.925,
+   "earnings": 85077
   },
   "mit": {
    "unitid": "166683",
@@ -915,7 +1275,13 @@
    "net": 14815,
    "netLow": null,
    "netMid": 4283,
-   "netHigh": 50747
+   "netHigh": 50747,
+   "pell": 0.238,
+   "firstGen": 0.259,
+   "loan": 0.068,
+   "retention": 0.991,
+   "gradRate": 0.957,
+   "earnings": 152553
   },
   "mitchell": {
    "unitid": "129774",
@@ -930,7 +1296,13 @@
    "net": 32206,
    "netLow": 24206,
    "netMid": 24937,
-   "netHigh": 38929
+   "netHigh": 38929,
+   "pell": 0.396,
+   "firstGen": 0.352,
+   "loan": 0.577,
+   "retention": 0.59,
+   "gradRate": 0.46,
+   "earnings": 49631
   },
   "montserrat": {
    "unitid": "166911",
@@ -945,7 +1317,13 @@
    "net": 35385,
    "netLow": 24093,
    "netMid": 35801,
-   "netHigh": 40803
+   "netHigh": 40803,
+   "pell": 0.374,
+   "firstGen": 0.328,
+   "loan": 0.784,
+   "retention": 0.909,
+   "gradRate": 0.631,
+   "earnings": 40733
   },
   "mount-holyoke": {
    "unitid": "166939",
@@ -960,7 +1338,13 @@
    "net": 30861,
    "netLow": 15445,
    "netMid": 14486,
-   "netHigh": 45832
+   "netHigh": 45832,
+   "pell": 0.258,
+   "firstGen": 0.19,
+   "loan": 0.531,
+   "retention": 0.886,
+   "gradRate": 0.823,
+   "earnings": 66117
   },
   "nec": {
    "unitid": "167057",
@@ -975,7 +1359,13 @@
    "net": 50840,
    "netLow": 45263,
    "netMid": 43577,
-   "netHigh": 52556
+   "netHigh": 52556,
+   "pell": 0.109,
+   "firstGen": null,
+   "loan": 0.247,
+   "retention": 0.884,
+   "gradRate": 0.744,
+   "earnings": 40481
   },
   "new-england-college": {
    "unitid": "182980",
@@ -990,7 +1380,13 @@
    "net": 24059,
    "netLow": 22072,
    "netMid": 21648,
-   "netHigh": 28968
+   "netHigh": 28968,
+   "pell": 0.45,
+   "firstGen": 0.46,
+   "loan": 0.741,
+   "retention": 0.613,
+   "gradRate": 0.375,
+   "earnings": 47863
   },
   "new-england-tech": {
    "unitid": "217305",
@@ -1005,7 +1401,13 @@
    "net": 39333,
    "netLow": 36592,
    "netMid": 36169,
-   "netHigh": 46674
+   "netHigh": 46674,
+   "pell": 0.461,
+   "firstGen": 0.414,
+   "loan": 0.7,
+   "retention": 0.74,
+   "gradRate": 0.546,
+   "earnings": 60289
   },
   "nhti": {
    "unitid": "183099",
@@ -1020,7 +1422,13 @@
    "net": 10176,
    "netLow": 7074,
    "netMid": 16856,
-   "netHigh": 17228
+   "netHigh": 17228,
+   "pell": 0.309,
+   "firstGen": 0.372,
+   "loan": 0.294,
+   "retention": 0.692,
+   "gradRate": 0.36,
+   "earnings": 53372
   },
   "nichols": {
    "unitid": "167260",
@@ -1035,7 +1443,13 @@
    "net": 31983,
    "netLow": 29698,
    "netMid": 32569,
-   "netHigh": 33136
+   "netHigh": 33136,
+   "pell": 0.319,
+   "firstGen": 0.316,
+   "loan": 0.75,
+   "retention": 0.725,
+   "gradRate": 0.535,
+   "earnings": 66716
   },
   "northeastern": {
    "unitid": "167358",
@@ -1050,7 +1464,13 @@
    "net": 29060,
    "netLow": null,
    "netMid": 2038,
-   "netHigh": 49705
+   "netHigh": 49705,
+   "pell": 0.16,
+   "firstGen": 0.185,
+   "loan": 0.236,
+   "retention": 0.969,
+   "gradRate": 0.907,
+   "earnings": 99371
   },
   "norwich": {
    "unitid": "230995",
@@ -1065,7 +1485,13 @@
    "net": 26676,
    "netLow": 19770,
    "netMid": 17661,
-   "netHigh": 35664
+   "netHigh": 35664,
+   "pell": 0.277,
+   "firstGen": 0.236,
+   "loan": 0.448,
+   "retention": 0.793,
+   "gradRate": 0.61,
+   "earnings": 78407
   },
   "olin": {
    "unitid": "441982",
@@ -1080,7 +1506,13 @@
    "net": 17057,
    "netLow": 14942,
    "netMid": 24128,
-   "netHigh": 35800
+   "netHigh": 35800,
+   "pell": 0.188,
+   "firstGen": null,
+   "loan": 0.247,
+   "retention": 0.98,
+   "gradRate": 0.964,
+   "earnings": 138832
   },
   "plymouth-state": {
    "unitid": "183080",
@@ -1095,7 +1527,13 @@
    "net": 19530,
    "netLow": 14737,
    "netMid": 16044,
-   "netHigh": 24350
+   "netHigh": 24350,
+   "pell": 0.327,
+   "firstGen": 0.27,
+   "loan": 0.685,
+   "retention": 0.684,
+   "gradRate": 0.518,
+   "earnings": 61199
   },
   "post": {
    "unitid": "130183",
@@ -1110,7 +1548,13 @@
    "net": 20694,
    "netLow": 21051,
    "netMid": 18987,
-   "netHigh": 15042
+   "netHigh": 15042,
+   "pell": 0.673,
+   "firstGen": 0.568,
+   "loan": 0.665,
+   "retention": 0.334,
+   "gradRate": 0.336,
+   "earnings": 44639
   },
   "providence-college": {
    "unitid": "217402",
@@ -1125,7 +1569,13 @@
    "net": 49594,
    "netLow": 27565,
    "netMid": 24571,
-   "netHigh": 57392
+   "netHigh": 57392,
+   "pell": 0.154,
+   "firstGen": 0.146,
+   "loan": 0.571,
+   "retention": 0.94,
+   "gradRate": 0.864,
+   "earnings": 90260
   },
   "quinnipiac": {
    "unitid": "130226",
@@ -1140,7 +1590,13 @@
    "net": 41729,
    "netLow": 35163,
    "netMid": 37444,
-   "netHigh": 44609
+   "netHigh": 44609,
+   "pell": 0.204,
+   "firstGen": 0.199,
+   "loan": 0.611,
+   "retention": 0.891,
+   "gradRate": 0.786,
+   "earnings": 87596
   },
   "regis": {
    "unitid": "167598",
@@ -1155,7 +1611,13 @@
    "net": 25506,
    "netLow": 21050,
    "netMid": 22539,
-   "netHigh": 32022
+   "netHigh": 32022,
+   "pell": 0.353,
+   "firstGen": 0.349,
+   "loan": 0.628,
+   "retention": 0.789,
+   "gradRate": 0.71,
+   "earnings": 69534
   },
   "rhode-island-college": {
    "unitid": "217420",
@@ -1170,7 +1632,13 @@
    "net": 10959,
    "netLow": 6871,
    "netMid": 9590,
-   "netHigh": 18191
+   "netHigh": 18191,
+   "pell": 0.432,
+   "firstGen": 0.447,
+   "loan": 0.393,
+   "retention": 0.733,
+   "gradRate": 0.447,
+   "earnings": 60399
   },
   "risd": {
    "unitid": "217493",
@@ -1185,7 +1653,13 @@
    "net": 50513,
    "netLow": 29175,
    "netMid": 42134,
-   "netHigh": 72156
+   "netHigh": 72156,
+   "pell": 0.17,
+   "firstGen": 0.106,
+   "loan": 0.277,
+   "retention": 0.95,
+   "gradRate": 0.917,
+   "earnings": 69341
   },
   "rivier": {
    "unitid": "183211",
@@ -1200,7 +1674,13 @@
    "net": 26585,
    "netLow": 24427,
    "netMid": 25289,
-   "netHigh": 28695
+   "netHigh": 28695,
+   "pell": 0.303,
+   "firstGen": 0.374,
+   "loan": 0.666,
+   "retention": 0.757,
+   "gradRate": 0.555,
+   "earnings": 72105
   },
   "roger-williams": {
    "unitid": "217518",
@@ -1215,7 +1695,13 @@
    "net": 37645,
    "netLow": 28854,
    "netMid": 30430,
-   "netHigh": 42874
+   "netHigh": 42874,
+   "pell": 0.206,
+   "firstGen": 0.197,
+   "loan": 0.572,
+   "retention": 0.811,
+   "gradRate": 0.674,
+   "earnings": 77127
   },
   "sacred-heart": {
    "unitid": "130253",
@@ -1230,7 +1716,13 @@
    "net": 45827,
    "netLow": 37930,
    "netMid": 39021,
-   "netHigh": 49120
+   "netHigh": 49120,
+   "pell": 0.187,
+   "firstGen": 0.229,
+   "loan": 0.578,
+   "retention": 0.831,
+   "gradRate": 0.768,
+   "earnings": 80896
   },
   "saint-anselm": {
    "unitid": "183239",
@@ -1245,7 +1737,13 @@
    "net": 34382,
    "netLow": 24676,
    "netMid": 22088,
-   "netHigh": 38988
+   "netHigh": 38988,
+   "pell": 0.163,
+   "firstGen": 0.131,
+   "loan": 0.693,
+   "retention": 0.881,
+   "gradRate": 0.803,
+   "earnings": 83058
   },
   "saint-josephs-maine": {
    "unitid": "161518",
@@ -1260,7 +1758,13 @@
    "net": 29029,
    "netLow": 23325,
    "netMid": 19755,
-   "netHigh": 36170
+   "netHigh": 36170,
+   "pell": 0.292,
+   "firstGen": 0.305,
+   "loan": 0.643,
+   "retention": 0.746,
+   "gradRate": 0.564,
+   "earnings": 69579
   },
   "saint-michaels": {
    "unitid": "231059",
@@ -1275,7 +1779,13 @@
    "net": 29915,
    "netLow": 20043,
    "netMid": 22234,
-   "netHigh": 35093
+   "netHigh": 35093,
+   "pell": 0.282,
+   "firstGen": 0.117,
+   "loan": 0.554,
+   "retention": 0.799,
+   "gradRate": 0.707,
+   "earnings": 66136
   },
   "salem-state": {
    "unitid": "167729",
@@ -1290,7 +1800,13 @@
    "net": 12921,
    "netLow": 8474,
    "netMid": 10214,
-   "netHigh": 22319
+   "netHigh": 22319,
+   "pell": 0.414,
+   "firstGen": 0.403,
+   "loan": 0.448,
+   "retention": 0.752,
+   "gradRate": 0.488,
+   "earnings": 62762
   },
   "salve-regina": {
    "unitid": "217536",
@@ -1305,7 +1821,13 @@
    "net": 36528,
    "netLow": 27034,
    "netMid": 32235,
-   "netHigh": 39271
+   "netHigh": 39271,
+   "pell": 0.186,
+   "firstGen": 0.186,
+   "loan": 0.638,
+   "retention": 0.828,
+   "gradRate": 0.729,
+   "earnings": 73336
   },
   "simmons": {
    "unitid": "167783",
@@ -1320,7 +1842,13 @@
    "net": 23444,
    "netLow": 19035,
    "netMid": 17108,
-   "netHigh": 34113
+   "netHigh": 34113,
+   "pell": 0.399,
+   "firstGen": 0.204,
+   "loan": 0.65,
+   "retention": 0.848,
+   "gradRate": 0.771,
+   "earnings": 79784
   },
   "smith": {
    "unitid": "167835",
@@ -1335,7 +1863,13 @@
    "net": 25519,
    "netLow": 2541,
    "netMid": 5996,
-   "netHigh": 40596
+   "netHigh": 40596,
+   "pell": 0.221,
+   "firstGen": 0.185,
+   "loan": 0.133,
+   "retention": 0.943,
+   "gradRate": 0.858,
+   "earnings": 69936
   },
   "snhu": {
    "unitid": "183026",
@@ -1350,7 +1884,13 @@
    "net": 36764,
    "netLow": 36355,
    "netMid": 36240,
-   "netHigh": 39780
+   "netHigh": 39780,
+   "pell": 0.552,
+   "firstGen": 0.483,
+   "loan": 0.584,
+   "retention": 0.611,
+   "gradRate": 0.421,
+   "earnings": 56870
   },
   "southern-ct-state": {
    "unitid": "130493",
@@ -1365,7 +1905,13 @@
    "net": 21029,
    "netLow": 18148,
    "netMid": 19373,
-   "netHigh": 28115
+   "netHigh": 28115,
+   "pell": 0.43,
+   "firstGen": 0.39,
+   "loan": 0.498,
+   "retention": 0.779,
+   "gradRate": 0.499,
+   "earnings": 59695
   },
   "springfield-college": {
    "unitid": "167899",
@@ -1380,7 +1926,13 @@
    "net": 28053,
    "netLow": 18055,
    "netMid": 21381,
-   "netHigh": 32591
+   "netHigh": 32591,
+   "pell": 0.247,
+   "firstGen": 0.314,
+   "loan": 0.704,
+   "retention": 0.807,
+   "gradRate": 0.708,
+   "earnings": 59623
   },
   "stonehill": {
    "unitid": "167996",
@@ -1395,7 +1947,13 @@
    "net": 36082,
    "netLow": 26134,
    "netMid": 28834,
-   "netHigh": 38577
+   "netHigh": 38577,
+   "pell": 0.192,
+   "firstGen": 0.164,
+   "loan": 0.631,
+   "retention": 0.84,
+   "gradRate": 0.738,
+   "earnings": 84633
   },
   "suffolk": {
    "unitid": "168005",
@@ -1410,7 +1968,13 @@
    "net": 40008,
    "netLow": 31517,
    "netMid": 30454,
-   "netHigh": 45050
+   "netHigh": 45050,
+   "pell": 0.361,
+   "firstGen": 0.297,
+   "loan": 0.601,
+   "retention": 0.754,
+   "gradRate": 0.585,
+   "earnings": 75345
   },
   "thomas": {
    "unitid": "161563",
@@ -1425,7 +1989,13 @@
    "net": 23739,
    "netLow": 17623,
    "netMid": 23021,
-   "netHigh": 35472
+   "netHigh": 35472,
+   "pell": 0.195,
+   "firstGen": 0.379,
+   "loan": 0.375,
+   "retention": 0.775,
+   "gradRate": 0.584,
+   "earnings": 53206
   },
   "trinity-college": {
    "unitid": "130590",
@@ -1440,7 +2010,13 @@
    "net": 37004,
    "netLow": 7222,
    "netMid": 17524,
-   "netHigh": 49941
+   "netHigh": 49941,
+   "pell": 0.155,
+   "firstGen": 0.178,
+   "loan": 0.393,
+   "retention": 0.899,
+   "gradRate": 0.831,
+   "earnings": 103089
   },
   "tufts": {
    "unitid": "168148",
@@ -1455,7 +2031,13 @@
    "net": 38797,
    "netLow": 4195,
    "netMid": 16897,
-   "netHigh": 57862
+   "netHigh": 57862,
+   "pell": 0.145,
+   "firstGen": 0.153,
+   "loan": 0.179,
+   "retention": 0.955,
+   "gradRate": 0.936,
+   "earnings": 89187
   },
   "uconn": {
    "unitid": "129020",
@@ -1470,7 +2052,13 @@
    "net": 24342,
    "netLow": 13649,
    "netMid": 17169,
-   "netHigh": 36552
+   "netHigh": 36552,
+   "pell": 0.284,
+   "firstGen": 0.266,
+   "loan": 0.442,
+   "retention": 0.925,
+   "gradRate": 0.835,
+   "earnings": 82098
   },
   "umaine": {
    "unitid": "161253",
@@ -1485,7 +2073,13 @@
    "net": 17224,
    "netLow": 13222,
    "netMid": 13468,
-   "netHigh": 22823
+   "netHigh": 22823,
+   "pell": 0.27,
+   "firstGen": 0.234,
+   "loan": 0.416,
+   "retention": 0.834,
+   "gradRate": 0.573,
+   "earnings": 59140
   },
   "umaine-farmington": {
    "unitid": "161226",
@@ -1500,7 +2094,13 @@
    "net": 17158,
    "netLow": 13270,
    "netMid": 14093,
-   "netHigh": 23034
+   "netHigh": 23034,
+   "pell": 0.337,
+   "firstGen": 0.324,
+   "loan": 0.384,
+   "retention": 0.728,
+   "gradRate": 0.499,
+   "earnings": 47674
   },
   "umaine-fort-kent": {
    "unitid": "161235",
@@ -1515,7 +2115,13 @@
    "net": 11167,
    "netLow": 10711,
    "netMid": 11314,
-   "netHigh": 15274
+   "netHigh": 15274,
+   "pell": 0.128,
+   "firstGen": 0.429,
+   "loan": 0.129,
+   "retention": 0.893,
+   "gradRate": 0.349,
+   "earnings": 56874
   },
   "umaine-presque-isle": {
    "unitid": "161341",
@@ -1530,7 +2136,13 @@
    "net": 10972,
    "netLow": 7966,
    "netMid": 10256,
-   "netHigh": 15568
+   "netHigh": 15568,
+   "pell": 0.294,
+   "firstGen": 0.367,
+   "loan": 0.25,
+   "retention": 0.584,
+   "gradRate": 0.394,
+   "earnings": 47161
   },
   "umass-amherst": {
    "unitid": "166629",
@@ -1545,7 +2157,13 @@
    "net": 22857,
    "netLow": 10294,
    "netMid": 12020,
-   "netHigh": 33795
+   "netHigh": 33795,
+   "pell": 0.232,
+   "firstGen": 0.216,
+   "loan": 0.464,
+   "retention": 0.919,
+   "gradRate": 0.812,
+   "earnings": 80486
   },
   "umass-boston": {
    "unitid": "166638",
@@ -1560,7 +2178,13 @@
    "net": 22548,
    "netLow": 22057,
    "netMid": 27711,
-   "netHigh": 36294
+   "netHigh": 36294,
+   "pell": 0.481,
+   "firstGen": 0.431,
+   "loan": 0.484,
+   "retention": 0.704,
+   "gradRate": 0.511,
+   "earnings": 70597
   },
   "umass-dartmouth": {
    "unitid": "167987",
@@ -1575,7 +2199,13 @@
    "net": 20319,
    "netLow": 14400,
    "netMid": 17318,
-   "netHigh": 29500
+   "netHigh": 29500,
+   "pell": 0.413,
+   "firstGen": 0.352,
+   "loan": 0.61,
+   "retention": 0.636,
+   "gradRate": 0.492,
+   "earnings": 68878
   },
   "umass-lowell": {
    "unitid": "166513",
@@ -1590,7 +2220,13 @@
    "net": 17362,
    "netLow": 9180,
    "netMid": 10484,
-   "netHigh": 27079
+   "netHigh": 27079,
+   "pell": 0.342,
+   "firstGen": 0.318,
+   "loan": 0.52,
+   "retention": 0.84,
+   "gradRate": 0.687,
+   "earnings": 77989
   },
   "une": {
    "unitid": "161457",
@@ -1605,7 +2241,13 @@
    "net": 38617,
    "netLow": 31879,
    "netMid": 33013,
-   "netHigh": 42902
+   "netHigh": 42902,
+   "pell": 0.141,
+   "firstGen": 0.221,
+   "loan": 0.442,
+   "retention": 0.794,
+   "gradRate": 0.618,
+   "earnings": 68670
   },
   "unh": {
    "unitid": "183044",
@@ -1620,7 +2262,13 @@
    "net": 26150,
    "netLow": 18960,
    "netMid": 20270,
-   "netHigh": 30808
+   "netHigh": 30808,
+   "pell": 0.212,
+   "firstGen": 0.174,
+   "loan": 0.564,
+   "retention": 0.873,
+   "gradRate": 0.768,
+   "earnings": 71477
   },
   "university-of-bridgeport": {
    "unitid": "128744",
@@ -1635,7 +2283,13 @@
    "net": 28356,
    "netLow": 28270,
    "netMid": 27219,
-   "netHigh": 30930
+   "netHigh": 30930,
+   "pell": 0.545,
+   "firstGen": 0.424,
+   "loan": 0.703,
+   "retention": 0.613,
+   "gradRate": 0.369,
+   "earnings": 56082
   },
   "university-of-hartford": {
    "unitid": "129525",
@@ -1650,7 +2304,13 @@
    "net": 28928,
    "netLow": 25616,
    "netMid": 26133,
-   "netHigh": 33722
+   "netHigh": 33722,
+   "pell": 0.364,
+   "firstGen": 0.287,
+   "loan": 0.666,
+   "retention": 0.829,
+   "gradRate": 0.568,
+   "earnings": 66020
   },
   "university-of-new-haven": {
    "unitid": "129941",
@@ -1665,7 +2325,13 @@
    "net": 32994,
    "netLow": 28165,
    "netMid": 30286,
-   "netHigh": 36618
+   "netHigh": 36618,
+   "pell": 0.359,
+   "firstGen": 0.286,
+   "loan": 0.822,
+   "retention": 0.765,
+   "gradRate": 0.636,
+   "earnings": 69320
   },
   "university-of-saint-joseph": {
    "unitid": "130314",
@@ -1680,7 +2346,13 @@
    "net": 28249,
    "netLow": 21679,
    "netMid": 23983,
-   "netHigh": 32934
+   "netHigh": 32934,
+   "pell": 0.235,
+   "firstGen": 0.422,
+   "loan": 0.593,
+   "retention": 0.821,
+   "gradRate": 0.618,
+   "earnings": 67897
   },
   "uri": {
    "unitid": "217484",
@@ -1695,7 +2367,13 @@
    "net": 22469,
    "netLow": 15297,
    "netMid": 17805,
-   "netHigh": 31501
+   "netHigh": 31501,
+   "pell": 0.25,
+   "firstGen": 0.263,
+   "loan": 0.52,
+   "retention": 0.836,
+   "gradRate": 0.723,
+   "earnings": 73439
   },
   "usm": {
    "unitid": "161554",
@@ -1710,7 +2388,13 @@
    "net": 14927,
    "netLow": 10980,
    "netMid": 12194,
-   "netHigh": 21982
+   "netHigh": 21982,
+   "pell": 0.318,
+   "firstGen": 0.328,
+   "loan": 0.332,
+   "retention": 0.739,
+   "gradRate": 0.432,
+   "earnings": 57989
   },
   "uvm": {
    "unitid": "231174",
@@ -1725,7 +2409,13 @@
    "net": 20277,
    "netLow": 11915,
    "netMid": 14146,
-   "netHigh": 28966
+   "netHigh": 28966,
+   "pell": 0.163,
+   "firstGen": 0.115,
+   "loan": 0.376,
+   "retention": 0.892,
+   "gradRate": 0.812,
+   "earnings": 68368
   },
   "vermont-state": {
    "unitid": "231165",
@@ -1740,7 +2430,13 @@
    "net": 22358,
    "netLow": 19010,
    "netMid": 18990,
-   "netHigh": 29159
+   "netHigh": 29159,
+   "pell": 0.402,
+   "firstGen": 0.381,
+   "loan": 0.583,
+   "retention": 0.678,
+   "gradRate": 0.414,
+   "earnings": 54163
   },
   "wellesley": {
    "unitid": "168218",
@@ -1755,7 +2451,13 @@
    "net": 23995,
    "netLow": 11253,
    "netMid": 5535,
-   "netHigh": 46438
+   "netHigh": 46438,
+   "pell": 0.247,
+   "firstGen": 0.172,
+   "loan": 0.238,
+   "retention": 0.965,
+   "gradRate": 0.908,
+   "earnings": 90458
   },
   "wentworth": {
    "unitid": "168227",
@@ -1770,7 +2472,13 @@
    "net": 30134,
    "netLow": 24776,
    "netMid": 26511,
-   "netHigh": 34896
+   "netHigh": 34896,
+   "pell": 0.293,
+   "firstGen": 0.247,
+   "loan": 0.593,
+   "retention": 0.838,
+   "gradRate": 0.631,
+   "earnings": 94995
   },
   "wesleyan": {
    "unitid": "130697",
@@ -1785,7 +2493,13 @@
    "net": 23014,
    "netLow": 3557,
    "netMid": 8768,
-   "netHigh": 45770
+   "netHigh": 45770,
+   "pell": 0.142,
+   "firstGen": 0.196,
+   "loan": 0.072,
+   "retention": 0.949,
+   "gradRate": 0.9,
+   "earnings": 86811
   },
   "western-ct-state": {
    "unitid": "130776",
@@ -1800,7 +2514,13 @@
    "net": 16754,
    "netLow": 16782,
    "netMid": 14133,
-   "netHigh": 22061
+   "netHigh": 22061,
+   "pell": 0.418,
+   "firstGen": 0.38,
+   "loan": 0.535,
+   "retention": 0.732,
+   "gradRate": 0.511,
+   "earnings": 62010
   },
   "western-new-england": {
    "unitid": "168254",
@@ -1815,7 +2535,13 @@
    "net": 27077,
    "netLow": 24043,
    "netMid": 25772,
-   "netHigh": 29285
+   "netHigh": 29285,
+   "pell": 0.311,
+   "firstGen": 0.245,
+   "loan": 0.855,
+   "retention": 0.74,
+   "gradRate": 0.637,
+   "earnings": 81107
   },
   "westfield-state": {
    "unitid": "168263",
@@ -1830,7 +2556,13 @@
    "net": 16484,
    "netLow": 11786,
    "netMid": 13642,
-   "netHigh": 23555
+   "netHigh": 23555,
+   "pell": 0.393,
+   "firstGen": 0.305,
+   "loan": 0.508,
+   "retention": 0.739,
+   "gradRate": 0.486,
+   "earnings": 63082
   },
   "wheaton-ma": {
    "unitid": "168281",
@@ -1845,7 +2577,13 @@
    "net": 31147,
    "netLow": 24752,
    "netMid": 24081,
-   "netHigh": 36108
+   "netHigh": 36108,
+   "pell": 0.262,
+   "firstGen": 0.147,
+   "loan": 0.718,
+   "retention": 0.822,
+   "gradRate": 0.724,
+   "earnings": 71967
   },
   "williams": {
    "unitid": "168342",
@@ -1860,7 +2598,13 @@
    "net": 15157,
    "netLow": 2291,
    "netMid": 722,
-   "netHigh": 43912
+   "netHigh": 43912,
+   "pell": 0.162,
+   "firstGen": 0.215,
+   "loan": 0.059,
+   "retention": 0.969,
+   "gradRate": 0.953,
+   "earnings": 95954
   },
   "worcester-state": {
    "unitid": "168430",
@@ -1875,7 +2619,13 @@
    "net": 13866,
    "netLow": 9813,
    "netMid": 9825,
-   "netHigh": 20358
+   "netHigh": 20358,
+   "pell": 0.343,
+   "firstGen": 0.356,
+   "loan": 0.425,
+   "retention": 0.781,
+   "gradRate": 0.571,
+   "earnings": 65784
   },
   "wpi": {
    "unitid": "168421",
@@ -1890,7 +2640,13 @@
    "net": 43885,
    "netLow": 36899,
    "netMid": 35703,
-   "netHigh": 48711
+   "netHigh": 48711,
+   "pell": 0.146,
+   "firstGen": 0.134,
+   "loan": 0.526,
+   "retention": 0.937,
+   "gradRate": 0.9,
+   "earnings": 113513
   },
   "yale": {
    "unitid": "130794",
@@ -1905,7 +2661,13 @@
    "net": 11340,
    "netLow": 1256,
    "netMid": 854,
-   "netHigh": 47749
+   "netHigh": 47749,
+   "pell": 0.238,
+   "firstGen": 0.25,
+   "loan": 0.066,
+   "retention": 0.988,
+   "gradRate": 0.963,
+   "earnings": 118356
   }
  }
 }

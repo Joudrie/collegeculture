@@ -193,6 +193,35 @@
     return { title: 'What it costs', preview: preview, body: out };
   }
 
+  // Outcomes and who goes, from the Scorecard, plus questions worth asking anywhere.
+  var TWO_YEAR = { nhti: true };
+  function supportSection(s) {
+    var st = stats(s.id);
+    if (!st) return null;
+    function pct(x) { return Math.round(x * 100) + '%'; }
+    var rows = [];
+    function row(label, val) { if (val != null) rows.push(h('div', null, h('dt', null, label), h('dd', null, val))); }
+    row('Come back for year two', st.retention != null ? pct(st.retention) : null);
+    row(TWO_YEAR[s.id] ? 'Finish within 3 years' : 'Graduate within 6 years', st.gradRate != null ? pct(st.gradRate) : null);
+    row('Median pay 10 years after starting', st.earnings != null ? money(st.earnings) : null);
+    row('Get a Pell grant (lower income)', st.pell ? pct(st.pell) : null);
+    row('First in family to go to college', st.firstGen != null ? pct(st.firstGen) : null);
+    row('Take out federal loans', st.loan ? pct(st.loan) : null);
+    var out = [h('dl', { class: 'cost' }, rows)];
+    if (ONLINE_HEAVY[s.id]) out.push(h('p', { class: 'small muted' }, 'These numbers include online students, not just the campus.'));
+    out.push(h('h3', null, 'Worth asking about'));
+    out.push(h('ul', null,
+      h('li', null, 'First-gen or low-income: ask if there is a first-gen program, a summer bridge or peer mentors.'),
+      h('li', null, 'Mental health: most schools offer free counseling. Ask how long the wait is in the middle of a semester.'),
+      h('li', null, 'Disabilities and learning differences: colleges have to give accommodations, but your IEP or 504 plan does not carry over. You register with the disability office yourself.'),
+      h('li', null, 'Grades: tutoring and writing centers are usually free. Using them early is normal, not a red flag.')));
+    out.push(h('p', { class: 'small muted' }, 'Numbers from the U.S. Department of Education College Scorecard. The questions apply to every school.'));
+    var bits = [];
+    if (st.retention != null) bits.push(pct(st.retention) + ' come back for year two');
+    if (st.gradRate != null) bits.push(pct(st.gradRate) + (TWO_YEAR[s.id] ? ' finish in 3 years' : ' graduate in 6 years'));
+    return { title: 'Support and how students do', preview: bits.join(', ') || 'Support to ask about', body: out };
+  }
+
   function applyColors(c) {
     var root = document.documentElement.style;
     var map = {
@@ -241,6 +270,11 @@
     if (cost) {
       var at = defs.map(function (d) { return d.key; }).indexOf('gettingIn') + 1;
       sections.splice(at, 0, section({ key: 'cost', title: cost.title, render: function () { return cost.body; } }, { preview: cost.preview }));
+    }
+    var support = supportSection(s);
+    if (support) {
+      var after = sections.map(function (el) { return el.id; }).indexOf(cost ? 'cost' : 'gettingIn') + 1;
+      sections.splice(after || sections.length, 0, section({ key: 'support', title: support.title, render: function () { return support.body; } }, { preview: support.preview }));
     }
     var list = h('div', { class: 'sections' }, sections);
 
