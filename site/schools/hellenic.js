@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'hellenic',
+  id: 'hellenic', nameStyle: "classic",
   name: 'Hellenic',
   nameSub: 'Hellenic College Holy Cross',
   title: 'Hellenic College',

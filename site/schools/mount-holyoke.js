@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'mount-holyoke',
+  id: 'mount-holyoke', nameStyle: "classic",
   name: 'Mount Holyoke',
   nameSub: 'College',
   state: 'Massachusetts',

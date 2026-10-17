@@ -444,3 +444,45 @@ a.btn-main { text-decoration: none; display: inline-block; }
 .bar-row { display: grid; grid-template-columns: 136px minmax(0, 1fr) 40px; gap: var(--s1); align-items: center; }
 .bar-pct { text-align: right; font-variant-numeric: tabular-nums; }
 .term dd ul { padding-left: var(--s2); display: grid; gap: 4px; }
+
+/* Site menu under the header */
+.topnav { border-bottom: 1px solid var(--line); background: var(--bg); }
+.topnav .wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.topnav a {
+  display: block; text-align: center; padding-block: 12px; font-weight: 600;
+  color: var(--fg); text-decoration: none;
+}
+.topnav a[aria-current="page"] { color: var(--accent); box-shadow: inset 0 -2px 0 var(--accent); }
+.topnav a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+/* School page: jump buttons and section groups */
+.jump { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s1); padding-top: var(--s2); }
+.chip-btn {
+  font: inherit; font-size: var(--t-sm); line-height: var(--lh-sm); font-weight: 600; color: var(--fg);
+  background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--s1) 4px; cursor: pointer;
+}
+.chip-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.groups { display: grid; gap: var(--s4); margin-bottom: var(--s4); }
+.group { scroll-margin-top: var(--s2); }
+.group .sections { margin-bottom: 0; }
+.group-title {
+  font-size: var(--t-sm); line-height: var(--lh-sm); font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.08em; padding-bottom: var(--s1);
+}
+.groups { padding-top: var(--s1); }
+
+/* Home: tool tiles and the filter toggle */
+.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s1); padding-top: var(--s1); }
+.tile {
+  display: grid; gap: 4px; align-content: start; padding: 12px; border: 1px solid var(--line);
+  border-radius: var(--radius); color: var(--fg); text-decoration: none; min-width: 0;
+}
+.tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.tile-title { font-weight: 700; }
+.filter-bar { display: flex; align-items: center; gap: var(--s2); padding-top: var(--s1); }
+.filter-bar .chip-btn { padding-inline: var(--s2); }
+
+/* School-name fonts (only the big name in the header) */
+[data-name-style="classic"] .band h1 { font-family: "Libre Caslon Text", Georgia, serif; font-weight: 700; letter-spacing: 0.02em; font-variation-settings: normal; }
+[data-name-style="slab"] .band h1 { font-family: "Roboto Slab", Georgia, serif; font-weight: 800; letter-spacing: 0; font-variation-settings: normal; }
+[data-name-style] .band h1 .sub { font-family: var(--font); font-variation-settings: "wdth" 100; }

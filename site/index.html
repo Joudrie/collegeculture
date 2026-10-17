@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&display=swap">
 <link rel="stylesheet" href="styles.css">
+<script src="nav.js"></script>
 </head>
 <body>
 <header class="band home">
@@ -22,16 +23,24 @@
 </header>
 
 <main class="wrap">
-  <a class="quiz-cta" href="quiz.html">
+  <a class="quiz-cta" href="quiz.html" id="quiz-cta">
     <span class="sum-title">Find your fit</span>
-    <span class="small">Take the quiz and get matched with schools by vibe.</span>
+    <span class="small" id="quiz-cta-text">Take the quiz and get matched with schools by vibe.</span>
   </a>
-  <p class="small compare-link"><a href="compare.html">Compare two schools side by side</a> · <a href="basics.html">College basics: timeline, visits and myths</a></p>
+  <div class="tiles">
+    <a class="tile" href="compare.html"><span class="tile-title">Compare</span><span class="small muted">Two schools side by side</span></a>
+    <a class="tile" href="basics.html"><span class="tile-title">Basics</span><span class="small muted">Timeline, visits, myths</span></a>
+    <a class="tile" href="glossary.html"><span class="tile-title">Glossary</span><span class="small muted">College words, explained</span></a>
+  </div>
   <div class="search">
     <label class="small muted" for="school-search">Find a school</label>
     <input id="school-search" type="search" placeholder="Name or town" autocomplete="off">
   </div>
-  <div class="filters">
+  <div class="filter-bar">
+    <button type="button" class="chip-btn" id="filter-toggle" aria-expanded="false" aria-controls="filters">Filters</button>
+    <button type="button" class="btn" id="filter-clear" hidden>Clear</button>
+  </div>
+  <div class="filters" id="filters" hidden>
     <label class="small muted">Size
       <select id="f-size"><option value="">Any</option><option value="small">Under 2,000</option><option value="mid">2,000 to 10,000</option><option value="big">Over 10,000</option></select></label>
     <label class="small muted">Setting
@@ -48,7 +57,7 @@
 
 <footer>
   <div class="wrap small muted">
-    <p>© 2026 College Culture · <a href="about.html">About</a> · <a href="glossary.html">Glossary</a> · <a href="basics.html">Basics</a></p>
+    <p>© 2026 College Culture · <a href="about.html">About</a> · <a href="glossary.html">Glossary</a></p>
   </div>
 </footer>
 
@@ -125,6 +134,31 @@
     return true;
   }
 
+  // Filters stay tucked away until asked for; the button shows how many are on.
+  var toggle = document.getElementById('filter-toggle'), panel = document.getElementById('filters'), clear = document.getElementById('filter-clear');
+  toggle.addEventListener('click', function () {
+    panel.hidden = !panel.hidden;
+    toggle.setAttribute('aria-expanded', String(!panel.hidden));
+  });
+  clear.addEventListener('click', function () {
+    Object.keys(pick).forEach(function (k) { pick[k].value = ''; });
+    update();
+  });
+  function syncFilterButton() {
+    var on = Object.keys(pick).filter(function (k) { return pick[k].value; }).length;
+    toggle.textContent = on ? 'Filters · ' + on : 'Filters';
+    clear.hidden = !on;
+  }
+
+  // Quiz box shows your #1 match once you've taken the quiz
+  try {
+    var top = JSON.parse(localStorage.getItem('cc-quiz-top'));
+    if (top && top.name) {
+      document.getElementById('quiz-cta').href = 'quiz.html#results';
+      document.getElementById('quiz-cta-text').textContent = 'Your top match: ' + top.name + '. See all 10.';
+    }
+  } catch (e) { /* no saved quiz */ }
+
   var input = document.getElementById('school-search');
   var empty = document.getElementById('no-match');
   var count = document.getElementById('match-count');
@@ -132,6 +166,7 @@
   function update() {
     var q = input.value.trim().toLowerCase();
     var filtering = !!(pick.size.value || pick.setting.value || pick.type.value || pick.price.value);
+    syncFilterButton();
     var shown = 0;
     main.querySelectorAll('details').forEach(function (group) {
       var visible = 0;

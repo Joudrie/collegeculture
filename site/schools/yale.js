@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'yale',
+  id: 'yale', nameStyle: "classic",
   name: 'Yale',
   nameSub: 'University',
   state: 'Connecticut',

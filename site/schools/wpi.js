@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'wpi',
+  id: 'wpi', nameStyle: "slab",
   name: 'WPI',
   nameSub: 'Worcester Polytechnic',
   state: 'Massachusetts',

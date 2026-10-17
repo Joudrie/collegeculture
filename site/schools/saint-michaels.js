@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'saint-michaels',
+  id: 'saint-michaels', nameStyle: "classic",
   name: "Saint Michael's",
   nameSub: 'College',
   state: 'Vermont',

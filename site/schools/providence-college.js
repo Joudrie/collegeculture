@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'providence-college',
+  id: 'providence-college', nameStyle: "classic",
   name: 'Providence',
   nameSub: 'College',
   state: 'Rhode Island',

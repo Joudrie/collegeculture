@@ -705,6 +705,10 @@
           share[1]),
       h('p', { class: 'small muted', text: 'Matches are a starting point, not advice. Visit, talk to students, and check the school sites for real numbers.' }));
     app.appendChild(main);
+    // Remember the #1 match so the home page can show it
+    if (!viewing && list[0]) {
+      try { localStorage.setItem('cc-quiz-top', JSON.stringify({ id: list[0].id, name: list[0].s.short || list[0].s.name })); } catch (e) { /* private mode */ }
+    }
   }
 
   // ---------- routing ----------

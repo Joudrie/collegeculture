@@ -1,5 +1,5 @@
 registerSchool({
-  "id": "colby",
+  "id": "colby", "nameStyle": "classic",
   "name": "Colby",
   "nameSub": "College",
   "state": "Maine",

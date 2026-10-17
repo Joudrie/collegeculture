@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'new-england-tech',
+  id: 'new-england-tech', nameStyle: "slab",
   name: 'New England Tech',
   nameSub: 'Institute of Technology',
   state: 'Rhode Island',

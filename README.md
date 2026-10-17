@@ -13,6 +13,7 @@ site/
   index.html          list of schools
   school.html         the school page template (school.html#<id>)
   render.js           builds a school page from its data file
+  nav.js              the Schools / Quiz / Compare / Basics menu on every page
   styles.css          shared styles for every page
   schools/
     index.js          the list of schools shown on index.html
@@ -50,7 +51,7 @@ Every school page uses the same template. A school is one data file: its content
 ## Design rules
 
 - **School colors.** The header band uses the school's colors. The accent color has to stay readable on white and on near-black, so bright school colors go on the stripe and a darker shade is used for the accent.
-- **One font.** Archivo, condensed for the school name and section titles, normal width for reading.
+- **One font.** Archivo, condensed for the school name and section titles, normal width for reading. The only exception: a school file can set `nameStyle: 'classic'` (Libre Caslon, for old traditional schools) or `'slab'` (Roboto Slab, for tech, maritime and military schools), which changes the big school name in the header and nothing else. Official school fonts are licensed, so these are free look-alikes.
 - **Short first screen.** A one-screen summary up top, then collapsible sections, each with a one-line preview.
 - **Strict system.** Text sizes 13 / 15 / 17 plus the display size, spacing on an 8pt scale, one 4px radius, no decorative animation.
 - **Same scales everywhere.** The vibe meters (party scene, campus feel, school spirit, academic pressure, career focus, Greek life, religion) are fixed in `render.js` so every school is rated the same way, and the quiz can use them too.

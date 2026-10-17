@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'holy-cross',
+  id: 'holy-cross', nameStyle: "classic",
   name: 'Holy Cross',
   nameSub: 'College',
   state: 'Massachusetts',

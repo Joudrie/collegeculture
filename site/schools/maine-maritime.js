@@ -1,5 +1,5 @@
 registerSchool({
-  "id": "maine-maritime",
+  "id": "maine-maritime", "nameStyle": "slab",
   "name": "Maine Maritime",
   "nameSub": "Academy",
   "state": "Maine",

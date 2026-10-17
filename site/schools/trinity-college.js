@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'trinity-college',
+  id: 'trinity-college', nameStyle: "classic",
   name: 'Trinity',
   nameSub: 'College, Hartford',
   state: 'Connecticut',

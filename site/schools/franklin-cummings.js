@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'franklin-cummings',
+  id: 'franklin-cummings', nameStyle: "slab",
   name: 'Franklin Cummings',
   nameSub: 'Tech',
   title: 'Franklin Cummings Tech',

@@ -31,6 +31,15 @@
     { key: 'people',      title: 'What people say',          render: renderPeople }
   ];
 
+  // How the sections are grouped on the page. Jump buttons scroll to the groups that have one.
+  var GROUPS = [
+    { id: 'vibe',      jump: 'Vibe',      title: 'The vibe',              keys: ['vibe', 'social', 'who', 'stereotypes', 'mythsAndKnow', 'traditions'] },
+    { id: 'living',    jump: 'Living',    title: 'Living there',          keys: ['living', 'getThere'] },
+    { id: 'money',     jump: 'Money',     title: 'Getting in and paying', keys: ['gettingIn', 'cost', 'support'] },
+    { id: 'academics', jump: 'Academics', title: 'Academics',             keys: ['knownFor', 'majors'] },
+    { id: 'bottom',    jump: null,        title: 'The bottom line',       keys: ['fit', 'people'] }
+  ];
+
   var VERDICTS = {
     true: 'Mostly true',
     half: 'Half true',
@@ -182,6 +191,7 @@
     if (!st) return s.facts;
     return s.facts.map(function (f) {
       if (f.label === 'Undergrads' && st.undergrad && !ONLINE_HEAVY[s.id]) return { label: f.label, value: '~' + (st.undergrad >= 1000 ? (Math.round(st.undergrad / 100) * 100).toLocaleString('en-US') : st.undergrad) };
+      if (f.label === 'Usual length' && st.net != null) return { label: st.public ? 'After aid, in-state' : 'After aid', value: money(st.net) };
       if (f.label === 'Getting in' && st.admitRate != null) return { label: f.label, value: Math.round(st.admitRate * 100) + '% admitted' };
       return f;
     });
@@ -277,6 +287,21 @@
     return { title: 'Support and how students do', preview: bits.join(', ') || 'Support to ask about', body: out };
   }
 
+  // Optional free font for the big school name only, picked to echo the school's own style.
+  // classic: old traditional schools. slab: tech, maritime and military schools. Default stays Archivo.
+  var NAME_FONTS = {
+    classic: 'https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&display=swap',
+    slab: 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap'
+  };
+  function useNameFont(style) {
+    document.documentElement.removeAttribute('data-name-style');
+    if (!NAME_FONTS[style]) return;
+    if (!document.getElementById('name-font-' + style)) {
+      document.head.appendChild(h('link', { rel: 'stylesheet', id: 'name-font-' + style, href: NAME_FONTS[style] }));
+    }
+    document.documentElement.setAttribute('data-name-style', style);
+  }
+
   function applyColors(c) {
     var root = document.documentElement.style;
     var map = {
@@ -302,6 +327,7 @@
     if (meta) meta.setAttribute('content', 'What ' + s.name + ' ' + (s.nameSub || '') + ' is actually like: the vibe, the social life, the stereotypes, and the things nobody tells you.');
     applyColors(s.colors);
     current = s;
+    useNameFont(s.nameStyle);
 
     var band = h('header', { class: 'band' }, h('div', { class: 'wrap' },
       h('div', { class: 'bar' },
@@ -337,10 +363,27 @@
       var after = sections.map(function (el) { return el.id; }).indexOf(cost ? 'cost' : 'gettingIn') + 1;
       sections.splice(after || sections.length, 0, section({ key: 'support', title: support.title, render: function () { return support.body; } }, { preview: support.preview }));
     }
-    var list = h('div', { class: 'sections' }, sections);
+    // Group the sections so the page reads in a clear order instead of one long list.
+    var byKey = {};
+    sections.forEach(function (el) { byKey[el.id] = el; });
+    var groups = GROUPS.map(function (g) {
+      var items = g.keys.filter(function (k) { return byKey[k]; }).map(function (k) { return byKey[k]; });
+      if (!items.length) return null;
+      return h('section', { class: 'group', id: 'g-' + g.id },
+        h('h2', { class: 'group-title' }, g.title),
+        h('div', { class: 'sections' }, items));
+    }).filter(Boolean);
+    var list = h('div', { class: 'groups' }, groups);
+    var jump = h('nav', { class: 'jump', 'aria-label': 'Jump to' }, GROUPS.filter(function (g) { return groups.some(function (el) { return el.id === 'g-' + g.id; }) && g.jump; })
+      .map(function (g) {
+        var b = h('button', { type: 'button', class: 'chip-btn' }, g.jump);
+        b.addEventListener('click', function () { document.getElementById('g-' + g.id).scrollIntoView({ block: 'start' }); });
+        return b;
+      }));
 
     var main = h('main', { class: 'wrap' },
       schoolNav(s.id),
+      jump,
       h('div', { class: 'controls' }, h('span', { class: 'small muted' }, sections.length + ' sections'), toggle),
       list,
       h('p', { class: 'small compare-link' }, h('a', { href: 'compare.html#a=' + s.id + '&b=' + compareWith(s.id) }, 'Compare ' + (s.title || s.name) + ' with another school')));
@@ -348,6 +391,7 @@
     var app = document.getElementById('app');
     app.textContent = '';
     app.appendChild(band);
+    if (window.siteNav) window.siteNav(band);
     app.appendChild(main);
     if (s.asOf) document.getElementById('as-of').textContent = 'Facts are approximate as of ' + s.asOf + ', so check the school\'s website for current numbers.';
 
@@ -389,9 +433,9 @@
     var n = neighbors(id);
     if (!n || n.total < 2) return null;
     var nav = h('nav', { class: 'school-nav', 'aria-label': 'More schools in this state' },
-      n.prev ? h('a', { class: 'prev', href: '#' + n.prev.id }, '\u2039 ' + n.prev.name) : h('span'),
+      n.prev ? h('a', { class: 'prev', href: '#' + n.prev.id }, '\u2039 ' + (n.prev.short || n.prev.name)) : h('span'),
       h('span', { class: 'pos small muted' }, (n.index + 1) + ' of ' + n.total + ' in ' + n.state),
-      n.next ? h('a', { class: 'next', href: '#' + n.next.id }, n.next.name + ' \u203A') : h('span'));
+      n.next ? h('a', { class: 'next', href: '#' + n.next.id }, (n.next.short || n.next.name) + ' \u203A') : h('span'));
 
     // Swipe left for the next school, right for the previous one
     var x0 = null, y0 = null;

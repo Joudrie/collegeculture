@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'connecticut-college',
+  id: 'connecticut-college', nameStyle: "classic",
   name: 'Conn College',
   nameSub: 'Connecticut College',
   title: 'Connecticut College',

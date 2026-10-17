@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'boston-college',
+  id: 'boston-college', nameStyle: "classic",
   name: 'BC',
   nameSub: 'Boston College',
   state: 'Massachusetts',

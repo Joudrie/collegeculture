@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'saint-anselm',
+  id: 'saint-anselm', nameStyle: "classic",
   name: "Saint A's",
   nameSub: 'Saint Anselm College',
   state: 'New Hampshire',

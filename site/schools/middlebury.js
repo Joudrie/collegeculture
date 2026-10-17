@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'middlebury',
+  id: 'middlebury', nameStyle: "classic",
   name: 'Middlebury',
   nameSub: 'College',
   state: 'Vermont',

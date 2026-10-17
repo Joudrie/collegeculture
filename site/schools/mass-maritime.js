@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'mass-maritime',
+  id: 'mass-maritime', nameStyle: "slab",
   name: 'Mass Maritime',
   nameSub: 'Maritime Academy',
   state: 'Massachusetts',

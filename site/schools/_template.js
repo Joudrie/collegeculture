@@ -21,6 +21,7 @@ registerSchool({
   id: 'school-id',
   name: 'School',            // big condensed name, e.g. 'Northeastern'
   nameSub: 'University',     // smaller line under it, or '' if none
+  // nameStyle: 'classic',  // optional: 'classic' (old traditional schools) or 'slab' (tech, maritime, military) font for the big name
   // title: 'UMass Lowell',  // optional: browser tab name when name alone is ambiguous
   state: 'Massachusetts',
   location: 'Town · Neighborhood',

@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'coast-guard-academy',
+  id: 'coast-guard-academy', nameStyle: "slab",
   name: 'Coast Guard',
   nameSub: 'Academy',
   title: 'US Coast Guard Academy',

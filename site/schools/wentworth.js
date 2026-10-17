@@ -1,5 +1,5 @@
 registerSchool({
-  id: 'wentworth',
+  id: 'wentworth', nameStyle: "slab",
   name: 'Wentworth',
   nameSub: 'Institute of Technology',
   state: 'Massachusetts',
