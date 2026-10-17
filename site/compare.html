@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Compare Schools</title>
+<meta name="description" content="Put two New England colleges side by side: vibe, size, admit rate and what they cost.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="band home">
+  <div class="wrap">
+    <div class="bar">
+      <a class="wordmark" href="index.html">College Culture</a>
+      <span class="small on-muted">Compare</span>
+    </div>
+    <p class="vibe-line">Pick two schools and see them side by side.</p>
+  </div>
+</header>
+
+<main class="wrap compare-page">
+  <div class="row-2 vs-pick">
+    <label class="small muted">First school <select id="pick-a"></select></label>
+    <label class="small muted">Second school <select id="pick-b"></select></label>
+  </div>
+  <div id="vs"></div>
+</main>
+
+<footer>
+  <div class="wrap small muted">
+    <p>Numbers from the U.S. Department of Education College Scorecard. Vibe ratings are our read of what students say.</p>
+    <p>© 2026 College Culture · <a href="about.html">About</a></p>
+  </div>
+</footer>
+
+<script src="schools/index.js"></script>
+<script src="schools/quiz-data.js"></script>
+<script src="schools/stats.js"></script>
+<script>
+(function () {
+  var Q = window.QUIZ_DATA || {}, ST = (window.SCHOOL_STATS || {}).schools || {};
+  var METERS = [['party', 'Party scene'], ['campus', 'Campus feel'], ['spirit', 'School spirit'], ['pressure', 'Academic pressure'],
+    ['career', 'Career focus'], ['greek', 'Greek life'], ['religion', 'Religion on campus']];
+  var SETTING = { 'big-city': 'Big city', 'small-city': 'Small city', 'college-town': 'College town', rural: 'Rural' };
+  var ONLINE_HEAVY = { snhu: true, post: true };
+  var ids = Object.keys(Q).sort(function (a, b) { return Q[a].name.localeCompare(Q[b].name); });
+  var order = window.SCHOOL_ORDER || ids;
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  // Bar color: the school's band, or its dark text color when the band is too light to see on gray.
+  function barColor(s) {
+    var c = s.band.slice(1).match(/../g).map(function (x) { return parseInt(x, 16) / 255; });
+    var light = 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2] > 0.6;
+    return light ? s.onBand : s.band;
+  }
+  function money(n) { return n == null ? 'No data' : '$' + (Math.round(n / 100) * 100).toLocaleString('en-US'); }
+  function size(id) {
+    var n = ONLINE_HEAVY[id] ? Q[id].undergrad : (ST[id] && ST[id].undergrad) || Q[id].undergrad;
+    return n ? '~' + (n >= 1000 ? (Math.round(n / 100) * 100).toLocaleString('en-US') : n) + (ONLINE_HEAVY[id] ? ' on campus' : '') : 'No data';
+  }
+
+  var a = document.getElementById('pick-a'), b = document.getElementById('pick-b');
+  [a, b].forEach(function (sel) {
+    ids.forEach(function (id) { var o = el('option', null, Q[id].name); o.value = id; sel.appendChild(o); });
+    sel.addEventListener('change', function () { location.hash = 'a=' + a.value + '&b=' + b.value; });
+  });
+
+  function row(label, va, vb) {
+    var r = el('div', 'vs-row');
+    r.append(el('span', 'vs-label small muted', label), el('span', 'vs-val', va), el('span', 'vs-val', vb));
+    return r;
+  }
+  function meter(label, x, y, ca, cb) {
+    var r = el('div', 'vs-row');
+    r.appendChild(el('span', 'vs-label small muted', label));
+    [[x, ca], [y, cb]].forEach(function (p) {
+      var cell = el('span', 'vs-meter');
+      var track = el('span', 'cmp-track'), fill = el('span', 'cmp-fill');
+      fill.style.width = p[0] * 10 + '%';
+      fill.style.background = p[1];
+      track.appendChild(fill);
+      cell.append(track, el('span', 'small', String(p[0])));
+      r.appendChild(cell);
+    });
+    return r;
+  }
+  function head(id) {
+    var s = Q[id], h = el('a', 'vs-head');
+    h.href = 'school.html#' + id;
+    h.style.background = s.band;
+    h.style.color = s.onBand;
+    h.append(el('span', 'vs-name', s.short), el('span', 'small', s.town + ', ' + s.state));
+    return h;
+  }
+
+  function render() {
+    var p = {};
+    location.hash.slice(1).split('&').forEach(function (kv) { var i = kv.indexOf('='); if (i > 0) p[kv.slice(0, i)] = kv.slice(i + 1); });
+    var x = Q[p.a] ? p.a : order[0], y = Q[p.b] ? p.b : order[1];
+    a.value = x; b.value = y;
+    var A = Q[x], B = Q[y], sa = ST[x] || {}, sb = ST[y] || {};
+    var out = document.getElementById('vs');
+    out.textContent = '';
+    var heads = el('div', 'vs-row vs-heads');
+    heads.append(el('span', 'vs-label'), head(x), head(y));
+    out.appendChild(heads);
+
+    var nums = el('section', 'vs-sec');
+    nums.appendChild(el('h2', 'sum-title', 'The basics'));
+    nums.append(
+      row('Setting', SETTING[A.setting] || '', SETTING[B.setting] || ''),
+      row('Type', A.public ? 'Public' : 'Private', B.public ? 'Public' : 'Private'),
+      row('Undergrads', size(x), size(y)),
+      row('Admitted', sa.admitRate != null ? Math.round(sa.admitRate * 100) + '%' : 'No data', sb.admitRate != null ? Math.round(sb.admitRate * 100) + '%' : 'No data'));
+    out.appendChild(nums);
+
+    var cost = el('section', 'vs-sec');
+    cost.appendChild(el('h2', 'sum-title', 'What it costs per year'));
+    cost.append(
+      row('Sticker price', money(sa.sticker), money(sb.sticker)),
+      row('Average after aid', money(sa.net), money(sb.net)),
+      row('Family under $30k', money(sa.netLow), money(sb.netLow)),
+      row('Family $48k to $75k', money(sa.netMid), money(sb.netMid)),
+      row('Family over $110k', money(sa.netHigh), money(sb.netHigh)));
+    if (sa.public || sb.public) cost.appendChild(el('p', 'small muted', 'After-aid prices for public schools are for in-state students.'));
+    out.appendChild(cost);
+
+    var vibe = el('section', 'vs-sec');
+    vibe.appendChild(el('h2', 'sum-title', 'The vibe, 0 to 10'));
+    METERS.forEach(function (m) { vibe.appendChild(meter(m[1], A.meters[m[0]], B.meters[m[0]], barColor(A), barColor(B))); });
+    out.appendChild(vibe);
+
+    var links = el('p', 'small');
+    var la = el('a', null, 'Read about ' + A.short), lb = el('a', null, 'Read about ' + B.short);
+    la.href = 'school.html#' + x; lb.href = 'school.html#' + y;
+    links.append(la, ' · ', lb);
+    out.appendChild(links);
+    document.title = A.short + ' vs. ' + B.short;
+  }
+  window.addEventListener('hashchange', render);
+  render();
+})();
+</script>
+</body>
+</html>

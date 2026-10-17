@@ -19,6 +19,7 @@ site/
     _template.js      blank school file with writing and color rules
     northeastern.js   one file per school
   about.html          where the info comes from
+  compare.html        two schools side by side (compare.html#a=<id>&b=<id>)
   quiz.html           the Find Your Fit quiz (quiz.js, quiz-questions.js)
   zips.js             ZIP code locations for distance
   schools/quiz-data.js  generated quiz data (do not edit)

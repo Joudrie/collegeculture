@@ -407,3 +407,33 @@ a.btn-main { text-decoration: none; display: inline-block; }
 .about section { display: grid; gap: var(--s1); }
 .about h2 { font-size: var(--t-lg); line-height: var(--lh-lg); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; font-variation-settings: "wdth" 75; }
 .about ul { padding-left: var(--s2); display: grid; gap: var(--s1); }
+
+/* Compare page */
+.compare-link { padding-top: var(--s2); }
+.compare-page { display: grid; gap: var(--s3); padding-block: var(--s2) var(--s5); }
+.vs-pick label { display: grid; gap: 4px; }
+.vs-pick select {
+  font: inherit; font-size: 16px; color: var(--fg); background: var(--bg); width: 100%;
+  border: 1px solid var(--muted); border-radius: var(--radius); padding: var(--s1) 12px;
+}
+#vs { display: grid; gap: var(--s3); }
+.vs-sec { display: grid; }
+.vs-sec .sum-title { padding-bottom: var(--s1); }
+.vs-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 4px var(--s2); padding-block: var(--s1); border-bottom: 1px solid var(--line);
+}
+.vs-label { grid-column: 1 / -1; }
+.vs-val { font-weight: 600; font-variant-numeric: tabular-nums; }
+.vs-meter { display: grid; grid-template-columns: minmax(0, 1fr) 16px; gap: var(--s1); align-items: center; }
+.vs-heads { border-bottom: 0; padding-top: 0; position: sticky; top: 0; background: var(--bg); z-index: 1; }
+.vs-heads .vs-label { display: none; }
+.vs-head {
+  display: grid; gap: 4px; padding: var(--s1) 12px; border-radius: var(--radius); text-decoration: none; min-width: 0;
+}
+.vs-name { font-weight: 700; overflow-wrap: anywhere; }
+@media (min-width: 720px) {
+  .vs-row { grid-template-columns: 200px minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+  .vs-label { grid-column: auto; }
+  .vs-heads .vs-label { display: block; }
+}

@@ -242,7 +242,8 @@
     var main = h('main', { class: 'wrap' },
       schoolNav(s.id),
       h('div', { class: 'controls' }, h('span', { class: 'small muted' }, sections.length + ' sections'), toggle),
-      list);
+      list,
+      h('p', { class: 'small compare-link' }, h('a', { href: 'compare.html#a=' + s.id + '&b=' + compareWith(s.id) }, 'Compare ' + (s.title || s.name) + ' with another school')));
 
     var app = document.getElementById('app');
     app.textContent = '';
@@ -276,6 +277,12 @@
       .sort(function (a, b) { return rank(a) - rank(b) || a.name.localeCompare(b.name); });
     var i = same.indexOf(me);
     return { state: state, index: i, total: same.length, prev: same[i - 1], next: same[i + 1] };
+  }
+
+  // Default second school for the compare page: the next one in the same state, else the most popular one.
+  function compareWith(id) {
+    var n = neighbors(id);
+    return (n && (n.next || n.prev) && (n.next || n.prev).id) || (id === 'harvard' ? 'mit' : 'harvard');
   }
 
   function schoolNav(id) {
