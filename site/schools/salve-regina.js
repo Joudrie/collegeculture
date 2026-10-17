@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential campus; food is okay and Newport is a big draw.", "housing": ["Most students live on campus, especially in the first years.", "Some campus housing is in older mansions and houses, which students tend to like.", "Newport is expensive, so off-campus housing can cost a lot."], "food": ["There is a main dining hall plus a few smaller spots.", "Residents typically need a meal plan.", "Newport has lots of restaurants, though many are geared to tourists."]},
     vibe: {
       preview: 'Pretty, close-knit, a bit preppy, quiet weekdays',
       meters: {

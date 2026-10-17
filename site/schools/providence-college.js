@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential; most people live on campus for a long time.", "housing": ["Most students live on campus, especially in the first years.", "Housing is mostly traditional dorms plus some apartment-style options for older students.", "Some upperclassmen move off campus into houses nearby."], "food": ["There are a couple of main dining halls, and students call the food fine.", "Residents usually need a meal plan.", "Providence has a great food scene a short ride away."]},
     vibe: {
       preview: 'Big social scene, big spirit, small enclosed campus',
       meters: {

@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Cadets live in barracks and eat together, all covered by the academy.", "housing": ["Cadets live in barracks on campus.", "The academy covers housing.", "Life is structured, and rooms are shared or tightly managed."], "food": ["Cadets eat together in a central dining hall.", "Meals are covered by the academy.", "Free time off campus is limited, so most food is what the academy serves."]},
     vibe: {
       preview: 'Structured, disciplined, close-knit, service first',
       meters: {

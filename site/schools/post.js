@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly online school with a small residential campus.", "housing": ["Post is mostly online, and most students do not live on campus.", "There is a small residential campus with limited housing for students who want it.", "If you want a classic campus life, ask what is actually available."], "food": ["Campus dining is small because the residential community is small.", "Residents usually have a meal plan or access to simple food options.", "Waterbury has restaurants off campus, but you may need a ride."]},
     vibe: {
       preview: 'Small, athletic, practical, friendly',
       meters: {

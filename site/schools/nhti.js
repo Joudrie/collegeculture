@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Community college, mostly commuters; very little student housing", "housing": ["NHTI is a community college, and most students commute.", "There is little to no student housing, so you'd live at home or rent.", "Check with the school for any current options."], "food": ["There's a small cafe or basic food on campus.", "Most students bring food or eat out between classes.", "Concord has restaurants a short drive away."]},
     vibe: {
       preview: 'Practical, low pressure, mostly commuters',
       meters: {

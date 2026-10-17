@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Lots of commuters, dorms for those who want them, food is basic", "housing": ["Many students commute from home.", "First-years who live on campus are often in dorms or suites.", "Off-campus housing near Salem is common but not cheap."], "food": ["There are a few campus dining spots.", "Students call it okay for a school this size.", "Downtown Salem has plenty of places to eat."]},
     vibe: {
       preview: 'Laid back, practical, a cool town, light on school spirit',
       meters: {

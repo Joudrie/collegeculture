@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Tiny art school; limited housing and a very small campus.", "housing": ["It is a very small art school, so housing options are limited.", "Many students find their own housing nearby, so ask the school what it offers.", "Studio time can mean long days on campus."], "food": ["Dining on campus is limited, so most students eat off campus or bring food.", "Beverly has a small downtown with restaurants and cafes.", "Boston is a train ride away for more choices."]},
     vibe: {
       preview: 'Creative, small, studio-heavy, laid-back',
       meters: {

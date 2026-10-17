@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential and compact; food is fine, with Boston nearby.", "housing": ["Most first-years live on campus, and a lot of students stay on campus for years.", "Housing is a mix of traditional dorms and suites or apartments.", "Some upperclassmen move off campus in the Waltham area."], "food": ["There is a main dining hall plus smaller spots around campus.", "Students usually call the food fine, not amazing.", "Waltham has lots of restaurants, and Boston is easy to reach."]},
     vibe: {
       preview: 'Career-first, polished, medium social scene',
       meters: {

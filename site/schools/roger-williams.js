@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential on the water; food is okay.", "housing": ["Most first-years live on campus.", "Housing is a mix of dorms, suites and apartment-style options.", "Many upperclassmen move off campus in nearby towns."], "food": ["There is a main dining hall, and students call the food decent.", "Residents usually need a meal plan.", "Bristol has a small downtown, but a car helps for more choices."]},
     vibe: {
       preview: 'Beachy, friendly, outdoorsy, quiet town',
       meters: {

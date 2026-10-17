@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small residential campus; food is limited but fine.", "housing": ["Most students live on campus in a small, tight-knit setting.", "Housing is mostly traditional dorms and suites.", "New London is a small town, so there is not much housing off campus."], "food": ["There is one main dining hall plus a small snack spot or two.", "Residents typically need a meal plan, and variety can get repetitive.", "The town has a few local places, but you will want a car for more."]},
     vibe: {
       preview: 'Tiny, quiet, outdoorsy, very hands-on',
       meters: {

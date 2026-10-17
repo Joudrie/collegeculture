@@ -53,6 +53,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "living": {"preview": "Very small, remote campus; small housing, limited food nearby", "housing": ["Fort Kent is a small school in a very remote part of northern Maine.", "There are some on-campus housing options, but not a big dorm scene.", "Many students live off campus or are from the area."], "food": ["Food options on campus are small.", "Off campus, there are only a few places to eat in town.", "A car is a big help up there."]},
     "vibe": {
       "preview": "Tiny, remote, outdoorsy and close",
       "meters": {

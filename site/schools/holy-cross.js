@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Almost everyone lives on campus; food is fine, campus feels tight-knit", "housing": ["Most students live on campus for most or all of their time.", "The school is small and residential, so campus is where life happens.", "Dorm types range from traditional rooms to apartment-style for older students."], "food": ["Dining is centered on a main hall plus a few smaller spots.", "Students usually call it fine, not amazing.", "Worcester has food nearby, but you'll likely want a ride or the bus."]},
     vibe: {
       preview: 'Small, close, work hard and play hard, everyone on campus',
       meters: {

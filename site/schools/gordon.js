@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small residential campus, most students live on campus", "housing": ["Most students live on campus, and it is a residential school.", "Housing is a mix of traditional dorms and apartments.", "The school has community rules that affect dorm life, so check them."], "food": ["There is one main dining hall.", "Students say it is average and gets repetitive.", "Wenham is quiet, so you may want a car for going out to eat."]},
     vibe: {
       preview: 'Faith-centered, close-knit, quiet weekends',
       meters: {

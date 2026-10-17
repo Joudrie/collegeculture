@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Big city campus, dorm life first, apartments after, food is okay", "housing": ["Most first-years live on campus, often in big dorms or high-rises.", "Many upperclassmen move to apartments around Allston and Brighton.", "Housing is a mix of traditional rooms and suites."], "food": ["There are a few dining halls, and meal plans are common for first-years.", "Students say the food is fine but gets old.", "Off campus, Boston has endless options at every price."]},
     vibe: {
       preview: 'Big, urban and independent. Medium party scene, hockey spirit.',
       meters: {

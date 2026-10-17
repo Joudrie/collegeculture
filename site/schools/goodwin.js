@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly commuters with some on-campus housing; basic campus food", "housing": ["Many students commute, and it's not a big residential campus.", "The school has some housing options for students who want it.", "Some students live nearby or at home."], "food": ["Dining on campus is basic.", "Students often eat around class or bring food.", "East Hartford has places to eat, and a car helps."]},
     vibe: {
       preview: 'Focused, practical, and built for jobs',
       meters: {

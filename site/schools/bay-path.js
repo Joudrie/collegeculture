@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small campus with residents and commuters; food is simple.", "housing": ["Many students live on campus, and there are residence halls for undergrads.", "Rooms are mostly dorms and suites in a small community.", "Plenty of students commute from nearby towns."], "food": ["Dining is small, with a main dining hall and a few other spots.", "Residents typically need a meal plan.", "Longmeadow is quiet, so most restaurants are a short drive away."]},
     vibe: {
       preview: 'Small, supportive, career-minded, quiet',
       meters: {

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Residential small-town campus, most first-years live in dorms", "housing": ["First-years usually live on campus.", "Many students move off campus in town once they are older.", "Housing is mostly traditional dorms plus some apartment-style options."], "food": ["There is a main dining hall and a few smaller places.", "Students describe it as decent, not amazing.", "The town is small, so off-campus options are limited."]},
     vibe: {
       preview: 'Outdoorsy, chill and small, with real winters',
       meters: {

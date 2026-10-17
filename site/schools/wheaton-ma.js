@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Residential small college; most people live on campus", "housing": ["Most students live on campus, and it's pretty residential.", "Dorms range from older halls to apartment-style for upperclassmen.", "Campus is small and green, with a close community."], "food": ["There's a main dining hall, and students say it's fine.", "Meal plans are standard for residents.", "Norton is a small town, so off-campus food is limited."]},
     vibe: {
       preview: 'Small, artsy, laid back, quiet town, campus-based social life',
       meters: {

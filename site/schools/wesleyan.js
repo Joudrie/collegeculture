@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Most students live on campus or in nearby houses, food is good", "housing": ["Most first-years and many upperclassmen live on campus.", "Many seniors live in houses owned by the school or in nearby apartments.", "Middletown is a small city, so campus is a big part of social life."], "food": ["There are a few dining halls and cafes.", "Students usually say the food is good.", "Main Street in Middletown has a number of local restaurants."]},
     vibe: {
       preview: 'Creative, political, open curriculum, not a sports school',
       meters: {

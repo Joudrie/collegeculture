@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Big campus, lots of living options; dining is well liked.", "housing": ["Many first-years live on campus in traditional dorms.", "Upperclassmen often choose apartments or move off campus around Storrs.", "Storrs is rural, so most people live close to campus."], "food": ["There are many dining halls, and people often say UConn dining is a highlight.", "Residents usually need a meal plan.", "Off-campus food near Storrs is limited, so a car or the campus bus helps."]},
     vibe: {
       preview: 'Huge school spirit, solid party scene, middle of nowhere',
       meters: {

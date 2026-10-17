@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small campus in a small town, most students are residents", "housing": ["Many students live on campus, especially in the first years.", "Housing is mostly traditional dorms and some suites.", "North Adams is small and quiet."], "food": ["There is a main dining hall.", "Students call it fine.", "The town has a handful of restaurants, but options are limited."]},
     vibe: {
       preview: 'Small, quiet, artsy, mountains everywhere',
       meters: {

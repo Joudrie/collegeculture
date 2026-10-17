@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential campus; food is decent and the area is quiet.", "housing": ["Most students live on campus for much of their time here.", "Housing includes traditional dorms and apartment-style options for older students.", "The campus is in suburban Smithfield, so it can feel isolated without a car."], "food": ["There is a main dining hall and some other places to eat on campus.", "Residents usually need a meal plan.", "Off-campus food is mostly chains and a short drive away."]},
     vibe: {
       preview: 'Career-focused, on-campus social life, nice self-contained campus',
       meters: {

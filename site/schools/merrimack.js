@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential and growing; food is fine, campus is quiet off-hours.", "housing": ["Most first-years live on campus.", "Housing is a mix of dorms, suites and apartment-style options.", "Students often drive to nearby towns on weekends, so a car helps."], "food": ["There is a main dining hall plus some smaller spots.", "Students usually call the food okay.", "North Andover has some restaurants nearby, and bigger options are a short drive away."]},
     vibe: {
       preview: 'Sporty, social, growing, hockey on Friday nights',
       meters: {

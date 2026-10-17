@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small and commuter-heavy; limited campus living.", "housing": ["A lot of students commute from home.", "There is some on-campus housing, but a smaller share of students live there.", "The campus is small and can feel quiet outside class hours."], "food": ["Dining is limited and built for a small campus.", "Commuters often eat between classes or bring food.", "New Haven has lots of restaurants if you have a way to get around."]},
     vibe: {
       preview: 'Small, friendly, quiet, Catholic roots',
       meters: {

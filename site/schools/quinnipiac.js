@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential, newer housing; food gets decent reviews.", "housing": ["Most first-years live on campus.", "People say the housing is on the nicer side, with a mix of dorms, suites and apartments.", "Many upperclassmen live off campus nearby in Hamden."], "food": ["There are a few dining spots on campus, and students generally say the food is decent.", "Residents usually need a meal plan.", "Off-campus food is mostly a short drive, so having a car helps."]},
     vibe: {
       preview: 'Social, polished, health-science heavy, hockey-crazy',
       meters: {

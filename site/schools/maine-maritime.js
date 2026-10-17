@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "living": {"preview": "Small regimental school, nearly everyone lives on campus", "housing": ["Most students live on campus, and rules are stricter than at other schools.", "Rooms are often shared.", "Castine is tiny and remote, so campus is your world."], "food": ["Most meals are in the campus dining hall.", "Students say it is okay.", "The town has very few places to eat out."]},
     "vibe": {
       "preview": "Hands-on, structured, close and very job driven",
       "meters": {

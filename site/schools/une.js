@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "living": {"preview": "Mostly residential campus on the coast; food is decent.", "housing": ["Most undergrads live on campus, especially early on.", "Housing is a mix of dorms and apartment-style options.", "Some upperclassmen move off campus in Biddeford and nearby towns."], "food": ["There is a main dining hall and some other places to eat on campus.", "Residents typically need a meal plan.", "Biddeford and nearby Portland have more restaurants if you have a car."]},
     "vibe": {
       "preview": "Health-focused, friendly, coastal, pretty career driven",
       "meters": {

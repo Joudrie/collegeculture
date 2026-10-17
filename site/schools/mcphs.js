@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "City campus with some housing, many students live off campus", "housing": ["The school has some residence halls, mostly for first-years.", "A lot of students move to apartments around Boston.", "Housing is limited compared to bigger schools, so plan early."], "food": ["Campus food is simple, with a dining hall or cafe-style options.", "Students often eat out or cook.", "The Longwood and Fenway area has lots of cheap places."]},
     vibe: {
       preview: 'Study-heavy, career-focused, quiet social scene',
       meters: {

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Lots of commuters, but you can live on campus; New Haven helps on food", "housing": ["Many students commute, and campus is not as residential as some schools.", "There are residence halls for students who want to live on campus.", "Some students live off campus in New Haven or nearby towns."], "food": ["The campus has dining options, and students can use meal plans.", "Students say the food is okay, like most school dining.", "New Haven nearby has lots of famous food, including pizza."]},
     vibe: {
       preview: 'Practical, diverse, low pressure, half commuter',
       meters: {

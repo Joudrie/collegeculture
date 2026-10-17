@@ -53,6 +53,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "living": {"preview": "Mostly commuters with some housing; food is limited and city-based.", "housing": ["USM is commuter-heavy, and many students live off campus.", "There are residence halls, mainly on the Gorham campus.", "Portland and Gorham are different feels, so check which campus you want."], "food": ["Campus dining is smaller than at big residential schools.", "Many students eat off campus or bring food.", "Portland has a lot of good restaurants if you want to eat out."]},
     "vibe": {
       "preview": "Commuter-heavy, city access, low-key",
       "meters": {

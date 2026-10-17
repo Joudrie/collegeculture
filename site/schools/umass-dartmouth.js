@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of residents and commuters; food is standard college dining.", "housing": ["Many students commute, but there is on-campus housing for those who want it.", "Residents usually live in dorms or suite-style halls.", "Campus is a bit out of the way, so a car helps."], "food": ["There is a main dining hall and some smaller spots on campus.", "Residents typically need a meal plan.", "Off-campus food is mostly a short drive away."]},
     vibe: {
       preview: 'Quiet, laid-back, affordable, with one-of-a-kind architecture',
       meters: {

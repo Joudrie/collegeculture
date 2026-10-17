@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of residents and commuters, small town, basic food", "housing": ["Many students live on campus, and many commute.", "Housing is mostly traditional dorms and apartment-style options.", "Willimantic is small, so weekends can be quiet."], "food": ["There is a main dining hall.", "Students call it fine.", "Off-campus options in Willimantic are limited and casual."]},
     vibe: {
       preview: 'Friendly, small, affordable, a real campus feel',
       meters: {

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Downtown Providence school known for culinary programs; mix of dorms and commuters", "housing": ["Many first-years live on campus, and some students live off campus.", "Housing is in and around the Providence campus.", "Some students commute from nearby."], "food": ["The school is famous for culinary programs, so food is a big part of the culture.", "Students still have regular dining options and meal plans.", "Providence has a strong restaurant scene to explore."]},
     vibe: {
       preview: 'Practical, city-based, quiet party scene, very career-focused',
       meters: {

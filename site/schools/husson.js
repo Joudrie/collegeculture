@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "living": {"preview": "Mix of commuters and residents, simple dorms, basic food", "housing": ["Many students commute, and many live on campus.", "Housing is mostly dorms and suites.", "Bangor is a small city with some off-campus housing."], "food": ["There is a campus dining hall.", "Students say it is fine.", "Bangor has the usual local restaurants and chains."]},
     "vibe": {
       "preview": "Practical, friendly, career first, low drama",
       "meters": {

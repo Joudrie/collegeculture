@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small campus with residents and commuters; food is simple.", "housing": ["Many students live on campus, but a good number commute.", "Housing is mostly dorms and suites in a small community.", "West Hartford is close, so apartments nearby are an option."], "food": ["Dining on campus is small, with a main dining hall.", "Residents typically need a meal plan.", "West Hartford has lots of restaurants a short ride away."]},
     vibe: {
       preview: 'Small, calm, and focused on health careers',
       meters: {

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Cadets live in barracks style; civilians have separate dorms and a quieter setup", "housing": ["Cadets in the Corps live under strict rules and routines.", "Civilian students live in separate residence halls with a more normal dorm feel.", "The campus is small and out in rural Vermont."], "food": ["Everyone eats in a main dining hall on campus.", "Cadets have more structure around meals than civilians.", "Northfield is tiny, so off-campus food options are limited."]},
     vibe: {
       preview: 'Structured, disciplined, close-knit, very small town',
       meters: {

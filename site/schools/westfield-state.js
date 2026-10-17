@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of commuters and residents; classic state school dorm life", "housing": ["Many students commute, but first-years often live on campus.", "Residence halls are mostly traditional dorms.", "Some older students move to apartments off campus."], "food": ["There is a main dining hall on campus.", "Students say it's average, like a lot of schools.", "Westfield has basic food spots, and a car helps."]},
     vibe: {
       preview: 'Social, practical, laid back, louder rep than reality',
       meters: {

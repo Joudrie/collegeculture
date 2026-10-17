@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential, on the coast, lots of students stay on campus", "housing": ["Most students live on campus, especially in the first years.", "Housing is a mix of traditional dorms and apartments.", "The campus is small and close to the water."], "food": ["There is one main dining hall plus a few smaller options.", "Students say it is okay and gets repetitive.", "Beverly and nearby towns have restaurants, but you may want a car."]},
     vibe: {
       preview: 'Beachy, friendly, career-minded, a little cliquey',
       meters: {

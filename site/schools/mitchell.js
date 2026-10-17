@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small campus, a mix of residents and commuters, basic food", "housing": ["Many students live on campus, and some commute.", "Housing is a small mix of dorms and suites.", "The campus is small and close to the water."], "food": ["There is one main dining hall.", "Students say it is basic.", "New London has local restaurants within a short ride."]},
     vibe: {
       preview: 'Small, friendly, and supportive',
       meters: {

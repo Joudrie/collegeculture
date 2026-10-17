@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Music school in the city; dorms plus lots of shared apartments", "housing": ["Berklee has residence halls, and many first-years live in them.", "Lots of students share apartments around Boston later.", "Practice space and noise can be a real thing in dorms."], "food": ["Berklee does not have one big dining hall like traditional colleges.", "Students often eat out or cook at home.", "Boston has food everywhere, but it adds up."]},
     vibe: {
       preview: 'Jam sessions, not parties. Huge creative energy, no sports.',
       meters: {

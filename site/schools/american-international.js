@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small campus with both residents and commuters; food is basic.", "housing": ["Many students live on campus, though a good number commute.", "Housing is mostly traditional dorms and some apartment-style options.", "The campus is in Springfield, so the neighborhood matters when you visit."], "food": ["Dining is small, with a main dining hall and a few other spots.", "Residents usually need a meal plan.", "Springfield has local restaurants, but many students stick to campus."]},
     vibe: {
       preview: 'Small, athletic, health-career focused, quiet social scene',
       meters: {

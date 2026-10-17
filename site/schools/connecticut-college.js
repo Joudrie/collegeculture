@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential; food is solid, with a small city nearby.", "housing": ["Most students live on campus, especially in the early years.", "Housing is a mix of traditional dorms, suites and some apartments.", "Campus is close-knit, so most social life stays on it."], "food": ["There are a few dining spots, and students generally say the food is good.", "Meal plans are standard for residents.", "New London has restaurants, though many students use a car or a ride."]},
     vibe: {
       preview: 'Small, close, outdoorsy, honor code, no frats',
       meters: {

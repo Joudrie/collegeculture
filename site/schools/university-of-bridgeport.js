@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of residents and commuters; campus is small, food is basic.", "housing": ["There is on-campus housing, mostly dorms.", "A good share of students commute or live nearby.", "The campus is small and sits in a city, so the feel is less like a campus bubble."], "food": ["There is a main dining option, and students call the food okay.", "Residents usually need a meal plan.", "Bridgeport has restaurants around, but students may travel for more choices."]},
     vibe: {
       preview: 'Diverse, practical, and what you make of it',
       meters: {

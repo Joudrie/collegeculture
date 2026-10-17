@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small residential school for students with learning differences", "housing": ["Most students live on campus in residence halls.", "Staff are around to help with daily life and routines.", "The campus is small and in rural Vermont."], "food": ["There's a main dining hall on campus.", "Students use meal plans, since there's little around.", "Putney is a tiny town, so off-campus food is limited."]},
     vibe: {
       preview: 'Supportive, small, structured, built for how you learn',
       meters: {

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Residential campus where most students live on campus", "housing": ["Most students live on campus, and it is a residential school.", "Housing is a mix of traditional rooms and apartment-style options.", "Easton is quiet, so having a car helps."], "food": ["There is a main dining hall and a few smaller spots.", "Students say it is fine but not great.", "Off-campus food options nearby are limited."]},
     vibe: {
       preview: 'Small, friendly, campus-centered, sporty',
       meters: {

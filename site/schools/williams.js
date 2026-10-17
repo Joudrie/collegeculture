@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Nearly everyone lives on campus; food is good and the town is tiny.", "housing": ["Almost all students live on campus all four years.", "Rooms are assigned by a housing lottery after first year.", "Most dorms are fairly nice, but you live in a small isolated town."], "food": ["Students eat in a handful of dining halls, and people generally like them.", "There is a meal plan for most residents.", "Williamstown has a few places to eat, but the options run out fast."]},
     vibe: {
       preview: 'Small, hard, sporty and outdoorsy, with the mountains all around',
       meters: {

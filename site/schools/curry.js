@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small, mostly residential, with a commuter group; food is average.", "housing": ["Most first-years live on campus.", "Housing is mainly traditional dorms and suites.", "Some students commute, and campus can be quiet on weekends."], "food": ["There is one main dining hall, and students call the food average.", "Residents usually need a meal plan.", "Boston is close for more food by train or car."]},
     vibe: {
       preview: 'Small, supportive, practical, quiet on weekends',
       meters: {

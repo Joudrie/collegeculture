@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Most students live on campus early, then many move to nearby houses", "housing": ["Most first-years live on campus in dorms.", "Many older students move into off-campus houses and apartments.", "Some students live in special-interest or themed housing."], "food": ["There are a couple of main dining halls, and students usually rate the food well.", "Meal plans are normal for students living on campus.", "Providence has a strong food scene close to campus."]},
     vibe: {
       preview: 'Freedom to pick your classes, relaxed vibe, quiet sports scene',
       meters: {

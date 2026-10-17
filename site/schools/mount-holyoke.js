@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Almost everyone lives on campus, food is above average", "housing": ["Nearly all students live on campus.", "Dorms are a mix of older halls and a few apartment-style options.", "The campus is residential, in a quiet small town."], "food": ["There are several dining halls around campus.", "Students usually say the food is pretty good.", "South Hadley is small, but nearby towns have more options."]},
     vibe: {
       preview: 'Cozy, traditional, beautiful campus, low-key weekends',
       meters: {

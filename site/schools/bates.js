@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "living": {"preview": "Fully residential and close-knit; food gets good reviews.", "housing": ["Almost all students live on campus.", "Housing is mostly dorms, with some apartment-style options for upperclassmen.", "Lewiston is a real city next to campus, so you can go off campus easily."], "food": ["Students generally say the dining hall food is good.", "Meal plans are standard for people living on campus.", "Lewiston and nearby Auburn have restaurants, though many are a short drive."]},
     "vibe": {
       "preview": "Friendly, outdoorsy, serious about class, easy to be yourself",
       "meters": {

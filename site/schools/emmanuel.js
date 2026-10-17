@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small city school; many live on campus, food mixed with Boston options", "housing": ["Many students live on campus in residence halls.", "Campus is in Boston's Longwood area, so it's urban.", "Upperclassmen often move off campus, and Boston rent is high."], "food": ["There's a main dining hall on campus.", "Students call it okay.", "The area around campus has lots of places to eat."]},
     vibe: {
       preview: 'Small and close-knit, strong for health and science, Boston for fun',
       meters: {

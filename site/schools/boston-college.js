@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Most people live on campus early; food is solid for a big school.", "housing": ["Most first-years live on campus, and lots of students stay on for a few years.", "Upperclassmen often move to apartments or houses off campus nearby.", "Housing is a mix of traditional dorms and suites, and people say the quality varies."], "food": ["There are a few dining halls, and students generally rate the food pretty well.", "Residents usually need a meal plan.", "Boston is a short train ride away for better food."]},
     vibe: {
       preview: 'Tight campus bubble, lots of school spirit, social and driven',
       meters: {

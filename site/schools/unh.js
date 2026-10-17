@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Most first-years live on campus; food is big-school dining, mostly decent.", "housing": ["First-years usually live on campus in traditional dorms.", "Lots of upperclassmen move to off-campus houses and apartments in Durham or nearby towns.", "Durham is small, so off-campus housing can get crowded and pricey."], "food": ["There are several dining halls, and students usually call them pretty good for a state school.", "Residents typically need a meal plan, at least in the first year.", "Downtown Durham has a few casual spots, but options are limited."]},
     vibe: {
       preview: 'Social, outdoorsy, real party scene, hockey on Saturday',
       meters: {

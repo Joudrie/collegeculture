@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "First-years live on campus; food is solid for a big state school.", "housing": ["Most first-years live on campus in traditional dorms.", "Many upperclassmen move to apartments in Orono and nearby towns.", "Orono is small, so off-campus choices are limited but affordable."], "food": ["There are a few dining halls, and students usually say the food is pretty good.", "Residents typically need a meal plan.", "Downtown Orono has a handful of casual places, nothing huge."]},
     vibe: {
       preview: 'Outdoorsy, social and cold, with hockey at the center',
       meters: {

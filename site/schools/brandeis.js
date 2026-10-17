@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly live on campus, small and quiet, food is fine", "housing": ["Most students live on campus, especially in the first years.", "Housing includes traditional dorms and apartment-style options.", "Waltham is quiet, so campus is where most people spend time."], "food": ["There are a few dining spots, with one main dining hall.", "Students say it is okay and can get repetitive.", "Moody Street in Waltham has a good mix of restaurants nearby."]},
     vibe: {
       preview: 'Academic, activist, and pretty low-key on weekends',
       meters: {

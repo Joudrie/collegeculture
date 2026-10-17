@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of dorms and commuters; food is standard campus dining", "housing": ["Many students commute, so it's less residential than some schools.", "First-years and others live in residence halls on campus.", "Dorms are mostly traditional with some apartment-style options."], "food": ["There is a main dining hall plus a few smaller spots.", "Students call it decent, like most state school dining.", "The town of Bridgewater has basic food options, but a car helps."]},
     vibe: {
       preview: 'Practical, low pressure, mixed commuter and dorm crowd',
       meters: {

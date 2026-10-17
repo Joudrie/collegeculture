@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small, city-based, dorms in downtown Boston, food is mostly off campus", "housing": ["Most first-years live in dorms right in downtown Boston.", "Dorms are mostly in city buildings, so rooms can feel small.", "Many students move to nearby apartments later."], "food": ["There is one main dining hall, and students often say it is just okay.", "Many students eat out or cook once they can.", "Downtown Boston has tons of places within walking distance."]},
     vibe: {
       preview: 'Creative, career-driven, very little traditional campus life',
       meters: {

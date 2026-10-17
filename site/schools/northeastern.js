@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Most first-years live on campus, then move to pricey off-campus apartments", "housing": ["Most first-years live on campus, usually in doubles or suites.", "Upperclassmen often move to apartments in Boston, and rent there is expensive.", "Co-op semesters mean some students sublet or move around a lot."], "food": ["There are several dining halls plus a lot of campus food spots.", "Students say the dining halls are decent, but they get repetitive.", "Plenty of cheap and good food is nearby in the city."]},
     vibe: {
       preview: 'Huge career focus, medium party scene, city campus',
       meters: {

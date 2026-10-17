@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Very small school, most students live on campus", "housing": ["It is a very small school, and most students live on campus.", "Housing is limited in size and mostly traditional dorms.", "It is close to Boston, so students often go into the city."], "food": ["There is one small dining hall.", "Students say it is simple.", "Brookline and Boston have lots of restaurants a short ride away."]},
     vibe: {
       preview: 'Tiny, faith-centered, and close',
       meters: {

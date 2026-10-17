@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small town school; most first-years live on campus, food is okay.", "housing": ["First-years mostly live on campus in traditional dorms.", "Upperclassmen often move to apartments or houses in Keene.", "The campus is close to a small downtown, so living nearby is easy."], "food": ["There is a main dining hall, and students call the food okay.", "Residents usually need a meal plan.", "Downtown Keene has local restaurants and cafes within walking distance."]},
     vibe: {
       preview: 'Small, social and laid back, with a real downtown next door',
       meters: {

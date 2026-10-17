@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Fully residential and tight-knit; food is a highlight for many students.", "housing": ["Almost all students live on campus, especially first-years.", "Housing is a mix of dorms and apartment-style options for upperclassmen.", "Campus social life stays mostly on campus, so you will see the same people a lot."], "food": ["Students generally say the dining halls are among the best around.", "Meal plans are standard for people living on campus.", "Brunswick has a small downtown with local restaurants."]},
     vibe: {
       preview: 'Friendly, outdoorsy, academic, and the food is the best around',
       meters: {

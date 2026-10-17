@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of residents and commuters, basic dorms, average food", "housing": ["Many students live on campus, and many commute.", "Housing includes traditional dorms and some suite or apartment-style options.", "Students often move off campus into the city later."], "food": ["There is a main dining hall and some smaller options.", "Students call it fine, not great.", "Fitchburg has cheap local places to eat."]},
     vibe: {
       preview: 'Low-key, creative pockets, lots of commuters',
       meters: {

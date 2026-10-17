@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Everyone lives on campus early; food is good, town is small.", "housing": ["Almost all students live on campus, especially in the first years.", "Housing includes dorms and a house community system that people talk about a lot.", "Greek life is a big part of social life for some students."], "food": ["There are a few dining options, and students generally say the food is good.", "Meal plans are the norm for students living on campus.", "Hanover is a very small town, so off-campus food choices are limited."]},
     vibe: {
       preview: 'Tight-knit, outdoorsy, and the Greek scene runs the weekends',
       meters: {

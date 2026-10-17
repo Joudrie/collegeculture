@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small residential campus; food is basic and simple.", "housing": ["Most students live on campus, and it is a small, close community.", "Housing is mostly traditional dorms and suites.", "Franklin is a small town, so there is not much off-campus housing for students."], "food": ["There is a main dining hall and not much variety beyond that.", "Residents typically need a meal plan.", "You will need a ride or the train to reach better food off campus."]},
     vibe: {
       preview: 'Small, hands-on, artsy and sporty at the same time',
       meters: {

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Houses are the whole system; most people live on campus all four years", "housing": ["Students live in houses on campus, each with its own community.", "Most students stay on campus for most or all of their time.", "Houses range from big old buildings to smaller ones."], "food": ["Dining is mostly in the houses, so you eat with your neighbors.", "Students generally call it good for college food.", "Downtown Northampton has lots of food and cafes."]},
     vibe: {
       preview: 'Academic, close-knit houses, artsy town, no frat parties',
       meters: {

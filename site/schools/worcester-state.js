@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of commuters and residents; food is fine, nothing special.", "housing": ["A lot of students commute from home, though plenty live on campus.", "Residence halls are mostly traditional dorms and suites.", "Some students rent off campus in Worcester."], "food": ["There is a main dining hall that most residents use.", "Students usually call the food fine.", "Worcester has a big range of restaurants off campus."]},
     vibe: {
       preview: 'Quiet, practical, commuter-heavy, low pressure',
       meters: {

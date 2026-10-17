@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Music conservatory in the city; small dorm, most students find their own places", "housing": ["NEC has a dorm for some students, but it's a small school.", "Many students live in apartments around Boston.", "Dorm life is built around practice and music schedules."], "food": ["The school doesn't have a big dining hall scene.", "Students mostly eat out or cook for themselves.", "Boston has endless places to eat, but it costs money."]},
     vibe: {
       preview: 'Music-obsessed, small, focused, with concerts every night',
       meters: {

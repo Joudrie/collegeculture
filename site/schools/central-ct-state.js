@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "A lot of commuters, some on-campus living, food is basic", "housing": ["The school is commuter-heavy, and many students live at home.", "Some students live on campus, mostly first-years.", "Campus can feel quiet on weekends because many students leave."], "food": ["There are a few dining options on campus.", "Students generally call it fine, not special.", "Off-campus food nearby is mostly casual and cheap."]},
     vibe: {
       preview: 'Practical, mostly in-state, D1 sports, calm weekends',
       meters: {

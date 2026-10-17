@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of residents and commuters, apartment-style options, food is fine", "housing": ["Many first-years live on campus, but a lot of students commute.", "Housing includes traditional dorms and apartment-style options.", "Many upperclassmen move off campus in Lowell."], "food": ["There are a few dining halls and some food courts.", "Students say it is decent and varied enough.", "Lowell has a lot of cheap, good restaurants."]},
     vibe: {
       preview: 'Career-minded, low-key social scene, big on hockey',
       meters: {

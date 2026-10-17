@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Everyone lives somewhere with its own culture; food is mixed, Cambridge helps", "housing": ["Undergrads mostly live on campus, and first-years are placed in a residence.", "Each dorm has its own personality, and people care a lot about it.", "Some students live in fraternities or sororities, or off campus later."], "food": ["Dining options are spread across dorms and campus, not one big hall.", "Many dorms have kitchens, so a lot of students cook.", "Cambridge and Kendall Square are right there for off-campus food."]},
     vibe: {
       preview: 'Intense work, quirky culture, strong dorm and frat life',
       meters: {

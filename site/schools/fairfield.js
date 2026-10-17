@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential; lots of students live near the beach after first year.", "housing": ["Most undergrads live on campus, especially early on.", "Many upperclassmen move to off-campus houses near the beach.", "Campus housing is a mix of dorms and apartment-style options."], "food": ["There is a main dining hall plus several other spots on campus.", "Residents typically need a meal plan.", "The town has plenty of restaurants, and New York City is within reach by train."]},
     vibe: {
       preview: 'Social, polished, close to the beach, Jesuit roots',
       meters: {

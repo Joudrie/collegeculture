@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "No dorms; school is for adult learners who live on their own", "housing": ["Cambridge College has no dorms.", "Students are mostly adult learners who already have housing.", "You'd find your own place or live at home."], "food": ["There is no campus dining hall or meal plan.", "Students eat on their own around work and class.", "The Boston area has lots of food nearby."]},
     vibe: {
       preview: 'Adults, evenings, and getting the degree done',
       meters: {

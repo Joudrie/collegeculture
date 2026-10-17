@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Huge dorm system, most people move off campus later; food is a known strength", "housing": ["Most first-years live on campus in big residence halls.", "Lots of upperclassmen move to apartments in and around Amherst.", "The campus is large, so where your dorm is matters for walking."], "food": ["Several big dining halls, and students often rate the food well.", "Meal plans are normal for first-years living on campus.", "Downtown Amherst has plenty of cheap places to eat."]},
     vibe: {
       preview: 'Big, social, lots to do, and the food is actually good',
       meters: {

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "No traditional campus living, mostly commuters and working students", "housing": ["There is little or no traditional campus housing, so most students arrange their own.", "Many students work in architecture offices while they study.", "Plan to live off campus in Boston, which is expensive."], "food": ["There is no big dining hall or meal plan.", "Students usually bring food or eat out nearby.", "Back Bay has lots of places to eat, though many are not cheap."]},
     vibe: {
       preview: 'Design-obsessed, work-focused, no classic campus',
       meters: {

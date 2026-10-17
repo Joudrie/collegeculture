@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small and mostly residential in a small town; food is basic.", "housing": ["Most students live on campus.", "Housing is mainly traditional dorms with a few apartment-style options.", "Henniker is quiet, so weekends can feel slow without a car."], "food": ["There is a main dining hall, and students call the food okay.", "Residents usually need a meal plan.", "Henniker has very few restaurants, so students drive for more."]},
     vibe: {
       preview: 'Small, friendly, outdoorsy, quiet weekends',
       meters: {

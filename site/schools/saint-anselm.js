@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small and mostly residential; most people live on campus.", "housing": ["Most students live on campus for much of their time there.", "Housing is a mix of traditional dorms and apartment-style options for older students.", "Campus is small, so everything is close together."], "food": ["There is a main dining hall, and students say the food is decent.", "Residents usually need a meal plan.", "Goffstown is quiet, so many students drive to Manchester for more food."]},
     vibe: {
       preview: 'Close-knit, traditional, more social than you would guess',
       meters: {

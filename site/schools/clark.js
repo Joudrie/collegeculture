@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mostly residential in the early years; food has a good reputation.", "housing": ["Most first-years live on campus.", "Housing includes traditional dorms and some apartment-style options.", "Many upperclassmen move to houses and apartments in the neighborhood around campus."], "food": ["There is a main dining hall, and students generally say the food is good.", "Residents usually need a meal plan.", "Worcester has a lot of restaurants off campus."]},
     vibe: {
       preview: 'Small, offbeat, progressive, low-key social scene',
       meters: {

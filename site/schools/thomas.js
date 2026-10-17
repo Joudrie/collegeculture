@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "living": {"preview": "Small and mostly residential; food is simple.", "housing": ["The campus is small, and most students live on it.", "Housing is mostly traditional dorms and suites.", "Everything is close together, and everyone knows each other."], "food": ["There is one main dining hall, so choices are limited.", "Residents usually need a meal plan.", "Waterville has a small downtown with restaurants nearby."]},
     "vibe": {
       "preview": "Small, athletic, career-minded and tight",
       "meters": {

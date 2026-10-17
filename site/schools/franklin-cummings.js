@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Small tech school in Boston; mostly commuters, little campus housing.", "housing": ["Franklin Cummings is mostly a commuter school.", "Campus housing is limited, and many students live at home or rent in the area.", "Boston rent is high, so plan for the cost."], "food": ["There is no big dining hall like at a traditional campus.", "Most students bring food or eat nearby.", "The South End has lots of places to eat, from cheap to pricey."]},
     vibe: {
       preview: 'Practical, small, job-focused, light on campus life',
       meters: {

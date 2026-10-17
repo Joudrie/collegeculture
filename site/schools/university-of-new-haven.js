@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "living": {"preview": "Mix of residents and commuters; food is decent, with a nearby city.", "housing": ["Many first-years live on campus.", "Housing is a mix of dorms, suites and apartment-style options.", "Some students commute from nearby towns."], "food": ["There is a main dining hall, and students call it decent.", "Residents usually need a meal plan.", "West Haven and New Haven have plenty of places to eat."]},
     vibe: {
       preview: 'Hands-on, career-focused, practical, friendly',
       meters: {
