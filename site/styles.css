@@ -440,3 +440,7 @@ a.btn-main { text-decoration: none; display: inline-block; }
 .terms { display: grid; }
 .term { display: grid; gap: 4px; padding-block: var(--s1); border-bottom: 1px solid var(--line); }
 .term dt { font-weight: 700; }
+.bars { display: grid; gap: var(--s1); }
+.bar-row { display: grid; grid-template-columns: 136px minmax(0, 1fr) 40px; gap: var(--s1); align-items: center; }
+.bar-pct { text-align: right; font-variant-numeric: tabular-nums; }
+.term dd ul { padding-left: var(--s2); display: grid; gap: 4px; }

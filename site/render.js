@@ -193,6 +193,38 @@
     return { title: 'What it costs', preview: preview, body: out };
   }
 
+  // Federal field codes (2-digit CIP) in plain words
+  var FIELDS = {
+    '01': 'Agriculture', '03': 'Environment', '04': 'Architecture', '05': 'Area and ethnic studies', '09': 'Communications',
+    '10': 'Media tech', '11': 'Computer science', '12': 'Culinary and personal services', '13': 'Education', '14': 'Engineering',
+    '15': 'Engineering tech', '16': 'Languages', '19': 'Family and consumer sciences', '22': 'Law and legal studies', '23': 'English',
+    '24': 'Liberal arts and general studies', '25': 'Library science', '26': 'Biology', '27': 'Math and stats', '29': 'Military tech',
+    '30': 'Interdisciplinary', '31': 'Recreation and fitness', '38': 'Philosophy and religion', '39': 'Theology', '40': 'Physical sciences',
+    '41': 'Science tech', '42': 'Psychology', '43': 'Criminal justice and security', '44': 'Public policy and social work',
+    '45': 'Social sciences', '46': 'Construction', '47': 'Mechanics and repair', '48': 'Precision production', '49': 'Transportation',
+    '50': 'Arts, music and design', '51': 'Health and nursing', '52': 'Business', '54': 'History'
+  };
+
+  function majorsSection(s) {
+    var st = stats(s.id);
+    if (!st || !st.majors || !st.majors.length) return null;
+    function pct(x) { return Math.round(x * 100) + '%'; }
+    var max = st.majors[0][1];
+    var out = [h('div', { class: 'bars' }, st.majors.map(function (m) {
+      return h('div', { class: 'bar-row' },
+        h('span', { class: 'small' }, FIELDS[m[0]] || 'Other'),
+        h('span', { class: 'cmp-track' }, h('span', { class: 'cmp-fill', style: 'width:' + Math.round(m[1] / max * 100) + '%' })),
+        h('span', { class: 'small bar-pct' }, pct(m[1])));
+    }))];
+    if (st.women != null) out.push(h('dl', { class: 'cost' },
+      h('div', null, h('dt', null, 'Undergrads who are women'), h('dd', null, pct(st.women))),
+      h('div', null, h('dt', null, 'Undergrads who are men'), h('dd', null, pct(1 - st.women)))));
+    out.push(h('p', { class: 'small muted' }, 'Share of degrees given out by field, and the undergrad gender split, from the U.S. Department of Education College Scorecard.' +
+      (ONLINE_HEAVY[s.id] ? ' These include online students.' : '')));
+    var top = st.majors.slice(0, 2).map(function (m) { return (FIELDS[m[0]] || 'Other') + ' ' + pct(m[1]); }).join(', ');
+    return { title: 'What people major in', preview: 'Top fields: ' + top + (st.women != null ? '. ' + pct(st.women) + ' women' : ''), body: out };
+  }
+
   // Outcomes and who goes, from the Scorecard, plus questions worth asking anywhere.
   var TWO_YEAR = { nhti: true };
   function supportSection(s) {
@@ -270,6 +302,11 @@
     if (cost) {
       var at = defs.map(function (d) { return d.key; }).indexOf('gettingIn') + 1;
       sections.splice(at, 0, section({ key: 'cost', title: cost.title, render: function () { return cost.body; } }, { preview: cost.preview }));
+    }
+    var majors = majorsSection(s);
+    if (majors) {
+      var kf = sections.map(function (el) { return el.id; }).indexOf('knownFor');
+      sections.splice(kf === -1 ? sections.length : kf + 1, 0, section({ key: 'majors', title: majors.title, render: function () { return majors.body; } }, { preview: majors.preview }));
     }
     var support = supportSection(s);
     if (support) {

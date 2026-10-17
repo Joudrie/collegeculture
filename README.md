@@ -20,6 +20,7 @@ site/
     northeastern.js   one file per school
   about.html          where the info comes from
   glossary.html       college words in plain English
+  basics.html         timeline from junior year to move-in, plus common myths
   compare.html        two schools side by side (compare.html#a=<id>&b=<id>)
   quiz.html           the Find Your Fit quiz (quiz.js, quiz-questions.js)
   zips.js             ZIP code locations for distance

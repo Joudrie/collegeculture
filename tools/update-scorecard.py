@@ -50,6 +50,10 @@ with open(sys.argv[1], encoding='utf-8-sig') as f:
             'retention': rate(r['RET_FT4']) if rate(r['RET_FT4']) is not None else rate(r['RET_FTL4']),
             'gradRate': rate(r['C150_4']) if rate(r['C150_4']) is not None else rate(r['C150_L4']),
             'earnings': num(r['MD_EARN_WNE_P10']),
+            'women': rate(r['UGDS_WOMEN']),
+            # Share of bachelor's degrees by field (2-digit CIP code), biggest first
+            'majors': sorted([[c[4:], rate(r[c])] for c in r if c.startswith('PCIP') and (rate(r[c]) or 0) >= 0.02],
+                             key=lambda x: -x[1])[:6],
         }
 
 missing = sorted(set(ids) - set(out))
