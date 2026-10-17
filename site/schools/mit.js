@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Red Line to Kendall/MIT; Logan Airport is close", "points": ["The Red Line stops at Kendall/MIT, right next to campus.", "Logan Airport is the main airport and is reachable by the T.", "You do not need a car here. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "Hacks, Pi Day decisions and the Brass Rat ring", "items": ["Hacks are clever, harmless pranks pulled off around campus, and they are a big part of MIT's culture.", "MIT has released many of its admissions decisions on Pi Day, March 14.", "Students get a class ring called the Brass Rat."]},
     "living": {"preview": "Everyone lives somewhere with its own culture; food is mixed, Cambridge helps", "housing": ["Undergrads mostly live on campus, and first-years are placed in a residence.", "Each dorm has its own personality, and people care a lot about it.", "Some students live in fraternities or sororities, or off campus later."], "food": ["Dining options are spread across dorms and campus, not one big hall.", "Many dorms have kitchens, so a lot of students cook.", "Cambridge and Kendall Square are right there for off-campus food."]},
     vibe: {
       preview: 'Intense work, quirky culture, strong dorm and frat life',

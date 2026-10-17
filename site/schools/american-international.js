@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Springfield has Amtrak and long-distance buses", "points": ["Springfield Union Station has Amtrak, and Peter Pan buses run from the area.", "Bradley International is the closest major airport.", "You can get around without a car, but it is easier with one. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus with both residents and commuters; food is basic.", "housing": ["Many students live on campus, though a good number commute.", "Housing is mostly traditional dorms and some apartment-style options.", "The campus is in Springfield, so the neighborhood matters when you visit."], "food": ["Dining is small, with a main dining hall and a few other spots.", "Residents usually need a meal plan.", "Springfield has local restaurants, but many students stick to campus."]},
     vibe: {
       preview: 'Small, athletic, health-career focused, quiet social scene',

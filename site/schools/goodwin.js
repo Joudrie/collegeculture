@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "CT Transit buses; Bradley Airport is close", "points": ["CT Transit buses connect East Hartford and Hartford.", "Bradley International Airport is the closest major airport.", "A car helps in this area. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly commuters with some on-campus housing; basic campus food", "housing": ["Many students commute, and it's not a big residential campus.", "The school has some housing options for students who want it.", "Some students live nearby or at home."], "food": ["Dining on campus is basic.", "Students often eat around class or bring food.", "East Hartford has places to eat, and a car helps."]},
     vibe: {
       preview: 'Focused, practical, and built for jobs',

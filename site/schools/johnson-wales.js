@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Providence train station and T.F. Green Airport nearby", "points": ["Providence station has Amtrak and MBTA commuter rail, and RIPTA buses cover the city.", "T.F. Green Airport in Warwick is the closest major airport.", "You do not really need a car in Providence. Check the school's rules on first-year cars."]},
     "living": {"preview": "Downtown Providence school known for culinary programs; mix of dorms and commuters", "housing": ["Many first-years live on campus, and some students live off campus.", "Housing is in and around the Providence campus.", "Some students commute from nearby."], "food": ["The school is famous for culinary programs, so food is a big part of the culture.", "Students still have regular dining options and meal plans.", "Providence has a strong restaurant scene to explore."]},
     vibe: {
       preview: 'Practical, city-based, quiet party scene, very career-focused',

@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Commuter rail to Boston; local buses in Lowell", "points": ["The Lowell Line commuter rail runs to Boston, and local buses serve the city.", "Logan Airport is the closest major airport.", "A car is handy but not required. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mix of residents and commuters, apartment-style options, food is fine", "housing": ["Many first-years live on campus, but a lot of students commute.", "Housing includes traditional dorms and apartment-style options.", "Many upperclassmen move off campus in Lowell."], "food": ["There are a few dining halls and some food courts.", "Students say it is decent and varied enough.", "Lowell has a lot of cheap, good restaurants."]},
     vibe: {
       preview: 'Career-minded, low-key social scene, big on hockey',

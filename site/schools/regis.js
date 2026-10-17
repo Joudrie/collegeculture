@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Suburban Weston; a car or ride helps", "points": ["Public transit around Weston is limited.", "Boston Logan is the nearest major airport.", "Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus with commuters and residents; quiet, food is basic.", "housing": ["It is a smaller school, and a lot of students commute.", "There is on-campus housing, mostly traditional dorms.", "Weston is quiet, so weekends can feel slow without a car."], "food": ["There is a main dining hall, and students call the food okay.", "Residents usually need a meal plan.", "Nearby options are limited, so a car or a ride helps."]},
     vibe: {
       preview: 'Small, health-focused, low-key social life',

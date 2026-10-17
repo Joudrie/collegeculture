@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Walkable Northampton; Bradley is the nearest big airport", "points": ["Peter Pan buses serve Northampton, and Amtrak's Vermonter stops there too.", "The nearest major airport is Bradley, near Hartford.", "You can manage without a car, but it helps. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "Mountain Day is a surprise day off", "items": ["Mountain Day is a surprise fall day when the president cancels classes and students head outside."]},
     "living": {"preview": "Houses are the whole system; most people live on campus all four years", "housing": ["Students live in houses on campus, each with its own community.", "Most students stay on campus for most or all of their time.", "Houses range from big old buildings to smaller ones."], "food": ["Dining is mostly in the houses, so you eat with your neighbors.", "Students generally call it good for college food.", "Downtown Northampton has lots of food and cafes."]},
     vibe: {
       preview: 'Academic, close-knit houses, artsy town, no frat parties',

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "In the Longwood area; Green Line and buses", "points": ["The Green Line and city buses serve the campus area.", "Boston Logan is the nearest major airport.", "You do not need a car in Boston."]},
     "living": {"preview": "Small art school with residence halls; food options are limited on campus.", "housing": ["MassArt has residence halls, but not everyone fits in them.", "A lot of students find apartments around Boston, often with roommates.", "Boston rent is high, so plan for the cost."], "food": ["Campus dining is smaller than at most colleges.", "Many students eat at nearby spots or cook for themselves.", "The Fenway and Longwood area has lots of places to eat."]},
     vibe: {
       preview: 'All art, all the time. Low party scene, low school spirit.',

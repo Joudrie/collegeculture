@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Downtown Boston, steps from the T", "points": ["Campus is on Beacon Hill, near Park Street and Government Center T stops.", "Logan Airport is the main airport and the T can get you there.", "You do not need a car in Boston. Check the school's rules on first-year cars."]},
     "living": {"preview": "City school with dorms downtown; many commute or move off campus", "housing": ["Dorms are in downtown Boston buildings, not a traditional green campus.", "Many students live off campus or commute.", "Boston rent is high, so students often share apartments."], "food": ["There is no big campus food scene since the school is in the middle of the city.", "Students mix meal plans with eating out around Beacon Hill and downtown.", "Boston has endless places to eat, but it costs money."]},
     vibe: {
       preview: 'Urban, independent, career-minded, light on school spirit',

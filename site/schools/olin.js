@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Commuter rail in Needham; Logan is the main airport", "points": ["The MBTA Needham commuter rail line runs to Boston, though you may need a ride or bus to get from the station to campus.", "Logan Airport is the main airport.", "A car is useful in the suburbs. Check the school's rules on first-year cars."]},
     "living": {"preview": "Tiny school where nearly everyone lives on campus; dining is simple", "housing": ["The school is very small, and almost everyone lives on campus.", "Students are close with their dormmates since there's so few people.", "Rooms are mostly shared at first and singles later."], "food": ["Dining is small and simple, not a big dining hall scene.", "Students often cook or eat around campus.", "Nearby Needham and Babson have some options, but you may want a ride."]},
     vibe: {
       preview: 'Tiny, nerdy, collaborative, and always building something',

@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Amtrak and buses in Springfield; Bradley is close", "points": ["Springfield's Union Station has Amtrak, and PVTA buses serve the area.", "Bradley International Airport is the closest major airport.", "A car is helpful but not always required. Check the school's rules on first-year cars."]},
     "living": {"preview": "Residential school, most people live on campus; food is average", "housing": ["Most students live on campus, especially early on.", "Dorms are mostly traditional with some apartment-style options.", "The campus is small and sporty, and people know each other."], "food": ["There's a main dining hall plus smaller spots.", "Students say it's average.", "Off-campus food nearby is limited, so it helps to have a car."]},
     vibe: {
       preview: 'Athletic, active, career-focused, team-centered social life',

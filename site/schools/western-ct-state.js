@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Metro-North branch to Danbury; a car helps", "points": ["The Metro-North Danbury branch runs to New York with a change, and local buses serve the city.", "Westchester County Airport is one of the closest airports.", "A car is useful. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mix of commuters and residents; state school dorms and basic dining", "housing": ["Many students commute, but there are residence halls on campus.", "First-years often live on campus.", "Some older students move to apartments near Danbury."], "food": ["There's a campus dining hall plus smaller spots.", "Students say it's average.", "Danbury has lots of food within a short drive."]},
     vibe: {
       preview: 'Low-key, commuter-heavy, affordable, practical',

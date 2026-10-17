@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Several rural campuses; transit varies by location", "points": ["Vermont State has multiple campuses, so options depend on which one you pick. Transit is limited in most of them.", "Burlington is the main airport in Vermont. Albany is another option for some campuses.", "A car helps at most locations. Check the school's rules on first-year cars."]},
     "living": {"preview": "Several small campuses; housing and food depend on which one you pick.", "housing": ["Vermont State has several campuses, and housing differs a lot between them.", "Some campuses have residence halls, and others are mostly commuter or online.", "Check with the campus you like about housing before you apply."], "food": ["Dining is small at most campuses, and some have limited options.", "Residents usually have a meal plan where dining exists.", "Castleton and the other towns are small, so off-campus food is limited."]},
     vibe: {
       preview: 'Small campuses, down-to-earth, depends on which one',

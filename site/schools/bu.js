@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Green Line B branch runs right through campus", "points": ["The Green Line B branch runs along Commonwealth Ave through campus.", "Logan Airport is the closest major airport.", "You do not need a car. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "The Beanpot hockey tournament in February", "items": ["The Beanpot is a yearly hockey tournament between BU, Northeastern, BC and Harvard, played in Boston."]},
     "living": {"preview": "Big city campus, dorm life first, apartments after, food is okay", "housing": ["Most first-years live on campus, often in big dorms or high-rises.", "Many upperclassmen move to apartments around Allston and Brighton.", "Housing is a mix of traditional rooms and suites."], "food": ["There are a few dining halls, and meal plans are common for first-years.", "Students say the food is fine but gets old.", "Off campus, Boston has endless options at every price."]},
     vibe: {
       preview: 'Big, urban and independent. Medium party scene, hockey spirit.',

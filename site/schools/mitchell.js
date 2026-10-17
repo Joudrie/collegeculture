@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Train station in New London; T.F. Green is the airport", "points": ["New London has an Amtrak and Shoreline East station.", "T.F. Green Airport in Rhode Island is the nearest major airport.", "A car helps. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus, a mix of residents and commuters, basic food", "housing": ["Many students live on campus, and some commute.", "Housing is a small mix of dorms and suites.", "The campus is small and close to the water."], "food": ["There is one main dining hall.", "Students say it is basic.", "New London has local restaurants within a short ride."]},
     vibe: {
       preview: 'Small, friendly, and supportive',

@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "West Haven; trains and buses nearby", "points": ["West Haven has a Metro-North and Shore Line East station, plus local buses.", "Tweed New Haven is the closest airport, and the New York airports are the bigger options.", "Check the school's rules on first-year cars."]},
     "living": {"preview": "Mix of residents and commuters; food is decent, with a nearby city.", "housing": ["Many first-years live on campus.", "Housing is a mix of dorms, suites and apartment-style options.", "Some students commute from nearby towns."], "food": ["There is a main dining hall, and students call it decent.", "Residents usually need a meal plan.", "West Haven and New Haven have plenty of places to eat."]},
     vibe: {
       preview: 'Hands-on, career-focused, practical, friendly',

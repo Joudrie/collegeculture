@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Five College buses; Bradley is the airport", "points": ["Local and Five College buses connect the campus with nearby towns.", "Bradley International Airport is the closest major airport.", "You can manage without a car, but it opens up the area. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "Mountain Day, a surprise day off", "items": ["Mountain Day is a surprise fall day when classes are canceled and the campus climbs Mount Holyoke."]},
     "living": {"preview": "Almost everyone lives on campus, food is above average", "housing": ["Nearly all students live on campus.", "Dorms are a mix of older halls and a few apartment-style options.", "The campus is residential, in a quiet small town."], "food": ["There are several dining halls around campus.", "Students usually say the food is pretty good.", "South Hadley is small, but nearby towns have more options."]},
     vibe: {
       preview: 'Cozy, traditional, beautiful campus, low-key weekends',

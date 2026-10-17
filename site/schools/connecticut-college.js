@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Amtrak station in New London nearby", "points": ["New London has an Amtrak station and regional buses.", "T. F. Green Airport and Bradley are the closest major airports.", "You can get by without a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential; food is solid, with a small city nearby.", "housing": ["Most students live on campus, especially in the early years.", "Housing is a mix of traditional dorms, suites and some apartments.", "Campus is close-knit, so most social life stays on it."], "food": ["There are a few dining spots, and students generally say the food is good.", "Meal plans are standard for residents.", "New London has restaurants, though many students use a car or a ride."]},
     vibe: {
       preview: 'Small, close, outdoorsy, honor code, no frats',

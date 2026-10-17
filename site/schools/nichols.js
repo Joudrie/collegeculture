@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Small town; plan on a car or rides", "points": ["Dudley is a small town and public transit is limited.", "Worcester, Boston Logan and T.F. Green are the usual airport options.", "A car helps. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small residential campus; food is limited and the area is quiet.", "housing": ["Most students live on campus.", "Housing is mostly dorms and suites in a small, close community.", "Dudley is a small town, so there is little to rent nearby."], "food": ["There is one main dining hall and a few small spots.", "Residents typically need a meal plan, and variety can get repetitive.", "Off-campus food is mostly a short drive away."]},
     vibe: {
       preview: 'Business-minded, athletic, small and quiet',

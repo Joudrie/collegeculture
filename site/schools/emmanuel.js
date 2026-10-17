@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Green Line and Orange Line nearby in Boston", "points": ["Campus is in the Longwood area, close to Green Line and Orange Line stops and city buses.", "Logan Airport is the main airport and is reachable by the T.", "You do not need a car in Boston. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small city school; many live on campus, food mixed with Boston options", "housing": ["Many students live on campus in residence halls.", "Campus is in Boston's Longwood area, so it's urban.", "Upperclassmen often move off campus, and Boston rent is high."], "food": ["There's a main dining hall on campus.", "Students call it okay.", "The area around campus has lots of places to eat."]},
     vibe: {
       preview: 'Small and close-knit, strong for health and science, Boston for fun',

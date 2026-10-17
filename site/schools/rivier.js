@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Nashua has buses to Boston; a car helps locally", "points": ["Buses run between Nashua and Boston, but local service is limited.", "Manchester and Boston Logan are the nearest big airports.", "A car makes life easier. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus with residents and commuters; food is simple.", "housing": ["Rivier has residence halls, but many students commute.", "Housing is mostly traditional dorms in a small community.", "Nashua is a real city, so apartments nearby are an option."], "food": ["Dining on campus is small, with a main dining hall and limited choices.", "Residents typically need a meal plan.", "Nashua has a lot of restaurants a short drive away."]},
     vibe: {
       preview: 'Quiet, friendly, career-focused, lots of commuters',

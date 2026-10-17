@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Not on the T; a car helps a lot", "points": ["Easton has no subway. Check the school for shuttle or train options.", "Logan Airport and T.F. Green in Rhode Island are the main airport options.", "A car is really useful here. Check the school's rules on first-year cars."]},
     "living": {"preview": "Residential campus where most students live on campus", "housing": ["Most students live on campus, and it is a residential school.", "Housing is a mix of traditional rooms and apartment-style options.", "Easton is quiet, so having a car helps."], "food": ["There is a main dining hall and a few smaller spots.", "Students say it is fine but not great.", "Off-campus food options nearby are limited."]},
     vibe: {
       preview: 'Small, friendly, campus-centered, sporty',

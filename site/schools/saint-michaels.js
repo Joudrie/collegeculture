@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Burlington airport is close; Amtrak at Essex Junction", "points": ["Burlington International Airport is the closest airport.", "Amtrak's Vermonter stops in Essex Junction, a short ride away.", "A car helps in Vermont. Check the school's rules on first-year cars."]},
     "living": {"preview": "Residential campus, most students live on campus, food is decent", "housing": ["Most students live on campus, especially early on.", "Housing includes traditional dorms and apartment-style options.", "The campus is quiet, and Burlington is nearby for off-campus fun."], "food": ["There is a main dining hall and a few smaller places.", "Students say the food is decent.", "Burlington has lots of restaurants if you can get a ride."]},
     vibe: {
       preview: 'Small, outdoorsy, friendly, easygoing party scene',

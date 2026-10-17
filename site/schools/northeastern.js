@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "On the T; Logan is a short ride away", "points": ["The Orange Line and Green Line E branch both stop at or near campus.", "Logan Airport is the closest major airport.", "You do not need a car. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "The Beanpot hockey tournament in February", "items": ["The Beanpot is a yearly hockey tournament between Northeastern, BU, BC and Harvard, played in Boston."]},
     "living": {"preview": "Most first-years live on campus, then move to pricey off-campus apartments", "housing": ["Most first-years live on campus, usually in doubles or suites.", "Upperclassmen often move to apartments in Boston, and rent there is expensive.", "Co-op semesters mean some students sublet or move around a lot."], "food": ["There are several dining halls plus a lot of campus food spots.", "Students say the dining halls are decent, but they get repetitive.", "Plenty of cheap and good food is nearby in the city."]},
     vibe: {
       preview: 'Huge career focus, medium party scene, city campus',

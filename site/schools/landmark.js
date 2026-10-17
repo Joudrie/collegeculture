@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Small Vermont town; Amtrak in nearby Brattleboro", "points": ["Putney is small, but Brattleboro nearby has Amtrak's Vermonter and bus service.", "Bradley and Manchester are the nearest larger airports.", "A car helps in a rural area. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small residential school for students with learning differences", "housing": ["Most students live on campus in residence halls.", "Staff are around to help with daily life and routines.", "The campus is small and in rural Vermont."], "food": ["There's a main dining hall on campus.", "Students use meal plans, since there's little around.", "Putney is a tiny town, so off-campus food is limited."]},
     vibe: {
       preview: 'Supportive, small, structured, built for how you learn',

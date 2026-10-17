@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Providence buses; T. F. Green is the airport", "points": ["RIPTA buses serve the campus area from downtown Providence.", "T. F. Green Airport is the closest major airport.", "Plenty of students commute by car. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly a commuter school; limited housing on campus.", "housing": ["Most students commute from home, so the campus can feel quiet at night and on weekends.", "There is some on-campus housing, but fewer students live there than at a typical residential college.", "If you want a full dorm experience, ask how many students actually live there."], "food": ["Dining is more limited than at a residential school.", "Commuters mostly eat on campus between classes or bring food.", "Providence is close, with lots of restaurants if you have a ride."]},
     vibe: {
       preview: 'Commuter-heavy, low cost, practical majors, calm',

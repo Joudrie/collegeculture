@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Small Maine city; Portland and Bangor airports", "points": ["Concord Coach buses serve Waterville, so check their schedule.", "Portland Jetport and Bangor are the closest major airports.", "A car helps, but is not needed every day. Check the school's rules on first-year cars."]},
     "living": {"preview": "Almost everyone lives on campus, food is better than average", "housing": ["Almost all students live on campus.", "Dorms are a mix of traditional rooms and suites.", "Waterville is small, so campus is the main social scene."], "food": ["Students eat mostly in a few campus dining halls.", "Students usually say the food is good.", "Waterville has a few local restaurants but not a lot."]},
     "vibe": {
       "preview": "Academic, outdoorsy, tight campus, very hard to get into",

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "In the Fenway; Green Line nearby", "points": ["Campus is near Green Line stops in the Longwood and Fenway area.", "Logan Airport is the closest major airport.", "You do not need a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "City campus with dorms, many move off campus later", "housing": ["Many first-years live on campus in dorms near the Fenway area.", "Rooms are a mix of doubles and suites.", "Many upperclassmen move to apartments in Boston."], "food": ["There is a main dining hall on campus.", "Students say it is fine, with some variety.", "The surrounding Boston area has a lot of cheap food."]},
     vibe: {
       preview: 'Small, career-minded, quiet on campus, very liberal',

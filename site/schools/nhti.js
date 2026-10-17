@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Concord Coach buses; you will want a car", "points": ["Concord Coach Lines runs buses from Concord to Boston and Logan Airport.", "Manchester-Boston Regional Airport is the closest airport, and Logan is the bigger option.", "Most students drive. NHTI is a commuter-style community college."]},
     "living": {"preview": "Community college, mostly commuters; very little student housing", "housing": ["NHTI is a community college, and most students commute.", "There is little to no student housing, so you'd live at home or rent.", "Check with the school for any current options."], "food": ["There's a small cafe or basic food on campus.", "Most students bring food or eat out between classes.", "Concord has restaurants a short drive away."]},
     vibe: {
       preview: 'Practical, low pressure, mostly commuters',

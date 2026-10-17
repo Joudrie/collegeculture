@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Red Line to Harvard Square; Logan is close", "points": ["The Red Line stops right at Harvard Square, and the commuter rail is nearby.", "Boston Logan is the closest major airport.", "You do not need a car here. Parking in Cambridge is hard and costly."]},
+    "traditions": {"preview": "The Game against Yale and Housing Day", "items": ["Housing Day is when first-years find out which upperclass house they will live in.", "The Game is the yearly football matchup against Yale, and it is a big weekend."]},
     "living": {"preview": "Everyone lives on campus in a house system; the food is solid.", "housing": ["Nearly everyone lives on campus for all four years.", "After first year you get placed into one of the upperclass houses, which become your home base.", "First-years live in dorms around Harvard Yard."], "food": ["Each house has its own dining hall, and first-years eat together in one big hall.", "Students generally say the food is good for college dining.", "Harvard Square has plenty of places to eat off campus, though it can be pricey."]},
     vibe: {
       preview: 'Packed schedules, strong house life, famous everything',

@@ -53,6 +53,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Island town; far from major airports", "points": ["Bar Harbor is on Mount Desert Island, and it is a long way from big cities.", "Bangor International Airport is the nearest major one, and Portland is the next option.", "Check the school's rules on first-year cars."]},
     "living": {"preview": "Tiny and residential; food leans local, and the town is seasonal.", "housing": ["It is a very small school, and most students live on or near campus.", "Housing is small and close-knit, with fewer big dorms than at other colleges.", "Bar Harbor gets expensive and crowded in tourist season."], "food": ["Students usually share a small dining setup with a lot of local and organic food.", "Meals are a social part of campus life.", "Off-campus eating in Bar Harbor is mostly tourist spots, and some close in winter."]},
     "vibe": {
       "preview": "Small, quirky, outdoorsy, self-directed",

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "In Boston; Orange Line and Green Line nearby", "points": ["Campus is near the Ruggles Orange Line stop and Green Line stops in the Fenway area.", "Logan Airport is the closest major airport.", "You do not need a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "City campus with dorms for many, plus a good number of commuters", "housing": ["Many first-years live on campus, and some students commute.", "Housing is mostly suites and apartment-style rooms.", "Later on, plenty of students move to off-campus apartments in Boston."], "food": ["There is a main dining hall and some smaller options.", "Students say the food is average.", "The Fenway and Mission Hill area has lots of cheap food."]},
     vibe: {
       preview: 'Practical, busy, career-first, quiet on-campus social life',

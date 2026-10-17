@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Bangor airport is close; buses run to Bangor and beyond", "points": ["Bangor International Airport is the closest airport. Concord Coach buses serve the Bangor area.", "Orono is far from big cities, so a car is useful.", "Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "Maine Day", "items": ["Maine Day is a spring day when classes pause and the campus gets together for service projects and events."]},
     "living": {"preview": "First-years live on campus; food is solid for a big state school.", "housing": ["Most first-years live on campus in traditional dorms.", "Many upperclassmen move to apartments in Orono and nearby towns.", "Orono is small, so off-campus choices are limited but affordable."], "food": ["There are a few dining halls, and students usually say the food is pretty good.", "Residents typically need a meal plan.", "Downtown Orono has a handful of casual places, nothing huge."]},
     vibe: {
       preview: 'Outdoorsy, social and cold, with hockey at the center',

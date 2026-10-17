@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Remote Vermont town; Burlington airport is the closest", "points": ["Middlebury is rural. Some regional buses run through Vermont, but service is limited.", "Burlington International is the closest major airport.", "A car helps a lot. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "Winter Carnival", "items": ["Winter Carnival is a winter weekend of skiing and events on and around campus."]},
     "living": {"preview": "Almost everyone lives on campus; food is well liked and the town is tiny.", "housing": ["Nearly all students live on campus for four years.", "Housing is mostly dorms and houses arranged through a lottery.", "Middlebury is a small town, so campus is the main social hub."], "food": ["There are a few dining halls, and students usually rate them well.", "Most students are on a meal plan.", "Downtown Middlebury has some cafes and restaurants, but it is small."]},
     vibe: {
       preview: 'Tiny, outdoorsy, academic, and everyone lives on campus',

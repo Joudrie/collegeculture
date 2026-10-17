@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Cape Cod gateway; a car helps a lot", "points": ["Public transit is limited here. Check the school for current bus or train options.", "Logan Airport and T.F. Green are the usual airports.", "A car is useful. Check the school's rules on first-year cars."]},
     "living": {"preview": "Regimental school, most students live on campus, food is basic", "housing": ["Most students live on campus, especially those in the regiment.", "Rooms are often shared and rules are stricter than at other schools.", "Buzzards Bay is small, so campus is where life happens."], "food": ["Students mostly eat in the campus dining hall.", "Students say the food is okay.", "Off-campus options are limited and you may need a ride."]},
     vibe: {
       preview: 'Structured, tight-knit, career-driven, right on the water',

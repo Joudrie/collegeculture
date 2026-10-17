@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Metro-North and I-95 corridor; a car helps", "points": ["Fairfield has Metro-North service on the New Haven line, and local buses run in the area.", "Westchester County, LaGuardia, JFK and Bradley are the usual airport options.", "A car makes campus life easier. Check the school's rules on first-year cars."]},
     "living": {"preview": "Lots of students live on campus; food has many options, suburban area", "housing": ["Many students live on campus, especially first-years.", "Housing includes traditional dorms and apartment-style options for older students.", "Some students live in nearby houses and apartments."], "food": ["There are several places to eat on campus, not just one hall.", "Students say the food is fine, with decent variety.", "Fairfield has restaurants nearby, but a car or ride helps."]},
     vibe: {
       preview: 'Friendly, sporty, career-minded, Catholic roots',

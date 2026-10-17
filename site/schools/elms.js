@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Small city; a car helps", "points": ["Chicopee has local buses, but options are limited.", "Bradley International Airport in Connecticut is the closest major airport.", "Check the school's rules on first-year cars."]},
     "living": {"preview": "Small and fairly quiet; many students commute, food is basic.", "housing": ["The school is small, and a good share of students commute.", "There is on-campus housing, mostly traditional dorms.", "Expect a quiet campus compared with a big residential school."], "food": ["There is a smaller dining setup, not a big variety.", "Students usually call the food okay.", "Chicopee and nearby Springfield have restaurants, but you will probably want a car."]},
     vibe: {
       preview: 'Small, quiet, career-focused, everyone knows everyone',

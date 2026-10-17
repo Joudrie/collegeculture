@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Close to T.F. Green Airport; a car helps", "points": ["RIPTA buses serve the area, but service is limited.", "T.F. Green Airport in Warwick is the closest major airport.", "A car makes getting around easier. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly commuters, with some housing; career-focused school", "housing": ["Many students commute, and it is not a big residential campus.", "The school has some on-campus housing options.", "Some students live in nearby apartments."], "food": ["The campus has basic dining options.", "Most students grab food around campus or bring their own.", "A car helps for off-campus food in East Greenwich."]},
     vibe: {
       preview: 'Practical, focused, low drama, light on traditions',

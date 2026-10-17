@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Remote Berkshires town; plan on a car or a ride", "points": ["Williamstown is far from cities and has no train. Public transit is limited.", "Albany is the closest major airport. Hartford and Boston are farther.", "Having a car helps if you want to leave town. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "Mountain Day, a surprise day off every fall", "items": ["Mountain Day is a surprise day off in the fall when classes are canceled and people head outside."]},
     "living": {"preview": "Nearly everyone lives on campus; food is good and the town is tiny.", "housing": ["Almost all students live on campus all four years.", "Rooms are assigned by a housing lottery after first year.", "Most dorms are fairly nice, but you live in a small isolated town."], "food": ["Students eat in a handful of dining halls, and people generally like them.", "There is a meal plan for most residents.", "Williamstown has a few places to eat, but the options run out fast."]},
     vibe: {
       preview: 'Small, hard, sporty and outdoorsy, with the mountains all around',

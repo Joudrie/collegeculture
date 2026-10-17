@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Near Springfield; buses exist, a car helps", "points": ["Springfield has Amtrak and long-distance buses. Local bus service to campus is limited.", "Bradley International is the closest major airport.", "A car makes the area easier. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus with residents and commuters; food is simple.", "housing": ["Many students live on campus, and there are residence halls for undergrads.", "Rooms are mostly dorms and suites in a small community.", "Plenty of students commute from nearby towns."], "food": ["Dining is small, with a main dining hall and a few other spots.", "Residents typically need a meal plan.", "Longmeadow is quiet, so most restaurants are a short drive away."]},
     vibe: {
       preview: 'Small, supportive, career-minded, quiet',

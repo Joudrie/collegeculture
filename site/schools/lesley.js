@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Near Porter Square: Red Line and commuter rail", "points": ["Porter Square has the Red Line and the commuter rail, plus city buses.", "Boston Logan is the nearest major airport.", "You do not need a car. Parking around Cambridge is limited."]},
     "living": {"preview": "Small residential base in a busy area; food is okay and options are nearby.", "housing": ["Some students live in campus residence halls near Harvard Square.", "A lot of students find apartments in the Boston area or commute.", "Housing in Cambridge is expensive, so ask about costs."], "food": ["Campus dining is small, so many students eat out or cook.", "Residents may be required to have a meal plan.", "Cambridge has a huge range of places to eat, from cheap to pricey."]},
     vibe: {
       preview: 'Creative, low-key, small, very little partying',

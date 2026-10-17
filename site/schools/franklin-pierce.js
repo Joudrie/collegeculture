@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Rural NH; plan on a car", "points": ["There is little to no public transit in Rindge.", "Manchester-Boston Regional Airport and Logan are the main airport options.", "A car helps a lot here. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small, rural, mostly residential campus", "housing": ["Most students live on campus.", "Housing is mostly traditional dorms and some apartment-style options.", "Rindge is very small, so campus life is where things happen."], "food": ["There is a main dining hall.", "Students call it average.", "Off-campus food is limited, and a car helps."]},
     vibe: {
       preview: 'Quiet, outdoorsy, close-knit, sports-friendly',

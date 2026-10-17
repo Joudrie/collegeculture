@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Metro-North and Amtrak nearby; New York is on the line", "points": ["Metro-North and Amtrak serve the area, so New York is reachable by train.", "Airports nearby include Bridgeport, Westchester, and the New York airports.", "A car helps off campus. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential; lots of students live near the beach after first year.", "housing": ["Most undergrads live on campus, especially early on.", "Many upperclassmen move to off-campus houses near the beach.", "Campus housing is a mix of dorms and apartment-style options."], "food": ["There is a main dining hall plus several other spots on campus.", "Residents typically need a meal plan.", "The town has plenty of restaurants, and New York City is within reach by train."]},
     vibe: {
       preview: 'Social, polished, close to the beach, Jesuit roots',

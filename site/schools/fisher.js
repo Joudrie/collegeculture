@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Boston campus; T access, no car needed", "points": ["The campus is in Boston, close to T lines and buses.", "Boston Logan is the nearest major airport.", "You do not need a car."]},
     "living": {"preview": "Small, city-based, with limited housing; many students commute.", "housing": ["The school is small and sits in an urban area, so campus living is limited.", "Many students commute or find housing on their own.", "Ask the school what housing is offered before you count on it."], "food": ["Dining on campus is limited, so many students eat out or bring food.", "Boston has huge food options at every price.", "Plan for food costs outside school meals."]},
     vibe: {
       preview: 'Small, friendly, career-minded, quiet campus in a big city',

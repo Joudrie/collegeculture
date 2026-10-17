@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Providence station has Amtrak and commuter rail", "points": ["Providence station has Amtrak and MBTA commuter rail, and campus is nearby.", "T.F. Green Airport is the closest major airport.", "You do not need a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "Dorms for first-years, many upperclassmen live off campus", "housing": ["First-years usually live on campus.", "Many upperclassmen move to apartments around Providence.", "Studio-heavy schedules mean students spend a lot of time on campus."], "food": ["There is a main dining hall, and students often rate it okay.", "Many students eat out or cook once they move off campus.", "Providence has a lot of good food, and much of it is affordable."]},
     vibe: {
       preview: 'Creative, intense, studio-heavy, not a sports school',

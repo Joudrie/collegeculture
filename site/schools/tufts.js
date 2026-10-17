@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Green Line stop at campus; Red Line nearby", "points": ["The Green Line has a Medford/Tufts stop, and Davis Square on the Red Line is a short trip away.", "Logan Airport is the closest major airport.", "You do not need a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly on-campus living, decent dining, quiet area near Boston", "housing": ["Most students live on campus, especially early on.", "Many upperclassmen move into houses and apartments near campus.", "You can get into Boston on the T, but campus itself is residential."], "food": ["There are two main dining halls plus a few smaller options.", "Students tend to say the food is better than at most schools.", "Davis Square is close and has lots of cheap places to eat."]},
     vibe: {
       preview: 'Nerdy, friendly, globally minded, and close to the city',

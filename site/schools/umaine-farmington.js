@@ -53,6 +53,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Small mountain town; plan on a car", "points": ["Farmington has very little public transit.", "Portland and Bangor are the main airport options, and both are a real drive away.", "A car is a big help. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small town school, mostly residential; basic food and a tight community", "housing": ["A lot of students live on campus, especially early on.", "Dorms are traditional, and the campus is small.", "Some students move off campus into town."], "food": ["There's a main dining hall.", "Students say it's decent, like most small schools.", "Farmington is a small town, so food options off campus are limited."]},
     "vibe": {
       "preview": "Small, friendly, outdoorsy and education-minded",

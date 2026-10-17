@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Amtrak and commuter rail in Providence; T.F. Green nearby", "points": ["Providence station has Amtrak and MBTA commuter rail, and RIPTA buses serve the city.", "T.F. Green Airport in Warwick is the closest major airport.", "You do not need a car. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "The Van Wickle Gates and Spring Weekend", "items": ["The Van Wickle Gates open inward for new students at Convocation and outward for graduates at Commencement.", "Spring Weekend is a big campus concert weekend each spring."]},
     "living": {"preview": "Most students live on campus early, then many move to nearby houses", "housing": ["Most first-years live on campus in dorms.", "Many older students move into off-campus houses and apartments.", "Some students live in special-interest or themed housing."], "food": ["There are a couple of main dining halls, and students usually rate the food well.", "Meal plans are normal for students living on campus.", "Providence has a strong food scene close to campus."]},
     vibe: {
       preview: 'Freedom to pick your classes, relaxed vibe, quiet sports scene',

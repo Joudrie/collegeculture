@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Manchester has a small airport; most students drive", "points": ["Manchester-Boston Regional Airport is close to campus, and Boston Logan is the bigger airport within driving distance.", "Local buses exist in Manchester, but a car makes life much easier.", "Check the school's rules on first-year cars."]},
     "living": {"preview": "Small residential core on a campus mostly known for online. Food is basic.", "housing": ["The campus is a small part of a huge online school, so most students are not on it.", "Residential students usually live in dorms or apartment-style housing, and many first-years live on campus.", "It is a smaller, quieter campus scene than a typical residential college."], "food": ["Residents usually have a meal plan with a main dining hall.", "Students call the food okay, not exciting.", "Manchester has plenty of restaurants, but you need a ride or a short drive for some."]},
     vibe: {
       preview: 'Laid back, close-knit, quiet weekends',

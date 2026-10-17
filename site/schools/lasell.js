@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Newton; Green Line and buses to Boston", "points": ["Newton has Green Line stops and buses that connect to Boston.", "Boston Logan is the nearest major airport.", "You can get by without a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small and mostly residential; food is okay, Boston is close.", "housing": ["Most first-years live on campus.", "Housing is mostly dorms and suites, and the campus is small.", "Some upperclassmen move off campus nearby."], "food": ["There is a main dining hall, and students call it fine.", "Residents usually need a meal plan.", "Newton has restaurants nearby, and Boston is easy to reach."]},
     vibe: {
       preview: 'Small and welcoming, practical majors, quiet on weekends',

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Worcester Union Station has commuter rail and buses", "points": ["Worcester has a commuter rail line to Boston and a city bus system. Both are slower than a car.", "Boston Logan is the main airport. Worcester and Hartford have smaller options.", "You can get by without a car, but a car gives you more freedom. Check the school's rules on first-year cars."]},
     "living": {"preview": "Lots of students live on campus; food is fine and near downtown Worcester.", "housing": ["First-years usually live on campus.", "After that, many students choose apartments and houses near campus.", "The campus is in a city neighborhood, so off-campus living is common."], "food": ["There is a main dining hall plus a few other spots on campus.", "Students generally call the food okay.", "Worcester has lots of restaurants, though you may need a short ride."]},
     vibe: {
       preview: 'Fast terms, real projects, nerdy but social',

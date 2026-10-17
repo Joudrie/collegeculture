@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Small, rural New Hampshire town; a car helps", "points": ["New London is small and remote with limited public transit.", "Manchester is the closest big airport, and Boston Logan is farther.", "A car helps for getting anywhere else. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small residential campus; food is limited but fine.", "housing": ["Most students live on campus in a small, tight-knit setting.", "Housing is mostly traditional dorms and suites.", "New London is a small town, so there is not much housing off campus."], "food": ["There is one main dining hall plus a small snack spot or two.", "Residents typically need a meal plan, and variety can get repetitive.", "The town has a few local places, but you will want a car for more."]},
     vibe: {
       preview: 'Tiny, quiet, outdoorsy, very hands-on',

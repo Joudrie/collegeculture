@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Free local buses; Bradley is the nearest big airport", "points": ["PVTA buses connect campus to the other Five College schools, and Peter Pan runs coaches to Amherst.", "The nearest major airport is Bradley, near Hartford.", "You can live without a car, though it helps. Check the school's rules on first-year cars."]},
     "living": {"preview": "Nearly everyone lives on campus all four years; food is good for a small school", "housing": ["Students almost all live on campus.", "Rooms are mostly singles and doubles in older and newer halls.", "The campus is small and tight, so you'll know people fast."], "food": ["There is one main dining hall, and students generally like it.", "Meal plans are standard for residents.", "Downtown Amherst is a short walk for extra food options."]},
     vibe: {
       preview: 'Small, smart, intense, and you build your own schedule',

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Rural campus; Amtrak stop in Kingston", "points": ["Kingston has an Amtrak station near campus, with trains along the Northeast Corridor.", "T. F. Green Airport near Providence is the closest major airport, and Boston Logan is the other option.", "A car helps in a rural area. Check the school's rules on first-year cars."]},
     "living": {"preview": "Big state school; most first-years live on campus, food is decent.", "housing": ["Most first-years live on campus in traditional dorms.", "Many upperclassmen move to apartments or houses off campus in and around Kingston.", "Campus is large, so some dorms are a real walk from classes."], "food": ["There are several dining halls, and the food is usually described as decent.", "First-years living in dorms usually have a meal plan.", "Off-campus food nearby is limited, and most students drive to the beaches and towns for more."]},
     vibe: {
       preview: 'Social, outdoorsy, beachy, with some serious majors mixed in',

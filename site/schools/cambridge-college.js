@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Boston-area school; most students use the T", "points": ["Check which location you will attend, since Cambridge College runs more than one site.", "Logan Airport is the main airport for the Boston area.", "Most students commute, so check parking and transit near your location."]},
     "living": {"preview": "No dorms; school is for adult learners who live on their own", "housing": ["Cambridge College has no dorms.", "Students are mostly adult learners who already have housing.", "You'd find your own place or live at home."], "food": ["There is no campus dining hall or meal plan.", "Students eat on their own around work and class.", "The Boston area has lots of food nearby."]},
     vibe: {
       preview: 'Adults, evenings, and getting the degree done',

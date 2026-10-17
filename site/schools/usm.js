@@ -53,6 +53,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Portland has buses and the Downeaster train", "points": ["Portland has city buses, long-distance buses and the Amtrak Downeaster.", "Portland International Jetport is the closest airport.", "A car is optional in Portland and more useful at the Gorham campus. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly commuters with some housing; food is limited and city-based.", "housing": ["USM is commuter-heavy, and many students live off campus.", "There are residence halls, mainly on the Gorham campus.", "Portland and Gorham are different feels, so check which campus you want."], "food": ["Campus dining is smaller than at big residential schools.", "Many students eat off campus or bring food.", "Portland has a lot of good restaurants if you want to eat out."]},
     "vibe": {
       "preview": "Commuter-heavy, city access, low-key",

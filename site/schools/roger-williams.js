@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Bristol; bus to Providence, a car helps", "points": ["RIPTA buses connect Bristol to Providence.", "T. F. Green Airport is the closest major airport.", "A car helps. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential on the water; food is okay.", "housing": ["Most first-years live on campus.", "Housing is a mix of dorms, suites and apartment-style options.", "Many upperclassmen move off campus in nearby towns."], "food": ["There is a main dining hall, and students call the food decent.", "Residents usually need a meal plan.", "Bristol has a small downtown, but a car helps for more choices."]},
     vibe: {
       preview: 'Beachy, friendly, outdoorsy, quiet town',

@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Green Line T runs right to campus", "points": ["The Green Line B branch stops at campus, so you can get downtown without a car.", "Boston Logan is the nearest major airport.", "You do not need a car, and first-year car rules are strict, so check the school's rules."]},
+    "traditions": {"preview": "Football rivalries and the Marathon cheer section", "items": ["Heartbreak Hill on the Boston Marathon route runs right by campus, and students come out to cheer on race day."]},
     "living": {"preview": "Most people live on campus early; food is solid for a big school.", "housing": ["Most first-years live on campus, and lots of students stay on for a few years.", "Upperclassmen often move to apartments or houses off campus nearby.", "Housing is a mix of traditional dorms and suites, and people say the quality varies."], "food": ["There are a few dining halls, and students generally rate the food pretty well.", "Residents usually need a meal plan.", "Boston is a short train ride away for better food."]},
     vibe: {
       preview: 'Tight campus bubble, lots of school spirit, social and driven',

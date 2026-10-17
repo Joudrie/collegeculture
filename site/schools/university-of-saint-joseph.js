@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "West Hartford: city buses; Bradley is the airport", "points": ["Hartford area buses serve West Hartford, including routes to downtown.", "Bradley International is the closest major airport.", "A car makes life easier. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus with residents and commuters; food is simple.", "housing": ["Many students live on campus, but a good number commute.", "Housing is mostly dorms and suites in a small community.", "West Hartford is close, so apartments nearby are an option."], "food": ["Dining on campus is small, with a main dining hall.", "Residents typically need a meal plan.", "West Hartford has lots of restaurants a short ride away."]},
     vibe: {
       preview: 'Small, calm, and focused on health careers',

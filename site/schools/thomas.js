@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Waterville; a car helps a lot", "points": ["Public transit in Waterville is limited, though intercity buses stop in town.", "Portland and Bangor are the nearest major airports.", "Check the school's rules on first-year cars."]},
     "living": {"preview": "Small and mostly residential; food is simple.", "housing": ["The campus is small, and most students live on it.", "Housing is mostly traditional dorms and suites.", "Everything is close together, and everyone knows each other."], "food": ["There is one main dining hall, so choices are limited.", "Residents usually need a meal plan.", "Waterville has a small downtown with restaurants nearby."]},
     "vibe": {
       "preview": "Small, athletic, career-minded and tight",

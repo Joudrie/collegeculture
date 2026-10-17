@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Small town; plan on a car", "points": ["Local buses run in Willimantic, but service is limited.", "Bradley International Airport is the closest major airport.", "A car helps a lot. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mix of residents and commuters, small town, basic food", "housing": ["Many students live on campus, and many commute.", "Housing is mostly traditional dorms and apartment-style options.", "Willimantic is small, so weekends can be quiet."], "food": ["There is a main dining hall.", "Students call it fine.", "Off-campus options in Willimantic are limited and casual."]},
     vibe: {
       preview: 'Friendly, small, affordable, a real campus feel',

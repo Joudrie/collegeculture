@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Commuter rail to Boston; Logan is the airport", "points": ["The Framingham/Worcester commuter rail line has stops in Wellesley.", "Logan Airport is the closest major airport.", "You can get by without a car. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "The Scream Tunnel on Marathon Monday", "items": ["During the Boston Marathon, students line the course in a loud crowd known as the Scream Tunnel, and runners know it from far away."]},
     "living": {"preview": "Almost everyone lives on campus all four years, food is good", "housing": ["Almost all students live on campus for all four years.", "Dorms are a mix of older halls and newer buildings.", "Campus is residential and pretty, but Wellesley is a quiet town."], "food": ["Food is served in several dining halls spread around campus.", "Students usually say it is better than average.", "The town has a few restaurants, and Boston is a train ride away."]},
     vibe: {
       preview: 'Academic, close-knit and beautiful, with the fun often in Boston',

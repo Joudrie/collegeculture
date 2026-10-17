@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Rural Vermont; plan on a car or rides", "points": ["Public transit is very limited in Bennington.", "Albany International Airport in New York is the closest major airport.", "A car helps a lot. Check the school's rules on first-year cars."]},
     "living": {"preview": "Tiny and fully residential; food is homey, campus is remote.", "housing": ["Almost everyone lives on campus in small houses.", "The house system gives dorm life a small, close feel.", "Students tend to stay on campus, and the town is small."], "food": ["There is a main dining hall with a small, familiar crowd.", "Students usually call the food decent.", "Bennington is a small town, so off-campus options are limited."]},
     vibe: {
       preview: 'Artsy, independent, tiny, very self-directed',

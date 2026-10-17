@@ -53,6 +53,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Rural Maine campus; you need a car or rides", "points": ["Public transit near Standish is very limited.", "Portland International Jetport is the closest major airport.", "A car is a big help. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small residential college on a lake; quiet area, limited food nearby", "housing": ["Many students live on campus, since it's a residential school.", "Dorms are mostly traditional, and the campus is small.", "Campus is in rural Maine, so you'll live on campus for most things."], "food": ["There's a main dining hall on campus.", "Students call the food average.", "Standish is small, so off-campus options are limited and you may need a car."]},
     "vibe": {
       "preview": "Small, friendly, health-focused, on a lake",

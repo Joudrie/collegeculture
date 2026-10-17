@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "City buses in Hartford; Bradley Airport is close", "points": ["CT Transit buses run through Hartford, and Amtrak and CTrail stop at Union Station downtown.", "Bradley International Airport is the closest major airport.", "A car is useful for getting around Hartford. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential, most people live on campus; Hartford is nearby", "housing": ["Most students live on campus for most of their time here.", "Housing includes traditional dorms and some apartment-style options.", "Campus is small, so everything is close."], "food": ["There is a main dining hall, and students say it's fine.", "Meal plans are normal for residents.", "Hartford has food nearby, but students often get a ride."]},
     vibe: {
       preview: 'Small, social, athletic and a little preppy',

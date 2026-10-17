@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Remote Berkshires; plan on a car", "points": ["Local buses exist, but service is limited. Check schedules first.", "Albany International Airport is the closest major airport.", "A car helps a lot here. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus in a small town, most students are residents", "housing": ["Many students live on campus, especially in the first years.", "Housing is mostly traditional dorms and some suites.", "North Adams is small and quiet."], "food": ["There is a main dining hall.", "Students call it fine.", "The town has a handful of restaurants, but options are limited."]},
     vibe: {
       preview: 'Small, quiet, artsy, mountains everywhere',

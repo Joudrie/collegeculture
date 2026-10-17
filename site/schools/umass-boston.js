@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Red Line T plus a shuttle; Logan is close", "points": ["The Red Line to JFK/UMass stop connects to campus, which is on a peninsula by the harbor.", "Boston Logan is the nearest major airport.", "It is a commuter-heavy school, so you do not need a car."]},
     "living": {"preview": "Mostly a commuter school; some dorms, but most students go home.", "housing": ["Most students commute, so campus can empty out after classes.", "There are residence halls, but only a smaller share of students live on campus.", "Many students live with family or rent in the Boston area."], "food": ["Dining on campus is basic and mostly built for people between classes.", "Residents can get a meal plan, but many students eat out or bring food.", "Boston has tons of food options, and the campus is on the harbor."]},
     vibe: {
       preview: 'Commuter-heavy, diverse, independent, nice harbor views',

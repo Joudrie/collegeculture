@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Train to New York and Boston; New Haven Union Station", "points": ["New Haven Union Station has Metro-North and Amtrak. It is the easy way to get to New York.", "Tweed New Haven is small. Most students fly through Bradley, or the New York airports.", "You do not need a car in New Haven. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "The Game and the Whiffenpoofs", "items": ["The Game is the yearly football matchup against Harvard.", "The Whiffenpoofs are a famous senior a cappella group that has been around for over a century."]},
     "living": {"preview": "Everyone lives on campus in a residential college; food is solid.", "housing": ["Nearly all undergrads live on campus all four years.", "You are placed in one of the residential colleges, which act like your home and community.", "Dorm rooms vary a lot by college."], "food": ["Each residential college has its own dining hall.", "Students generally say the food is good for college dining.", "New Haven has a lot of restaurants, including its well-known pizza spots."]},
     vibe: {
       preview: 'Intense but friendly, very artsy, life centered on your college',

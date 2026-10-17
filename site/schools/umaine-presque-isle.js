@@ -53,6 +53,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Very remote; plan on a car", "points": ["Presque Isle is far north in Maine with very little public transit.", "Presque Isle has a small airport. Bangor is the nearest large one, and it is a long drive.", "A car helps a lot. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small campus in a remote town; housing exists and food is basic.", "housing": ["There are residence halls, and many students live on campus.", "Some students commute from nearby, and the town is small.", "Presque Isle is remote, so off-campus options are limited."], "food": ["Dining on campus is small and simple.", "Residents usually have a meal plan.", "The town has a few local places, but choices are limited."]},
     "vibe": {
       "preview": "Quiet, flexible, rural and practical",

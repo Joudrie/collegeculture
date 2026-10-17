@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Walkable Burlington; the airport is nearby", "points": ["Green Mountain Transit buses serve Burlington, and campus is close to downtown.", "Burlington International Airport is the closest airport.", "You can get by without a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small school in Burlington; dorms early, off-campus later", "housing": ["Many first-years live in residence halls.", "Older students often move into apartments in and around Burlington.", "Campus sits close to downtown, so living there feels like city living."], "food": ["Dining options are small compared to a big university.", "Students say the food is okay.", "Burlington has lots of restaurants and cafes nearby."]},
     vibe: {
       preview: 'Career-focused, creative, small campus in a fun city',

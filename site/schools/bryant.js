@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Suburban campus; a car helps a lot", "points": ["The campus is in Smithfield, a suburb, with limited public transit. Providence is the nearest city.", "T.F. Green airport near Providence is the closest major airport.", "Most students say a car makes life easier. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential campus; food is decent and the area is quiet.", "housing": ["Most students live on campus for much of their time here.", "Housing includes traditional dorms and apartment-style options for older students.", "The campus is in suburban Smithfield, so it can feel isolated without a car."], "food": ["There is a main dining hall and some other places to eat on campus.", "Residents usually need a meal plan.", "Off-campus food is mostly chains and a short drive away."]},
     vibe: {
       preview: 'Career-focused, on-campus social life, nice self-contained campus',

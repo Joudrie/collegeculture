@@ -30,6 +30,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Amtrak stops in New London, not far from campus", "points": ["New London has an Amtrak station, and regional trains serve the area.", "T.F. Green near Providence and Bradley near Hartford are the closest big airports.", "Cadets follow strict military rules, so ask the Academy about cars."]},
+    "traditions": {"preview": "Swab Summer", "items": ["Swab Summer is the demanding summer training new cadets go through before classes start."]},
     "living": {"preview": "Cadets live in barracks and eat together, all covered by the academy.", "housing": ["Cadets live in barracks on campus.", "The academy covers housing.", "Life is structured, and rooms are shared or tightly managed."], "food": ["Cadets eat together in a central dining hall.", "Meals are covered by the academy.", "Free time off campus is limited, so most food is what the academy serves."]},
     vibe: {
       preview: 'Structured, disciplined, close-knit, service first',

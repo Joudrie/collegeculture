@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Bus to the T and commuter rail; Logan is close", "points": ["Local buses connect Waltham to the Boston area, and the commuter rail has a Waltham stop.", "Boston Logan is the nearest major airport.", "You can get by without a car, but check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential and compact; food is fine, with Boston nearby.", "housing": ["Most first-years live on campus, and a lot of students stay on campus for years.", "Housing is a mix of traditional dorms and suites or apartments.", "Some upperclassmen move off campus in the Waltham area."], "food": ["There is a main dining hall plus smaller spots around campus.", "Students usually call the food fine, not amazing.", "Waltham has lots of restaurants, and Boston is easy to reach."]},
     vibe: {
       preview: 'Career-first, polished, medium social scene',

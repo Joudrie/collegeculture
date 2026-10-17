@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Storrs is rural; buses help, but a car makes life easier", "points": ["Storrs is out in the country, with no train. Buses connect campus to nearby towns and Hartford.", "Bradley International near Hartford is the closest major airport.", "A car helps for off-campus trips. Check the school's rules on first-year cars."]},
     "living": {"preview": "Big campus, lots of living options; dining is well liked.", "housing": ["Many first-years live on campus in traditional dorms.", "Upperclassmen often choose apartments or move off campus around Storrs.", "Storrs is rural, so most people live close to campus."], "food": ["There are many dining halls, and people often say UConn dining is a highlight.", "Residents usually need a meal plan.", "Off-campus food near Storrs is limited, so a car or the campus bus helps."]},
     vibe: {
       preview: 'Huge school spirit, solid party scene, middle of nowhere',

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Green Line stops steps from campus", "points": ["Hynes Convention Center and Symphony stops on the Green Line are close to campus.", "Logan Airport is the main airport and the T can get you there.", "You do not need a car in Boston. Check the school's rules on first-year cars."]},
     "living": {"preview": "Music school in the city; dorms plus lots of shared apartments", "housing": ["Berklee has residence halls, and many first-years live in them.", "Lots of students share apartments around Boston later.", "Practice space and noise can be a real thing in dorms."], "food": ["Berklee does not have one big dining hall like traditional colleges.", "Students often eat out or cook at home.", "Boston has food everywhere, but it adds up."]},
     vibe: {
       preview: 'Jam sessions, not parties. Huge creative energy, no sports.',

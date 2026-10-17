@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "City buses in Burlington; Burlington airport is nearby", "points": ["Green Mountain Transit buses serve Burlington and the campus.", "Burlington International Airport is the closest airport, and the Amtrak Vermonter stops in nearby Essex Junction.", "You can get by without a car in Burlington. Check the school's rules on first-year cars."]},
     "living": {"preview": "First-years live on campus, then many move into Burlington", "housing": ["First-years mostly live in residence halls on campus.", "After that, a lot of students rent houses and apartments in Burlington.", "Off-campus rentals can be competitive and pricey, people say."], "food": ["There are a few dining halls, and students generally call the food decent.", "Vermont has a big local food and farm scene.", "Downtown Burlington has lots of restaurants and cafes."]},
     vibe: {
       preview: 'Laid back, outdoorsy, real party scene, great college town',

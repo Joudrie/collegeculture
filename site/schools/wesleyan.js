@@ -29,6 +29,8 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Middletown has local buses; Bradley is the airport", "points": ["Local buses serve Middletown, but there is no train in town.", "Bradley International Airport is the closest major airport.", "A car helps, but many students go without. Check the school's rules on first-year cars."]},
+    "traditions": {"preview": "Spring Fling, the big spring concert weekend", "items": ["Spring Fling is a yearly spring concert event on campus."]},
     "living": {"preview": "Most students live on campus or in nearby houses, food is good", "housing": ["Most first-years and many upperclassmen live on campus.", "Many seniors live in houses owned by the school or in nearby apartments.", "Middletown is a small city, so campus is a big part of social life."], "food": ["There are a few dining halls and cafes.", "Students usually say the food is good.", "Main Street in Middletown has a number of local restaurants."]},
     vibe: {
       preview: 'Creative, political, open curriculum, not a sports school',

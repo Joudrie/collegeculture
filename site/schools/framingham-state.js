@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Commuter rail from Framingham station to Boston", "points": ["Framingham station has commuter rail to Boston and Worcester.", "Boston Logan is the nearest major airport.", "A car helps in the suburbs but is not required. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mix of residents and commuters; food is basic and simple.", "housing": ["Many students commute, but there are residence halls on campus.", "First-years who live on campus usually are in traditional dorms.", "Framingham has apartments nearby, and the commuter rail helps."], "food": ["There is a main dining hall and a few other spots on campus.", "Residents usually need a meal plan.", "Downtown Framingham has a decent mix of restaurants."]},
     vibe: {
       preview: 'Small, low-key, close to home, quiet on weekends',

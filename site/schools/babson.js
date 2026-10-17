@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Near Wellesley; commuter rail and shuttles reach Boston", "points": ["The Framingham/Worcester commuter rail line serves Wellesley, and a campus shuttle may run to town. Check the current schedule.", "Boston Logan is the closest major airport.", "A car is handy for errands. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential, small campus; dining is okay and options are limited.", "housing": ["Most undergrads live on campus, especially early on.", "Housing is a mix of traditional dorms and suite-style rooms.", "The campus is small and a bit separate from the town of Wellesley."], "food": ["There are a few dining options on campus, so variety can get old.", "Residents usually have a meal plan.", "You will want a ride or the train to get to better food off campus."]},
     vibe: {
       preview: 'Entrepreneurial, small, career-focused, quiet suburb',

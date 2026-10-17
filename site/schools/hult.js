@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Boston area; the T and buses cover the city", "points": ["The T and city buses cover the Boston area. Check the campus address for the closest stop.", "Boston Logan is the nearest major airport.", "You do not need a car in Boston."]},
     "living": {"preview": "Small international business school in Boston; housing is mostly on your own.", "housing": ["Hult is a small business school with limited campus housing.", "Most students find their own apartments in or near Boston.", "Boston rent is high, so budget carefully."], "food": ["There is not a traditional campus dining hall like at bigger colleges.", "Most students buy food themselves or eat out.", "Boston has a lot of restaurants, from cheap to expensive."]},
     vibe: {
       preview: 'Business-only, international, small, light on campus traditions',

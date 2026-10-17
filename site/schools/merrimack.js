@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Suburban campus; Logan is a drive away", "points": ["Public transit near North Andover is limited, so a car helps.", "Boston Logan is the nearest major airport.", "Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential and growing; food is fine, campus is quiet off-hours.", "housing": ["Most first-years live on campus.", "Housing is a mix of dorms, suites and apartment-style options.", "Students often drive to nearby towns on weekends, so a car helps."], "food": ["There is a main dining hall plus some smaller spots.", "Students usually call the food okay.", "North Andover has some restaurants nearby, and bigger options are a short drive away."]},
     vibe: {
       preview: 'Sporty, social, growing, hockey on Friday nights',

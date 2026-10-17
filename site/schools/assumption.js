@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Worcester has commuter rail and city buses", "points": ["Worcester has commuter rail to Boston and city buses. Both can be slow.", "Boston Logan is the main airport. Worcester and Hartford have smaller options.", "A car is useful but not required. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential campus; food is decent and Worcester is nearby.", "housing": ["Most undergrads live on campus, especially early on.", "Housing is mostly dorms and suites, with apartments for older students.", "Some upperclassmen move off campus in Worcester."], "food": ["There is a main dining hall plus a few other spots.", "Residents usually need a meal plan.", "Worcester has plenty of restaurants a short ride away."]},
     vibe: {
       preview: 'Small, friendly, on-campus life, Catholic but not intense',

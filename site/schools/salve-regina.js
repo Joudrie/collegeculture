@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Newport has local buses; T.F. Green is the airport", "points": ["Newport is walkable, and RIPTA buses run in the area. There is no train.", "T.F. Green near Providence is the closest major airport.", "You can get by without a car. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential campus; food is okay and Newport is a big draw.", "housing": ["Most students live on campus, especially in the first years.", "Some campus housing is in older mansions and houses, which students tend to like.", "Newport is expensive, so off-campus housing can cost a lot."], "food": ["There is a main dining hall plus a few smaller spots.", "Residents typically need a meal plan.", "Newport has lots of restaurants, though many are geared to tourists."]},
     vibe: {
       preview: 'Pretty, close-knit, a bit preppy, quiet weekdays',

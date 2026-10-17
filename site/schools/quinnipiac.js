@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Car country; New Haven airport is the closest", "points": ["Hamden is a suburb of New Haven, and local buses run there.", "Tweed New Haven is the closest airport, and Bradley and the New York airports are the bigger options.", "A car is handy. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential, newer housing; food gets decent reviews.", "housing": ["Most first-years live on campus.", "People say the housing is on the nicer side, with a mix of dorms, suites and apartments.", "Many upperclassmen live off campus nearby in Hamden."], "food": ["There are a few dining spots on campus, and students generally say the food is decent.", "Residents usually need a meal plan.", "Off-campus food is mostly a short drive, so having a car helps."]},
     vibe: {
       preview: 'Social, polished, health-science heavy, hockey-crazy',

@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Beverly has commuter rail; campus is a ride away", "points": ["Beverly has commuter rail service to Boston, and campus is a short ride from it.", "Logan Airport is the closest major airport.", "A car helps on the North Shore. Check the school's rules on first-year cars."]},
     "living": {"preview": "Mostly residential, on the coast, lots of students stay on campus", "housing": ["Most students live on campus, especially in the first years.", "Housing is a mix of traditional dorms and apartments.", "The campus is small and close to the water."], "food": ["There is one main dining hall plus a few smaller options.", "Students say it is okay and gets repetitive.", "Beverly and nearby towns have restaurants, but you may want a car."]},
     vibe: {
       preview: 'Beachy, friendly, career-minded, a little cliquey',

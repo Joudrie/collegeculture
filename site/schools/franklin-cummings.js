@@ -30,6 +30,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "In Boston's South End; T and buses nearby", "points": ["The T and city buses serve the South End, and Back Bay is close by.", "Boston Logan is the nearest major airport.", "You do not need a car in Boston."]},
     "living": {"preview": "Small tech school in Boston; mostly commuters, little campus housing.", "housing": ["Franklin Cummings is mostly a commuter school.", "Campus housing is limited, and many students live at home or rent in the area.", "Boston rent is high, so plan for the cost."], "food": ["There is no big dining hall like at a traditional campus.", "Most students bring food or eat nearby.", "The South End has lots of places to eat, from cheap to pricey."]},
     vibe: {
       preview: 'Practical, small, job-focused, light on campus life',

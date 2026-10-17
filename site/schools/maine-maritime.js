@@ -52,6 +52,7 @@ registerSchool({
     }
   ],
   "sections": {
+    "getThere": {"preview": "Remote coastal town; plan on a car", "points": ["Castine is small and remote with little public transit.", "Bangor International Airport is the closest major airport.", "A car helps a lot. Check the school's rules on first-year cars."]},
     "living": {"preview": "Small regimental school, nearly everyone lives on campus", "housing": ["Most students live on campus, and rules are stricter than at other schools.", "Rooms are often shared.", "Castine is tiny and remote, so campus is your world."], "food": ["Most meals are in the campus dining hall.", "Students say it is okay.", "The town has very few places to eat out."]},
     "vibe": {
       "preview": "Hands-on, structured, close and very job driven",

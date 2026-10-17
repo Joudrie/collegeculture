@@ -29,6 +29,7 @@ registerSchool({
   ],
 
   sections: {
+    "getThere": {"preview": "Green and Orange Line stops near campus", "points": ["Campus is on Huntington Ave near Symphony and Massachusetts Ave T stops.", "Logan Airport is the main airport and the T can get you there.", "You do not need a car in Boston. Check the school's rules on first-year cars."]},
     "living": {"preview": "Music conservatory in the city; small dorm, most students find their own places", "housing": ["NEC has a dorm for some students, but it's a small school.", "Many students live in apartments around Boston.", "Dorm life is built around practice and music schedules."], "food": ["The school doesn't have a big dining hall scene.", "Students mostly eat out or cook for themselves.", "Boston has endless places to eat, but it costs money."]},
     vibe: {
       preview: 'Music-obsessed, small, focused, with concerts every night',
