@@ -20,9 +20,11 @@
     { key: 'vibe',        title: 'The vibe',                 render: renderVibe },
     { key: 'social',      title: 'Social life',              render: renderParagraphs },
     { key: 'living',      title: 'Dorms and food',           render: renderLiving },
+    { key: 'getThere',    title: 'Getting there',            render: renderGetThere },
     { key: 'gettingIn',   title: 'Getting in',               render: renderPoints },
     { key: 'who',         title: 'Who goes here',            render: renderParagraphs },
     { key: 'knownFor',    title: 'Known for',                render: renderPoints },
+    { key: 'traditions',  title: 'Traditions',               render: renderTraditions },
     { key: 'stereotypes', title: 'Stereotypes vs. reality',  render: renderStereotypes },
     { key: 'mythsAndKnow',title: 'Myths and things to know', render: renderMythsAndKnow },
     { key: 'fit',         title: 'Is it for you?',           render: renderFit },
@@ -115,6 +117,27 @@
       h('div', null, h('h3', null, leftTitle), h('ul', null, left.map(function (x) { return h('li', null, x); }))),
       h('div', null, h('h3', null, rightTitle), h('ul', null, right.map(function (x) { return h('li', null, x); })))
     );
+  }
+
+  // Straight-line miles from the school (federal coordinates) to Boston and New York City.
+  var current = null;
+  function miles(lat1, lon1, lat2, lon2) {
+    var r = Math.PI / 180, a = Math.sin((lat2 - lat1) * r / 2), b = Math.sin((lon2 - lon1) * r / 2);
+    return 3959 * 2 * Math.asin(Math.sqrt(a * a + Math.cos(lat1 * r) * Math.cos(lat2 * r) * b * b));
+  }
+  function renderGetThere(data) {
+    var st = current && stats(current.id), out = [];
+    if (st && st.lat != null) {
+      var bos = Math.round(miles(st.lat, st.lon, 42.3601, -71.0589) / 5) * 5;
+      var nyc = Math.round(miles(st.lat, st.lon, 40.7128, -74.006) / 5) * 5;
+      out.push(h('p', null, bos <= 5 ? 'In or right next to Boston. About ' + nyc + ' miles from New York City in a straight line.'
+        : 'About ' + bos + ' miles from Boston and ' + nyc + ' from New York City, in a straight line. Driving is longer.'));
+    }
+    out.push(h('ul', null, data.points.map(function (x) { return h('li', null, x); })));
+    return out;
+  }
+  function renderTraditions(data) {
+    return h('ul', null, data.items.map(function (x) { return h('li', null, x); }));
   }
 
   function renderLiving(data) {
@@ -278,6 +301,7 @@
     var meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', 'What ' + s.name + ' ' + (s.nameSub || '') + ' is actually like: the vibe, the social life, the stereotypes, and the things nobody tells you.');
     applyColors(s.colors);
+    current = s;
 
     var band = h('header', { class: 'band' }, h('div', { class: 'wrap' },
       h('div', { class: 'bar' },

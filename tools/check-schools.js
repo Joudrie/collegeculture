@@ -11,7 +11,7 @@ const vm = require('vm');
 
 const dir = path.join(__dirname, '..', 'site', 'schools');
 const METERS = ['party', 'campus', 'spirit', 'pressure', 'career', 'greek', 'religion'];
-const SECTIONS = ['vibe', 'social', 'living', 'gettingIn', 'who', 'knownFor', 'stereotypes', 'mythsAndKnow', 'fit', 'people'];
+const SECTIONS = ['vibe', 'social', 'living', 'getThere', 'gettingIn', 'who', 'knownFor', 'stereotypes', 'mythsAndKnow', 'fit', 'people'];
 const VERDICTS = ['true', 'half', 'myth', 'outdated'];
 
 function luminance(hex) {
