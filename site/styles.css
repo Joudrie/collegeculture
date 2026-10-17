@@ -437,3 +437,6 @@ a.btn-main { text-decoration: none; display: inline-block; }
   .vs-label { grid-column: auto; }
   .vs-heads .vs-label { display: block; }
 }
+.terms { display: grid; }
+.term { display: grid; gap: 4px; padding-block: var(--s1); border-bottom: 1px solid var(--line); }
+.term dt { font-weight: 700; }
