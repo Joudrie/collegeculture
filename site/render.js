@@ -19,6 +19,7 @@
   var SECTIONS = [
     { key: 'vibe',        title: 'The vibe',                 render: renderVibe },
     { key: 'social',      title: 'Social life',              render: renderParagraphs },
+    { key: 'living',      title: 'Dorms and food',           render: renderLiving },
     { key: 'gettingIn',   title: 'Getting in',               render: renderPoints },
     { key: 'who',         title: 'Who goes here',            render: renderParagraphs },
     { key: 'knownFor',    title: 'Known for',                render: renderPoints },
@@ -114,6 +115,10 @@
       h('div', null, h('h3', null, leftTitle), h('ul', null, left.map(function (x) { return h('li', null, x); }))),
       h('div', null, h('h3', null, rightTitle), h('ul', null, right.map(function (x) { return h('li', null, x); })))
     );
+  }
+
+  function renderLiving(data) {
+    return twoLists('Housing', data.housing, 'Food', data.food);
   }
 
   function renderFit(data) {
