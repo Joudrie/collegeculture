@@ -33,25 +33,32 @@
       <span class="wordmark">College Culture</span>
       <span class="small on-muted">New England</span>
     </div>
-    <p class="vibe-line">What schools are actually like, based on what students and alumni say. Not rankings, not advice.</p>
+    <h1 class="hero-h1">What college is actually like</h1>
+    <p class="vibe-line">Honest snapshots of 127 New England schools, based on what students and alumni say. Not rankings, not advice.</p>
+    <div class="search hero-search">
+      <label class="small on-muted" for="school-search">Find a school</label>
+      <input id="school-search" type="search" placeholder="Search by name or town" autocomplete="off">
+    </div>
   </div>
 </header>
 
 <main class="wrap">
   <a class="quiz-cta" href="quiz.html" id="quiz-cta">
     <span class="sum-title">Find your fit</span>
-    <span class="small" id="quiz-cta-text">Take the quiz and get matched with schools by vibe.</span>
+    <span class="small" id="quiz-cta-text">Answer a few questions and get your top 10 schools by vibe.</span>
+    <span class="cta-go" id="quiz-cta-go">Take the quiz ›</span>
   </a>
+  <section class="home-sec" aria-labelledby="pop-title">
+    <h2 class="group-title" id="pop-title">Popular schools</h2>
+    <div class="pop-row" id="pop-row"></div>
+  </section>
   <div class="tiles">
     <a class="tile" href="compare.html"><span class="tile-title">Compare</span><span class="small muted">Two schools side by side</span></a>
     <a class="tile" href="basics.html"><span class="tile-title">Basics</span><span class="small muted">Timeline, visits, myths</span></a>
     <a class="tile" href="glossary.html"><span class="tile-title">Glossary</span><span class="small muted">College words, explained</span></a>
   </div>
-  <div class="search">
-    <label class="small muted" for="school-search">Find a school</label>
-    <input id="school-search" type="search" placeholder="Name or town" autocomplete="off">
-  </div>
-  <div class="filter-bar">
+  <div class="filter-bar home-sec">
+    <h2 class="group-title">Browse by state</h2>
     <button type="button" class="chip-btn" id="filter-toggle" aria-expanded="false" aria-controls="filters">Filters</button>
     <button type="button" class="btn" id="filter-clear" hidden>Clear</button>
   </div>
@@ -102,7 +109,9 @@
     var details = el('details', 'state');
     var summary = el('summary');
     var title = el('span', 'sum-text');
-    title.append(el('span', 'sum-title', STATES[code]), el('span', 'small muted state-count', list.length + ' schools'));
+    var dots = el('span', 'state-dots');
+    list.slice(0, 4).forEach(function (s) { var d = el('span', 'dot'); d.style.background = s.band; dots.appendChild(d); });
+    title.append(el('span', 'sum-title', STATES[code]), el('span', 'small muted state-count', list.length + ' schools'), dots);
     var chev = el('span', 'chev');
     chev.setAttribute('aria-hidden', 'true');
     summary.append(title, chev);
@@ -170,9 +179,22 @@
     var top = JSON.parse(localStorage.getItem('cc-quiz-top'));
     if (top && top.name) {
       document.getElementById('quiz-cta').href = 'quiz.html#results';
-      document.getElementById('quiz-cta-text').textContent = 'Your top match: ' + top.name + '. See all 10.';
+      document.getElementById('quiz-cta-text').textContent = 'Your top match: ' + top.name + '.';
+      document.getElementById('quiz-cta-go').textContent = 'See your top 10 \u203A';
     }
   } catch (e) { /* no saved quiz */ }
+
+  // Popular schools as cards in their own colors
+  ['harvard', 'mit', 'yale', 'brown', 'dartmouth', 'boston-college', 'bu', 'northeastern', 'umass-amherst', 'uconn', 'uvm', 'bowdoin'].forEach(function (id) {
+    var q = facts[id];
+    if (!q) return;
+    var a = el('a', 'pop-card');
+    a.href = 's/' + id + '/';
+    a.style.background = q.band;
+    a.style.color = q.onBand;
+    a.append(el('span', 'pop-name', q.short), el('span', 'small', q.town + ', ' + q.state));
+    document.getElementById('pop-row').appendChild(a);
+  });
 
   var input = document.getElementById('school-search');
   var empty = document.getElementById('no-match');

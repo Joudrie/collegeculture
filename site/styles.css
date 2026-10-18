@@ -486,3 +486,29 @@ a.btn-main { text-decoration: none; display: inline-block; }
 [data-name-style="classic"] .band h1 { font-family: "Libre Caslon Text", Georgia, serif; font-weight: 700; letter-spacing: 0.02em; font-variation-settings: normal; }
 [data-name-style="slab"] .band h1 { font-family: "Roboto Slab", Georgia, serif; font-weight: 800; letter-spacing: 0; font-variation-settings: normal; }
 [data-name-style] .band h1 .sub { font-family: var(--font); font-variation-settings: "wdth" 100; }
+
+/* Home page */
+.hero-h1 { font-size: 40px; line-height: 40px; padding-top: var(--s1); }
+@media (min-width: 720px) { .hero-h1 { font-size: 56px; line-height: 56px; } }
+.hero-search { padding-top: var(--s1); }
+.hero-search input { border-color: var(--on-school-muted); width: 100%; }
+.quiz-cta .cta-go { font-weight: 700; padding-top: var(--s1); }
+.home-sec { padding-top: var(--s3); }
+.pop-row {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 144px; gap: var(--s1);
+  overflow-x: auto; padding-bottom: var(--s1); scrollbar-width: none;
+}
+.pop-row::-webkit-scrollbar { display: none; }
+.pop-card {
+  display: grid; align-content: space-between; gap: var(--s1); height: 96px; padding: 12px;
+  border-radius: var(--radius); text-decoration: none; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+.pop-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pop-name {
+  font-weight: 800; font-size: var(--t-lg); line-height: var(--lh-lg); text-transform: uppercase;
+  font-variation-settings: "wdth" 75; overflow-wrap: anywhere;
+}
+.filter-bar.home-sec { justify-content: space-between; padding-bottom: var(--s1); }
+.filter-bar .group-title { padding-bottom: 0; }
+.state-dots { display: inline-flex; gap: 4px; margin-left: auto; align-self: center; }
+.state-dots .dot { width: var(--s1); height: var(--s1); border-radius: var(--radius); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12); }
