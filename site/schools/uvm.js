@@ -77,7 +77,7 @@ registerSchool({
         { title: 'The outdoors', text: 'Mountains, ski areas and Lake Champlain are all close by. For a lot of students, that is the main reason they came.' },
         { title: 'Burlington', text: 'Regularly called one of the best college towns around. Small enough to walk, big enough to have plenty going on.' },
         { title: 'Environmental programs', text: "UVM has a big focus on the environment and sustainability. If that's your thing, there are a lot of options." },
-        { title: 'Men\'s soccer', text: "The team won the 2024 NCAA national championship, the school's first national title in a team sport." }
+        { title: 'Men\'s soccer', text: "The team won the 2024 NCAA national championship, the school's first national title outside of skiing." }
       ]
     },
 

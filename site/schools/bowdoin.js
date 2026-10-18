@@ -58,7 +58,7 @@ registerSchool({
       points: [
         { title: "It's extremely hard to get into.", text: 'Only a small share of applicants get in. Treat it as a reach even with top grades.' },
         { title: 'Early decision helps.', text: "A bigger share of early decision applicants get in than regular ones. It's binding, so only apply early if it's your clear first pick." },
-        { title: 'Tests are optional.', text: 'Bowdoin was the first college in the country to go test-optional, back in 1969. Around half of students don\'t send scores. Check the current policy before you apply.' },
+        { title: 'Tests are optional.', text: 'Bowdoin was the first college in the country to go test-optional, back in 1969. Plenty of students don\'t send scores. Check the current policy before you apply.' },
         { title: 'Aid has no loans.', text: 'Bowdoin meets full demonstrated need with grants instead of loans. Run the net price calculator before you rule it out.' }
       ]
     },

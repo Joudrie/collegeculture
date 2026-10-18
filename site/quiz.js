@@ -617,7 +617,7 @@
         reasons(r),
         r.filters.length ? h('p', { class: 'small miss', text: 'Misses your filters: ' + r.filters.join(', ') }) : null,
         compareChart(r.s),
-        h('a', { class: 'link-btn', href: 'school.html#' + r.id, text: 'Read the full ' + r.s.short + ' page' })));
+        h('a', { class: 'link-btn', href: 's/' + r.id + '/', text: 'Read the full ' + r.s.short + ' page' })));
   }
 
   function carousel(list, onChange) {

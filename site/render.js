@@ -429,13 +429,18 @@
     return (n && (n.next || n.prev) && (n.next || n.prev).id) || (id === 'harvard' ? 'mit' : 'harvard');
   }
 
+  // Link to another school's page: its own address when hosted, the old hash link when opened as a file.
+  function schoolHref(id) {
+    return window.SCHOOL_ID ? 's/' + id + '/' : 'school.html#' + id;
+  }
+
   function schoolNav(id) {
     var n = neighbors(id);
     if (!n || n.total < 2) return null;
     var nav = h('nav', { class: 'school-nav', 'aria-label': 'More schools in this state' },
-      n.prev ? h('a', { class: 'prev', href: '#' + n.prev.id }, '\u2039 ' + (n.prev.short || n.prev.name)) : h('span'),
+      n.prev ? h('a', { class: 'prev', href: schoolHref(n.prev.id) }, '\u2039 ' + (n.prev.short || n.prev.name)) : h('span'),
       h('span', { class: 'pos small muted' }, (n.index + 1) + ' of ' + n.total + ' in ' + n.state),
-      n.next ? h('a', { class: 'next', href: '#' + n.next.id }, (n.next.short || n.next.name) + ' \u203A') : h('span'));
+      n.next ? h('a', { class: 'next', href: schoolHref(n.next.id) }, (n.next.short || n.next.name) + ' \u203A') : h('span'));
 
     // Swipe left for the next school, right for the previous one
     var x0 = null, y0 = null;
@@ -449,7 +454,7 @@
       x0 = null;
       if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
       var target = dx < 0 ? n.next : n.prev;
-      if (target) location.hash = target.id;
+      if (target) location.href = new URL(schoolHref(target.id), document.baseURI).href;
     }, { passive: true });
     return nav;
   }
@@ -468,13 +473,16 @@
     catch (e) { console.error(e); notFound(data && data.id); }
   };
 
-  // The school id comes from ?s=<id>, or from #<id> where query strings are not kept (hosted previews)
-  var id = new URLSearchParams(location.search).get('s') || location.hash.slice(1) || '';
-  window.addEventListener('hashchange', function () {
+  // Each school has its own page at s/<id>/ (built by tools/build-pages.js), which sets SCHOOL_ID.
+  // school.html?s=<id> and school.html#<id> are old links: they move to the real address when hosted.
+  var fixed = window.SCHOOL_ID;
+  var id = fixed || new URLSearchParams(location.search).get('s') || location.hash.slice(1) || '';
+  if (!/^[a-z0-9-]+$/.test(id) || id === '_template') { notFound(id); return; }
+  if (!fixed && location.protocol !== 'file:') { location.replace('s/' + id + '/'); return; }
+  if (!fixed) window.addEventListener('hashchange', function () {
     var next = location.hash.slice(1);
     if (/^[a-z0-9-]+$/.test(next) && !document.getElementById(next)) { window.scrollTo(0, 0); location.reload(); }
   });
-  if (!/^[a-z0-9-]+$/.test(id) || id === '_template') { notFound(id); return; }
   var script = document.createElement('script');
   script.src = 'schools/' + id + '.js';
   script.onerror = function () { notFound(id); };

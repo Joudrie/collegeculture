@@ -75,7 +75,7 @@ registerSchool({
     knownFor: {
       preview: 'The food, the old ZooMass rep, hockey, and strong majors',
       points: [
-        { title: 'The food', text: "UMass has been ranked number one for campus food by The Princeton Review year after year. People really do brag about the dining halls." },
+        { title: 'The food', text: "UMass is regularly ranked at or near the top for campus food by The Princeton Review. People really do brag about the dining halls." },
         { title: 'ZooMass', text: "The old party nickname. Students still use it, sometimes as a joke, sometimes as a badge of honor." },
         { title: 'Hockey', text: 'UMass won the men\'s national hockey title in 2021. Games at the Mullins Center are the big night out.' },
         { title: 'Strong programs', text: 'The Isenberg School of Management and computer science are the two names people bring up most.' }

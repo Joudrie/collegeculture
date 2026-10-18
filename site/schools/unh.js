@@ -77,7 +77,7 @@ registerSchool({
         { title: 'Wildcat hockey', text: "Games at the Whittemore Center are the big night out for a lot of students. It's the closest thing UNH has to a religion." },
         { title: 'A party rep', text: "UNH has been on party school lists before and students still talk about it. It's real, but it's not all there is." },
         { title: 'Ocean and outdoors', text: 'Marine science, ocean engineering and environmental programs are strong, and the coast and the White Mountains are close.' },
-        { title: 'The Dairy Bar', text: "A small campus restaurant in the old train depot. It's a classic first stop on a campus tour." }
+        { title: 'The Dairy Bar', text: "A small campus restaurant in the old train depot. It's a campus classic for ice cream and snacks." }
       ]
     },
 

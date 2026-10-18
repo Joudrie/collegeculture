@@ -11,7 +11,9 @@ Open `site/index.html` in a browser. No build step and no server needed.
 ```
 site/
   index.html          list of schools
-  school.html         the school page template (school.html#<id>)
+  school.html         the school page template; old school.html#<id> links redirect to s/<id>/
+  s/<id>/index.html   each school's real page and address (generated, do not edit)
+  og/                 link preview images (generated)
   render.js           builds a school page from its data file
   nav.js              the Schools / Quiz / Compare / Basics menu on every page
   styles.css          shared styles for every page
@@ -35,7 +37,9 @@ tools/
   check-schools.js    checks every school file against the rules
   build-quiz-data.js  rebuilds schools/quiz-data.js and schools/stats.js after edits
   update-scorecard.py refreshes data/scorecard.json from the Scorecard download
-  sync-index.js       copies school colors into the school list
+  sync-index.js       copies school short names and colors into the school list
+  build-pages.js      builds s/<id>/ pages and link preview tags (run after any school edit)
+  build-og.mjs        builds the preview images in og/ (needs Playwright)
 ```
 
 Every school page uses the same template. A school is one data file: its content plus its colors.
@@ -46,7 +50,8 @@ Every school page uses the same template. A school is one data file: its content
 2. Fill in the content and colors. The comments at the top of the template explain each field.
 3. Add a line for it in `site/schools/index.js`.
 4. Run `node tools/check-schools.js <id>` to check colors, contrast and content rules.
-5. Open `site/school.html#<id>` to see it.
+5. Run `node tools/sync-index.js`, `node tools/build-pages.js` and `node tools/build-og.mjs`.
+6. Open `site/s/<id>/` to see it.
 
 ## Design rules
 

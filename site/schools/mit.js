@@ -25,7 +25,7 @@ registerSchool({
     { label: 'Getting in', value: 'Extremely hard' },
     { label: 'Usual length', value: '4 years' },
     { label: 'Sports', value: 'Division III' },
-    { label: 'Greek life', value: 'Big (FSILGs)' }
+    { label: 'Greek life', value: 'Common (FSILGs)' }
   ],
 
   sections: {
@@ -40,7 +40,7 @@ registerSchool({
         spirit:   { value: 4, note: 'Pride in MIT, not in sports' },
         pressure: { value: 9, note: 'The workload is no joke' },
         career:   { value: 10, note: 'Recruiters come to you' },
-        greek:    { value: 6, note: 'About a third of undergrads join one' },
+        greek:    { value: 6, note: 'A big chunk of undergrads join one' },
         religion: { value: 1, note: 'Secular, groups exist if you look' }
       }
     },

@@ -78,7 +78,7 @@ registerSchool({
         { title: 'Languages', text: 'Middlebury is famous for teaching languages. Its summer Language Schools make students pledge to speak only the language they are learning, and lots of students study abroad.' },
         { title: 'Environmental studies', text: 'It has one of the oldest environmental studies programs in the country, and sustainability is a big part of campus life.' },
         { title: 'The Snow Bowl', text: 'The college owns a ski area in the Green Mountains. Students get cheap passes, and the ski team competes at the top level.' },
-        { title: 'Febs', text: "Students who start in February graduate in February too, and celebrate by skiing down the Snow Bowl in their caps and gowns. Families come back for the full ceremony in May." }
+        { title: 'Febs', text: "Students who start in February finish mid-year, and celebrate by skiing down the Snow Bowl in their caps and gowns. They come back in May for the full commencement." }
       ]
     },
 
