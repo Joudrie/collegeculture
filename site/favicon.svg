@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="4" fill="#0B0B0B"/><rect y="52" width="64" height="12" fill="#D41B2C"/><text x="32" y="40" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="30" fill="#FFFFFF">CC</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="#f2b632"/><g transform="translate(128 128) scale(0.8638) translate(-128.00 -128.00)"><path d="M70 118 V172 Q128 200 186 172 V118 Z" fill="#1b1b1b" stroke="#141414" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M128 50 L230 98 L128 146 L26 98 Z" fill="#1b1b1b" stroke="#141414" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M128 66 L196 98" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round"/>
+<path d="M128 98 L204 112 L204 164" fill="none" stroke="#141414" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M128 98 L204 112 L204 164" fill="none" stroke="#d7263d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M192 160 H216 L222 206 H186 Z" fill="#d7263d" stroke="#141414" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M196 178 V200 M204 178 V200 M212 178 V200" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+<circle cx="128" cy="98" r="10" fill="#d7263d" stroke="#141414" stroke-width="6"/></g></svg>
